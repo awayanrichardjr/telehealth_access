@@ -17,7 +17,7 @@
     <title>TELEHEALTH ACCESS</title>
 </head>
 
-<body>
+<body class="lightmode">
     <!-- background  -->
     <!-- <div class="body-bg-blur"></div>
     <div class="body-bg1"></div>

@@ -48,7 +48,7 @@
     border-style: solid;
     border-color: whitesmoke;
 
-    background-color: var(--light-mode-base-color);
+    background-color: var(--base-color);
 
     display: block;
     width: 100%;

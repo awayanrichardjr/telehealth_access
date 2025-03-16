@@ -1,24 +1,32 @@
 /* root variables */
 :root {
-    /* light mode  */
+    /* lightmode  */
     --light-mode-base-color: whitesmoke;
-    --primary-color: white;
-    --secondary-color: lightgrey;
-    --tritary-color: grey;
+    --light-primary-color: white;
+    --light-secondary-color: lightgrey;
+    --light-tritary-color: grey;
+    --light-text-color: grey;
+    --light-text-color-hover: black;
 
-    /* text */
-    --text-color: grey;
-    --text-color-hover: black;
+    /* darkmode  */
+    --dark-mode-base-color: black;
+    --dark-primary-color: grey;
+    --dark-secondary-color: grey;
+    --dark-tritary-color: lightgrey;
+    --dark-text-color: white;
+    --dark-text-color-hover: whitesmoke;
+
+    /* text size  */
     --text-size-default: 16px;
     --text-size-m: 12px;
     --text-size-s: 10px;
 
-    /* dark mode  */
-    --dark-mode-base-color: #2e2e2e;
 
     /* border */
     --card-border: 0.5rem;
     --card-border-thin: 0.3rem;
+    --border-color: lightgrey;
+    --border-color-hover: grey;
 
     /* colors */
     --blue: #4287f5;
@@ -31,4 +39,22 @@
     /* shadows */
     --shadow: 1px 1px 2px rgba(0, 0, 0, 0.200);
     --card-shadow: 1px 10px 10px rgba(0, 0, 0, 0.200);
+}
+
+.lightmode {
+    --base-color: var(--light-mode-base-color);
+    --primary-color: var(--light-primary-color);
+    --secondary-color: var(--light-secondary-color);
+    --tritary-color: var(--light-tritary-color);
+    --text-color: var(--light-text-color);
+    --text-color-hover: var(--light-text-color-hover);
+}
+
+.darkmode {
+    --base-color: var(--dark-mode-base-color);
+    --primary-color: var(--dark-primary-color);
+    --secondary-color: var(--dark-secondary-color);
+    --tritary-color: var(--dark-tritary-color);
+    --text-color: var(--dark-text-color);
+    --text-color-hover: var(--dark-text-color-hover);
 }
