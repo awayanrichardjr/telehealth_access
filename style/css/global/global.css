@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    appearance: 0;
+    box-sizing: border-box;
+
+    /* defualt transition-duration */
+    transition: 0.3s;
+}
+
+html {
+    /* defaul size  */
+    font-size: var(--text-size-default);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+body {
+    background-color: var(--light-mode-base-color);
+    font-family: "Poppins", sans-serif;
+}
+
+/* settings  */
+.logout a:hover {
+    color: var(--red);
+}
+
+/* stutas  */
+.verified-status {
+    color: var(--blue);
+}
+
+.unverified-status {
+    color: var(--red);
+}
+
+.pending-status {
+    color: var(--yellow);
+}

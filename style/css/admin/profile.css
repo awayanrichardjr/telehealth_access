@@ -1,0 +1,23 @@
+.admin_profile {
+    padding: 0.5rem;
+}
+
+.admin_profile :where(div) {
+    padding: 1rem;
+    background-color: var(--primary-color);
+    border-radius: var(--card-border-thin);
+    box-shadow: var(--shadow);
+}
+
+.admin_profile :where(.pfp) {
+    width: 150px;
+}
+
+.admin_profile :where(.details) {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    font-size: 10px;
+    color: var(--text-color);
+}

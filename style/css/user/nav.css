@@ -1,0 +1,95 @@
+.user_nav {
+    background-color: var(--primary-color);
+    box-shadow: var(--shadow);
+
+    display: flex;
+    justify-content: space-between;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.user_nav :where(.logo) {
+    width: 20px;
+}
+
+/* dropdown  */
+.user_nav :where(.dropdown-links) {
+    display: none;
+}
+
+.user_nav :where(.dropdown-content) {
+    display: none;
+    position: absolute;
+    right: 0;
+    z-index: 1000;
+
+    background-color: var(--primary-color);
+    border-radius: var(--card-border);
+    box-shadow: var(--card-shadow);
+}
+
+.user_nav :where(a) {
+    color: var(--text-color);
+    padding: 1rem 2rem;
+
+    display: block;
+    align-items: center;
+    gap: 0.5rem;
+
+    font-size: var(--text-size-m);
+}
+
+.user_nav :where(a:hover) {
+    color: var(--text-color-hover);
+}
+
+.user_nav .links a::after {
+    content: "";
+    background-color: grey;
+    display: block;
+    height: 1px;
+    width: 0;
+    transition: 0.3s;
+    z-index: 1000;
+}
+
+.user_nav .links a:hover::after {
+    width: 100%;
+}
+
+.user_nav :where(.links) {
+    display: flex;
+    align-items: center;
+}
+
+.user_nav :where(.title-link a) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width:800px) {
+    .user_nav :where(.links) {
+        display: none;
+    }
+
+    .user_nav :where(.dropdown-links) {
+        display: block;
+    }
+
+    .user_nav :where(.dropdown-links:hover .dropdown-content) {
+        display: block;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .user_nav :where(.title-link h4) {
+        display: none;
+    }
+}
+
+.user_nav :where(.login-link a) {
+    font-weight: 500;
+}

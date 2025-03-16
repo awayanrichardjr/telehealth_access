@@ -1,0 +1,12 @@
+<?php
+$sql = "CREATE TABLE medical (
+    medID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    medName VARCHAR(255) NOT NULL,
+    medBdate DATE NOT NULL,
+    medAddress VARCHAR(255) NOT NULL,
+    medSpecialty VARCHAR(255) NOT NULL,
+    medEmail VARCHAR(255) NOT NULL UNIQUE,
+    medContact VARCHAR(255) NOT NULL UNIQUE,
+    medCdate DATE NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    medModified VARCHAR(255) NOT NULL
+)";

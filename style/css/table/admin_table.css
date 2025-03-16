@@ -1,0 +1,55 @@
+.admin_table {
+    padding: 1rem;
+
+    overflow: auto;
+    justify-self: center;
+}
+
+.admin_table :where(h1) {
+    color: var(--blue);
+}
+
+/* table  */
+.admin_table :where(table) {
+    background-color: rgba(255, 255, 255, 0.700);
+    font-size: 10px;
+}
+
+
+/* dropdown  */
+.admin_table :where(.dropdown-content) {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+
+    background-color: var(--primary-color);
+    border-radius: var(--card-border);
+    box-shadow: var(--card-shadow);
+}
+
+.admin_table :where(.dropdown-links:hover .dropdown-content) {
+    display: inline-flex;
+}
+
+.admin_table :where(.dropdown-content a) {
+    display: block;
+    padding: 1rem;
+    color: var(--text-color);
+}
+
+/*  */
+.admin_table :where(.dropdown-content a:hover) {
+    color: var(--text-color-hover);
+}
+
+.admin_table :where(th, td) {
+    white-space: nowrap;
+}
+
+@media screen and (max-width:800px) {
+    .admin_table {
+        justify-self: start;
+        width: 100%;
+        overflow: auto;
+    }
+}

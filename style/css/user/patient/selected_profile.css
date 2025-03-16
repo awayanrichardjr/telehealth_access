@@ -1,0 +1,49 @@
+.selected_profile {
+    background-color: unset;
+
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.selected_profile :where(.container) {
+    height: fit-content;
+}
+
+.selected_profile :where(.verified) {
+    color: var(--blue);
+}
+
+.selected_profile :where(.unverified) {
+    color: var(--red);
+}
+
+.selected_profile :where(.actions) {
+    display: flex;
+    gap: 0.3rem;
+}
+
+.selected_profile :where(.actions a) {
+    color: white;
+    background-color: var(--blue);
+    padding: 0.5rem 1rem;
+    border-radius: var(--card-border-thin);
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 10px;
+}
+
+.selected_profile :where(.actions a:hover) {
+    background-color: var(--blue-hover);
+}
+
+@media screen and (max-width: 800px) {
+    .selected_profile {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+}

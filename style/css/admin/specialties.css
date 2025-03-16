@@ -1,0 +1,45 @@
+.admin_specialties {
+    padding: 0.5rem;
+
+    display: flex;
+    justify-self: center;
+}
+
+.admin_specialties :where(.specialties) {
+    background-color: var(--primary-color);
+    border-radius: var(--card-border-thin);
+    box-shadow: var(--shadow);
+
+    margin-left: 0.5rem;
+    font-size: 10px;
+}
+
+.admin_specialties :where(#chartContainer) {
+    position: sticky;
+    top: 82px;
+
+    box-shadow: var(--shadow);
+    height: 550px;
+    width: 340px;
+}
+
+.admin_specialties :where(.specialties li) {
+    padding: 1rem;
+}
+
+.admin_specialties :where(.specialties li:hover) {
+    background-color: whitesmoke;
+}
+
+.admin_specialties :where(h2) {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:800px) {}
+
+@media screen and (max-width:480px) {
+    .admin_specialties :where(.specialties) {
+        display: none;
+    }
+}

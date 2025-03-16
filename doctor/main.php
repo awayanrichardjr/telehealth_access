@@ -1,0 +1,47 @@
+<main class="main_doc">
+    <nav class="main_nav_doc">
+        <ul class="links">
+            <li class="pfp">
+                <a href="../public/profile_doc.php">
+                    <span class="material-symbols-outlined">account_circle</span>
+                    <p>
+                        <!-- full name -->
+                        <?php echo $_SESSION['docFname'] . " " . $_SESSION['docMname'] . " " . $_SESSION['docLname'] . " " . $_SESSION['docSuffix'] ?>
+                    </p>
+                </a>
+            </li>
+        </ul>
+        <ul class="links">
+            <li>
+                <a href="../public/main_doc.php">
+                    <span class="material-symbols-outlined">home</span>
+                    <p>Home</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="material-symbols-outlined">dashboard</span>
+                    <p>Dashboard</p>
+                </a>
+            </li>
+            <li>
+                <a href="../public/appointment_doc.php">
+                    <span class="material-symbols-outlined">contract</span>
+                    <p>Appointments</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="material-symbols-outlined">clinical_notes</span>
+                    <p>Medical Records</p>
+                </a>
+            </li>
+            <li>
+                <a href="../public/settings_doc.php">
+                    <span class="material-symbols-outlined">settings</span>
+                    <p>Settings</p>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- </main> -->

@@ -1,0 +1,15 @@
+{
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorSurroundingLinesStyle": "default",
+    "editor.find.autoFindInSelection": "always",
+    "editor.find.seedSearchStringFromSelection": "always",
+    "editor.minimap.autohide": false,
+    "editor.minimap.enabled": true,
+    "editor.find.addExtraSpaceOnTop": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "diffEditor.codeLens": true,
+    "editor.inlineSuggest.suppressSuggestions": false,
+    "files.autoGuessEncoding": true
+}

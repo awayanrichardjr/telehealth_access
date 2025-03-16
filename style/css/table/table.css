@@ -1,0 +1,17 @@
+table {
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid lightgrey;
+    padding: 0.5rem;
+}
+
+th {
+    background-color: whitesmoke;
+}
+
+tr:hover {
+    background-color: whitesmoke;
+}

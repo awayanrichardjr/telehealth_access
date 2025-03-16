@@ -1,0 +1,15 @@
+.messages_p {
+    padding: 0.5rem;
+}
+
+.messages_p :where(div) {
+    background-color: var(--primary-color);
+    border-radius: var(--card-border);
+    box-shadow: var(--shadow);
+
+    padding: 1rem;
+}
+
+.messages_p :where(h1) {
+    color: var(--blue);
+}

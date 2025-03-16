@@ -1,0 +1,31 @@
+.settings_p {
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.settings_p :where(ul) {
+    background-color: var(--primary-color);
+    border-radius: var(--card-border);
+    box-shadow: var(--shadow);
+
+    padding: 1rem;
+}
+
+.settings_p :where(h1) {
+    color: var(--blue);
+}
+
+.settings_p :where(a) {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    font-size: 10px;
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+    width: fit-content;
+}
+
+.settings_p :where(a:hover) {
+    color: var(--text-color-hover);
+}

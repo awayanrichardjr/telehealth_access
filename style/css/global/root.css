@@ -1,0 +1,34 @@
+/* root variables */
+:root {
+    /* light mode  */
+    --light-mode-base-color: whitesmoke;
+    --primary-color: white;
+    --secondary-color: lightgrey;
+    --tritary-color: grey;
+
+    /* text */
+    --text-color: grey;
+    --text-color-hover: black;
+    --text-size-default: 16px;
+    --text-size-m: 12px;
+    --text-size-s: 10px;
+
+    /* dark mode  */
+    --dark-mode-base-color: #2e2e2e;
+
+    /* border */
+    --card-border: 0.5rem;
+    --card-border-thin: 0.3rem;
+
+    /* colors */
+    --blue: #4287f5;
+    --blue-hover: #85b4ff;
+    --red: #f54242;
+    --yellow: #f5bf42;
+    --green: #42f593;
+    --purple: #e342f5;
+
+    /* shadows */
+    --shadow: 1px 1px 2px rgba(0, 0, 0, 0.200);
+    --card-shadow: 1px 10px 10px rgba(0, 0, 0, 0.200);
+}

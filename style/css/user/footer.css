@@ -1,0 +1,83 @@
+.user_footer {
+    background-color: var(--primary-color);
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1000;
+}
+
+.user_footer :where(.links) {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+    width: 100%;
+}
+
+.user_footer :where(.links a) {
+    display: block;
+    padding: 1rem 2rem;
+    color: var(--text-color);
+}
+
+.user_footer :where(.links a:hover) {
+    color: var(--text-color-hover);
+}
+
+.user_footer :where(hr) {
+    width: 100%;
+    border-radius: 100%;
+}
+
+.user_footer :where(.social-icons) {
+    justify-content: center;
+}
+
+.user_footer :where(.fa-facebook:hover) {
+    color: var(--blue);
+}
+
+.user_footer :where(.fa-instagram:hover) {
+    color: var(--red);
+}
+
+.user_footer :where(.fa-twitter:hover) {
+    color: black;
+}
+
+.user_footer :where(.fa-linkedin:hover) {
+    color: #3271a8;
+}
+
+.user_footer :where(.copyright) {
+    color: var(--text-color);
+    font-size: var(--text-size-m);
+    text-align: center;
+}
+
+@media screen and (max-width:800px) {
+
+    .user_footer :where(.links a) {
+        padding: 1rem;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .user_footer :where(.links) {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .user_footer :where(.links a) {
+        font-size: var(--text-size);
+    }
+
+    .user_footer :where(.social-icons) {
+        flex-direction: row;
+    }
+}

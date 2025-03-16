@@ -1,0 +1,47 @@
+.admin_dashboard {
+    padding: 0.5rem;
+}
+
+.admin_dashboard :where(.container) {
+    padding: 1rem;
+    background-color: var(--primary-color);
+    border-radius: var(--card-border-thin);
+    box-shadow: var(--shadow);
+
+    justify-self: center;
+}
+
+.admin_dashboard :where(.users-container ul) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.admin_dashboard :where(.users-container li) {
+    padding: 1rem;
+    background-color: var(--primary-color);
+    border-radius: var(--card-border);
+
+    flex-grow: 1;
+}
+
+.admin_dashboard :where(.num-doctor) {
+    background-color: var(--blue);
+    color: var(--primary-color);
+}
+
+.admin_dashboard :where(.num-patient) {
+    background-color: var(--red);
+    color: var(--primary-color);
+}
+
+.admin_dashboard :where(.num-appointment) {
+    background-color: var(--green);
+    color: var(--primary-color);
+}
+
+.admin_dashboard :where(.users-container li h2) {
+    display: flex;
+    justify-content: space-between;
+}

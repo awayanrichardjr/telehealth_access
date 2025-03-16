@@ -1,0 +1,82 @@
+.form {
+    padding: 1rem;
+    justify-self: center;
+    height: 90vh;
+    overflow: auto;
+}
+
+.form :where(form h1) {
+    text-align: center;
+    color: var(--blue);
+}
+
+.form :where(form) {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    border-radius: var(--card-border-thin);
+    box-shadow: var(--shadow);
+}
+
+.form :where(form label) {
+    font-size: var(--text-size-s);
+}
+
+.form :where(.title-reg) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form :where(.details) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.form :where(.details div) {
+    flex-grow: 1;
+}
+
+/* input  */
+.form :where(input, select, textarea) {
+    padding: 0.5rem;
+    font-size: 10px;
+
+    border-radius: var(--card-border-thin);
+
+    border-width: 2px;
+    border-style: solid;
+    border-color: whitesmoke;
+
+    background-color: var(--light-mode-base-color);
+
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.form :where(input:hover) {
+    border-color: lightblue;
+}
+
+.form :where(input:focus) {
+    border-color: lightblue;
+}
+
+.form :where(#submit) {
+    background-color: var(--blue);
+    color: var(--primary-color);
+}
+
+.form :where(#submit:hover) {
+    background-color: var(--blue-hover);
+}
+
+.form :where(.or) {
+    text-align: center;
+    font-size: 10px;
+}
+
+.form :where(.error) {
+    color: var(--red);
+}

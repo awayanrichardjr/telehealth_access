@@ -1,0 +1,30 @@
+.profile_p {
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.profile_p :where(img) {
+    width: 150px;
+}
+
+.profile_p :where(.container) {
+    background-color: white;
+    border-radius: var(--card-border-thin);
+    box-shadow: var(--shadow);
+    padding: 1rem;
+}
+
+.profile_p :where(.details) {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.profile_p :where(.details li) {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    font-size: 10px;
+    color: var(--text-color);
+}

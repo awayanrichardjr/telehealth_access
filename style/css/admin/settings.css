@@ -1,0 +1,30 @@
+.admin_settings {
+    padding: 0.5rem;
+}
+
+.admin_settings :where(ul) {
+    padding: 1rem;
+    background-color: var(--primary-color);
+    border-radius: var(--card-border-thin);
+    box-shadow: var(--shadow);
+}
+
+.admin_settings :where(a) {
+    display: flex;
+    padding: 0.5rem;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+
+    font-size: 10px;
+    color: var(--text-color);
+    width: fit-content;
+}
+
+.admin_settings :where(a:hover) {
+    color: var(--text-color-hover);
+}
+
+.admin_settings :where(h1) {
+    color: var(--blue);
+}

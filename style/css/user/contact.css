@@ -1,0 +1,53 @@
+.contact {
+    height: 90vh;
+    width: inherit;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    margin-bottom: 7rem;
+}
+
+/* container  */
+.contact :where(.container) {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.contact :where(.container h1) {
+    font-size: 2rem;
+    color: var(--blue);
+}
+
+.contact :where(.container p) {
+    color: grey;
+}
+
+/* map  */
+.contact :where(.map) {
+    padding: 0;
+}
+
+.contact :where(.map iframe) {
+    aspect-ratio: 16/9;
+    width: 450px;
+
+    border: none;
+    box-shadow: var(--card-shadow);
+}
+
+@media screen and (max-width: 800px) {}
+
+@media screen and (max-width: 480px) {
+    .contact :where(.map iframe) {
+        height: 450px;
+        width: 100%;
+    }
+
+}

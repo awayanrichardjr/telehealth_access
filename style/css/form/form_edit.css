@@ -1,0 +1,4 @@
+.form_edit :where(h1) {
+    color: var(--blue);
+    text-align: center;
+}

@@ -1,0 +1,52 @@
+.user_home {
+    display: flex;
+    justify-content: center;
+}
+
+.specialties_p {
+    background-color: var(--primary-color);
+    border-radius: var(--card-border-thin);
+    box-shadow: var(--shadow);
+
+    margin: 0.5rem;
+    width: fit-content;
+    justify-self: start;
+}
+
+.specialties_p :where(img) {
+    width: 100px;
+}
+
+.specialties_p :where(a) {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0.5rem 1rem;
+
+    font-size: 10px;
+    color: var(--text-color);
+}
+
+.specialties_p :where(a:hover) {
+    color: var(--text-color-hover);
+    background-color: whitesmoke;
+}
+
+.specialties_p :where(h1) {
+    color: var(--blue);
+    padding: 1rem;
+}
+
+@media screen and (max-width: 800px) {}
+
+@media screen and (max-width: 480px) {
+    .user_home {
+        flex-direction: column-reverse;
+        padding: 0.5rem;
+        overflow: auto;
+    }
+
+    .specialties_p {
+        width: inherit;
+    }
+}

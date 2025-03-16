@@ -1,0 +1,90 @@
+.sp_thead {
+    background-color: var(--primary-color);
+    border-radius: var(--card-border-thin);
+    box-shadow: var(--shadow);
+
+    padding: 1rem;
+    margin-top: 0.5rem;
+    height: 85vh;
+    overflow: auto;
+
+    position: sticky;
+    top: 82px;
+}
+
+.sp_thead :where(img) {
+    width: 50px;
+}
+
+.sp_thead :where(h1) {
+    color: var(--blue);
+}
+
+.sp_thead :where(th) {
+    color: var(--text-color);
+}
+
+.sp_thead :where(th, td) {
+    border: unset;
+    text-align: start;
+    font-size: 10px;
+
+    background-color: unset;
+}
+
+.sp_thead :where(tbody a) {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    color: black;
+}
+
+.sp_thead :where(tbody p) {
+    color: grey;
+}
+
+.sp_thead :where(tbody h4) {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.sp_thead :where(.verified) {
+    color: var(--blue);
+}
+
+.sp_thead :where(tr:hover .verified) {
+    font-variation-settings:
+        'FILL' 1;
+}
+
+@media screen and (max-width: 800px) {
+    .sp_thead :where(.sp-name) {
+        display: none;
+    }
+
+    .sp_thead :where(h1) {
+        font-size: 10px;
+    }
+
+    .sp_thead {
+        top: 65px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .sp_thead :where(tbody) {
+        display: flex;
+    }
+
+    .sp_thead {
+        top: 0;
+        padding: 0;
+        height: fit-content;
+    }
+
+    .sp_thead :where(h1, th) {
+        display: none;
+    }
+}

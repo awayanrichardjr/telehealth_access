@@ -1,0 +1,67 @@
+.user_role {
+    height: 90vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 5rem;
+}
+
+.user_role :where(ul) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.user_role :where(.doc a) {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    padding: 1rem 2rem;
+
+    background-color: var(--blue);
+    border-radius: var(--card-border);
+    color: var(--primary-color);
+    transition: 0.1s;
+}
+
+.user_role :where(.doc a:hover) {
+    transform: scale(1.1);
+    z-index: 1000;
+    box-shadow: var(--card-shadow);
+}
+
+.user_role :where(.p a) {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    padding: 1rem 2rem;
+
+    background-color: var(--purple);
+    border-radius: var(--card-border);
+    color: var(--primary-color);
+    transition: 0.1s;
+}
+
+.user_role :where(.p a:hover) {
+    transform: scale(1.1);
+    z-index: 1000;
+    box-shadow: var(--card-shadow);
+}
+
+.user_role .material-symbols-outlined:hover {
+    color: unset;
+    font-variation-settings:
+        'FILL' 0;
+}
+
+.user_role :where(label) {
+    color: var(--text-color);
+    font-size: var(--text-size-m);
+}

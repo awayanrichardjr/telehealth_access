@@ -1,0 +1,16 @@
+.calendar {
+    box-shadow: var(--shadow);
+    margin-top: 0.5rem;
+
+    aspect-ratio: 3/2;
+    width: 700px;
+}
+
+@media screen and (max-width: 800px) {
+    .calendar {
+        aspect-ratio: 3/2;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {}

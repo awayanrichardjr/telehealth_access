@@ -1,0 +1,149 @@
+.about {}
+
+/* container  */
+.about :where(.container) {
+    height: 70vh;
+    margin-bottom: 8rem;
+
+    position: sticky;
+    top: 75px;
+    z-index: -1;
+    padding: 1rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    font-size: var(--text-size-s);
+}
+
+.about :where(.container .info h1) {
+    font-size: 2rem;
+    color: var(--blue);
+}
+
+.about :where(.info) {
+    width: 500px;
+}
+
+.about :where(.img) {
+    aspect-ratio: 5/2;
+    object-fit: cover;
+    width: 500px;
+
+    animation-name: about-img;
+    animation-duration: 10s;
+    animation-delay: ease;
+    animation-iteration-count: infinite;
+    box-shadow: var(--card-shadow);
+}
+
+@keyframes about-img {
+    0% {
+        background-image: url("bg/img1.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    25% {
+        background-image: url("bg/img2.jpeg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    50% {
+        background-image: url("bg/img3.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    100% {
+        background-image: url("bg/img1.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+/* container1  */
+.about :where(.container1) {
+    background-color: var(--light-mode-base-color);
+    z-index: 1;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-size: var(--text-size-m);
+}
+
+
+.about :where(.container1 .member) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    width: 500px;
+}
+
+.about :where(.container1 .member img) {
+    width: inherit;
+    box-shadow: var(--shadow);
+}
+
+.about :where(.container1 h1) {
+    font-size: 2rem;
+    color: var(--blue);
+}
+
+.about :where(.container1 p) {
+    font-size: 10px;
+    text-align: justify;
+}
+
+/* media queries  */
+@media screen and (max-width: 800px) {
+    .about :where(.container .info) {
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about {
+        padding: 0;
+    }
+
+    .about :where(.container) {
+        width: 100%;
+        padding: 0;
+    }
+
+    .about :where(.container .info) {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .about :where(.container .img) {
+        width: 100%;
+        padding: 0;
+    }
+
+    /* container1  */
+    .about :where(.container1 .member) {
+        width: 100%;
+        padding: 0;
+    }
+
+    .about :where(.container1 .member img) {
+        width: 100%;
+        padding: 0;
+    }
+}

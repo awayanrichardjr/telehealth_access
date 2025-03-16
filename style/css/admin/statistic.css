@@ -1,0 +1,14 @@
+.admin_statistic {
+    padding: 0.5rem;
+}
+
+.admin_statistic :where(.chart) {
+    padding: 1rem;
+    background-color: var(--primary-color);
+    border-radius: var(--card-border-thin);
+    box-shadow: var(--shadow);
+}
+
+.admin_statistic :where(h1) {
+    color: var(--blue);
+}

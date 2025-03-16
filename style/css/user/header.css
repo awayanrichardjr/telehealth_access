@@ -1,0 +1,33 @@
+.user_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+
+    padding: 1rem;
+    height: 95vh;
+    text-align: center;
+}
+
+.user_header :where(.logo) {
+    width: 150px;
+}
+
+.user_header :where(h1) {
+    color: var(--blue);
+}
+
+.user_header :where(a) {
+    color: var(--text-color);
+}
+
+.user_header :where(a:hover) {
+    color: var(--text-color-hover);
+}
+
+@media screen and (max-width:480px) {
+    .user_header :where(h1) {
+        font-size: 20px;
+    }
+}
