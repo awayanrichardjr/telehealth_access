@@ -6,7 +6,7 @@
     box-sizing: border-box;
 
     /* defualt transition-duration */
-    transition: 0.3s;
+    transition: 0.1s;
 }
 
 html {

@@ -1,0 +1,8 @@
+.appointment {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.appointment :where(h1) {
+    color: var(--blue);
+}

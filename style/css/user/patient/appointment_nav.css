@@ -1,0 +1,55 @@
+.appointment_nav {
+    padding: 0.5rem;
+    height: 85vh;
+
+    position: sticky;
+    top: 74px;
+}
+
+.appointment_nav :where(.side-nav) {
+    background-color: var(--primary-color);
+    border-radius: var(--card-border-thin);
+    box-shadow: var(--shadow);
+    height: inherit;
+
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 1rem;
+
+}
+
+.appointment_nav :where(.side-nav) a {
+    color: var(--text-color);
+    font-size: 10px;
+    white-space: nowrap;
+
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    padding: 0.5rem 1rem;
+}
+
+.appointment_nav :where(.side-nav) a:hover {
+    color: var(--text-color-hover);
+    background-color: whitesmoke;
+
+}
+
+@media screen and (max-width: 800px) {
+    .appointment_nav {
+        top: 56px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .appointment_nav :where(.side-nav) p {
+        display: none;
+    }
+
+    .appointment_nav {
+        position: sticky;
+        top: 40px;
+    }
+}

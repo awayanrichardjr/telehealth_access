@@ -7,7 +7,7 @@
       </li>
 
       <!-- visibility -->
-      <li class="view-appt">
+      <li class="appt-visibility">
         <a href="../public/view_appointment_doc.php?conID=<?php echo $row['conID'] ?>" class="appt-visibility">
           <span class="material-symbols-outlined">visibility</span>
         </a>
