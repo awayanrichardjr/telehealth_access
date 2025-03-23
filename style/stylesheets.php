@@ -46,6 +46,8 @@
 <link rel="stylesheet" href="../style/css/form/form_edit.css">
 <link rel="stylesheet" href="../style/css/form/user_role.css">
 <link rel="stylesheet" href="../style/css/form/chat_selected_doc.css">
+<link rel="stylesheet" href="../style/css/form/view_appointment_p.css">
+<link rel="stylesheet" href="../style/css/form/view_appointment_doc.css">
 
 <!-- table  -->
 <link rel="stylesheet" href="../style/css/table/table.css">

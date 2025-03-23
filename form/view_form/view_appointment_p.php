@@ -1,10 +1,10 @@
 <section class="view_appointment_p">
-    <form action="">
+    <form action="" class="paper">
         <header class="header">
             <img class="logo" src="../img/images/doctor.png" alt="img">
             <h1>TELEHEALTH ACCESS<br>APPOINTMENT</h1>
         </header>
-        <ol class="content">
+        <ol class="body">
             <div class="container">
                 <div>
                     <!-- <li>
