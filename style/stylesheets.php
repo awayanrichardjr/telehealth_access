@@ -52,6 +52,7 @@
 <link rel="stylesheet" href="../style/css/table/admin_table.css">
 <link rel="stylesheet" href="../style/css/table/user_table.css">
 <link rel="stylesheet" href="../style/css/table/user_sp_thead.css">
+<link rel="stylesheet" href="../style/css/table/user_appointment_doc_thead.css">
 
 
 <!-- google icons  -->
