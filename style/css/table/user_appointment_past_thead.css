@@ -1,28 +1,28 @@
-.appointment {
+.appointment_past {
     padding: 0.5rem;
     width: 100%;
 }
 
-.appointment :where(h1) {
+.appointment_past :where(h1) {
     color: var(--blue);
 }
 
-.appointment :where(table) {
+.appointment_past :where(table) {
     display: flex;
     flex-direction: column;
 }
 
-.appointment :where(tbody) {
+.appointment_past :where(tbody) {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
 }
 
-.appointment :where(tr) {
+.appointment_past :where(tr) {
     display: flex;
 }
 
-.appointment :where(td) {
+.appointment_past :where(td) {
     background-color: var(--blue);
     border-radius: var(--card-border);
     box-shadow: var(--shadow);
@@ -32,35 +32,29 @@
     white-space: nowrap;
 }
 
-.appointment :where(td:hover) {
-    background-color: var(--blue-hover);
-    box-shadow: var(--card-shadow);
-    transform: scale(1.05);
-}
-
-.appointment :where(.view-appt) {
+.appointment_past :where(.view-appt) {
     display: flex;
     justify-content: space-between;
 }
 
-.appointment :where(.appt-visibility) {
+.appointment_past :where(.appt-visibility) {
     color: rgba(255, 255, 255, 0.205);
 }
 
-.appointment :where(.appt-visibility:hover) {
+.appointment_past :where(.appt-visibility:hover) {
     color: white;
 }
 
 @media screen and (max-width: 480px) {
-    .appointment :where(tbody) {
+    .appointment_past :where(tbody) {
         flex-direction: column;
     }
 
-    .appointment :where(tr) {
+    .appointment_past :where(tr) {
         flex-grow: 1;
     }
 
-    .appointment :where(td) {
+    .appointment_past :where(td) {
         flex-grow: 1;
     }
 }

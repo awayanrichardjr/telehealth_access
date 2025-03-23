@@ -15,6 +15,7 @@
     </ul>
 
     <br>
+
     <p><b><?php echo $_SESSION['conSelectedDoc'] ?></b></p>
     <p><?php echo $_SESSION['conDocSpecialty'] ?></p>
     <p><?php echo $_SESSION['conADateTime'] ?></p>
