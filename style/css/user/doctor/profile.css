@@ -1,0 +1,39 @@
+.profile_doc {
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.profile_doc :where(img) {
+    width: 150px;
+}
+
+.profile_doc :where(.container) {
+    background-color: white;
+    border-radius: var(--card-border-thin);
+    box-shadow: var(--shadow);
+    padding: 1rem;
+}
+
+.profile_doc :where(.details) {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.profile_doc :where(.details li) {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    font-size: 10px;
+    color: var(--text-color);
+}
+
+/* status  */
+.profile_doc :where(.verified) {
+    color: var(--blue);
+}
+
+.profile_doc :where(.unverified) {
+    color: var(--red);
+}
