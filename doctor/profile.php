@@ -1,48 +1,50 @@
 <section class="profile_doc">
-    <div>
+    <div class="container">
         <img src="../img/images/user.png" alt="img">
         <h2 class="profile-name">
             <?php echo $_SESSION['docFname'] . " " . $_SESSION['docMname'] . " " . $_SESSION['docLname'] . " " . $_SESSION['docSuffix'] ?>
         </h2>
-        <p class="details">
-            <span class="material-symbols-outlined" style="font-size: 17px;">stethoscope</span>
-            <?php echo $_SESSION['docSpecialty'] ?>
-        </p>
-        <p class="details">
-            <span class="material-symbols-outlined" style="font-size: 17px;">location_on</span>
-            <?php echo $_SESSION['docAddress'] ?>
-        </p>
-        <p class="details">
-            <span class="material-symbols-outlined" style="font-size: 17px;">cake</span>
-            <?php echo $_SESSION['docBdate'] ?>
-        </p>
-        <p class="details">
-            <span class="material-symbols-outlined" style="font-size: 17px;">contact_phone</span>
-            <?php echo $_SESSION['docContact'] ?>
-        </p>
-        <p class="details">
-            <span class="material-symbols-outlined" style="font-size: 17px;">contact_mail</span>
-            <?php echo $_SESSION['docEmail'] ?>
-        </p>
-        <!-- STATUS -->
-        <?php
-        if ($_SESSION['docStatus'] == "Verified") {
-            ?>
-            <p class="details verified">
-                <span class="material-symbols-outlined" style="font-size: 17px;">verified</span>
-                <?php echo $_SESSION['docStatus'] ?>
-            </p>
+        <ul class="details">
+            <li>
+                <span class="material-symbols-outlined" style="font-size: 17px;">stethoscope</span>
+                <?php echo $_SESSION['docSpecialty'] ?>
+            </li>
+            <li>
+                <span class="material-symbols-outlined" style="font-size: 17px;">location_on</span>
+                <?php echo $_SESSION['docAddress'] ?>
+            </li>
+            <li>
+                <span class="material-symbols-outlined" style="font-size: 17px;">cake</span>
+                <?php echo $_SESSION['docBdate'] ?>
+            </li>
+            <li>
+                <span class="material-symbols-outlined" style="font-size: 17px;">contact_phone</span>
+                <?php echo $_SESSION['docContact'] ?>
+            </li>
+            <li>
+                <span class="material-symbols-outlined" style="font-size: 17px;">contact_mail</span>
+                <?php echo $_SESSION['docEmail'] ?>
+            </li>
+            <!-- STATUS -->
             <?php
-        } else {
+            if ($_SESSION['docStatus'] == "Verified") {
+                ?>
+                <li class="verified">
+                    <span class="material-symbols-outlined" style="font-size: 17px;">verified</span>
+                    <?php echo $_SESSION['docStatus'] ?>
+                </li>
+                <?php
+            } else {
+                ?>
+                <li class="unverified">
+                    <span class="material-symbols-outlined" style="font-size: 17px;">verified</span>
+                    <?php echo $_SESSION['docStatus'] ?>
+                </li>
+                <?php
+            }
             ?>
-            <p class="details unverified">
-                <span class="material-symbols-outlined" style="font-size: 17px;">verified</span>
-                <?php echo $_SESSION['docStatus'] ?>
-            </p>
-            <?php
-        }
-        ?>
 
+        </ul>
         <ul class="tab-bar">
             <li class="tab-content">
                 <a href="../public/messages_doc.php">
