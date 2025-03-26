@@ -26,6 +26,8 @@
     font-size: var(--text-size-m);
     text-align: center;
     color: var(--text-color);
+
+    /* white-space: nowrap; */
 }
 
 .main_nav_doc :where(a:hover) {
@@ -35,6 +37,20 @@
 @media screen and (max-width:800px) {
     .main_nav_doc :where(.links p) {
         display: none;
+    }
+
+    .main_nav_doc :where(a:hover p) {
+        display: block;
+        margin-top: 75px;
+        padding: 0.5rem;
+        border-radius: var(--card-border);
+
+        background-color: rgba(0, 0, 0, 0.500);
+        color: var(--primary-color);
+        font-size: 10px;
+
+        position: absolute;
+        z-index: 1000;
     }
 }
 

@@ -25,7 +25,9 @@
     right: 0;
     z-index: 1000;
 
-    background-color: var(--primary-color);
+    background-color: rgba(255, 255, 255, 0.521);
+    backdrop-filter: blur(10px);
+
     border-radius: var(--card-border);
     box-shadow: var(--card-shadow);
 }
@@ -87,6 +89,12 @@
 @media screen and (max-width:480px) {
     .user_nav :where(.title-link h4) {
         display: none;
+    }
+
+    .user_nav :where(.dropdown-content) {
+        width: 100%;
+        height: 80vh;
+        text-align: center;
     }
 }
 

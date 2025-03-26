@@ -41,6 +41,19 @@
     .main_nav_p :where(.links p) {
         display: none;
     }
+
+    .main_nav_p :where(a:hover p) {
+        display: block;
+        margin-top: 70px;
+        padding: 0.5rem;
+        border-radius: var(--card-border);
+
+        background-color: rgba(0, 0, 0, 0.500);
+        color: var(--primary-color);
+        font-size: 10px;
+
+        position: absolute;
+    }
 }
 
 @media screen and (max-width:480px) {

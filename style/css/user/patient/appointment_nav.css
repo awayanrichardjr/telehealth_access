@@ -52,4 +52,18 @@
         position: sticky;
         top: 40px;
     }
+
+    .appointment_nav :where(.side-nav) a:hover p {
+        display: block;
+        margin-left: 35px;
+        padding: 0.5rem;
+        border-radius: var(--card-border);
+
+        background-color: rgba(0, 0, 0, 0.500);
+        color: var(--primary-color);
+        font-size: 10px;
+
+        position: absolute;
+        z-index: 1000;
+    }
 }
