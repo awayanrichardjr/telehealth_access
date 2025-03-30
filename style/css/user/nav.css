@@ -40,7 +40,7 @@
     align-items: center;
     gap: 0.5rem;
 
-    font-size: var(--text-size-m);
+    font-size: var(--text-size-s);
 }
 
 .user_nav :where(a:hover) {

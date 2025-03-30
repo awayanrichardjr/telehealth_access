@@ -28,7 +28,7 @@
     justify-content: center;
 
     padding: 1rem 2rem;
-    font-size: var(--text-size-m);
+    font-size: var(--text-size-s);
     text-align: center;
     color: var(--text-color);
 }

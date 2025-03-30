@@ -15,7 +15,7 @@
 .admin_main_nav :where(a) {
     color: var(--text-color);
     padding: 1rem 2rem;
-    font-size: var(--text-size-m);
+    font-size: var(--text-size-s);
 
     display: flex;
     flex-direction: column;

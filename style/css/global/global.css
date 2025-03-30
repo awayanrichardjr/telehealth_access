@@ -44,3 +44,8 @@ body {
 .pending-status {
     color: var(--yellow);
 }
+
+a:hover .material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 1;
+}

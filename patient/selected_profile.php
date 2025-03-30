@@ -54,7 +54,7 @@
             </li>
             <li>
                 <a href="../public/consult_selected_doc.php?docID=<?php echo $row['docID'] ?>">
-                    <span class="material-symbols-outlined" style="font-size: 17px;">chat</span>
+                    <span class="material-symbols-outlined" style="font-size: 17px;">event_upcoming</span>
                     Consult
                 </a>
             </li>

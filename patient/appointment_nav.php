@@ -2,7 +2,7 @@
     <ul class="side-nav">
         <li>
             <a href="../public/appointment_profile_p.php">
-                <span class="material-symbols-outlined">contract</span>
+                <span class="material-symbols-outlined">event_note</span>
                 <p>My appointments</p>
             </a>
         </li>
