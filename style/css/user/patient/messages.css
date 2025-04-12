@@ -1,5 +1,6 @@
 .messages_p {
     padding: 0.5rem;
+    width: 100%;
 }
 
 .messages_p :where(div) {
