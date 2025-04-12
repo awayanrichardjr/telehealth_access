@@ -1,5 +1,10 @@
 .main_doc {}
 
+.main_doc :where(.user_main_body) {
+    display: flex;
+    justify-content: center;
+}
+
 .main_nav_doc {
     background-color: var(--primary-color);
     box-shadow: var(--shadow);

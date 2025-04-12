@@ -1,4 +1,4 @@
-<section class="settings">
+<section class="settings_doc">
     <h1>Settings</h1>
     <ul>
         <li>

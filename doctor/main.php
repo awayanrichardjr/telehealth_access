@@ -18,12 +18,12 @@
                     <p>Home</p>
                 </a>
             </li>
-            <li>
+            <!-- <li>
                 <a href="#">
                     <span class="material-symbols-outlined">dashboard</span>
                     <p>Dashboard</p>
                 </a>
-            </li>
+            </li> -->
             <li>
                 <a href="../public/appointment_doc.php">
                     <span class="material-symbols-outlined">contract</span>
@@ -44,4 +44,7 @@
             </li>
         </ul>
     </nav>
+    <section class="user_main_body">
+
+        <!-- </section>
     <!-- </main> -->

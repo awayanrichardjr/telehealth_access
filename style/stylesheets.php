@@ -28,6 +28,7 @@
 <link rel="stylesheet" href="../style/css/user/patient/specialties.css">
 
 <!-- doctor -->
+<link rel="stylesheet" href="../style/css/user/doctor/appointment_nav.css">
 <link rel="stylesheet" href="../style/css/user/doctor/main.css">
 <link rel="stylesheet" href="../style/css/user/doctor/messages.css">
 <link rel="stylesheet" href="../style/css/user/doctor/profile.css">

@@ -8,7 +8,7 @@ if (empty($_SESSION['docEmail']) || empty($_SESSION['docPass'])) {
 } else {
     include '../user/index.php';
     include '../doctor/main.php';
-    include '../doctor/profile.php';
+    include '../doctor/appointment_nav.php';
     include '../table/user_appointment_doc_thead.php';
 
     $conSelectedDoc = "Dr. " . $_SESSION['docFname'] . " " . $_SESSION['docMname'] . " " . $_SESSION['docLname'] . " " . $_SESSION['docSuffix'];
