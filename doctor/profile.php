@@ -43,61 +43,22 @@
                 <?php
             }
             ?>
-
         </ul>
         <ul class="tab-bar">
-            <li class="tab-content">
-                <a href="../public/messages_doc.php">
-                    <span class="material-symbols-outlined" style="font-size: 17px;">chat</span>
-                    Messages
-                </a>
-                <a href="../public/appointment_profile_doc.php">
-                    <span class="material-symbols-outlined" style="font-size: 17px;">contract</span>
-                    Appointments
-                </a>
-            </li>
-            <li></li>
-
             <!-- dropdown  -->
-            <li class="more-dropdown">
-                <span class="material-symbols-outlined">more_horiz</span>
-                <div class="more-content">
+            <li class="dropdown-links">
+                <span class="material-symbols-outlined style=" font-size: 17px;">more_horiz</span>
+                <div class="dropdown-content">
                     <a href="../public/verify_doc.php?docID=<?php echo $_SESSION['docID'] ?>">
                         <span class="material-symbols-outlined">verified</span>
                         Verify Account
                     </a>
-                    <a href="#">
-                        <span class="material-symbols-outlined">history</span>
-                        Appointment History
-                    </a>
                     <a href="../public/available_doc.php">
-                        <span class="material-symbols-outlined">event_available</span>
+                        <span class="material-symbols-outlined style=" font-size: 17px;">event_available</span>
                         Availability
                     </a>
                 </div>
             </li>
-            <!-- ----------------------- -->
-            <!-- <li class="more-dropdown1">
-                <span class="material-symbols-outlined">more_horiz</span>
-                <div class="more-content">
-                    <a href="../public/messages_doc.php">
-                        <span class="material-symbols-outlined" style="font-size: 17px;">chat</span>
-                        Messages
-                    </a>
-                    <a href="../public/appointment_profile_doc.php">
-                        <span class="material-symbols-outlined" style="font-size: 17px;">contract</span>
-                        Appointments
-                    </a>
-                    <a href="../public/verify_doc.php?docID=<?php echo $_SESSION['docID'] ?>">
-                        <span class="material-symbols-outlined">verified</span>
-                        Verify Account
-                    </a>
-                    <a href="#">
-                        <span class="material-symbols-outlined">history</span>
-                        Appointment History
-                    </a>
-                </div>
-            </li> -->
         </ul>
     </div>
 </section>
