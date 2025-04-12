@@ -8,6 +8,7 @@ if (empty($_SESSION['docEmail']) || empty($_SESSION['docPass'])) {
 } else {
     include '../user/index.php';
     include '../doctor/main.php';
+    include '../doctor/appointment_nav.php';
     // include '../doctor/profile.php';
 
     $selected_conID = $_GET['conID'];

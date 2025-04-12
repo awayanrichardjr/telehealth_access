@@ -1,6 +1,7 @@
 <section class="available_doc">
     <a href="https://calendar.google.com/calendar/u/0/r">
-        <span class="material-symbols-outlined">edit_calendar</span>Edit Schedule/Click to Google Calendar
+        <span class="material-symbols-outlined">edit_calendar</span>
+        <p>Edit Schedule/Click to Google Calendar</p>
     </a>
     <div class="calendar">
         <iframe

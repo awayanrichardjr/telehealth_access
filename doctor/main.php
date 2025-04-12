@@ -26,7 +26,7 @@
             </li> -->
             <li>
                 <a href="../public/appointment_doc.php">
-                    <span class="material-symbols-outlined">contract</span>
+                    <span class="material-symbols-outlined">schedule</span>
                     <p>Appointments</p>
                 </a>
             </li>
@@ -47,4 +47,4 @@
     <section class="user_main_body">
 
         <!-- </section>
-    <!-- </main> -->
+    </main> -->

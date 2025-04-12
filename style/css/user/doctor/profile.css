@@ -3,6 +3,18 @@
     width: 100%;
 }
 
+.profile_doc :where(.tab-bar) {
+    width: fit-content;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+.profile_doc :where(.tab-bar:hover) {
+    color: var(--text-color-hover);
+    background-color: var(--base-color);
+    border-radius: var(--card-border-thin);
+}
+
 .profile_doc :where(img) {
     width: 150px;
 }
@@ -48,10 +60,13 @@
 
     font-size: 10px;
     color: var(--text-color);
+    padding: 1rem 2rem;
 }
 
 .profile_doc :where(.dropdown-content a:hover) {
     color: var(--text-color-hover);
+    background-color: whitesmoke;
+    border-radius: 0.5rem;
 }
 
 .profile_doc :where(.dropdown-content) {
@@ -63,7 +78,7 @@
     border-radius: var(--card-border);
     box-shadow: var(--card-shadow);
 
-    padding: 1rem;
+    /* padding: 1rem; */
 }
 
 .profile_doc :where(.dropdown-links:hover .dropdown-content) {

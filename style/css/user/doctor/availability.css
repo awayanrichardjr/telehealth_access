@@ -1,0 +1,31 @@
+.available_doc :where(a) {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    color: var(--text-color);
+    font-size: 10px;
+    margin-block: 1rem;
+    width: fit-content;
+}
+
+.available_doc :where(a:hover) {
+    color: var(--text-color-hover);
+}
+
+.calendar :where(iframe) {
+    box-shadow: var(--shadow);
+    margin-top: 0.5rem;
+
+    aspect-ratio: 3/2;
+    width: 700px;
+}
+
+@media screen and (max-width: 800px) {
+    .calendar :where(iframe) {
+        aspect-ratio: 3/2;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {}

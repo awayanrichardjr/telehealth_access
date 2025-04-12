@@ -47,17 +47,17 @@
         <!-- PROOF -->
         <div>
             <label for="docQualify">Certificates/Qualifications *</label>
-            <input type="file" name="docQualify" id="docQualify">
+            <input type="file" name="docQualify" id="docQualify" required>
         </div>
 
         <section class=" details">
             <div>
                 <label for="docIDfront">Front Valid ID *</label>
-                <input type="file" name="docIDfront" id="docIDfront">
+                <input type="file" name="docIDfront" id="docIDfront" required>
             </div>
             <div>
                 <label for=" docIDback">Back Valid ID *</label>
-                <input type="file" name="docIDback" id="docIDback">
+                <input type="file" name="docIDback" id="docIDback" required>
             </div>
         </section>
 
