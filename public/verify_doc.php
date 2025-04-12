@@ -19,13 +19,13 @@ if (empty($_SESSION['docEmail']) || empty($_SESSION['docPass'])) {
         $docEmail = $_REQUEST['docEmail'];
         $docStatus = $_REQUEST['docStatus'];
         $docQualify = $_FILES['docQualify'];
-        $docIDfront = $_FILES['docIDfront'];
-        $docIDback = $_FILES['docIDback'];
+        // $docIDfront = $_FILES['docIDfront'];
+        // $docIDback = $_FILES['docIDback'];
 
-        // UPLOAD FILES 
-        include '../public/upload.php';
+        // UPLOAD FILES  , docIDfront='$docIDfront', docIDback='$docIDback'
+        // include '../public/upload.php';
 
-        $sql = "UPDATE doctor SET docFname = '$docFname', docMname = '$docMname', docLname = '$docLname', docSuffix = '$docSuffix', docAddress = '$docAddress', docBdate = '$docBdate', docContact = '$docContact', docSpecialty = '$docSpecialty', docEmail = '$docEmail', docStatus='$docStatus', docQualify = '$docQualify', docIDfront='$docIDfront', docIDback='$docIDback' WHERE docID = '$docID'";
+        $sql = "UPDATE doctor SET docFname = '$docFname', docMname = '$docMname', docLname = '$docLname', docSuffix = '$docSuffix', docAddress = '$docAddress', docBdate = '$docBdate', docContact = '$docContact', docSpecialty = '$docSpecialty', docEmail = '$docEmail', docStatus='$docStatus', docQualify = '$docQualify' WHERE docID = '$docID'";
 
         if ($conn->query($sql) === TRUE) {
             header("location: ../public/profile_doc.php");

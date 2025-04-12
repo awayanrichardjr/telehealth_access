@@ -44,12 +44,13 @@
             </div>
         </section>
 
-        <!-- PROOF -->
+        <!-- Qualification -->
         <div>
             <label for="docQualify">Certificates/Qualifications *</label>
             <input type="file" name="docQualify" id="docQualify" required>
         </div>
 
+        <!-- ID -->
         <section class=" details">
             <div>
                 <label for="docIDfront">Front Valid ID *</label>

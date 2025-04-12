@@ -2,15 +2,15 @@
 
 if (isset($_POST['submit'])) {
     # code...
-    $file = $_FILES['file'];
+    $file = $_FILES['docQualify'];
     // print_r($file);
 
-    // extract the type of the file 
-    $fileName = $_FILES['file']['name'];
-    $fileType = $_FILES['file']['type'];
-    $fileTmpName = $_FILES['file']['tmp_name'];
-    $fileError = $_FILES['file']['error'];
-    $fileSize = $_FILES['file']['size'];
+    // extract the type of the file k
+    $fileName = basename($file['name']);
+    $fileType = $file['type'];
+    $fileTmpName = $file['tmp_name'];
+    $fileError = $file['error'];
+    $fileSize = $file['size'];
 
     $fileExt = explode('.', $fileName);
     $fileActualExt = strtolower(end($fileExt));
