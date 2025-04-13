@@ -6,14 +6,14 @@
                 <li class="num-doctor">
                     <h2>
                         <?php
-                        $ran = random_int(1, 999999);
-                        $ran1 = random_int(1, 999999);
-                        $ran2 = random_int(1, 999999);
-
+                        // $ran = random_int(1, 999999);  + $ran 
+                        // $ran1 = random_int(1, 999999);  + $ran1 
+                        // $ran2 = random_int(1, 999999);  + $ran2 
+                        
                         $num_of_doc = "SELECT * from doctor";
                         $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                         if ($doc_total = mysqli_num_rows($num_of_doc_run)) {
-                            echo $doc_total + $ran . "+";
+                            echo $doc_total . "+";
                         } else {
                             echo 0 . "+";
                         }
@@ -30,7 +30,7 @@
                         $num_of_doc = "SELECT * from patient";
                         $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                         if ($p_total = mysqli_num_rows($num_of_doc_run)) {
-                            echo $p_total + $ran1 . "+";
+                            echo $p_total . "+";
                         } else {
                             echo 0 . "+";
                         }
@@ -47,7 +47,7 @@
                         $num_of_doc = "SELECT * from consult";
                         $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                         if ($con_total = mysqli_num_rows($num_of_doc_run)) {
-                            echo $con_total + $ran2 . "+";
+                            echo $con_total . "+";
                         } else {
                             echo 0 . "+";
                         }

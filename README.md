@@ -8,7 +8,7 @@
 
 ## TELEHEALTH ACCESS: AN ONLINE CONSULTATION AND APPOINTMENT SYSTEM WITH PREDICTIVE ANALYTICS
 
-## Final Objectives
+### Final Objectives
 
     a. To create a user-friendly platform for registering, booking, conducting, and managing virtual consultations.
     b. To implement predictive analytics for identifying high-risk patients.
@@ -16,3 +16,10 @@
     d. Allows doctors to access patient records for informed consultations.
     e. To provide reports on consultation histories, medical records.
     f. To evaluate the system’s impact on wait times, patient satisfaction, and efficiency.
+
+## DATABASE
+
+### LINK
+
+    ALT + Click the link
+    http://localhost/phpmyadmin/index.php?route=/database/structure&db=health

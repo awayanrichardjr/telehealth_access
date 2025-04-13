@@ -46,7 +46,7 @@ if (empty($_SESSION['pEmail']) || empty($_SESSION['pPass'])) {
             // specialists table body
             include '../table/user_sp_tbody.php';
         }
-    } 
+    }
     $conn->close();
 }
 

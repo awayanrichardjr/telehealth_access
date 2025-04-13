@@ -5,34 +5,34 @@
         <li>
             <h2>
                 <?php
-                $ran1 = random_int(1, 100);
-                $ran2 = random_int(1, 100);
-                $ran3 = random_int(1, 100);
-                $ran4 = random_int(1, 100);
-                $ran5 = random_int(1, 100);
-                $ran6 = random_int(1, 100);
-                $ran7 = random_int(1, 100);
-                $ran8 = random_int(1, 100);
-                $ran9 = random_int(1, 100);
-                $ran10 = random_int(1, 100);
-                $ran11 = random_int(1, 100);
-                $ran12 = random_int(1, 100);
-                $ran13 = random_int(1, 100);
-                $ran14 = random_int(1, 100);
-                $ran15 = random_int(1, 100);
-                $ran16 = random_int(1, 100);
-                $ran17 = random_int(1, 100);
-                $ran18 = random_int(1, 100);
-                $ran19 = random_int(1, 100);
-                $ran20 = random_int(1, 100);
-                $ran21 = random_int(1, 100);
-                $ran22 = random_int(1, 100);
-                $ran23 = random_int(1, 100);
-
+                // $ran1 = random_int(1, 100);
+                // $ran2 = random_int(1, 100);
+                // $ran3 = random_int(1, 100);
+                // $ran4 = random_int(1, 100);
+                // $ran5 = random_int(1, 100);
+                // $ran6 = random_int(1, 100);
+                // $ran7 = random_int(1, 100);
+                // $ran8 = random_int(1, 100);
+                // $ran9 = random_int(1, 100);
+                // $ran10 = random_int(1, 100);
+                // $ran11 = random_int(1, 100);
+                // $ran12 = random_int(1, 100);
+                // $ran13 = random_int(1, 100);
+                // $ran14 = random_int(1, 100);
+                // $ran15 = random_int(1, 100);
+                // $ran16 = random_int(1, 100);
+                // $ran17 = random_int(1, 100);
+                // $ran18 = random_int(1, 100);
+                // $ran19 = random_int(1, 100);
+                // $ran20 = random_int(1, 100);
+                // $ran21 = random_int(1, 100);
+                // $ran22 = random_int(1, 100);
+                // $ran23 = random_int(1, 100);
+                
                 $num_of_doc = "SELECT * from doctor WHERE docSpecialty='Dermatologist'";
                 $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                 if ($derma_total = mysqli_num_rows($num_of_doc_run)) {
-                    echo $derma_total + $ran1 . "+";
+                    echo $derma_total . "+";
                 } else {
                     echo 0 . "+";
                 }
@@ -49,7 +49,7 @@
                 $num_of_doc = "SELECT * from doctor WHERE docSpecialty='Obstetrician-Gynecologist'";
                 $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                 if ($obste_total = mysqli_num_rows($num_of_doc_run)) {
-                    echo $obste_total + $ran2 . "+";
+                    echo $obste_total . "+";
                 } else {
                     echo 0 . "+";
                 }
@@ -63,11 +63,11 @@
         <li>
             <h2>
                 <?php
-                $optha_total = 1;
+                // $optha_total = 1;
                 $num_of_doc = "SELECT * from doctor WHERE docSpecialty='Ophthalmologist'";
                 $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                if ($optha_total == true) {
-                    echo $optha_total + $ran3 . "+";
+                if ($optha_total = mysqli_num_rows($num_of_doc_run)) {
+                    echo $optha_total . "+";
                 } else {
                     echo 0 . "+";
                 }
@@ -81,11 +81,11 @@
         <li>
             <h2>
                 <?php
-                $allergy_total = 1;
+                // $allergy_total = 1;
                 $num_of_doc = "SELECT * from doctor WHERE docSpecialty='Allergist'";
                 $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                if ($allergy_total == true) {
-                    echo $allergy_total + $ran4 . "+";
+                if ($allergy_total = mysqli_num_rows($num_of_doc_run)) {
+                    echo $allergy_total . "+";
                 } else {
                     echo 0 . "+";
                 }
@@ -99,11 +99,11 @@
         <li>
             <h2>
                 <?php
-                $gastro_total = 1;
+                // $gastro_total = 1;
                 $num_of_doc = "SELECT * from doctor WHERE docSpecialty='Gastroenterologist'";
                 $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                if ($gastro_total == true) {
-                    echo $gastro_total + $ran5 . "+";
+                if ($gastro_total = mysqli_num_rows($num_of_doc_run)) {
+                    echo $gastro_total . "+";
                 } else {
                     echo 0 . "+";
                 }
@@ -117,11 +117,11 @@
         <li>
             <h2>
                 <?php
-                $geria_total = 1;
+                // $geria_total = 1;
                 $num_of_doc = "SELECT * from doctor WHERE docSpecialty='Geriatrician'";
                 $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                if ($geria_total == true) {
-                    echo $geria_total + $ran6 . "+";
+                if ($geria_total = mysqli_num_rows($num_of_doc_run)) {
+                    echo $geria_total . "+";
                 } else {
                     echo 0 . "+";
                 }
@@ -135,11 +135,11 @@
         <li>
             <h2>
                 <?php
-                $infec_total = 1;
+                // $infec_total = 1;
                 $num_of_doc = "SELECT * from doctor WHERE docSpecialty='Infectious Disease Specialist'";
                 $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                if ($infec_total == true) {
-                    echo $infec_total + $ran7 . "+";
+                if ($infec_total = mysqli_num_rows($num_of_doc_run)) {
+                    echo $infec_total . "+";
                 } else {
                     echo 0 . "+";
                 }
@@ -153,11 +153,11 @@
         <li>
             <h2>
                 <?php
-                $hema_total = 1;
+                // $hema_total = 1;
                 $num_of_doc = "SELECT * from doctor WHERE docSpecialty='Hematologist'";
                 $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                if ($hema_total == true) {
-                    echo $hema_total + $ran8 . "+";
+                if ($hema_total = mysqli_num_rows($num_of_doc_run)) {
+                    echo $hema_total . "+";
                 } else {
                     echo 0 . "+";
                 }
@@ -171,11 +171,11 @@
         <li>
             <h2>
                 <?php
-                $neuro_total = 1;
+                // $neuro_total = 1;
                 $num_of_doc = "SELECT * from doctor WHERE docSpecialty='Neurologist'";
                 $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                if ($neuro_total == true) {
-                    echo $neuro_total + $ran9 . "+";
+                if ($neuro_total = mysqli_num_rows($num_of_doc_run)) {
+                    echo $neuro_total . "+";
                 } else {
                     echo 0 . "+";
                 }
@@ -189,11 +189,11 @@
         <li>
             <h2>
                 <?php
-                $cardio_total = 1;
+                // $cardio_total = 1;
                 $num_of_doc = "SELECT * from doctor WHERE docSpecialty='Cardiologist'";
                 $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                if ($cardio_total == true) {
-                    echo $cardio_total + $ran10 . "+";
+                if ($cardio_total = mysqli_num_rows($num_of_doc_run)) {
+                    echo $cardio_total . "+";
                 } else {
                     echo 0 . "+";
                 }
@@ -207,11 +207,11 @@
         <li>
             <h2>
                 <?php
-                $pedia_total = 1;
+                // $pedia_total = 1;
                 $num_of_doc = "SELECT * from doctor WHERE docSpecialty='Pediatrician'";
                 $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                if ($pedia_total == true) {
-                    echo $pedia_total + $ran11 . "+";
+                if ($pedia_total = mysqli_num_rows($num_of_doc_run)) {
+                    echo $pedia_total . "+";
                 } else {
                     echo 0 . "+";
                 }
@@ -225,11 +225,11 @@
         <li>
             <h2>
                 <?php
-                $endo_total = 1;
+                // $endo_total = 1;
                 $num_of_doc = "SELECT * from doctor WHERE docSpecialty='Endocrinologist'";
                 $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                if ($endo_total == true) {
-                    echo $endo_total + $ran12 . "+";
+                if ($endo_total = mysqli_num_rows($num_of_doc_run)) {
+                    echo $endo_total . "+";
                 } else {
                     echo 0 . "+";
                 }
@@ -243,11 +243,11 @@
         <li>
             <h2>
                 <?php
-                $radio_total = 1;
+                // $radio_total = 1;
                 $num_of_doc = "SELECT * from doctor WHERE docSpecialty='Radiologist'";
                 $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                if ($radio_total == true) {
-                    echo $radio_total + $ran13 . "+";
+                if ($radio_total = mysqli_num_rows($num_of_doc_run)) {
+                    echo $radio_total . "+";
                 } else {
                     echo 0 . "+";
                 }
@@ -261,11 +261,11 @@
         <li>
             <h2>
                 <?php
-                $nephro_total = 1;
+                // $nephro_total = 1;
                 $num_of_doc = "SELECT * from doctor WHERE docSpecialty='Nephrologist'";
                 $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                if ($nephro_total == true) {
-                    echo $nephro_total + $ran14 . "+";
+                if ($nephro_total = mysqli_num_rows($num_of_doc_run)) {
+                    echo $nephro_total . "+";
                 } else {
                     echo 0 . "+";
                 }
@@ -279,11 +279,11 @@
         <li>
             <h2>
                 <?php
-                $otorhi_total = 1;
+                // $otorhi_total = 1;
                 $num_of_doc = "SELECT * from doctor WHERE docSpecialty='Otorhinolaryngologist'";
                 $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                if ($otorhi_total == true) {
-                    echo $otorhi_total + $ran15 . "+";
+                if ($otorhi_total = mysqli_num_rows($num_of_doc_run)) {
+                    echo $otorhi_total . "+";
                 } else {
                     echo 0 . "+";
                 }
@@ -297,11 +297,11 @@
         <li>
             <h2>
                 <?php
-                $podia_total = 1;
+                // $podia_total = 1;
                 $num_of_doc = "SELECT * from doctor WHERE docSpecialty='Podiatrist'";
                 $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                if ($podia_total == true) {
-                    echo $podia_total + $ran16 . "+";
+                if ($podia_total = mysqli_num_rows($num_of_doc_run)) {
+                    echo $podia_total . "+";
                 } else {
                     echo 0 . "+";
                 }
@@ -315,11 +315,11 @@
         <li>
             <h2>
                 <?php
-                $fam_total = 1;
+                // $fam_total = 1;
                 $num_of_doc = "SELECT * from doctor WHERE docSpecialty='Family Medicine Doctor'";
                 $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                if ($fam_total == true) {
-                    echo $fam_total + $ran17 . "+";
+                if ($fam_total = mysqli_num_rows($num_of_doc_run)) {
+                    echo $fam_total . "+";
                 } else {
                     echo 0 . "+";
                 }
@@ -333,11 +333,11 @@
         <li>
             <h2>
                 <?php
-                $psych_total = 1;
+                // $psych_total = 1;
                 $num_of_doc = "SELECT * from doctor WHERE docSpecialty='Psychiatrist'";
                 $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                if ($psych_total == true) {
-                    echo $psych_total + $ran18 . "+";
+                if ($psych_total = mysqli_num_rows($num_of_doc_run)) {
+                    echo $psych_total . "+";
                 } else {
                     echo 0 . "+";
                 }
@@ -351,11 +351,11 @@
         <li>
             <h2>
                 <?php
-                $emp_total = 1;
+                // $emp_total = 1;
                 $num_of_doc = "SELECT * from doctor WHERE docSpecialty='Emergency Medicine Physician'";
                 $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                if ($emp_total == true) {
-                    echo $emp_total + $ran19 . "+";
+                if ($emp_total = mysqli_num_rows($num_of_doc_run)) {
+                    echo $emp_total . "+";
                 } else {
                     echo 0 . "+";
                 }
@@ -369,11 +369,11 @@
         <li>
             <h2>
                 <?php
-                $anes_total = 1;
+                // $anes_total = 1;
                 $num_of_doc = "SELECT * from doctor WHERE docSpecialty='Anesthesiologist'";
                 $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                if ($anes_total == true) {
-                    echo $anes_total + $ran20 . "+";
+                if ($anes_total = mysqli_num_rows($num_of_doc_run)) {
+                    echo $anes_total . "+";
                 } else {
                     echo 0 . "+";
                 }
@@ -387,11 +387,11 @@
         <li>
             <h2>
                 <?php
-                $gene_total = 1;
+                // $gene_total = 1;
                 $num_of_doc = "SELECT * from doctor WHERE docSpecialty='General Surgeon'";
                 $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                if ($gene_total == true) {
-                    echo $gene_total + $ran21 . "+";
+                if ($gene_total = mysqli_num_rows($num_of_doc_run)) {
+                    echo $gene_total . "+";
                 } else {
                     echo 0 . "+";
                 }
@@ -405,11 +405,11 @@
         <li>
             <h2>
                 <?php
-                $patho_total = 1;
+                // $patho_total = 1;
                 $num_of_doc = "SELECT * from doctor WHERE docSpecialty='Pathologist'";
                 $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                if ($patho_total == true) {
-                    echo $patho_total + $ran22 . "+";
+                if ($patho_total = mysqli_num_rows($num_of_doc_run)) {
+                    echo $patho_total . "+";
                 } else {
                     echo 0 . "+";
                 }
@@ -423,11 +423,11 @@
         <li>
             <h2>
                 <?php
-                $surgeon_total = 1;
+                // $surgeon_total = 1;
                 $num_of_doc = "SELECT * from doctor WHERE docSpecialty='Surgeon'";
                 $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                if ($surgeon_total == true) {
-                    echo $surgeon_total + $ran23 . "+";
+                if ($surgeon_total = mysqli_num_rows($num_of_doc_run)) {
+                    echo $surgeon_total . "+";
                 } else {
                     echo 0 . "+";
                 }
