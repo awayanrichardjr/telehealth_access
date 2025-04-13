@@ -5,6 +5,6 @@ if (empty($_SESSION['docEmail']) || empty($_SESSION['docPass'])) {
 } else {
     include '../user/index.php';
     include '../doctor/main.php';
-    include '../doctor/profile.php';
+    // include '../doctor/profile.php';
     include '../doctor/messages.php';
 }

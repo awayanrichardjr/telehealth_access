@@ -1,0 +1,57 @@
+.user_table {
+    padding: 0.5rem;
+
+    overflow: auto;
+    justify-self: center;
+
+    width: 100%;
+}
+
+.user_table :where(h1) {
+    color: var(--blue);
+}
+
+/* table  */
+.user_table :where(table) {
+    /* background-color: rgba(255, 255, 255, 0.700); */
+    font-size: 10px;
+}
+
+
+/* dropdown  */
+.user_table :where(.dropdown-content) {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+
+    background-color: var(--primary-color);
+    border-radius: var(--card-border);
+    box-shadow: var(--card-shadow);
+}
+
+.user_table :where(.dropdown-links:hover .dropdown-content) {
+    display: inline-flex;
+}
+
+.user_table :where(.dropdown-content a) {
+    display: block;
+    padding: 1rem;
+    color: var(--text-color);
+}
+
+/*  */
+.user_table :where(.dropdown-content a:hover) {
+    color: var(--text-color-hover);
+}
+
+.user_table :where(th, td) {
+    white-space: nowrap;
+}
+
+@media screen and (max-width:800px) {
+    .user_table {
+        justify-self: start;
+        width: 100%;
+        overflow: auto;
+    }
+}

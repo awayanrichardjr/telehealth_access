@@ -18,12 +18,6 @@
                     <p>Home</p>
                 </a>
             </li>
-            <!-- <li>
-                <a href="#">
-                    <span class="material-symbols-outlined">dashboard</span>
-                    <p>Dashboard</p>
-                </a>
-            </li> -->
             <li>
                 <a href="../public/appointment_doc.php">
                     <span class="material-symbols-outlined">schedule</span>
@@ -31,9 +25,9 @@
                 </a>
             </li>
             <li>
-                <a href="#">
-                    <span class="material-symbols-outlined">clinical_notes</span>
-                    <p>Medical Records</p>
+                <a href="../public/messages_doc.php">
+                    <span class="material-symbols-outlined">chat</span>
+                    <p>Messages</p>
                 </a>
             </li>
             <li>

@@ -1,4 +1,4 @@
-<section class="messages">
+<section class="messages_doc">
     <h1>Messages</h1>
-    <div>ey</div>
+    <div>No Messages</div>
 </section>
