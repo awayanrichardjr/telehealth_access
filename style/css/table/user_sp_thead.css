@@ -10,6 +10,8 @@
 
     position: sticky;
     top: 82px;
+
+    width: fit-content;
 }
 
 .sp_thead :where(img) {

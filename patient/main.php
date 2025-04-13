@@ -19,14 +19,8 @@
                 </a>
             </li>
             <li>
-                <a href="#">
-                    <span class="material-symbols-outlined">dashboard</span>
-                    <p>Dashboard</p>
-                </a>
-            </li>
-            <li>
                 <a href="../public/appointment_p.php">
-                    <span class="material-symbols-outlined">event_note</span>
+                    <span class="material-symbols-outlined">schedule</span>
                     <p>Appointments</p>
                 </a>
             </li>

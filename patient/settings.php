@@ -9,6 +9,12 @@
             </a>
         </li>
         <li>
+            <a href="#">
+                <span class="material-symbols-outlined">dashboard</span>
+                <p>Dashboard</p>
+            </a>
+        </li>
+        <li>
             <a href="../public/delete_acc_p.php?pID=<?php echo $_SESSION['pID'] ?>">
                 <span class="material-symbols-outlined" style="font-size: 17px;">delete</span>
                 Delete Account
