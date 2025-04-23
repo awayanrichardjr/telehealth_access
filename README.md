@@ -10,16 +10,16 @@
 
 ### Final Objectives
 
-    a. To create a user-friendly platform for registering, booking, conducting, and managing virtual consultations.
-    b. To implement predictive analytics for identifying high-risk patients.
-    c. To integrate secure digital payment options for online consultations.
-    d. Allows doctors to access patient records for informed consultations.
-    e. To provide reports on consultation histories, medical records.
-    f. To evaluate the system’s impact on wait times, patient satisfaction, and efficiency.
+    a. To create a user-friendly platform for virtual healthcare consultations.
+    b. To integrate predictive analytics for efficient appointment scheduling.
+    c. To evaluate the system's impact on wait times and patient satisfaction.
+    d. To allow secure online payments for consultations.
+    e. To enable doctors to access and view patients’ medical records securely.
+    f. To implement a verification process that ensures only certified and licensed medical professionals can provide consultations through the system.
+    g. To identify and address the barriers in implementing telehealth systems.
 
 ## DATABASE
 
 ### LINK
 
-    ALT + Click the link
     http://localhost/phpmyadmin/index.php?route=/database/structure&db=health

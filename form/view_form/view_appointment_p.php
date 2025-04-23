@@ -50,7 +50,7 @@
 
                 <!-- complain  -->
                 <li>
-                    <label for="conDiagnose">Diagnose/Complain:</label>
+                    <label for="conDiagnose">Compliant:</label>
                     <p><?php echo $_SESSION['conDiagnose'] ?></p>
                 </li>
             </div>
