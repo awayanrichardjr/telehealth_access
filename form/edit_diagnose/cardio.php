@@ -1,7 +1,9 @@
-<label for="conDiagnose">Diagnosis *</label>
-<select name="conDiagnose" id="conDiagnose">
-    <option value="" style="color: grey;">Select diagnosis:</option>
-    <option value="Skin">Skin</option>
-    <option value="Hair">Hair</option>
-    <option value="Nail">Nail</option>
-</select>
+<label for="conDiagnose">Compliant *
+    <span class="error">
+        <?php if (isset($_GET['conDiagnoseErr'])) {
+            echo $conDiagnoseError = $_GET['conDiagnoseErr'];
+        } ?>
+    </span>
+</label>
+
+<textarea name="conDiagnose" id="conDiagnose"><?php echo $row['conDiagnose'] ?></textarea>

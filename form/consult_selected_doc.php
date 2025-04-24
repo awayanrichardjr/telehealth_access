@@ -92,7 +92,7 @@
                 <input type="datetime-local" name="conADateTime" id="conADateTime">
             </div>
             <div>
-                <!-- diagnosis  -->
+                <!-- compliant  -->
                 <?php include '../form/diagnose/derma.php' ?>
             </div>
         </section>

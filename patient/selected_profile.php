@@ -33,6 +33,20 @@
                     <span class="material-symbols-outlined" style="font-size: 17px;">verified</span>
                     <?php echo $row['docStatus'] ?>
                 </li>
+                <ul class="actions">
+                    <li>
+                        <a href="../public/chat_selected_doc.php?docID=<?php echo $row['docID'] ?>">
+                            <span class="material-symbols-outlined" style="font-size: 17px;">chat</span>
+                            <p>Chat</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../public/consult_selected_doc.php?docID=<?php echo $row['docID'] ?>">
+                            <span class="material-symbols-outlined" style="font-size: 17px;">event_upcoming</span>
+                            <p>Consult</p>
+                        </a>
+                    </li>
+                </ul>
                 <?php
             } else {
                 ?>
@@ -40,24 +54,23 @@
                     <span class="material-symbols-outlined" style="font-size: 17px;">verified</span>
                     <?php echo "Unverified" ?>
                 </li>
+                <ul class="actions">
+                    <li>
+                        <a href="#" style="background-color: grey;">
+                            <span class="material-symbols-outlined" style="font-size: 17px;">chat</span>
+                            <p>Chat</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" style="background-color: grey;">
+                            <span class="material-symbols-outlined" style="font-size: 17px;">event_upcoming</span>
+                            <p>Consult</p>
+                        </a>
+                    </li>
+                </ul>
                 <?php
             }
             ?>
-        </ul>
-
-        <ul class="actions">
-            <li>
-                <a href="../public/chat_selected_doc.php?docID=<?php echo $row['docID'] ?>">
-                    <span class="material-symbols-outlined" style="font-size: 17px;">chat</span>
-                    Chat
-                </a>
-            </li>
-            <li>
-                <a href="../public/consult_selected_doc.php?docID=<?php echo $row['docID'] ?>">
-                    <span class="material-symbols-outlined" style="font-size: 17px;">event_upcoming</span>
-                    Consult
-                </a>
-            </li>
         </ul>
     </div>
     <!-- </section> -->

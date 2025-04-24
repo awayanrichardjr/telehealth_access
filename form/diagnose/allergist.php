@@ -5,4 +5,4 @@
         } ?>
     </span>
 </label>
-<textarea name="" id="" placeholder="Type your Complains..."></textarea>k
+<textarea name="conDiagnose" id="conDiagnose" placeholder="Type your Complains..."></textarea>
