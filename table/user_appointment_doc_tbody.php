@@ -6,11 +6,22 @@
         <p><?php echo $_SESSION['conEmail'] ?></p>
       </li>
 
+
       <!-- visibility -->
-      <li class="appt-visibility">
-        <a href="../public/view_appointment_doc.php?conID=<?php echo $row['conID'] ?>" class="appt-visibility">
-          <span class="material-symbols-outlined">visibility</span>
-        </a>
+      <li class="view-appt">
+        <?php
+        $docName = "Dr. " . $_SESSION['docFname'] . " " . $_SESSION['docMname'] . " " . $_SESSION['docLname'] . " " . $_SESSION['docSuffix'];
+
+        if ($_SESSION['conSelectedDoc'] === $docName) { ?>
+          <a href="../public/view_appointment_doc.php?conID=<?php echo $row['conID'] ?>" class="appt-visibility">
+            <span class="material-symbols-outlined">visibility</span>
+          </a>
+          <?php
+        } else { ?>
+          <a href="../public/appointment_doc.php?locked" class="appt-visibility">
+            <span class="material-symbols-outlined">visibility_lock</span>
+          </a>
+        <?php } ?>
       </li>
     </ul>
 

@@ -8,9 +8,16 @@
 
       <!-- visibility -->
       <li class="view-appt">
-        <a href="../public/view_appointment_p.php?conID=<?php echo $row['conID'] ?>" class="appt-visibility">
-          <span class="material-symbols-outlined">visibility</span>
-        </a>
+        <?php if ($_SESSION['conEmail'] === $_SESSION['pEmail']) { ?>
+          <a href="../public/view_appointment_p.php?conID=<?php echo $row['conID']; ?>" class="appt-visibility">
+            <span class="material-symbols-outlined">visibility</span>
+          </a>
+          <?php
+        } else { ?>
+          <a href="../public/appointment_p.php?locked" class="appt-visibility">
+            <span class="material-symbols-outlined">visibility_lock</span>
+          </a>
+        <?php } ?>
       </li>
     </ul>
 
