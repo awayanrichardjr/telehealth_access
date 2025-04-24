@@ -1,6 +1,6 @@
 <tr>
     <td>
-        <a href="../public/profile_doc.php?docID=<?php echo $row['feed_id'] ?>">
+        <a>
             <img src="../img/images/user.png" alt=""">
             <div>
             <h4 class=" feed_name">

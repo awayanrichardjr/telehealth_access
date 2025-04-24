@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $_SESSION['pPass'] = $row['pPass'];
                 $_SESSION['pConfirm'] = $row['pConfirm'];
 
-                header("location: ../public/main_p.php");
+                header("location: ../public/main_p_feed.php");
                 exit();
             }
         } else {

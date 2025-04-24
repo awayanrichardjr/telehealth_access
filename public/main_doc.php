@@ -9,8 +9,8 @@ if (empty($_SESSION['docEmail']) || empty($_SESSION['docPass'])) {
 } else {
     include '../user/index.php';
     include '../doctor/main.php';
-    include '../user/feed.php';
-    include '../table/user_feed_thead.php';
+    include '../user/feed_doc.php';
+    include '../table/user_feed_doc_thead.php';
 
     $sql = "SELECT * FROM feed ORDER BY feed_id DESC";
     $result = $conn->query($sql);
@@ -26,7 +26,7 @@ if (empty($_SESSION['docEmail']) || empty($_SESSION['docPass'])) {
             $_SESSION['feed_Cdate'] = $row['feed_Cdate'];
             $_SESSION['feed_Modified'] = $row['feed_Modified'];
 
-            include '../table/user_feed_tbody.php';
+            include '../table/user_feed_doc_tbody.php';
         }
     } else {
         echo '<p class="no-data">No Posts</p>';

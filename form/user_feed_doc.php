@@ -3,8 +3,8 @@
     <img src="../img/images/user.png" alt="profile" style="width: 40px; border-radius: 50%;">
 
     <!-- name -->
-    <input type="hidden" name="feed_name" id="feed_name" placeholder="Name"
-        value="<?php echo $_SESSION['docFname'] . " " . $_SESSION['docMname'] . " " . $_SESSION['docLname'] . " " . $_SESSION['docSuffix'] ?>"
+    <input type="hidden" name="feed_name" id="feed_name"
+        value="Dr. <?php echo $_SESSION['docFname'] . " " . $_SESSION['docMname'] . " " . $_SESSION['docLname'] . " " . $_SESSION['docSuffix'] ?>"
         readonly>
 
     <!-- status -->

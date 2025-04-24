@@ -62,3 +62,8 @@
 .user_feed :where(table) img {
     width: 2rem;
 }
+
+.user_feed :where(table) .verified {
+    color: var(--blue);
+    font-variation-settings: 'FILL' 1;
+}

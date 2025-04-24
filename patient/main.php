@@ -13,9 +13,15 @@
         </ul>
         <ul class="links">
             <li>
-                <a href="../public/main_p.php">
+                <a href="../public/main_p_feed.php">
                     <span class="material-symbols-outlined">home</span>
                     <p>Home</p>
+                </a>
+            </li>
+            <li>
+                <a href="../public/main_p_specialists.php">
+                    <span class="material-symbols-outlined">home_health</span>
+                    <p>Specialists</p>
                 </a>
             </li>
             <li>

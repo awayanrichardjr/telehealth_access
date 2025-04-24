@@ -12,10 +12,12 @@
 
 .selected_profile :where(.verified) {
     color: var(--blue);
+    font-variation-settings: 'FILL' 1;
 }
 
 .selected_profile :where(.unverified) {
     color: var(--red);
+    font-variation-settings: 'FILL' 1;
 }
 
 .selected_profile :where(.actions) {

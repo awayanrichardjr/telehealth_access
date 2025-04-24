@@ -54,11 +54,7 @@
 
 .sp_thead :where(.verified) {
     color: var(--blue);
-}
-
-.sp_thead :where(tr:hover .verified) {
-    font-variation-settings:
-        'FILL' 1;
+    font-variation-settings: 'FILL' 1;
 }
 
 @media screen and (max-width: 800px) {
