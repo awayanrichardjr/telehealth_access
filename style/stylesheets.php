@@ -42,6 +42,7 @@
 <link rel="stylesheet" href="../style/css/user/header.css">
 <link rel="stylesheet" href="../style/css/user/index.css">
 <link rel="stylesheet" href="../style/css/user/nav.css">
+<link rel="stylesheet" href="../style/css/user/user_feed.css">
 
 <!-- form  -->
 <link rel="stylesheet" href="../style/css/form/form.css">

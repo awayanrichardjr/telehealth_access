@@ -1,0 +1,64 @@
+.user_feed {
+    display: flex;
+    flex-direction: column;
+}
+
+.user_feed :where(.user_feed_form) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+
+    /* background-color: red; */
+    height: 100%;
+
+    background-color: var(--primary-color);
+    border-radius: var(--card-border-thin);
+}
+
+.user_feed :where(.user_feed_form) #submit {
+    width: fit-content;
+}
+
+.user_feed :where(table) tr {
+    background-color: var(--primary-color);
+}
+
+.user_feed :where(table) {
+    border-collapse: separate;
+
+    margin-top: 1rem;
+}
+
+.user_feed :where(table) td {
+    border-radius: var(--card-border-thin);
+    border: unset;
+    box-shadow: var(--shadow);
+}
+
+.user_feed :where(table) .feed_date {
+    color: grey;
+}
+
+.user_feed :where(table) .feed_name {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.user_feed :where(table) a {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+
+    font-size: 10px;
+    color: black;
+
+    margin-bottom: 1rem;
+    width: fit-content;
+}
+
+.user_feed :where(table) img {
+    width: 2rem;
+}
