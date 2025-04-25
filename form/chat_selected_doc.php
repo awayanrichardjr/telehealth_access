@@ -15,7 +15,10 @@
             </a>
         </div>
 
-        <div class="convo"></div>
+        <!-- conversation -->
+        <div class="convo">
+            <!-- table here... -->
+        </div>
 
         <div class="chat-textarea">
             <input type="text" name="pChat" id="pChat" placeholder="Type messages...">

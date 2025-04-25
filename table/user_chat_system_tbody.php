@@ -1,5 +1,7 @@
 <tbody>
     <tr>
-        <td></td>
+        <td>
+            <p class=""><?php echo $_SESSION[''] ?></p>
+        </td>
     </tr>
 </tbody>

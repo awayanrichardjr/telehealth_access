@@ -15,14 +15,29 @@
         if ($_SESSION['conSelectedDoc'] === $docName) { ?>
           <a href="../public/view_appointment_doc.php?conID=<?php echo $row['conID'] ?>" class="appt-visibility">
             <span class="material-symbols-outlined">visibility</span>
+            <p>View</p>
           </a>
           <?php
         } else { ?>
           <a href="../public/appointment_doc.php?locked" class="appt-visibility">
             <span class="material-symbols-outlined">visibility_lock</span>
+            <p>Locked</p>
           </a>
         <?php } ?>
       </li>
+
+      <!-- closed appointment -->
+      <li>
+        <?php if ($_SESSION['conSelectedDoc'] === $docName) { ?>
+          <a href="#" class="appt-visibility">
+            <span class="material-symbols-outlined">check</span>
+            <p>closed</p>
+          </a>
+          <?php
+        } else {
+        } ?>
+      </li>
+
     </ul>
 
     <br>

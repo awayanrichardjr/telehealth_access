@@ -48,6 +48,23 @@
     white-space: nowrap;
 }
 
+.user_table :where(a p) {
+    display: none;
+}
+
+.user_table :where(a:hover p) {
+    display: block;
+    margin-top: unset;
+    padding: 0.5rem;
+    border-radius: var(--card-border);
+
+    background-color: rgba(0, 0, 0, 0.500);
+    color: var(--primary-color);
+    font-size: 10px;
+
+    position: absolute;
+}
+
 @media screen and (max-width:800px) {
     .user_table {
         justify-self: start;

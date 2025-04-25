@@ -33,15 +33,27 @@
                                 Specialist summary
                             </a>
                         </li>
+                        <li>
+                            <a href="../public/statistic.php">
+                                <!-- <span class="material-symbols-outlined">clinical_notes</span> -->
+                                Predictive Analytics
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../public/monthly_analytics.php">
+                                <!-- <span class="material-symbols-outlined">clinical_notes</span> -->
+                                Mothly Analytics
+                            </a>
+                        </li>
                     </ul>
                 </li>
 
-                <li>
+                <!-- <li>
                     <a href="../public/statistic.php">
                         <span class="material-symbols-outlined">monitoring</span>
                         <p>Statistics</p>
                     </a>
-                </li>
+                </li> -->
 
                 <!-- dropdown -->
                 <div class="dropdown-links">

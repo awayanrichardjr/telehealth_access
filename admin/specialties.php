@@ -1,34 +1,10 @@
 <section class="admin_specialties">
     <div id="chartContainer">
     </div>
-    <ul class="specialties">
+    <ul class=" specialties">
         <li>
             <h2>
                 <?php
-                // $ran1 = random_int(1, 100);
-                // $ran2 = random_int(1, 100);
-                // $ran3 = random_int(1, 100);
-                // $ran4 = random_int(1, 100);
-                // $ran5 = random_int(1, 100);
-                // $ran6 = random_int(1, 100);
-                // $ran7 = random_int(1, 100);
-                // $ran8 = random_int(1, 100);
-                // $ran9 = random_int(1, 100);
-                // $ran10 = random_int(1, 100);
-                // $ran11 = random_int(1, 100);
-                // $ran12 = random_int(1, 100);
-                // $ran13 = random_int(1, 100);
-                // $ran14 = random_int(1, 100);
-                // $ran15 = random_int(1, 100);
-                // $ran16 = random_int(1, 100);
-                // $ran17 = random_int(1, 100);
-                // $ran18 = random_int(1, 100);
-                // $ran19 = random_int(1, 100);
-                // $ran20 = random_int(1, 100);
-                // $ran21 = random_int(1, 100);
-                // $ran22 = random_int(1, 100);
-                // $ran23 = random_int(1, 100);
-                
                 $num_of_doc = "SELECT * from doctor WHERE docSpecialty='Dermatologist'";
                 $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                 if ($derma_total = mysqli_num_rows($num_of_doc_run)) {

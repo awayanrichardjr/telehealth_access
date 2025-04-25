@@ -8,6 +8,5 @@ if (empty($_SESSION['pEmail']) || empty($_SESSION['pPass'])) {
 } else {
     include '../user/index.php';
     include '../patient/main.php';
-    // include '../patient/specialties.php';
     include '../form/chat_selected_doc.php';
 }
