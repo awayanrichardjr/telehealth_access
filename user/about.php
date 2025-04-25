@@ -40,22 +40,25 @@
             <img src="../img/images/user-profile.png" alt="img">
             <div class="member-info">
                 <h1>Ailyn Mentos</h1>
-                <p>Role/Researcher</p>
+                <p>QA Specialist /System Analyst</p>
                 <br>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea inventore voluptatum tempora aliquam
-                    cum, ipsum animi, velit dicta excepturi eos reprehenderit molestiae ratione. Quidem quod, odio odit
-                    veniam necessitatibus repudiandae.</p>
+                <p>The Capstone <b>QA Specialist and Systems Analyst</b> for TELEHEALTH ACCESS: An Online Consultation
+                    and
+                    Appointment System with Predictive Analytics makes sure the telehealth website works well and meets
+                    user needs. They figure out what the system should do and test it thoroughly to ensure online doctor
+                    visits, appointment booking, and smart analytics run smoothly.</p>
             </div>
         </div>
         <div class="member">
             <img src="../img/images/user-profile.png" alt="img">
             <div class="member-info">
                 <h1>Angel Grace Concha</h1>
-                <p>Role/Researcher</p>
+                <p>Assistant Documentation/ Research Support</p>
                 <br>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea inventore voluptatum tempora aliquam
-                    cum, ipsum animi, velit dicta excepturi eos reprehenderit molestiae ratione. Quidem quod, odio odit
-                    veniam necessitatibus repudiandae.</p>
+                <p>The Capstone <b>Assistant Documentation and Research Support</b> for TELEHEALTH ACCESS: An Online
+                    Consultation and Appointment System with Predictive Analytics helps create clear project documents
+                    and researches tools, methods, and healthcare trends. They ensure the telehealth website for online
+                    doctor visits, appointment booking, and smart analytics is well-supported and properly recorded.</p>
             </div>
         </div>
         <div class="member">
