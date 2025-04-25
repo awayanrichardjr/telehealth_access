@@ -14,13 +14,13 @@
         </li>
         <li>
             <a href="../public/appointment_past_doc.php">
-                <span class="material-symbols-outlined">history</span>
+                <span class="material-symbols-outlined">data_check</span>
                 <p>Appointment History</p>
             </a>
         </li>
         <li>
             <a href="../public/medical_doc.php">
-                <span class="material-symbols-outlined">clinical_notes</span>
+                <span class="material-symbols-outlined">medical_information</span>
                 <p>Medical Records</p>
             </a>
         </li>

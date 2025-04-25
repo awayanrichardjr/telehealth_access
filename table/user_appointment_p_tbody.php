@@ -1,4 +1,4 @@
-<tr>
+<tr class="appointment_tr">
   <td>
     <ul class="view-appt">
       <li>

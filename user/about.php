@@ -27,18 +27,20 @@
             <img src="../img/images/user-profile.png" alt="img">
             <div class="member-info">
                 <h1>Airis Mentos</h1>
-                <p>Role</p>
+                <p>Project Manager/Researcher</p>
                 <br>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea inventore voluptatum tempora aliquam
-                    cum, ipsum animi, velit dicta excepturi eos reprehenderit molestiae ratione. Quidem quod, odio odit
-                    veniam necessitatibus repudiandae.</p>
+                <p>The <b>Capstone Project Manager</b> for TELEHEALTH ACCESS: An Online Consultation and Appointment
+                    System
+                    with Predictive Analytics leads the team to successfully complete the project from start to finish.
+                    They guide a group of students working together to create a web-based telehealth system for online
+                    doctor visits, appointment booking, and smart analytics to improve healthcare services.</p>
             </div>
         </div>
         <div class="member">
             <img src="../img/images/user-profile.png" alt="img">
             <div class="member-info">
                 <h1>Ailyn Mentos</h1>
-                <p>Role</p>
+                <p>Role/Researcher</p>
                 <br>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea inventore voluptatum tempora aliquam
                     cum, ipsum animi, velit dicta excepturi eos reprehenderit molestiae ratione. Quidem quod, odio odit
@@ -49,7 +51,7 @@
             <img src="../img/images/user-profile.png" alt="img">
             <div class="member-info">
                 <h1>Angel Grace Concha</h1>
-                <p>Role</p>
+                <p>Role/Researcher</p>
                 <br>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea inventore voluptatum tempora aliquam
                     cum, ipsum animi, velit dicta excepturi eos reprehenderit molestiae ratione. Quidem quod, odio odit
@@ -60,11 +62,13 @@
             <img src="../img/images/user-profile.png" alt="img">
             <div class="member-info">
                 <h1>Richard Dumael Awayan Jr.</h1>
-                <p>Role</p>
+                <p>Full-Stack Developer/Researcher</p>
                 <br>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea inventore voluptatum tempora aliquam
-                    cum, ipsum animi, velit dicta excepturi eos reprehenderit molestiae ratione. Quidem quod, odio odit
-                    veniam necessitatibus repudiandae.</p>
+                <p>The <b>Capstone Full-Stack Developer</b> for TELEHEALTH ACCESS: An Online Consultation and
+                    Appointment
+                    System with Predictive Analytics builds and connects the website’s front-end and
+                    back-end. They create an easy-to-use telehealth system for online
+                    doctor visits, appointment booking, and smart analytics to improve healthcare services.</p>
             </div>
         </div>
     </div>

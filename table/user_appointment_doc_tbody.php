@@ -1,4 +1,4 @@
-<tr>
+<tr class="appointment_tr">
   <td>
     <ul class="view-appt">
       <li>
@@ -6,19 +6,20 @@
         <p><?php echo $_SESSION['conEmail'] ?></p>
       </li>
 
-
-      <!-- visibility -->
+      <!-- visibility action -->
       <li class="view-appt">
         <?php
         $docName = "Dr. " . $_SESSION['docFname'] . " " . $_SESSION['docMname'] . " " . $_SESSION['docLname'] . " " . $_SESSION['docSuffix'];
 
         if ($_SESSION['conSelectedDoc'] === $docName) { ?>
+          <!-- visible -->
           <a href="../public/view_appointment_doc.php?conID=<?php echo $row['conID'] ?>" class="appt-visibility">
             <span class="material-symbols-outlined">visibility</span>
             <p>View</p>
           </a>
           <?php
         } else { ?>
+          <!-- locked -->
           <a href="../public/appointment_doc.php?locked" class="appt-visibility">
             <span class="material-symbols-outlined">visibility_lock</span>
             <p>Locked</p>
@@ -26,12 +27,12 @@
         <?php } ?>
       </li>
 
-      <!-- closed appointment -->
+      <!-- closed action -->
       <li>
         <?php if ($_SESSION['conSelectedDoc'] === $docName) { ?>
-          <a href="#" class="appt-visibility">
+          <a href="../public/closed_appointment.php" class="appt-visibility">
             <span class="material-symbols-outlined">check</span>
-            <p>closed</p>
+            <p>Close</p>
           </a>
           <?php
         } else {

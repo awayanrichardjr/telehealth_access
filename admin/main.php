@@ -39,12 +39,11 @@
                                 Predictive Analytics
                             </a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a href="../public/monthly_analytics.php">
-                                <!-- <span class="material-symbols-outlined">clinical_notes</span> -->
                                 Mothly Analytics
                             </a>
-                        </li>
+                        </li> -->
                     </ul>
                 </li>
 
@@ -94,7 +93,7 @@
                 <!-- settings  -->
                 <li>
                     <a href="../public/settings_admin.php">
-                        <span class="material-symbols-outlined">settings</span>
+                        <span class="material-symbols-outlined">admin_panel_settings</span>
                         <p>Settings</p>
                     </a>
                 </li>

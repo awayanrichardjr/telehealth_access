@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit();
     } else {
 
-        $sql = "INSERT INTO doctor (docFname, docMname, docLname, docSuffix, docAddress, docBdate, docContact, docSpecialty, docStatus, docEmail, docPass, docConfirm) VALUES ('$doFnamev','$docMname','$docLname','$docSuffix','$docAddress','$docBdate','$docContact','$docSpecialty','$docStatus','$docEmail','$docPass','$docConfirm')";
+        $sql = "INSERT INTO doctor (docFname, docMname, docLname, docSuffix, docAddress, docBdate, docContact, docSpecialty, docStatus, docEmail, docPass, docConfirm) VALUES ('$doFname','$docMname','$docLname','$docSuffix','$docAddress','$docBdate','$docContact','$docSpecialty','$docStatus','$docEmail','$docPass','$docConfirm')";
 
         if ($conn->query($sql) === TRUE) {
             header("location: log_doc.php");

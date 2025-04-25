@@ -8,12 +8,12 @@
                 <?php echo $_SESSION['docID'] ?>
             </a>
         </li>
-        <li>
+        <!-- <li>
             <a href="#">
                 <span class="material-symbols-outlined">dashboard</span>
                 Dashboard
             </a>
-        </li>
+        </li> -->
         <li>
             <a href="../public/delete_acc_doc.php?docID=<?php echo $_SESSION['docID'] ?>">
                 <span class="material-symbols-outlined">delete</span>

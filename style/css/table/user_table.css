@@ -48,11 +48,12 @@
     white-space: nowrap;
 }
 
-.user_table :where(a p) {
+/* label */
+.appointment_tr :where(a p) {
     display: none;
 }
 
-.user_table :where(a:hover p) {
+.appointment_tr :where(a:hover p) {
     display: block;
     margin-top: unset;
     padding: 0.5rem;
