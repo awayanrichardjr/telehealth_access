@@ -1,9 +1,11 @@
-<section class="user_medical">
-    <h1>Medical History</h1>
-    <table>
-        <thead></thead>
-        <tbody>
+<section class="user_table appointment">
+    <h1>Medical Records</h1>
+    <div>
+        <table>
+            <thead></thead>
+            <tbody>
 
-            <!-- </tbody>
-        </table>
+                <!-- </tbody>
+            </table>
+        </div>
 </section> -->

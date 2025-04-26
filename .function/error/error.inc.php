@@ -216,7 +216,63 @@ function error_consult_doc(
     }
     // qrbqwobsajdcnqaiwofhbqiwd
 }
+function error_medical_doc(
+    $medName,
+    $medAddress,
+    $medBdate,
+    $medContact,
+    $medEmail,
+    $medSelectedDoc,
+    $medDocSpecialty,
+    $medADateTime,
+    $medDiagnose,
+    $medConcern
+) {
+    // consult
+    if (empty($medName)) {
+        header("location: ../public/close_action_form.php?medNameErr= empty field");
+        exit();
+    }
+    if (empty($medAddress)) {
+        header("location: ../public/close_action_form.php?medAddressErr= empty field");
+        exit();
+    }
+    if (empty($medBdate)) {
+        header("location: ../public/close_action_form.php?medBdateErr= empty field");
+        exit();
+    }
+    if (empty($medContact)) {
+        header("location: ../public/close_action_form.php?medContactErr= empty field");
+        exit();
+    }
+    if (empty($medEmail)) {
+        header("location: ../public/close_action_form.php?medEmailErr= empty field");
+        exit();
+    }
+    if (empty($medSelectedDoc)) {
+        header("location: ../public/close_action_form.php?medSelectedDocErr= empty field");
+        exit();
+    }
+    if (empty($medDocSpecialty)) {
+        header("location: ../public/close_action_form.php?medDocSpecialtyErr= empty field");
+        exit();
+    }
 
+    // date time
+    if (empty($medADateTime)) {
+        header("location: ../public/close_action_form.php?medADateTimeErr= empty field");
+        exit();
+    }
+    if (empty($medDiagnose)) {
+        header("location: ../public/close_action_form.php?medDiagnoseErr= empty field");
+        exit();
+    }
+    if (empty($medConcern)) {
+        header("location: ../public/close_action_form.php?medConcernErr= empty field");
+        exit();
+    }
+    // qrbqwobsajdcnqaiwofhbqiwd
+}
 function error_edit_doc(
     $docFname,
     $docMname,

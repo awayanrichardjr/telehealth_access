@@ -18,13 +18,12 @@ if (empty($_SESSION['docEmail']) || empty($_SESSION['docPass'])) {
         // output data of each row
         while ($row = $result->fetch_assoc()) {
 
-            $_SESSION['medID'] = $row['medID'];
-            $_SESSION['medName'] = $row['medName'];
+            // session here... 
 
             include '../table/user_medical_tbody.php';
         }
     } else {
-        echo "No consultation Records";
+        echo "No Medical Records";
     }
     $conn->close();
 }

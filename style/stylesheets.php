@@ -34,6 +34,7 @@
 <link rel="stylesheet" href="../style/css/user/doctor/messages.css">
 <link rel="stylesheet" href="../style/css/user/doctor/profile.css">
 <link rel="stylesheet" href="../style/css/user/doctor/settings.css">
+<link rel="stylesheet" href="../style/css/user/doctor/medical.css">
 
 <!-- user  -->
 <link rel="stylesheet" href="../style/css/user/about.css">
