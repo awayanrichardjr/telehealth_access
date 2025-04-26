@@ -1,2 +1,9 @@
-<section class="user_table">
-    <h1>Manage Medical Records</h1>
+<section class="user_medical">
+    <h1>Medical History</h1>
+    <table>
+        <thead></thead>
+        <tbody>
+
+            <!-- </tbody>
+        </table>
+</section> -->

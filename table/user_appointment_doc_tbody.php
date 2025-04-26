@@ -30,7 +30,7 @@
       <!-- closed action -->
       <li>
         <?php if ($_SESSION['conSelectedDoc'] === $docName) { ?>
-          <a href="../public/closed_appointment.php" class="appt-visibility">
+          <a href="../public/close_appointment.php" class="appt-visibility">
             <span class="material-symbols-outlined">check</span>
             <p>Close</p>
           </a>
