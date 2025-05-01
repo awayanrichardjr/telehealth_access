@@ -2,36 +2,43 @@
 Ob_start();
 session_start();
 
-include '../user/index.php';
-include '../doctor/main.php';
-include '../doctor/appointment_nav.php';
-
 // patient
 if (empty($_SESSION['docEmail']) && empty($_SESSION['docPass'])) {
     header("location: ../public/logout_doc.php");
     exit();
 } else {
+    include '../user/index.php';
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-        // post here... 
+        $medName = ucwords($_POST['medName']);
+        $medAddress = ucwords($_POST['medAddress']);
+        $medBdate = $_POST['medBdate'];
+        $medContact = $_POST['medContact'];
+        $medEmail = validate($_POST['medEmail']);
+        $medSelectedDoc = $_POST['medSelectedDoc'];
+        $medDocSpecialty = $_POST['medDocSpecialty'];
+        $medDiagnose = $_POST['medDiagnose'];
+        $medConcern = $_POST['medConcern'];
+        $medCdate = $_POST['medCdate'];
+        $medADateTime = $_POST['medADateTime'];
 
-        $sql = "INSERT INTO medical () VALUES ()";
+        error_medical_doc($medName, $medAddress, $medBdate, $medContact, $medEmail, $medSelectedDoc, $medDocSpecialty, $medADateTime, $medDiagnose, $medConcern);
+
+        $sql = "INSERT INTO medical (medName, medAddress, medBdate, medContact, medEmail, medSelectedDoc, medDocSpecialty, medDiagnose, medConcern, medCdate, medADateTime) VALUES ('$medName','$medAddress','$medBdate','$medContact','$medEmail','$medSelectedDoc','$medDocSpecialty','$medDiagnose','$medConcern','$medCdate','$medADateTime')";
 
         if ($conn->query($sql) === TRUE) {
-            // header here... 
-            header("location: ../public/appointment_doc.php");
+            header("location: appointment_profile_doc.php");
             exit();
         } else {
-            // header here... 
-            header("location: ../public/appointment_doc.php");
-            exit();
+            // echo "Error: " . $sql . "<br>" . $conn->error;
+            header("location: appointment_doc.php?error");
+            // exit();
         }
-        // $conn->close();
+        $conn->close();
     }
-
-    // close action form 
+    include '../doctor/main.php';
+    include '../doctor/appointment_nav.php';
     include '../form/close_action_form.php';
-
 }
 Ob_end_flush();
