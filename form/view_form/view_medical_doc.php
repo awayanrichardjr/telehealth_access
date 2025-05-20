@@ -68,7 +68,7 @@
                     <p><?php echo $_SESSION['medCdate'] ?></p>
                 </li>
                 <li>
-                    <label for="medADateTime">Appointment Date/Time:</label>
+                    <label for="medADateTime">Closed Appointment Date/Time:</label>
                     <p><?php echo $_SESSION['medADateTime'] ?></p>
                 </li>
             </div>

@@ -12,7 +12,8 @@ if (empty($_SESSION['docEmail']) || empty($_SESSION['docPass'])) {
     include '../table/user_appointment_doc_thead.php';
 
     $conSelectedDoc = "Dr. " . $_SESSION['docFname'] . " " . $_SESSION['docMname'] . " " . $_SESSION['docLname'] . " " . $_SESSION['docSuffix'];
-    $sql = "SELECT * FROM consult WHERE conSelectedDoc='$conSelectedDoc'";
+
+    $sql = "SELECT * FROM consult WHERE conSelectedDoc='$conSelectedDoc' ORDER BY conADateTime DESC";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {

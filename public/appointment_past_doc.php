@@ -11,7 +11,7 @@ if (empty($_SESSION['docEmail']) || empty($_SESSION['docPass'])) {
     include '../doctor/appointment_nav.php';
     include '../table/user_appointment_past_thead.php';
 
-    $sql = "SELECT * FROM medical ORDER BY medCdate";
+    $sql = "SELECT * FROM medical ORDER BY medADateTime DESC";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {

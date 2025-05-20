@@ -10,14 +10,9 @@
   </td>
   <td><?php echo $_SESSION['medID'] ?></td>
   <td><?php echo $_SESSION['medName'] ?></td>
-  <td><?php echo $_SESSION['medAddress'] ?></td>
-  <td><?php echo $_SESSION['medBdate'] ?></td>
+  <td><?php echo $_SESSION['medEmail'] ?></td>
   <td><?php echo $_SESSION['medSelectedDoc'] ?></td>
   <td><?php echo $_SESSION['medDocSpecialty'] ?></td>
-  <td><?php echo $_SESSION['medDiagnose'] ?></td>
-  <td><?php echo $_SESSION['medConcern'] ?></td>
-  <td><?php echo $_SESSION['medEmail'] ?></td>
-  <td><?php echo $_SESSION['medContact'] ?></td>
   <td><?php echo $_SESSION['medCdate'] ?></td>
   <td><?php echo $_SESSION['medADateTime'] ?></td>
 </tr>

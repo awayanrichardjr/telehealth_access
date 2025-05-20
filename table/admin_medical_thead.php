@@ -7,16 +7,11 @@
                     <th>ACTION</th>
                     <th>ID</th>
                     <th>Name</th>
-                    <th>-</th>
-                    <th>-</th>
-                    <th>-</th>
-                    <th>-</th>
-                    <th>-</th>
-                    <th>-</th>
-                    <th>-</th>
-                    <th>-</th>
-                    <th>-</th>
-                    <th>-</th>
+                    <th>E-mail</th>
+                    <th>Doctor</th>
+                    <th>Doc' Specialty</th>
+                    <th>Created Date</th>
+                    <th>Closed Date</th>
                 </tr>
             </thead>
             <tbody>

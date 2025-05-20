@@ -32,7 +32,7 @@ if (empty($_SESSION['docEmail']) && empty($_SESSION['docPass'])) {
             exit();
         } else {
             // echo "Error: " . $sql . "<br>" . $conn->error;
-            header("location: appointment_doc.php?error");
+            header("location: appointment_profile_doc.php?error");
             // exit();
         }
         $conn->close();
