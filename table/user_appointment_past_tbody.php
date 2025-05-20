@@ -13,11 +13,11 @@
 
         if ($_SESSION['medSelectedDoc'] === $docName) { ?>
           <!-- visible -->
-          <a href="../public/view_appointment_doc.php?medID=<?php echo $row['medID'] ?>" class="appt-visibility">
+          <a href="../public/view_medical_doc.php?medID=<?php echo $row['medID'] ?>" class="appt-visibility">
             <span class="material-symbols-outlined">visibility</span>
             <p>View</p>
           </a>
-          <?php
+        <?php
         } else { ?>
           <!-- locked -->
           <a href="../public/appointment_past_doc.php?locked" class="appt-visibility">
@@ -26,7 +26,6 @@
           </a>
         <?php } ?>
       </li>
-
     </ul>
 
     <br>

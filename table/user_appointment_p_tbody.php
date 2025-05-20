@@ -13,7 +13,7 @@
             <span class="material-symbols-outlined">visibility</span>
             <p>View</p>
           </a>
-          <?php
+        <?php
         } else { ?>
           <a href="../public/appointment_p.php?locked" class="appt-visibility">
             <span class="material-symbols-outlined">visibility_lock</span>
@@ -29,7 +29,7 @@
             <span class="material-symbols-outlined">cancel</span>
             <p>Cancel</p>
           </a>
-          <?php
+        <?php
         } else {
         } ?>
       </li>

@@ -14,9 +14,9 @@
         <input type="text" name="medEmail" id="medEmail" value="<?php echo $_SESSION['conEmail'] ?>" readonly>
         <input type="text" name="medContact" id="medContact" value="<?php echo $_SESSION['conContact'] ?>" readonly>
         <input type="datetime" name="medCdate" id="medCdate" value="<?php echo $_SESSION['conCdate'] ?>" readonly>
-        <input type="text" name="medADateTime" id="medADateTime" value="<?php echo $_SESSION['conADateTime'] ?>"
-            readonly>
-
+        <input type="text" name="medADateTime" id="medADateTime" value="<?php
+                                                                        date_default_timezone_set("Asia/Manila");
+                                                                        echo date("M d, Y h:ia") ?>" readonly>
         <!-- confirm btn -->
         <input type="submit" name="submit" id="submit" value="Confirm">
     </form>
