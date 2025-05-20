@@ -96,3 +96,44 @@
 .view_appointment_doc :where(label) {
     color: var(--text-color);
 }
+
+/* close appt. btn  */
+.view_appointment_doc :where(.appt-visibility) {
+    color: rgb(0, 0, 0);
+}
+
+.view_appointment_doc :where(.appt-visibility:hover) {
+    color: rgb(255, 255, 255);
+}
+
+/* label */
+.view_appointment_doc :where(.paper) .view-appt {
+    background-color: rgba(0, 0, 0, 0.500);
+
+    position: absolute;
+    z-index: 1000;
+
+    height: 70px;
+    width: inherit;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.view_appointment_doc :where(.view-appt) p {
+    display: none;
+}
+
+.view_appointment_doc :where(.view-appt:hover) p {
+    display: block;
+    margin-top: 50px;
+    padding: 0.5rem;
+    border-radius: var(--card-border);
+
+    background-color: rgba(0, 0, 0, 0.500);
+    color: var(--primary-color);
+    font-size: 10px;
+
+    position: absolute;
+}

@@ -17,7 +17,7 @@
             <span class="material-symbols-outlined">visibility</span>
             <p>View</p>
           </a>
-          <?php
+        <?php
         } else { ?>
           <!-- locked -->
           <a href="../public/appointment_doc.php?locked" class="appt-visibility">
@@ -26,19 +26,6 @@
           </a>
         <?php } ?>
       </li>
-
-      <!-- closed action -->
-      <li>
-        <?php if ($_SESSION['conSelectedDoc'] === $docName) { ?>
-          <a href="../public/close_appointment.php?conID=<?php echo $row['conID'] ?>" class="appt-visibility">
-            <span class="material-symbols-outlined">check</span>
-            <p>Close</p>
-          </a>
-          <?php
-        } else {
-        } ?>
-      </li>
-
     </ul>
 
     <br>
