@@ -19,6 +19,16 @@ if (empty($_SESSION['adminEmail']) || empty($_SESSION['adminPass'])) {
 
             $_SESSION['medID'] = $row['medID'];
             $_SESSION['medName'] = $row['medName'];
+            $_SESSION['medAddress'] = $row['medAddress'];
+            $_SESSION['medBdate'] = $row['medBdate'];
+            $_SESSION['medSelectedDoc'] = $row['medSelectedDoc'];
+            $_SESSION['medDocSpecialty'] = $row['medDocSpecialty'];
+            $_SESSION['medDiagnose'] = $row['medDiagnose'];
+            $_SESSION['medConcern'] = $row['medConcern'];
+            $_SESSION['medEmail'] = $row['medEmail'];
+            $_SESSION['medContact'] = $row['medContact'];
+            $_SESSION['medCdate'] = $row['medCdate'];
+            $_SESSION['medADateTime'] = $row['medADateTime'];
 
             include '../table/admin_medical_tbody.php';
         }
