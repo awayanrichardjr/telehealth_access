@@ -23,7 +23,7 @@ if (empty($_SESSION['pEmail']) && empty($_SESSION['pPass'])) {
         $conCdate = $_POST['conCdate'];
         $conADateTime = $_POST['conADateTime'];
 
-        error_consult_doc($conName, $conAddress, $conBdate, $conContact, $conEmail, $conSelectedDoc, $conDocSpecialty, $conADateTime, $conDiagnose, $conConcern);
+        // error_consult_doc($conName, $conAddress, $conBdate, $conContact, $conEmail, $conSelectedDoc, $conDocSpecialty, $conADateTime, $conDiagnose, $conConcern);
 
         $sql = "INSERT INTO consult (conName, conAddress, conBdate, conContact, conEmail, conSelectedDoc, conDocSpecialty, conDiagnose, conConcern, conCdate, conADateTime) VALUES ('$conName','$conAddress','$conBdate','$conContact','$conEmail','$conSelectedDoc','$conDocSpecialty','$conDiagnose','$conConcern','$conCdate','$conADateTime')";
 
