@@ -1,7 +1,6 @@
-<tbody>
-    <tr>
-        <td>
-            <p class=""><?php echo $_SESSION[''] ?></p>
-        </td>
-    </tr>
-</tbody>
+<tr>
+    <td>
+        <p class=""><?php echo $_SESSION['chat_msg'] ?></p>
+    </td>
+</tr>
+<!-- </tbody> -->

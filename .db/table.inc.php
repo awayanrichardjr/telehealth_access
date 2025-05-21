@@ -7,3 +7,4 @@ include '../.db/table/consult.php';
 include '../.db/table/feed.php';
 include '../.db/table/chat.php';
 include '../.db/table/medical.php';
+// include '../.db/table/payment.php';

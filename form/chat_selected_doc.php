@@ -23,11 +23,12 @@
         <!-- conversation -->
         <div class="convo">
             <!-- table here... -->
+            <?php include '../public/chat_convo_doc.php' ?>
         </div>
 
         <!-- type messages here... -->
         <div class="chat-textarea">
-            <input type="text" name="pChat" id="pChat" placeholder="Type messages...">
+            <input type="text" name="chat_msg" id="chat_msg" placeholder="Type messages...">
             <input type="submit" name="submit" id="submit" value="Send">
         </div>
     </form>

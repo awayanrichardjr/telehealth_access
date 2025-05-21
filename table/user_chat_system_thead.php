@@ -1,10 +1,10 @@
-<section class="chat-system">
+<section class="">
     <table>
         <thead>
             <tr>
                 <th></th>
             </tr>
         </thead>
-
-        <!-- </table>
+        <tbody>
+            <!-- </table>
 </section> -->
