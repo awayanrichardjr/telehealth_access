@@ -20,6 +20,6 @@
                 <p style="color: var(--blue);">Recomended</p>
             </li>
         </ul>
-        <p>You can complete your payment securely through our platform.</p>
+        <p>You can complete your payment securely through our platform!</p>
     </form>
 </section>
