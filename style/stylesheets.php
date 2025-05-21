@@ -52,6 +52,7 @@
 <link rel="stylesheet" href="../style/css/form/chat_selected_doc.css">
 <link rel="stylesheet" href="../style/css/form/view_appointment_p.css">
 <link rel="stylesheet" href="../style/css/form/view_appointment_doc.css">
+<link rel="stylesheet" href="../style/css/form/payment.css">
 
 <!-- table  -->
 <link rel="stylesheet" href="../style/css/table/table.css">

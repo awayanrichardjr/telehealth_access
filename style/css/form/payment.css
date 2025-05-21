@@ -1,0 +1,39 @@
+.payment {
+    padding: 0.5rem;
+
+}
+
+.payment :where(ul) {
+    padding: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.payment :where(ul) img {
+    width: 200px;
+
+    padding: 1rem 2rem;
+    background-color: var(--primary-color);
+    border-radius: var(--card-border-thin);
+    box-shadow: var(--shadow);
+}
+
+.payment :where(ul) img:hover {
+    background-color: rgba(0, 0, 0, 0.100);
+}
+
+.payment :where(ul) img:active {
+    background-color: rgba(0, 0, 0, 0.200);
+}
+
+.payment :where(h1) {
+    color: var(--blue);
+}
+
+.payment :where(p) {
+    font-size: 10px;
+    color: grey;
+}
