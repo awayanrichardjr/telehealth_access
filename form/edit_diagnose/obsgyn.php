@@ -1,9 +1,9 @@
-<label for="conDiagnose">Compliant *
+<label for="medDiagnose">Compliant *
     <span class="error">
-        <?php if (isset($_GET['conDiagnoseErr'])) {
-            echo $conDiagnoseError = $_GET['conDiagnoseErr'];
+        <?php if (isset($_GET['medDiagnoseErr'])) {
+            echo $medDiagnoseError = $_GET['medDiagnoseErr'];
         } ?>
     </span>
 </label>
 
-<textarea name="conDiagnose" id="conDiagnose"><?php echo $row['conDiagnose'] ?></textarea>
+<textarea name="medDiagnose" id="medDiagnose"><?php echo $row['medDiagnose'] ?></textarea>
