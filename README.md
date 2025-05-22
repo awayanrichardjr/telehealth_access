@@ -16,7 +16,7 @@
     d. To allow secure online payments for consultations.
     e. To enable doctors to access and view patients’ medical records securely.
     f. To implement a verification process that ensures only certified and licensed medical professionals can provide consultations through the system.
-    g. To identify and address the barriers in implementing telehealth systems.
+    g. To guide users on how to navigate the telehealth system.
 
 ## DATABASE
 

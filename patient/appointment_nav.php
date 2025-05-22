@@ -14,8 +14,8 @@
         </li>
         <li>
             <a href="../public/appointment_past_p.php">
-                <span class="material-symbols-outlined">history</span>
-                <p>Appointment History</p>
+                <span class="material-symbols-outlined">medical_information</span>
+                <p>Medical Records</p>
             </a>
         </li>
     </ul>
