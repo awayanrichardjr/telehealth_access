@@ -12,6 +12,7 @@
         <input type="hidden" name="medDiagnose" id="medDiagnose" value="<?php echo $_SESSION['conDiagnose'] ?>" readonly>
         <input type="hidden" name="medConcern" id="medConcern" value="<?php echo $_SESSION['conConcern'] ?>" readonly>
         <input type="hidden" name="medUsername" id="medUsername" value="<?php echo $_SESSION['conUsername'] ?>" readonly>
+        <input type="hidden" name="medEmail" id="medEmail" value="<?php echo $_SESSION['conEmail'] ?>" readonly>
         <input type="hidden" name="medContact" id="medContact" value="<?php echo $_SESSION['conContact'] ?>" readonly>
         <input type="hidden" name="medCdate" id="medCdate" value="<?php echo $_SESSION['conCdate'] ?>" readonly>
         <input type="hidden" name="medADateTime" id="medADateTime" value="<?php

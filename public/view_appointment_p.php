@@ -29,6 +29,7 @@ if (empty($_SESSION['pUsername']) || empty($_SESSION['pPass'])) {
             $_SESSION['conDiagnose'] = $row['conDiagnose'];
             $_SESSION['conConcern'] = $row['conConcern'];
             $_SESSION['conUsername'] = $row['conUsername'];
+            $_SESSION['conEmail'] = $row['conEmail'];
             $_SESSION['conContact'] = $row['conContact'];
             $_SESSION['conCdate'] = $row['conCdate'];
             $_SESSION['conADateTime'] = $row['conADateTime'];

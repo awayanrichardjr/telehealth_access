@@ -38,9 +38,15 @@
                         <label for="conUsername">Username:</label>
                         <p><?php echo $_SESSION['conUsername'] ?></p>
                     </li>
+                </div>
+                <div class="details">
                     <li>
                         <label for="conContact">Contact Number:</label>
                         <p><?php echo $_SESSION['conContact'] ?></p>
+                    </li>
+                    <li>
+                        <label for="conEmail">Email Address:</label>
+                        <p><?php echo $_SESSION['conEmail'] ?></p>
                     </li>
                 </div>
             </div>

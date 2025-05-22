@@ -16,6 +16,7 @@ if (empty($_SESSION['pUsername']) && empty($_SESSION['pPass'])) {
         $conBdate = $_POST['conBdate'];
         $conContact = $_POST['conContact'];
         $conUsername = validate($_POST['conUsername']);
+        $conEmail = validate($_POST['conEmail']);
         $conSelectedDoc = $_POST['conSelectedDoc'];
         $conDocSpecialty = $_POST['conDocSpecialty'];
         $conDiagnose = $_POST['conDiagnose'];
@@ -23,9 +24,9 @@ if (empty($_SESSION['pUsername']) && empty($_SESSION['pPass'])) {
         $conCdate = $_POST['conCdate'];
         $conADateTime = $_POST['conADateTime'];
 
-        error_consult_doc($conName, $conAddress, $conBdate, $conContact, $conUsername, $conSelectedDoc, $conDocSpecialty, $conADateTime, $conDiagnose);
+        error_consult_doc($conName, $conAddress, $conBdate, $conContact, $conEmail, $conUsername, $conSelectedDoc, $conDocSpecialty, $conADateTime, $conDiagnose);
 
-        $sql = "INSERT INTO consult (conName, conAddress, conBdate, conContact, conUsername, conSelectedDoc, conDocSpecialty, conDiagnose, conConcern, conCdate, conADateTime) VALUES ('$conName','$conAddress','$conBdate','$conContact','$conUsername','$conSelectedDoc','$conDocSpecialty','$conDiagnose','$conConcern','$conCdate','$conADateTime')";
+        $sql = "INSERT INTO consult (conName, conAddress, conBdate, conContact, conUsername, conEmail, conSelectedDoc, conDocSpecialty, conDiagnose, conConcern, conCdate, conADateTime) VALUES ('$conName','$conAddress','$conBdate','$conContact','$conUsername','$conEmail','$conSelectedDoc','$conDocSpecialty','$conDiagnose','$conConcern','$conCdate','$conADateTime')";
 
         if ($conn->query($sql) === TRUE) {
             header("location: pay_selected_doc.php");

@@ -31,12 +31,6 @@
                 </a>
             </li>
             <li>
-                <a href="../public/../public/messages_p.php">
-                    <span class="material-symbols-outlined">chat</span>
-                    <p>Messages</p>
-                </a>
-            </li>
-            <li>
                 <a href="../public/settings_p.php">
                     <span class="material-symbols-outlined">settings</span>
                     <p>Settings</p>

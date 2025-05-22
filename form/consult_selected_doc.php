@@ -21,6 +21,16 @@
         </label>
         <input type="text" name="conAddress" id="conAddress" value="<?php echo $_SESSION['pAddress'] ?>">
 
+        <!-- email  -->
+        <label for="conEmail">Email Address *
+            <span class="error">
+                <?php if (isset($_GET['conEmailErr'])) {
+                    echo $conEmailError = $_GET['conEmailErr'];
+                } ?>
+            </span>
+        </label>
+        <input type="email" name="conEmail" id="conEmail" placeholder="Provide E-mail Address">
+
         <section class="details">
             <div>
                 <label for="conBdate">Patient Birthdate *
@@ -43,6 +53,8 @@
                 <input type="text" name="conContact" id="conContact" value="<?php echo $_SESSION['pContact'] ?>">
             </div>
         </section>
+
+        <!-- username  -->
         <label for="conUsername">Username *
             <span class="error">
                 <?php if (isset($_GET['conUsernameErr'])) {

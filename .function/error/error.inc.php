@@ -164,6 +164,7 @@ function error_consult_doc(
     $conAddress,
     $conBdate,
     $conContact,
+    $conEmail,
     $conUsername,
     $conSelectedDoc,
     $conDocSpecialty,
@@ -177,6 +178,10 @@ function error_consult_doc(
     }
     if (empty($conAddress)) {
         header("location: ../public/consult_selected_doc.php?conAddressErr= empty field");
+        exit();
+    }
+    if (empty($conEmail)) {
+        header("location: ../public/consult_selected_doc.php?conEmailErr= empty field");
         exit();
     }
     if (empty($conBdate)) {

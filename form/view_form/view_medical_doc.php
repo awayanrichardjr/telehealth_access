@@ -32,9 +32,15 @@
                         <label for="medUsername">Username:</label>
                         <p><?php echo $_SESSION['medUsername'] ?></p>
                     </li>
+                </div>
+                <div class="details">
                     <li>
-                        <label for="medContact">Contact Number:</label>
+                        <label for="conContact">Contact Number:</label>
                         <p><?php echo $_SESSION['medContact'] ?></p>
+                    </li>
+                    <li>
+                        <label for="conEmail">Email Address:</label>
+                        <p><?php echo $_SESSION['medEmail'] ?></p>
                     </li>
                 </div>
             </div>

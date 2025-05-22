@@ -9,6 +9,7 @@ $sql = "CREATE TABLE consult (
     conDiagnose VARCHAR(255) NOT NULL,
     conConcern VARCHAR(255) NOT NULL,
     conUsername VARCHAR(255) NOT NULL,
+    conEmail VARCHAR(255) NOT NULL,
     conContact VARCHAR(255) NOT NULL,
     conCdate VARCHAR(255) NOT NULL,
     conADateTime DATETIME NOT NULL
