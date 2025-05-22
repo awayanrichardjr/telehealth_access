@@ -1,6 +1,6 @@
 <?php
 session_start();
-if (empty($_SESSION['adminEmail']) || empty($_SESSION['adminPass'])) {
+if (empty($_SESSION['adminUsername']) || empty($_SESSION['adminPass'])) {
     header("location: ../public/logout_admin.php");
 } else {
     include '../admin/index.php';
@@ -24,7 +24,7 @@ if (empty($_SESSION['adminEmail']) || empty($_SESSION['adminPass'])) {
             $_SESSION['docStatus'] = $row['docStatus'];
             $_SESSION['docBdate'] = $row['docBdate'];
             $_SESSION['docContact'] = $row['docContact'];
-            $_SESSION['docEmail'] = $row['docEmail'];
+            $_SESSION['docUsername'] = $row['docUsername'];
             $_SESSION['docCdate'] = $row['docCdate'];
             $_SESSION['docModified'] = $row['docModified'];
 

@@ -50,12 +50,6 @@
             <input type="file" name="docQualify" id="docQualify" required>
         </div>
 
-        <!-- Google space link -->
-        <div>
-            <label for="doc_space">Google space link *</label>
-            <input type="url" name="doc_space" id="doc_space" placeholder="Provide Google Space Link..." required>
-        </div>
-
         <!-- ID -->
         <section class=" details">
             <div>
@@ -67,6 +61,12 @@
                 <input type="file" name="docIDback" id="docIDback" required>
             </div>
         </section>
+
+        <!-- Google space link -->
+        <div>
+            <label for="doc_space">Google space link *</label>
+            <input type="url" name="doc_space" id="doc_space" placeholder="Provide Google Space Link..." required>
+        </div>
 
         <!-- submit btn  -->
         <input type="submit" name="submit" id="submit" value="Submit">

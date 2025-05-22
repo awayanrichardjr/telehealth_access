@@ -19,6 +19,7 @@ if (empty($_SESSION['adminUsername']) || empty($_SESSION['adminPass'])) {
         $docSpecialty = $_REQUEST['docSpecialty'];
         $docUsername = $_REQUEST['docUsername'];
         $docModified = $_REQUEST['docModified'];
+        $doc_space = $_REQUEST['doc_space'];
 
         if (isset($_POST['docVerify'])) {
             $docStatus = "Verified";
@@ -34,7 +35,7 @@ if (empty($_SESSION['adminUsername']) || empty($_SESSION['adminPass'])) {
         $docSuffixv = toupper1stchar($docSuffix);
         $docAddressv = toupper1stchar($docAddress);
 
-        $sql = "UPDATE doctor SET docFname = '$docFnamev', docMname = '$docMnamev', docLname = '$docLnamev', docSuffix = '$docSuffixv', docAddress = '$docAddressv', docBdate = '$docBdate', docContact = '$docContact', docSpecialty = '$docSpecialty', docUsername = '$docUsername', docModified = '$docModified', docStatus = '$docStatus' WHERE docID = '$docID'";
+        $sql = "UPDATE doctor SET docFname = '$docFnamev', docMname = '$docMnamev', docLname = '$docLnamev', docSuffix = '$docSuffixv', docAddress = '$docAddressv', docBdate = '$docBdate', docContact = '$docContact', docSpecialty = '$docSpecialty', docUsername = '$docUsername', docModified = '$docModified', docStatus = '$docStatus', doc_space = '$doc_space' WHERE docID = '$docID'";
 
         if ($conn->query($sql) === TRUE) {
             header("location: ../public/records_doc.php");

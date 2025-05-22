@@ -119,6 +119,17 @@
             <input type="text" name="docUsername" id="docUsername" value="<?php echo $row['docUsername'] ?>">
         </div>
 
+        <!-- Google space link  -->
+        <div>
+            <label for="doc_space">Google space link</label>
+            <span class="error">
+                <?php if (isset($_GET['doc_spaceErr'])) {
+                    echo $doc_spaceErr = $_GET['doc_spaceErr'];
+                } ?>
+            </span>
+            <input type="url" name="doc_space" id="doc_space" value="<?php echo $row['doc_space'] ?>">
+        </div>
+
         <!-- SAVE btn -->
         <input type="submit" name="docSave" id="submit" value="Save">
 

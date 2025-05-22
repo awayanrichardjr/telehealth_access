@@ -65,7 +65,8 @@ function error_reg_doc(
     $docContact,
     $docUsername,
     $docPass,
-    $docConfirm
+    $docConfirm,
+    $doc_space
 ) {
     // doc
     if (empty($docFname)) {
@@ -110,6 +111,10 @@ function error_reg_doc(
     }
     if (empty($docConfirm)) {
         header("location: ../public/reg_doc.php?docConfirmErr= empty field");
+        exit();
+    }
+    if (empty($doc_space)) {
+        header("location: ../public/reg_doc.php?doc_spaceErr= empty field");
         exit();
     }
 }
