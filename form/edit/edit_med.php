@@ -21,18 +21,27 @@
                 <input type="text" name="medContact" id="medContact" value="<?php echo $row['medContact'] ?>">
 
             </div>
+        </section>
+
+        <!-- username ad email -->
+        <section class="details">
             <div>
                 <label for="medUsername">Patient Username *</label>
                 <input type="text" name="medUsername" id="medUsername" value="<?php echo $row['medUsername'] ?>">
-
+            </div>
+            <div>
+                <label for="medEmail">Patient Username *</label>
+                <input type="text" name="medEmail" id="medEmail" value="<?php echo $row['medEmail'] ?>">
             </div>
         </section>
 
-        <!-- personal doctor  -->
-        <label for="medSelectedDoc">Patient's Personal Doctor *</label>
-        <input type="text" name="medSelectedDoc" id="medSelectedDoc" value="<?php echo $row['medSelectedDoc'] ?>">
-
         <section class="details">
+            <div>
+                <!-- personal doctor  -->
+                <label for="medSelectedDoc">Patient's Personal Doctor *</label>
+                <input type="text" name="medSelectedDoc" id="medSelectedDoc" value="<?php echo $row['medSelectedDoc'] ?>">
+
+            </div>
             <!-- specialists  -->
             <div>
                 <label for="medDocSpecialty">Doctor's Specialist *</label>
@@ -63,18 +72,25 @@
                     <option value="Surgeon">Surgeon</option>
                 </select>
             </div>
-            <div>
-                <?php include '../form/edit_diagnose/derma.php' ?>
-            </div>
-            <div>
-                <label for="medADateTime">Appointment Date/Time *</label>
-                <input type="datetime" name="medADateTime" id="medADateTime"
-                    value="<?php echo $row['medADateTime'] ?>">
-            </div>
         </section>
 
-        <!-- medical created date -->
-        <input type="datetime" name="medCdate" id="medCdate" value="<?php echo $row['medCdate'] ?>">
+        <sction class="details">
+            <div>
+                <!-- Appointment Date/Time -->
+                <label for="medADateTime">Appointment Date/Time *</label>
+                <input type="datetime" name="medADateTime" id="medADateTime" value="<?php echo $row['medADateTime'] ?>" readonly>
+            </div>
+            <div>
+                <!-- medical created date -->
+                <label for="medCdate">Medical Date/Time *</label>
+                <input type="datetime" name="medCdate" id="medCdate" value="<?php echo $row['medCdate'] ?>" readonly>
+            </div>
+        </sction>
+
+        <!-- conpliant  -->
+        <div>
+            <?php include '../form/edit_diagnose/derma.php' ?>
+        </div>
 
         <!-- additional concern  -->
         <label for="medConcern">Patient's Additional Concern *</label>
