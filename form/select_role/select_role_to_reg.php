@@ -1,5 +1,5 @@
 <section class="user_role">
-    <label for="" class="user-role-label">
+    <label for="" class="info-label">
         <p>Select role to <b>register</b></p>
         <a href="#"><span class="material-symbols-outlined" style="font-size: 17px;">info</span></a>
     </label>

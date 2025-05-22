@@ -1,7 +1,9 @@
 <section class="form">
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-        <h1 class="user-h1">Register as a doctor</h1>
-
+        <label class="info-label">
+            <h1 class="user-h1">Register as a doctor</h1>
+            <a href="#"><span class="material-symbols-outlined" style="font-size: 17px;">info</span></a>
+        </label>
         <!-- fullname  -->
         <section class="details">
             <div>

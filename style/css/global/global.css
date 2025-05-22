@@ -49,3 +49,15 @@ a:hover .material-symbols-outlined {
     font-variation-settings:
         'FILL' 1;
 }
+
+/* info-label  */
+.info-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.info-label .material-symbols-outlined {
+    color: var(--blue);
+}
