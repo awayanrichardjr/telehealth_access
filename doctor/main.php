@@ -24,12 +24,12 @@
                     <p>Appointments</p>
                 </a>
             </li>
-            <li>
+            <!-- <li>
                 <a href="../public/messages_doc.php">
                     <span class="material-symbols-outlined">chat</span>
                     <p>Messages</p>
                 </a>
-            </li>
+            </li> -->
             <li>
                 <a href="../public/settings_doc.php">
                     <span class="material-symbols-outlined">settings</span>

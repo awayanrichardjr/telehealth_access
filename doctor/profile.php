@@ -41,15 +41,19 @@
         <ul class="tab-bar">
             <!-- dropdown  -->
             <li class="dropdown-links">
-                <span class="material-symbols-outlined style=" font-size: 17px;">more_horiz</span>
+                <span class="material-symbols-outlined">more_horiz</span>
                 <div class="dropdown-content">
                     <a href="../public/verify_doc.php?docID=<?php echo $_SESSION['docID'] ?>">
                         <span class="material-symbols-outlined">verified</span>
-                        Verify Account
+                        <p>Verify Account</p>
                     </a>
                     <a href="../public/available_doc.php">
-                        <span class="material-symbols-outlined style=" font-size: 17px;">event_available</span>
-                        Availability
+                        <span class="material-symbols-outlined">event_available</span>
+                        <p>Availability</p>
+                    </a>
+                    <a href="<?php echo $_SESSION['doc_space'] ?>">
+                        <span class="material-symbols-outlined">link</span>
+                        <p>Google Space Link</p>
                     </a>
                 </div>
             </li>
