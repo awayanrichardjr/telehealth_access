@@ -7,49 +7,50 @@
         <ul class="details">
             <li>
                 <span class="material-symbols-outlined" style="font-size: 17px;">stethoscope</span>
-                <?php echo $_SESSION['docSpecialty'] ?>
+                <p><?php echo $_SESSION['docSpecialty'] ?></p>
             </li>
             <li>
                 <span class="material-symbols-outlined" style="font-size: 17px;">location_on</span>
-                <?php echo $_SESSION['docAddress'] ?>
+                <p><?php echo $_SESSION['docAddress'] ?></p>
             </li>
             <li>
                 <span class="material-symbols-outlined" style="font-size: 17px;">cake</span>
-                <?php echo $_SESSION['docBdate'] ?>
+                <p><?php echo $_SESSION['docBdate'] ?></p>
             </li>
             <li>
                 <span class="material-symbols-outlined" style="font-size: 17px;">contact_phone</span>
-                <?php echo $_SESSION['docContact'] ?>
+                <p><?php echo $_SESSION['docContact'] ?></p>
             </li>
             <li>
                 <span class="material-symbols-outlined" style="font-size: 17px;">contact_mail</span>
-                <?php echo $_SESSION['docEmail'] ?>
+                <p><?php echo $_SESSION['docEmail'] ?></p>
             </li>
             <!-- STATUS -->
             <?php
             if ($row['docStatus'] == "Verified") {
-                ?>
+            ?>
                 <li class="verified">
                     <span class="material-symbols-outlined" style="font-size: 17px;">verified</span>
                     <?php echo $row['docStatus'] ?>
                 </li>
                 <ul class="actions">
                     <li>
-                        <a href="../public/chat_selected_doc.php?docID=<?php echo $row['docID'] ?>">
-                            <span class="material-symbols-outlined" style="font-size: 17px;">chat</span>
-                            <p>Chat</p>
-                        </a>
-                    </li>
-                    <li>
                         <a href="../public/consult_selected_doc.php?docID=<?php echo $row['docID'] ?>">
                             <span class="material-symbols-outlined" style="font-size: 17px;">event_upcoming</span>
                             <p>Consult</p>
                         </a>
                     </li>
+                    <!-- google link -->
+                    <li>
+                        <a href="<?php echo $_SESSION['doc_space'] ?>">
+                            <span class="material-symbols-outlined" style="font-size: 17px;">link</span>
+                            <p>Google Space Link</p>
+                        </a>
+                    </li>
                 </ul>
-                <?php
+            <?php
             } else {
-                ?>
+            ?>
                 <li class="unverified">
                     <span class="material-symbols-outlined" style="font-size: 17px;">verified</span>
                     <?php echo "Unverified" ?>
@@ -57,20 +58,18 @@
                 <ul class="actions">
                     <li>
                         <a href="#" style="background-color: grey;">
-                            <span class="material-symbols-outlined" style="font-size: 17px;">chat</span>
-                            <p>Chat</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" style="background-color: grey;">
                             <span class="material-symbols-outlined" style="font-size: 17px;">event_upcoming</span>
                             <p>Consult</p>
                         </a>
                     </li>
+                    <li>
+                        <a href="#" style="background-color: grey;">
+                            <span class="material-symbols-outlined" style="font-size: 17px;">link</span>
+                            <p>Google Space Link</p>
+                        </a>
+                    </li>
                 </ul>
-                <?php
-            }
-            ?>
+            <?php } ?>
         </ul>
     </div>
     <!-- </section> -->

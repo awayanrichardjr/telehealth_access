@@ -26,23 +26,17 @@
                 <?php echo $_SESSION['docEmail'] ?>
             </li>
             <!-- STATUS -->
-            <?php
-            if ($_SESSION['docStatus'] == "Verified") {
-                ?>
+            <?php if ($_SESSION['docStatus'] == "Verified") { ?>
                 <li class="verified">
                     <span class="material-symbols-outlined" style="font-size: 17px;">verified</span>
                     <?php echo $_SESSION['docStatus'] ?>
                 </li>
-                <?php
-            } else {
-                ?>
+            <?php } else { ?>
                 <li class="unverified">
                     <span class="material-symbols-outlined" style="font-size: 17px;">verified</span>
                     <?php echo $_SESSION['docStatus'] ?>
                 </li>
-                <?php
-            }
-            ?>
+            <?php } ?>
         </ul>
         <ul class="tab-bar">
             <!-- dropdown  -->

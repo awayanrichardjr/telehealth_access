@@ -29,6 +29,7 @@ if (empty($_SESSION['pEmail']) || empty($_SESSION['pPass'])) {
             $_SESSION['docBdate'] = $row['docBdate'];
             $_SESSION['docContact'] = $row['docContact'];
             $_SESSION['docEmail'] = $row['docEmail'];
+            $_SESSION['doc_space'] = $row['doc_space']; #google link 
 
             include '../patient/selected_profile.php';
             include '../patient/availability.php';

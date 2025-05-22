@@ -18,5 +18,6 @@ $sql = "CREATE TABLE doctor (
     docPhoto VARCHAR(255) NOT NULL,
     docQualify VARCHAR(255) NOT NULL,
     docIDfront VARCHAR(255) NOT NULL,
-    docIDback VARCHAR(255) NOT NULL
+    docIDback VARCHAR(255) NOT NULL,
+    doc_space VARCHAR(255) NOT NULL
 )";
