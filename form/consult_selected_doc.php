@@ -98,16 +98,11 @@
         </section>
 
         <input type="hidden" name="conCdate" id="conCdate" value="<?php
-        date_default_timezone_set("Asia/Manila");
-        echo date("M-d-Y h:ia") ?>">
+                                                                    date_default_timezone_set("Asia/Manila");
+                                                                    echo date("M-d-Y h:ia") ?>">
 
-        <label for="conConcern">Additional Concern *
-            <span class="error">
-                <?php if (isset($_GET['conConcernErr'])) {
-                    echo $conConcernError = $_GET['conConcernErr'];
-                } ?>
-            </span>
-        </label>
+        <!-- concern -->
+        <label for="conConcern">Additional Concern * </label>
         <textarea name="conConcern" id="conConcern"
             placeholder="Type additional concern or specify your concern..."></textarea>
 

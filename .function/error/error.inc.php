@@ -220,8 +220,7 @@ function error_medical_doc(
     $medSelectedDoc,
     $medDocSpecialty,
     $medADateTime,
-    $medDiagnose,
-    $medConcern
+    $medDiagnose
 ) {
     // consult
     if (empty($medName)) {
@@ -260,10 +259,6 @@ function error_medical_doc(
     }
     if (empty($medDiagnose)) {
         header("location: ../public/close_action_form.php?medDiagnoseErr= empty field");
-        exit();
-    }
-    if (empty($medConcern)) {
-        header("location: ../public/close_action_form.php?medConcernErr= empty field");
         exit();
     }
     // qrbqwobsajdcnqaiwofhbqiwd
