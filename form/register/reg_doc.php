@@ -124,9 +124,11 @@
 
         <!-- duplicate Username error -->
         <span class="error">
-            <?php if (isset($_GET['docUsernameTakenErr'])) {
+            <?php
+            if (isset($_GET['docUsernameTakenErr'])) {
                 echo $docUsernameTakenError = $_GET['docUsernameTakenErr'];
-            } ?>
+            }
+            ?>
         </span>
         <div>
             <label for="docUsername">Username
@@ -136,7 +138,7 @@
                     } ?>
                 </span>
             </label>
-            <input type="username" name="docUsername" id="docUsername" placeholder="Username">
+            <input type="text" name="docUsername" id="docUsername" placeholder="Username">
         </div>
 
         <!-- passwords error  -->

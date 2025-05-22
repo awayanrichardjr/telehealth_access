@@ -85,9 +85,11 @@
         <hr>
         <!-- duplicate Username error -->
         <span class="error">
-            <?php if (isset($_GET['pUsernameTakenErr'])) {
+            <?php
+            if (isset($_GET['pUsernameTakenErr'])) {
                 echo $pUsernameTakenError = $_GET['pUsernameTakenErr'];
-            } ?>
+            }
+            ?>
         </span>
         <div>
             <label for="pUsername">Username
