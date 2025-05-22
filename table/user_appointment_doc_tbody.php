@@ -31,6 +31,7 @@
     <br>
     <p><b><?php echo $_SESSION['conSelectedDoc'] ?></b></p>
     <p><?php echo $_SESSION['conDocSpecialty'] ?></p>
-    <p><?php echo $_SESSION['conADateTime'] ?></p>
+    <p><?php echo $_SESSION['conADateTime'] = date_default_timezone_set("Asia/Manila");
+        echo date("M d, Y h:ia") ?></p>
   </td>
 </tr>
