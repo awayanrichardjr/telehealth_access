@@ -66,7 +66,6 @@ function error_reg_doc(
     $docUsername,
     $docPass,
     $docConfirm,
-    $doc_space
 ) {
     // doc
     if (empty($docFname)) {
@@ -111,10 +110,6 @@ function error_reg_doc(
     }
     if (empty($docConfirm)) {
         header("location: ../public/reg_doc.php?docConfirmErr= empty field");
-        exit();
-    }
-    if (empty($doc_space)) {
-        header("location: ../public/reg_doc.php?doc_spaceErr= empty field");
         exit();
     }
 }
@@ -174,7 +169,6 @@ function error_consult_doc(
     $conDocSpecialty,
     $conADateTime,
     $conDiagnose,
-    $conConcern
 ) {
     // consult
     if (empty($conName)) {
@@ -213,10 +207,6 @@ function error_consult_doc(
     }
     if (empty($conDiagnose)) {
         header("location: ../public/consult_selected_doc.php?conDiagnoseErr= empty field");
-        exit();
-    }
-    if (empty($conConcern)) {
-        header("location: ../public/consult_selected_doc.php?conConcernErr= empty field");
         exit();
     }
     // qrbqwobsajdcnqaiwofhbqiwd
