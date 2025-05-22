@@ -30,6 +30,7 @@ if (empty($_SESSION['docUsername']) || empty($_SESSION['docPass'])) {
             $_SESSION['medConcern'] = $row['medConcern'];
             $_SESSION['medCdate'] = $row['medCdate'];
             $_SESSION['medADateTime'] = $row['medADateTime'];
+            $_SESSION['medTreatment'] = $row['medTreatment'];
 
             include '../table/user_appointment_past_tbody.php';
         }

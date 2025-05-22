@@ -65,7 +65,7 @@
             </div>
 
             <li class="li-concern">
-                <label for="medConcern">Concern:</label>
+                <label for="medConcern">Additional Concern:</label>
                 <p><?php echo $_SESSION['medConcern'] ?></p>
             </li>
             <div class="details">
@@ -76,6 +76,12 @@
                 <li>
                     <label for="medADateTime">Closed Appointment Date/Time:</label>
                     <p><?php echo $_SESSION['medADateTime'] ?></p>
+                </li>
+            </div>
+            <div class="details">
+                <li>
+                    <label for="medTreatment">Additional Treatment:</label>
+                    <p><?php echo $_SESSION['medTreatment'] ?></p>
                 </li>
             </div>
         </ol>

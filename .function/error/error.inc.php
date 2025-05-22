@@ -1,5 +1,4 @@
 <?php
-
 // error
 function error_reg_admin(
     $adminFname,

@@ -33,6 +33,7 @@ if (empty($_SESSION['docUsername']) || empty($_SESSION['docPass'])) {
             $_SESSION['medContact'] = $row['medContact'];
             $_SESSION['medCdate'] = $row['medCdate'];
             $_SESSION['medADateTime'] = $row['medADateTime'];
+            $_SESSION['medTreatment'] = $row['medTreatment'];
 
             include '../form/view_form/view_medical_doc.php';
             exit();

@@ -62,7 +62,7 @@
             </div>
 
             <li class="li-concern">
-                <label for="conConcern">Concern:</label>
+                <label for="conConcern">Additional concern:</label>
                 <p><?php echo $_SESSION['conConcern'] ?></p>
             </li>
             <div class="details">
