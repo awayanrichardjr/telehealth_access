@@ -1,6 +1,6 @@
 <?php
-ob_start();
 session_start();
+
 if (empty($_SESSION['docUsername']) || empty($_SESSION['docPass'])) {
     header("location: ../public/log_doc.php");
 } else {
@@ -40,13 +40,30 @@ if (empty($_SESSION['docUsername']) || empty($_SESSION['docPass'])) {
     }
 
     include '../doctor/main.php';
+
     $selected_docID = $_GET['docID'];
+
     $sql = "SELECT * FROM doctor WHERE docID = $selected_docID";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
         // output data of each row
         while ($row = $result->fetch_assoc()) {
+
+            $_SESSION['docID'] = $row['docID'];
+            $_SESSION['docFname'] = $row['docFname'];
+            $_SESSION['docMname'] = $row['docMname'];
+            $_SESSION['docLname'] = $row['docLname'];
+            $_SESSION['docSuffix'] = $row['docSuffix'];
+            $_SESSION['docAddress'] = $row['docAddress'];
+            $_SESSION['docBdate'] = $row['docBdate'];
+            $_SESSION['docContact'] = $row['docContact'];
+            $_SESSION['docSpecialty'] = $row['docSpecialty'];
+            $_SESSION['docUsername'] = $row['docUsername'];
+            $_SESSION['docStatus'] = $row['docStatus'];
+            $_SESSION['docQualify'] = $row['docQualify'];
+            $_SESSION['doc_space'] = $row['doc_space'];
+
             include '../form/edit/verify_doc.php';
             exit();
         }
