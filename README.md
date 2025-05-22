@@ -14,11 +14,7 @@
     b. To integrate predictive analytics for efficient appointment scheduling.
     c. To evaluate the system's impact on wait times and patient satisfaction.
     d. To allow secure online payments for consultations.
-<<<<<<< HEAD
-    e. To enable doctors to access and view patients' appointments and medical records securely.
-=======
     e. To enable doctors to access and view patients’ appointments and medical records securely.
->>>>>>> bb402f03dc6473c7b28e20cd74ce3b91126ee5c4
     f. To implement a verification process that ensures only certified and licensed medical professionals can provide consultations through the system.
     g. To guide users on how to navigate the telehealth system.
 
