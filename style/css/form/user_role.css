@@ -65,3 +65,11 @@
     color: var(--text-color);
     font-size: var(--text-size-m);
 }
+
+/* user-role-label  */
+.user_role :where(.user-role-label) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+}

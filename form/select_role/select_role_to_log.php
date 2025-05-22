@@ -1,5 +1,8 @@
 <section class="user_role">
-    <label for="">Select role to <b>login</b></label>
+    <label for="" class="user-role-label">
+        <p>Select role to <b>login</b></p>
+        <a href="#"><span class="material-symbols-outlined" style="font-size: 17px;">info</span></a>
+    </label>
     <ul>
         <li class="doc">
             <a href="../public/log_doc.php">
