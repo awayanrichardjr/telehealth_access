@@ -47,7 +47,7 @@
                         <span class="material-symbols-outlined">event_available</span>
                         <p>Availability</p>
                     </a>
-                    <a href="<?php echo $_SESSION['doc_space'] ?>?docID=<?php echo $_SESSION['docID'] ?>">
+                    <a href="<?php echo $_SESSION['doc_space'] ?>">
                         <span class="material-symbols-outlined">link</span>
                         <p>Google Space Link</p>
                     </a>

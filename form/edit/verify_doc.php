@@ -65,7 +65,7 @@
         <!-- Google space link -->
         <div>
             <label for="doc_space">Google space link *</label>
-            <input type="url" name="doc_space" id="doc_space" placeholder="Provide Google Space Link..." required>
+            <input type="url" name="doc_space" id="doc_space" value="<?php echo $_SESSION['doc_space'] ?>" required>
         </div>
 
         <!-- submit btn  -->

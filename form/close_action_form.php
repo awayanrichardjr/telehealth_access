@@ -18,6 +18,8 @@
                                                                             date_default_timezone_set("Asia/Manila");
                                                                             echo date("M d, Y h:ia") ?>" readonly>
         <!-- confirm btn -->
-        <input type="submit" name="submit" id="submit" value="Confirm">
+        <label for="medTreatment" style="color: grey;">Treatment *(Optional)</label>
+        <textarea name="medTreatment" id="medTreatment" placeholder="Additional Treatment..."></textarea>
+        <input type="submit" name="submit" id="submit" value="Close">
     </form>
 </section>
