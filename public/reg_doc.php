@@ -1,5 +1,6 @@
 <?php
 Ob_start();
+// session_start();
 include '../user/index.php';
 include '../user/nav.php';
 
@@ -27,7 +28,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
 
         $sql = "INSERT INTO doctor (docFname, docMname, docLname, docSuffix, docAddress, docBdate, docContact, docSpecialty, docStatus, docUsername, docPass, docConfirm) VALUES ('$docFname','$docMname','$docLname','$docSuffix','$docAddress','$docBdate','$docContact','$docSpecialty','$docStatus','$docUsername','$docPass','$docConfirm')";
-
         if ($conn->query($sql) === TRUE) {
             header("location: log_doc.php");
             exit();

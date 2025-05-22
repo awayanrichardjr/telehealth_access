@@ -25,10 +25,6 @@ function error_reg_admin(
         header("location: ../public/reg_admin.php?adminLnameErr= empty field");
         exit();
     }
-    // if (empty($adminSuffix)) {
-    // header("location: ../public/reg_admin.php?adminSuffixErr= empty field");
-    // exit();
-    // }
     if (empty($adminAddress)) {
         header("location: ../public/reg_admin.php?adminAddressErr= empty field");
         exit();
@@ -53,7 +49,6 @@ function error_reg_admin(
         header("location: ../public/reg_admin.php?adminConfirmErr= empty field");
         exit();
     }
-    // qrbqwobsajdcnqaiwofhbqiwd
 }
 
 function error_reg_doc(
@@ -65,7 +60,7 @@ function error_reg_doc(
     $docContact,
     $docUsername,
     $docPass,
-    $docConfirm,
+    $docConfirm
 ) {
     // doc
     if (empty($docFname)) {
@@ -80,10 +75,6 @@ function error_reg_doc(
         header("location: ../public/reg_doc.php?docLnameErr= empty field");
         exit();
     }
-    // if (empty($docSuffix)) {
-    // header("location: ../public/reg_doc.php?docSuffixErr= empty field");
-    // exit();
-    // }
     if (empty($docAddress)) {
         header("location: ../public/reg_doc.php?docAddressErr= empty field");
         exit();
@@ -96,10 +87,6 @@ function error_reg_doc(
         header("location: ../public/reg_doc.php?docContactErr= empty field");
         exit();
     }
-    // if (empty($docSpecialty)) {
-    // header("location: ../public/reg_doc.php?docSpecialtyErr= empty field");
-    // exit();
-    // }
     if (empty($docUsername)) {
         header("location: ../public/reg_doc.php?docUsernameErr= empty field");
         exit();
@@ -129,10 +116,6 @@ function error_reg_p($pFname, $pMname, $pLname, $pAddress, $pBdate, $pContact, $
         header("location: ../public/reg_p.php?pLnameErr= empty field");
         exit();
     }
-    // if (empty($pSuffix)) {
-    // header("location: ../public/reg_p.php?pSuffixErr= empty field");
-    // exit();
-    // }
     if (empty($pAddress)) {
         header("location: ../public/reg_p.php?pAddressErr= empty field");
         exit();
@@ -214,7 +197,6 @@ function error_consult_doc(
         header("location: ../public/consult_selected_doc.php?conDiagnoseErr= empty field");
         exit();
     }
-    // qrbqwobsajdcnqaiwofhbqiwd
 }
 function error_medical_doc(
     $medName,
@@ -266,7 +248,6 @@ function error_medical_doc(
         header("location: ../public/close_action_form.php?medDiagnoseErr= empty field");
         exit();
     }
-    // qrbqwobsajdcnqaiwofhbqiwd
 }
 function error_edit_doc(
     $docFname,
@@ -292,10 +273,6 @@ function error_edit_doc(
         header("location: ../public/edit_doc.php?docLnameErr= empty field");
         exit();
     }
-    // if (empty($docSuffix)) {
-    // header("location: ../public/edit_doc.php?docSuffixErr= empty field");
-    // exit();
-    // }
     if (empty($docAddress)) {
         header("location: ../public/edit_doc.php?docAddressErr= empty field");
         exit();
@@ -308,10 +285,6 @@ function error_edit_doc(
         header("location: ../public/edit_doc.php?docContactErr= empty field");
         exit();
     }
-    // if (empty($docSpecialty)) {
-    // header("location: ../public/edit_doc.php?docSpecialtyErr= empty field");
-    // exit();
-    // }
     if (empty($docUsername)) {
         header("location: ../public/edit_doc.php?docUsernameErr= empty field");
         exit();
@@ -341,10 +314,6 @@ function error_edit_p($pFname, $pMname, $pLname, $pAddress, $pBdate, $pContact, 
         header("location: ../public/edit_p.php?pLnameErr= empty field");
         exit();
     }
-    // if (empty($pSuffix)) {
-    // header("location: ../public/edit_p.php?pSuffixErr= empty field");
-    // exit();
-    // }
     if (empty($pAddress)) {
         header("location: ../public/edit_p.php?pAddressErr= empty field");
         exit();
@@ -357,10 +326,6 @@ function error_edit_p($pFname, $pMname, $pLname, $pAddress, $pBdate, $pContact, 
         header("location: ../public/edit_p.php?pContactErr= empty field");
         exit();
     }
-    // if (empty($pSpecialty)) {
-    // header("location: ../public/edit_p.php?pSpecialtyErr= empty field");
-    // exit();
-    // }
     if (empty($pUsername)) {
         header("location: ../public/edit_p.php?pUsernameErr= empty field");
         exit();
