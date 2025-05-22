@@ -8,11 +8,11 @@ $sql = "CREATE TABLE doctor (
     docBdate DATE NOT NULL,
     docAddress VARCHAR(255) NOT NULL,
     docSpecialty VARCHAR(255) NOT NULL,
-    docUsername VARCHAR(255) NOT NULL,
-    docEmail VARCHAR(255) NOT NULL,
+    docUsername VARCHAR(255) NOT NULL UNIQUE, #username
+    docEmail VARCHAR(255) NOT NULL, #email
     docContact VARCHAR(255) NOT NULL UNIQUE,
-    docPass VARCHAR(255) NOT NULL,
-    docConfirm VARCHAR(255) NOT NULL,
+    docPass VARCHAR(255) NOT NULL, #password
+    docConfirm VARCHAR(255) NOT NULL, #confirm password
     docCdate DATE NOT NULL DEFAULT CURRENT_TIMESTAMP,
     docModified VARCHAR(255) NOT NULL,
     docStatus VARCHAR(10) NOT NULL,

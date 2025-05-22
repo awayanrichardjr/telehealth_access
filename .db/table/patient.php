@@ -8,9 +8,9 @@ $sql = "CREATE TABLE patient (
     pAddress VARCHAR(255) NOT NULL,
     pBdate DATE NOT NULL,
     pContact VARCHAR(255) NOT NULL UNIQUE,
-    pUsername VARCHAR(255) NOT NULL,
-    pEmail VARCHAR(255) NOT NULL UNIQUE,
-    pPass VARCHAR(255) NOT NULL,
+    pUsername VARCHAR(255) NOT NULL UNIQUE, #username
+    pEmail VARCHAR(255) NOT NULL,
+    pPass VARCHAR(255) NOT NULL, #password
     pConfirm VARCHAR(255) NOT NULL,
     pCdate DATE NOT NULL DEFAULT CURRENT_TIMESTAMP,
     pModified VARCHAR(255) NOT NULL
