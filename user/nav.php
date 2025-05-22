@@ -14,8 +14,8 @@
     <li><a href="../public/user.php">Home</a></li>
     <li><a href="../public/about.php">About</a></li>
     <li><a href="../public/contact.php">Contact</a></li>
-    <li class="login-link"><a href="../public/select_role_to_log.php">Login</a></li>
-    <li><a href="../public/select_role_to_reg.php">Register</a></li>
+    <li class="login-link"><a href="../public/select_role_to_log.php" style="color: var(--blue)">Login</a></li>
+    <li><a href="../public/select_role_to_reg.php" style="color: var(--purple);">Register</a></li>
   </ul>
 
   <!-- dropdown menu bar  -->
@@ -27,8 +27,8 @@
       <li><a href="../public/user.php">Home</a></li>
       <li><a href="../public/about.php">About</a></li>
       <li><a href="../public/contact.php">Contact</a></li>
-      <li><a href="../public/select_role_to_log.php">Login</a></li>
-      <li><a href="../public/select_role_to_reg.php">Register</a></li>
+      <li><a href="../public/select_role_to_log.php" style="color: var(--blue)">Login</a></li>
+      <li><a href="../public/select_role_to_reg.php" style="color: var(--purple)">Register</a></li>
     </div>
   </ul>
 </nav>
