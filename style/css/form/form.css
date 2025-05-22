@@ -79,4 +79,5 @@
 
 .form :where(.error) {
     color: var(--red);
+    font-size: 10px;
 }
