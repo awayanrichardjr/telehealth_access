@@ -3,7 +3,7 @@
     <ul class="view-appt">
       <li>
         <h3><?php echo $_SESSION['conName'] ?></h3>
-        <p><?php echo $_SESSION['conEmail'] ?></p>
+        <p><?php echo $_SESSION['conUsername'] ?></p>
       </li>
 
       <!-- visibility action -->

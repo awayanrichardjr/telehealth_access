@@ -6,7 +6,7 @@
                 <th>ACTION</th>
                 <th>ID</th>
                 <th>NAME</th>
-                <th>EMAIL</th>
+                <th>USERNAME</th>
                 <th>DATE REGISTERED<br><small>yy-mm-dd</small></th>
                 <th>DATE/TIME MODIFIED<br><small>mm-dd-yy-tt</small></th>
             </tr>

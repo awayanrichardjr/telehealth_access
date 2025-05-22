@@ -82,21 +82,23 @@
             </div>
         </section>
         <hr>
-        <!-- duplicate e-mail error -->
+
+        <!-- duplicate username error -->
         <span class="error">
-            <?php if (isset($_GET['adminEmailTakenErr'])) {
-                echo $adminEmailTakenError = $_GET['adminEmailTakenErr'];
+            <?php if (isset($_GET['adminUsernameTakenErr'])) {
+                echo $adminUsernameTakenError = $_GET['adminUsernameTakenErr'];
             } ?>
         </span>
+        <!-- Username -->
         <div>
-            <label for="adminEmail">E-mail
+            <label for="adminUsername">Username
                 <span class="error">
-                    <?php if (isset($_GET['adminEmailErr'])) {
-                        echo $adminEmailError = $_GET['adminEmailErr'];
+                    <?php if (isset($_GET['adminUsernameErr'])) {
+                        echo $adminUsernameError = $_GET['adminUsernameErr'];
                     } ?>
                 </span>
             </label>
-            <input type="email" name="adminEmail" id="adminEmail" placeholder="E-mail">
+            <input type="text" name="adminUsername" id="adminUsername" placeholder="Username">
         </div>
 
         <!-- passwords error  -->

@@ -3,7 +3,7 @@ Ob_start();
 session_start();
 
 // patient
-if (empty($_SESSION['docEmail']) && empty($_SESSION['docPass'])) {
+if (empty($_SESSION['docUsername']) && empty($_SESSION['docPass'])) {
     header("location: ../public/logout_doc.php");
     exit();
 } else {

@@ -23,7 +23,7 @@
             </li>
             <li>
                 <span class="material-symbols-outlined" style="font-size: 17px;">contact_mail</span>
-                <?php echo $_SESSION['docEmail'] ?>
+                <?php echo $_SESSION['docUsername'] ?>
             </li>
             <!-- STATUS -->
             <?php if ($_SESSION['docStatus'] == "Verified") { ?>

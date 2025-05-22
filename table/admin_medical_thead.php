@@ -7,7 +7,7 @@
                     <th>ACTION</th>
                     <th>ID</th>
                     <th>Name</th>
-                    <th>E-mail</th>
+                    <th>Username</th>
                     <th>Doctor</th>
                     <th>Doc' Specialty</th>
                     <th>Created Date</th>

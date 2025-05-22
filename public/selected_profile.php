@@ -2,7 +2,7 @@
 session_start();
 
 // doc
-if (empty($_SESSION['pEmail']) || empty($_SESSION['pPass'])) {
+if (empty($_SESSION['pUsername']) || empty($_SESSION['pPass'])) {
     header("location: ../public/logout_p.php");
     exit();
 } else {
@@ -28,7 +28,7 @@ if (empty($_SESSION['pEmail']) || empty($_SESSION['pPass'])) {
             $_SESSION['docAddress'] = $row['docAddress'];
             $_SESSION['docBdate'] = $row['docBdate'];
             $_SESSION['docContact'] = $row['docContact'];
-            $_SESSION['docEmail'] = $row['docEmail'];
+            $_SESSION['docUsername'] = $row['docUsername'];
             $_SESSION['doc_space'] = $row['doc_space']; #google link 
 
             include '../patient/selected_profile.php';

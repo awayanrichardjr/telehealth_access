@@ -12,11 +12,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $pAddress = ucwords($_POST['pAddress']);
     $pBdate = $_POST['pBdate'];
     $pContact = $_POST['pContact'];
-    $pEmail = validate($_POST['pEmail']);
+    $pUsername = validate($_POST['pUsername']);
     $pPass = validate($_POST['pPass']);
     $pConfirm = validate($_POST['pConfirm']);
 
-    error_reg_p($pFname, $pMname, $pLname, $pAddress, $pBdate, $pContact, $pEmail, $pPass, $pConfirm);
+    error_reg_p($pFname, $pMname, $pLname, $pAddress, $pBdate, $pContact, $pUsername, $pPass, $pConfirm);
 
     // if password not match ...&&
     if (($pPass) != ($pConfirm)) {
@@ -24,13 +24,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit();
     } else {
 
-        $sql = "INSERT INTO patient (pFname, pMname, pLname, pSuffix, pAddress, pBdate, pContact, pEmail, pPass, pConfirm) VALUES ('$pFname','$pMname','$pLname','$pSuffix','$pAddress','$pBdate','$pContact','$pEmail','$pPass','$pConfirm')";
+        $sql = "INSERT INTO patient (pFname, pMname, pLname, pSuffix, pAddress, pBdate, pContact, pUsername, pPass, pConfirm) VALUES ('$pFname','$pMname','$pLname','$pSuffix','$pAddress','$pBdate','$pContact','$pUsername','$pPass','$pConfirm')";
 
         if ($conn->query($sql) === TRUE) {
             header("location: log_p.php");
             exit();
         } else {
-            header("location: ../public/reg_p.php?pEmailTakenErr=E-mail has been taken");
+            header("location: ../public/reg_p.php?pUsernameTakenErr=E-mail has been taken");
             exit();
         }
 

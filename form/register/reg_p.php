@@ -85,19 +85,19 @@
         <hr>
         <!-- duplicate e-mail error -->
         <span style="text-align: center;">
-            <?php if (isset($_GET['pEmailTakenErr'])) {
-                echo $pEmailTakenError = $_GET['pEmailTakenErr'];
+            <?php if (isset($_GET['pUsernameTakenErr'])) {
+                echo $pUsernameTakenError = $_GET['pUsernameTakenErr'];
             } ?>
         </span>
         <div>
-            <label for="pEmail">E-mail
+            <label for="pUsername">E-mail
                 <span class="error">
-                    <?php if (isset($_GET['pEmailErr'])) {
-                        echo $pEmailError = $_GET['pEmailErr'];
+                    <?php if (isset($_GET['pUsernameErr'])) {
+                        echo $pUsernameError = $_GET['pUsernameErr'];
                     } ?>
                 </span>
             </label>
-            <input type="email" name="pEmail" id="pEmail" placeholder="E-mail">
+            <input type="text" name="pUsername" id="pUsername" placeholder="E-mail">
         </div>
 
         <!-- passwords error  -->

@@ -2,7 +2,7 @@
 session_start();
 
 // doc
-if (empty($_SESSION['docEmail']) || empty($_SESSION['docPass'])) {
+if (empty($_SESSION['docUsername']) || empty($_SESSION['docPass'])) {
     header("location: ../public/logout_doc.php");
     exit();
 } else {

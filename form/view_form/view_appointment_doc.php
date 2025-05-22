@@ -35,8 +35,8 @@
                         <p><?php echo $_SESSION['conBdate'] ?></p>
                     </li>
                     <li>
-                        <label for="conEmail">E-mail:</label>
-                        <p><?php echo $_SESSION['conEmail'] ?></p>
+                        <label for="conUsername">E-mail:</label>
+                        <p><?php echo $_SESSION['conUsername'] ?></p>
                     </li>
                     <li>
                         <label for="conContact">Contact Number:</label>

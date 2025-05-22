@@ -123,19 +123,19 @@
         <hr>
         <!-- duplicate e-mail error -->
         <span class="error">
-            <?php if (isset($_GET['docEmailTakenErr'])) {
-                echo $docEmailTakenError = $_GET['docEmailTakenErr'];
+            <?php if (isset($_GET['docUsernameTakenErr'])) {
+                echo $docUsernameTakenError = $_GET['docUsernameTakenErr'];
             } ?>
         </span>
         <div>
-            <label for="docEmail">E-mail
+            <label for="docUsername">E-mail
                 <span class="error">
-                    <?php if (isset($_GET['docEmailErr'])) {
-                        echo $docEmailError = $_GET['docEmailErr'];
+                    <?php if (isset($_GET['docUsernameErr'])) {
+                        echo $docUsernameError = $_GET['docUsernameErr'];
                     } ?>
                 </span>
             </label>
-            <input type="email" name="docEmail" id="docEmail" placeholder="E-mail">
+            <input type="text" name="docUsername" id="docUsername" placeholder="E-mail">
         </div>
 
         <!-- passwords error  -->

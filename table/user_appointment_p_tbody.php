@@ -3,12 +3,12 @@
     <ul class="view-appt">
       <li>
         <h3><?php echo $_SESSION['conName'] ?></h3>
-        <p><?php echo $_SESSION['conEmail'] ?></p>
+        <p><?php echo $_SESSION['conUsername'] ?></p>
       </li>
 
       <!-- visibility -->
       <li class="view-appt">
-        <?php if ($_SESSION['conEmail'] === $_SESSION['pEmail']) { ?>
+        <?php if ($_SESSION['conUsername'] === $_SESSION['pUsername']) { ?>
           <a href="../public/view_appointment_p.php?conID=<?php echo $row['conID']; ?>" class="appt-visibility">
             <span class="material-symbols-outlined">visibility</span>
             <p>View</p>
@@ -24,7 +24,7 @@
 
       <!-- cancel appointment -->
       <li>
-        <?php if ($_SESSION['conEmail'] === $_SESSION['pEmail']) { ?>
+        <?php if ($_SESSION['conUsername'] === $_SESSION['pUsername']) { ?>
           <a href="../public/delete_appointment.php?conID=<?php echo $row['conID']; ?>" class="appt-visibility">
             <span class="material-symbols-outlined">cancel</span>
             <p>Cancel</p>

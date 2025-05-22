@@ -2,6 +2,6 @@
 session_start();
 
 // doc
-unset($_SESSION['docEmail']);
+unset($_SESSION['docUsername']);
 header("location: ../public/log_doc.php");
 exit();

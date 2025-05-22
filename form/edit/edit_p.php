@@ -78,14 +78,14 @@
         </section>
 
         <div>
-            <label for="pEmail">E-mail
+            <label for="pUsername">E-mail
                 <span class="error">
-                    <?php if (isset($_GET['pEmail'])) {
-                        echo $pEmailErr = $_GET['pEmail'];
+                    <?php if (isset($_GET['pUsername'])) {
+                        echo $pUsernameErr = $_GET['pUsername'];
                     } ?>
                 </span>
             </label>
-            <input type="email" name="pEmail" id="pEmail" value="<?php echo $row['pEmail'] ?>">
+            <input type="text" name="pUsername" id="pUsername" value="<?php echo $row['pUsername'] ?>">
         </div>
         <div>
             <input type="hidden" name="pModified" id="pModified" value="<?php

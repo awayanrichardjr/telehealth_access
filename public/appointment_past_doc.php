@@ -2,7 +2,7 @@
 session_start();
 
 // patient
-if (empty($_SESSION['docEmail']) || empty($_SESSION['docPass'])) {
+if (empty($_SESSION['docUsername']) || empty($_SESSION['docPass'])) {
     header("location: ../public/logout_doc.php");
     exit();
 } else {
@@ -23,7 +23,7 @@ if (empty($_SESSION['docEmail']) || empty($_SESSION['docPass'])) {
             $_SESSION['medAddress'] = $row['medAddress'];
             $_SESSION['medBdate'] = $row['medBdate'];
             $_SESSION['medContact'] = $row['medContact'];
-            $_SESSION['medEmail'] = $row['medEmail'];
+            $_SESSION['medUsername'] = $row['medUsername'];
             $_SESSION['medSelectedDoc'] = $row['medSelectedDoc'];
             $_SESSION['medDocSpecialty'] = $row['medDocSpecialty'];
             $_SESSION['medDiagnose'] = $row['medDiagnose'];

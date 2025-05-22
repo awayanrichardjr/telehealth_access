@@ -16,7 +16,7 @@ $doc_fullname = $_SESSION['docFname'] . " " . $_SESSION['docMname'] . " " . $_SE
     <td><?php echo $doc_fullname ?>
     </td>
     <td><?php echo $_SESSION['docSpecialty'] ?></td>
-    <td><?php echo $_SESSION['docEmail'] ?></td>
+    <td><?php echo $_SESSION['docUsername'] ?></td>
 
     <!-- status -->
     <?php if ($_SESSION['docStatus'] == "Verified") { ?>

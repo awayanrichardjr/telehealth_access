@@ -8,7 +8,7 @@ $sql = "CREATE TABLE medical (
     medDocSpecialty VARCHAR(255) NOT NULL,
     medDiagnose VARCHAR(255) NOT NULL,
     medConcern VARCHAR(255) NOT NULL,
-    medEmail VARCHAR(255) NOT NULL,
+    medUsername VARCHAR(255) NOT NULL,
     medContact VARCHAR(255) NOT NULL,
     medCdate VARCHAR(255) NOT NULL,
     medADateTime VARCHAR(255) NOT NULL,

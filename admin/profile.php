@@ -17,7 +17,7 @@
         </p>
         <p class="details">
             <span class="material-symbols-outlined" style="font-size: 17px;">contact_mail</span>
-            <?php echo $_SESSION['adminEmail'] ?>
+            <?php echo $_SESSION['adminUsername'] ?>
         </p>
     </div>
 </section>

@@ -7,7 +7,7 @@
                 <th>ID</th>
                 <th>NAME</th>
                 <th>SPECIALTY</th>
-                <th>EMAIL</th>
+                <th>USERNAME</th>
                 <th>STATUS</th>
                 <th>DATE REGISTERED<br><small>yy-mm-dd</small></th>
                 <th>DATE/TIME MODIFIED<br><small>mm-dd-yy-tt</small></th>

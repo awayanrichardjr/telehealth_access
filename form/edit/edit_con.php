@@ -22,8 +22,8 @@
 
             </div>
             <div>
-                <label for="conEmail">Patient E-mail *</label>
-                <input type="email" name="conEmail" id="conEmail" value="<?php echo $row['conEmail'] ?>">
+                <label for="conUsername">Patient E-mail *</label>
+                <input type="text" name="conUsername" id="conUsername" value="<?php echo $row['conUsername'] ?>">
 
             </div>
         </section>

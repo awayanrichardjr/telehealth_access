@@ -1,7 +1,7 @@
 <?php
 Ob_start();
 session_start();
-if (empty($_SESSION['adminEmail']) || empty($_SESSION['adminPass'])) {
+if (empty($_SESSION['adminUsername']) || empty($_SESSION['adminPass'])) {
     header("location: ../public/log_admin.php");
 } else {
     include '../admin/index.php';
@@ -12,7 +12,7 @@ if (empty($_SESSION['adminEmail']) || empty($_SESSION['adminPass'])) {
         $conName = $_REQUEST['conName'];
         $conAddress = $_REQUEST['conAddress'];
         $conBdate = $_REQUEST['conBdate'];
-        $conEmail = $_REQUEST['conEmail'];
+        $conUsername = $_REQUEST['conUsername'];
         $conSelectedDoc = $_REQUEST['conSelectedDoc'];
         $conDiagnose = $_REQUEST['conDiagnose'];
         $conConcern = $_REQUEST['conConcern'];
@@ -24,7 +24,7 @@ if (empty($_SESSION['adminEmail']) || empty($_SESSION['adminPass'])) {
         $conSelectedDocv = toupper1stchar($conSelectedDoc);
         $conConcernv = toupper1stchar($conConcern);
 
-        $sql = "UPDATE consult SET conName='$conNamev', conAddress='$conAddressv', conBdate='$conBdate', conEmail='$conEmail', conSelectedDoc='$conSelectedDocv', conDiagnose='$conDiagnose',conConcern='$conConcernv', conCdate='$conCdate', conADateTime='$conADateTime' WHERE conID='$conID'";
+        $sql = "UPDATE consult SET conName='$conNamev', conAddress='$conAddressv', conBdate='$conBdate', conUsername='$conUsername', conSelectedDoc='$conSelectedDocv', conDiagnose='$conDiagnose',conConcern='$conConcernv', conCdate='$conCdate', conADateTime='$conADateTime' WHERE conID='$conID'";
 
         if ($conn->query($sql) === TRUE) {
             header("location: ../public/appointment_admin.php");

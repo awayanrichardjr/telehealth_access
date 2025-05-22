@@ -1,7 +1,7 @@
 <?php
 ob_start();
 session_start();
-if (empty($_SESSION['docEmail']) || empty($_SESSION['docPass'])) {
+if (empty($_SESSION['docUsername']) || empty($_SESSION['docPass'])) {
     header("location: ../public/log_doc.php");
 } else {
     include '../user/index.php';
@@ -17,7 +17,7 @@ if (empty($_SESSION['docEmail']) || empty($_SESSION['docPass'])) {
         $docBdate = $_REQUEST['docBdate'];
         $docContact = $_REQUEST['docContact'];
         $docSpecialty = $_REQUEST['docSpecialty'];
-        $docEmail = $_REQUEST['docEmail'];
+        $docUsername = $_REQUEST['docUsername'];
         $docStatus = $_REQUEST['docStatus'];
         $docQualify = $_FILES['docQualify'];
         $doc_space = $_REQUEST['doc_space'];
@@ -27,7 +27,7 @@ if (empty($_SESSION['docEmail']) || empty($_SESSION['docPass'])) {
         // UPLOAD FILES  , docIDfront='$docIDfront', docIDback='$docIDback'
         // include '../public/upload.php';
 
-        $sql = "UPDATE doctor SET docFname = '$docFname', docMname = '$docMname', docLname = '$docLname', docSuffix = '$docSuffix', docAddress = '$docAddress', docBdate = '$docBdate', docContact = '$docContact', docSpecialty = '$docSpecialty', docEmail = '$docEmail', docStatus='$docStatus', docQualify = '$docQualify', doc_space = '$doc_space' WHERE docID = '$docID'";
+        $sql = "UPDATE doctor SET docFname = '$docFname', docMname = '$docMname', docLname = '$docLname', docSuffix = '$docSuffix', docAddress = '$docAddress', docBdate = '$docBdate', docContact = '$docContact', docSpecialty = '$docSpecialty', docUsername = '$docUsername', docStatus='$docStatus', docQualify = '$docQualify', doc_space = '$doc_space' WHERE docID = '$docID'";
 
         if ($conn->query($sql) === TRUE) {
             header("location: ../public/profile_doc.php");

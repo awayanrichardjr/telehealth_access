@@ -3,7 +3,7 @@ Ob_start();
 session_start();
 
 // patient
-if (empty($_SESSION['docEmail']) && empty($_SESSION['docPass'])) {
+if (empty($_SESSION['docUsername']) && empty($_SESSION['docPass'])) {
     header("location: ../public/logout_doc.php");
     exit();
 } else {
@@ -15,7 +15,7 @@ if (empty($_SESSION['docEmail']) && empty($_SESSION['docPass'])) {
         $medAddress = ucwords($_POST['medAddress']);
         $medBdate = $_POST['medBdate'];
         $medContact = $_POST['medContact'];
-        $medEmail = validate($_POST['medEmail']);
+        $medUsername = validate($_POST['medUsername']);
         $medSelectedDoc = $_POST['medSelectedDoc'];
         $medDocSpecialty = $_POST['medDocSpecialty'];
         $medDiagnose = $_POST['medDiagnose'];
@@ -23,9 +23,9 @@ if (empty($_SESSION['docEmail']) && empty($_SESSION['docPass'])) {
         $medCdate = $_POST['medCdate'];
         $medADateTime = $_POST['medADateTime'];
 
-        error_medical_doc($medName, $medAddress, $medBdate, $medContact, $medEmail, $medSelectedDoc, $medDocSpecialty, $medADateTime, $medDiagnose, $medConcern);
+        error_medical_doc($medName, $medAddress, $medBdate, $medContact, $medUsername, $medSelectedDoc, $medDocSpecialty, $medADateTime, $medDiagnose, $medConcern);
 
-        $sql = "INSERT INTO medical (medName, medAddress, medBdate, medContact, medEmail, medSelectedDoc, medDocSpecialty, medDiagnose, medConcern, medCdate, medADateTime) VALUES ('$medName','$medAddress','$medBdate','$medContact','$medEmail','$medSelectedDoc','$medDocSpecialty','$medDiagnose','$medConcern','$medCdate','$medADateTime')";
+        $sql = "INSERT INTO medical (medName, medAddress, medBdate, medContact, medUsername, medSelectedDoc, medDocSpecialty, medDiagnose, medConcern, medCdate, medADateTime) VALUES ('$medName','$medAddress','$medBdate','$medContact','$medUsername','$medSelectedDoc','$medDocSpecialty','$medDiagnose','$medConcern','$medCdate','$medADateTime')";
 
         if ($conn->query($sql) === TRUE) {
             header("location: appointment_profile_doc.php");

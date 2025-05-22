@@ -4,18 +4,18 @@ session_start();
 include '../admin/index.php';
 include '../admin/nav.php';
 
-$adminEmailErr = $adminPassErr = "";
+$adminUsernameErr = $adminPassErr = "";
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    $adminEmail = validate($_POST['adminEmail']);
+    $adminUsername = validate($_POST['adminUsername']);
     $adminPass = validate($_POST['adminPass']);
 
-    if (empty($adminEmail)) {
-        $adminEmailErr = "is required";
+    if (empty($adminUsername)) {
+        $adminUsernameErr = "is required";
     } elseif (empty($adminPass)) {
         $adminPassErr = "is required";
     } else {
-        $sql = "SELECT * FROM admin WHERE adminEmail='$adminEmail' AND adminPass='$adminPass'";
+        $sql = "SELECT * FROM admin WHERE adminUsername='$adminUsername' AND adminPass='$adminPass'";
         $result = $conn->query($sql);
 
         if ($result->num_rows > 0) {
@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $_SESSION['adminAddress'] = $row['adminAddress'];
                 $_SESSION['adminBdate'] = $row['adminBdate'];
                 $_SESSION['adminContact'] = $row['adminContact'];
-                $_SESSION['adminEmail'] = $row['adminEmail'];
+                $_SESSION['adminUsername'] = $row['adminUsername'];
                 $_SESSION['adminPass'] = $row['adminPass'];
                 $_SESSION['adminConfirm'] = $row['adminConfirm'];
 

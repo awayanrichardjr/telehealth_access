@@ -1,7 +1,7 @@
 <?php
 Ob_start();
 session_start();
-if (empty($_SESSION['adminEmail']) || empty($_SESSION['adminPass'])) {
+if (empty($_SESSION['adminUsername']) || empty($_SESSION['adminPass'])) {
     header("location: ../public/log_admin.php");
 } else {
     include '../admin/index.php';
@@ -17,7 +17,7 @@ if (empty($_SESSION['adminEmail']) || empty($_SESSION['adminPass'])) {
         $docBdate = $_REQUEST['docBdate'];
         $docContact = $_REQUEST['docContact'];
         $docSpecialty = $_REQUEST['docSpecialty'];
-        $docEmail = $_REQUEST['docEmail'];
+        $docUsername = $_REQUEST['docUsername'];
         $docModified = $_REQUEST['docModified'];
 
         if (isset($_POST['docVerify'])) {
@@ -34,7 +34,7 @@ if (empty($_SESSION['adminEmail']) || empty($_SESSION['adminPass'])) {
         $docSuffixv = toupper1stchar($docSuffix);
         $docAddressv = toupper1stchar($docAddress);
 
-        $sql = "UPDATE doctor SET docFname = '$docFnamev', docMname = '$docMnamev', docLname = '$docLnamev', docSuffix = '$docSuffixv', docAddress = '$docAddressv', docBdate = '$docBdate', docContact = '$docContact', docSpecialty = '$docSpecialty', docEmail = '$docEmail', docModified = '$docModified', docStatus = '$docStatus' WHERE docID = '$docID'";
+        $sql = "UPDATE doctor SET docFname = '$docFnamev', docMname = '$docMnamev', docLname = '$docLnamev', docSuffix = '$docSuffixv', docAddress = '$docAddressv', docBdate = '$docBdate', docContact = '$docContact', docSpecialty = '$docSpecialty', docUsername = '$docUsername', docModified = '$docModified', docStatus = '$docStatus' WHERE docID = '$docID'";
 
         if ($conn->query($sql) === TRUE) {
             header("location: ../public/records_doc.php");

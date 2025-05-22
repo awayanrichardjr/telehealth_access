@@ -26,8 +26,8 @@
                         <p><?php echo $_SESSION['medBdate'] ?></p>
                     </li>
                     <li>
-                        <label for="medEmail">E-mail:</label>
-                        <p><?php echo $_SESSION['medEmail'] ?></p>
+                        <label for="medUsername">E-mail:</label>
+                        <p><?php echo $_SESSION['medUsername'] ?></p>
                     </li>
                     <li>
                         <label for="medContact">Contact Number:</label>

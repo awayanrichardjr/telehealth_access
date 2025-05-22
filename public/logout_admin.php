@@ -2,6 +2,6 @@
 session_start();
 
 // admin
-unset($_SESSION['adminEmail']);
+unset($_SESSION['adminUsername']);
 header("location: ../public/log_admin.php");
 exit();

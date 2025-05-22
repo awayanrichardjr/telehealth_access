@@ -17,7 +17,7 @@
         <td><?php $_SESSION['medDocSpecialty'] ?></td>
         <td><?php $_SESSION['medDiagnose'] ?></td>
         <td><?php $_SESSION['medConcern'] ?></td>
-        <td><?php $_SESSION['medEmail'] ?></td>
+        <td><?php $_SESSION['medUsername'] ?></td>
         <td><?php $_SESSION['medContact'] ?></td>
         <td><?php $_SESSION['medCdate'] ?></td>
         <td><?php $_SESSION['medADateTime'] ?></td>

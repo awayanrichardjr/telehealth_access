@@ -12,11 +12,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $adminAddress = ucwords($_POST['adminAddress']);
     $adminBdate = $_POST['adminBdate'];
     $adminContact = $_POST['adminContact'];
-    $adminEmail = validate($_POST['adminEmail']);
+    $adminUsername = validate($_POST['adminUsername']);
     $adminPass = validate($_POST['adminPass']);
     $adminConfirm = validate($_POST['adminConfirm']);
 
-    error_reg_admin($adminFname, $adminMname, $adminLname, $adminAddress, $adminBdate, $adminContact, $adminEmail, $adminPass, $adminConfirm);
+    error_reg_admin($adminFname, $adminMname, $adminLname, $adminAddress, $adminBdate, $adminContact, $adminUsername, $adminPass, $adminConfirm);
 
     // if password not match ...&&
     if (($adminPass) != ($adminConfirm)) {
@@ -24,13 +24,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit();
     } else {
 
-        $sql = "INSERT INTO admin (adminFname, adminMname, adminLname, adminSuffix, adminAddress, adminBdate, adminContact, adminEmail, adminPass, adminConfirm) VALUES ('$adminFname','$adminMname','$adminLname','$adminSuffix','$adminAddress','$adminBdate','$adminContact','$adminEmail','$adminPass','$adminConfirm')";
+        $sql = "INSERT INTO admin (adminFname, adminMname, adminLname, adminSuffix, adminAddress, adminBdate, adminContact, adminUsername, adminPass, adminConfirm) VALUES ('$adminFname','$adminMname','$adminLname','$adminSuffix','$adminAddress','$adminBdate','$adminContact','$adminUsername','$adminPass','$adminConfirm')";
 
         if ($conn->query($sql) === TRUE) {
             header("location: log_admin.php");
             exit();
         } else {
-            header("location: ../public/reg_admin.php?adminEmailTakenErr=E-mail has been taken");
+            header("location: ../public/reg_admin.php?adminUsernameTakenErr=E-mail has been taken");
             exit();
             // echo "Error: " . $sql . "<br>" . $conn->error;
         }

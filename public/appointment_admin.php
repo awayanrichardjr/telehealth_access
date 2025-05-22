@@ -2,7 +2,7 @@
 session_start();
 
 // admin
-if (empty($_SESSION['adminEmail']) || empty($_SESSION['adminPass'])) {
+if (empty($_SESSION['adminUsername']) || empty($_SESSION['adminPass'])) {
     header("location: ../public/logout_admin.php");
     exit();
 } else {
@@ -22,7 +22,7 @@ if (empty($_SESSION['adminEmail']) || empty($_SESSION['adminPass'])) {
             $_SESSION['conAddress'] = $row['conAddress'];
             $_SESSION['conBdate'] = $row['conBdate'];
             $_SESSION['conContact'] = $row['conContact'];
-            $_SESSION['conEmail'] = $row['conEmail'];
+            $_SESSION['conUsername'] = $row['conUsername'];
             $_SESSION['conSelectedDoc'] = $row['conSelectedDoc'];
             $_SESSION['conDocSpecialty'] = $row['conDocSpecialty'];
             $_SESSION['conDiagnose'] = $row['conDiagnose'];

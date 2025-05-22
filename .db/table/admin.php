@@ -7,7 +7,7 @@ $sql = "CREATE TABLE admin (
     adminSuffix VARCHAR(255) NOT NULL,
     adminAddress VARCHAR(255) NOT NULL,
     adminBdate DATE NOT NULL,
-    adminEmail VARCHAR(255) NOT NULL UNIQUE,
+    adminUsername VARCHAR(255) NOT NULL UNIQUE,
     adminContact VARCHAR(255) NOT NULL UNIQUE,
     adminPass VARCHAR(255) NOT NULL,
     adminConfirm VARCHAR(255) NOT NULL,

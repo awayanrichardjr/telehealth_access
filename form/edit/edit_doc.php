@@ -110,13 +110,13 @@
 
         <!-- E-MAIL  -->
         <div>
-            <label for="docEmail">E-mail</label>
+            <label for="docUsername">E-mail</label>
             <span class="error">
-                <?php if (isset($_GET['docEmailErr'])) {
-                    echo $docFnameErr = $_GET['docEmailErr'];
+                <?php if (isset($_GET['docUsernameErr'])) {
+                    echo $docFnameErr = $_GET['docUsernameErr'];
                 } ?>
             </span>
-            <input type="email" name="docEmail" id="docEmail" value="<?php echo $row['docEmail'] ?>">
+            <input type="text" name="docUsername" id="docUsername" value="<?php echo $row['docUsername'] ?>">
         </div>
 
         <!-- SAVE btn -->
@@ -144,8 +144,8 @@
         <!-- DATETIME  -->
         <div>
             <input type="hidden" name="docModified" id="docModified" value="<?php
-            date_default_timezone_set("Asia/Manila");
-            echo date("M-d-Y h:ia") ?>">
+                                                                            date_default_timezone_set("Asia/Manila");
+                                                                            echo date("M-d-Y h:ia") ?>">
         </div>
 
         <!-- STATUS PENDING -->

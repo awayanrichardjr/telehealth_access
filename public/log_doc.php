@@ -4,18 +4,18 @@ session_start();
 include '../user/index.php';
 include '../user/nav.php';
 
-$docEmailErr = $docPassErr = "";
+$docUsernameErr = $docPassErr = "";
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    $docEmail = validate($_POST['docEmail']);
+    $docUsername = validate($_POST['docUsername']);
     $docPass = validate($_POST['docPass']);
 
-    if (empty($docEmail)) {
-        $docEmailErr = "is required";
+    if (empty($docUsername)) {
+        $docUsernameErr = "is required";
     } else if (empty($docPass)) {
         $docPassErr = "is required";
     } else {
-        $sql = "SELECT * FROM doctor WHERE docEmail='$docEmail' AND docPass='$docPass'";
+        $sql = "SELECT * FROM doctor WHERE docUsername='$docUsername' AND docPass='$docPass'";
         $result = $conn->query($sql);
 
         if ($result->num_rows > 0) {
@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $_SESSION['docContact'] = $row['docContact'];
                 $_SESSION['docSpecialty'] = $row['docSpecialty'];
                 $_SESSION['docStatus'] = $row['docStatus'];
-                $_SESSION['docEmail'] = $row['docEmail'];
+                $_SESSION['docUsername'] = $row['docUsername'];
                 $_SESSION['docPass'] = $row['docPass'];
                 $_SESSION['docConfirm'] = $row['docConfirm'];
 

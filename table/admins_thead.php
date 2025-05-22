@@ -9,7 +9,7 @@
                 <th>ADDRESS</th>
                 <th>BIRHTDATE</th>
                 <th>CONTACT</th>
-                <th>EMAIL</th>
+                <th>Username</th>
                 <th>CREATED DATE</th>
                 <th>MODIFIED</th>
             </tr>

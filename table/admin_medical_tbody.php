@@ -10,7 +10,7 @@
   </td>
   <td><?php echo $_SESSION['medID'] ?></td>
   <td><?php echo $_SESSION['medName'] ?></td>
-  <td><?php echo $_SESSION['medEmail'] ?></td>
+  <td><?php echo $_SESSION['medUsername'] ?></td>
   <td><?php echo $_SESSION['medSelectedDoc'] ?></td>
   <td><?php echo $_SESSION['medDocSpecialty'] ?></td>
   <td><?php echo $_SESSION['medCdate'] ?></td>

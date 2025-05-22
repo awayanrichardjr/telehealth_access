@@ -23,7 +23,7 @@
             </li>
             <li>
                 <span class="material-symbols-outlined" style="font-size: 17px;">contact_mail</span>
-                <p><?php echo $_SESSION['docEmail'] ?></p>
+                <p><?php echo $_SESSION['docUsername'] ?></p>
             </li>
             <!-- STATUS -->
             <?php

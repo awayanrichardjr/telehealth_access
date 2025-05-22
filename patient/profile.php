@@ -19,7 +19,7 @@
             </li>
             <li>
                 <span class="material-symbols-outlined" style="font-size: 17px;">contact_mail</span>
-                <?php echo $_SESSION['pEmail'] ?>
+                <?php echo $_SESSION['pUsername'] ?>
             </li>
         </ul>
     </div>

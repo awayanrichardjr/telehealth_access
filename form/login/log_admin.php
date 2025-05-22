@@ -5,10 +5,10 @@
         <h1>ADMIN TELEHEALTH MANAGEMENT</h1>
         <!-- <h1>Login</h1> -->
         <div>
-            <label for="adminEmail">E-mail
-                <span class="error"><?php echo $adminEmailErr ?></span>
+            <label for="adminUsername">E-mail
+                <span class="error"><?php echo $adminUsernameErr ?></span>
             </label>
-            <input type="email" name="adminEmail" id="adminEmail" placeholder="Enter E-mail">
+            <input type="text" name="adminUsername" id="adminUsername" placeholder="Enter E-mail">
         </div>
         <div>
             <label for="adminPass">Password

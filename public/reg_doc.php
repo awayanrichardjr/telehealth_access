@@ -14,11 +14,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $docContact = $_POST['docContact'];
     $docSpecialty = $_POST['docSpecialty'];
     $docStatus = $_POST['docStatus'];
-    $docEmail = validate($_POST['docEmail']);
+    $docUsername = validate($_POST['docUsername']);
     $docPass = validate($_POST['docPass']);
     $docConfirm = validate($_POST['docConfirm']);
 
-    error_reg_doc($docFname, $docMname, $docLname, $docAddress, $docBdate, $docContact, $docEmail, $docPass, $docConfirm);
+    error_reg_doc($docFname, $docMname, $docLname, $docAddress, $docBdate, $docContact, $docUsername, $docPass, $docConfirm);
 
     // if password not match ...&&
     if (($docPass) != ($docConfirm)) {
@@ -26,13 +26,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit();
     } else {
 
-        $sql = "INSERT INTO doctor (docFname, docMname, docLname, docSuffix, docAddress, docBdate, docContact, docSpecialty, docStatus, docEmail, docPass, docConfirm) VALUES ('$docFname','$docMname','$docLname','$docSuffix','$docAddress','$docBdate','$docContact','$docSpecialty','$docStatus','$docEmail','$docPass','$docConfirm')";
+        $sql = "INSERT INTO doctor (docFname, docMname, docLname, docSuffix, docAddress, docBdate, docContact, docSpecialty, docStatus, docUsername, docPass, docConfirm) VALUES ('$docFname','$docMname','$docLname','$docSuffix','$docAddress','$docBdate','$docContact','$docSpecialty','$docStatus','$docUsername','$docPass','$docConfirm')";
 
         if ($conn->query($sql) === TRUE) {
             header("location: log_doc.php");
             exit();
         } else {
-            header("location: ../public/reg_doc.php?docEmailTakenErr=E-mail has been taken");
+            header("location: ../public/reg_doc.php?docUsernameTakenErr=E-mail has been taken");
             exit();
         }
 

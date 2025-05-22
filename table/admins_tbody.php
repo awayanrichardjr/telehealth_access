@@ -14,7 +14,7 @@
     <td><?php echo $_SESSION['adminAddress'] ?></td>
     <td><?php echo $_SESSION['adminBdate'] ?></td>
     <td><?php echo $_SESSION['adminContact'] ?></td>
-    <td><?php echo $_SESSION['adminEmail'] ?></td>
+    <td><?php echo $_SESSION['adminUsername'] ?></td>
     <td><?php echo $_SESSION['adminCdate'] ?></td>
     <td><?php echo $_SESSION['adminModified'] ?></td>
 </tr>

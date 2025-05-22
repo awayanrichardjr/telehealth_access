@@ -11,7 +11,7 @@
     <td><?php echo $_SESSION['pID'] ?></td>
     <td><?php echo $_SESSION['pFname'] . " " . $_SESSION['pMname'] . " " . $_SESSION['pLname'] . " " . $_SESSION['pSuffix'] ?>
     </td>
-    <td><?php echo $_SESSION['pEmail'] ?></td>
+    <td><?php echo $_SESSION['pUsername'] ?></td>
     <td><?php echo $_SESSION['pCdate'] ?></td>
     <td><?php echo $_SESSION['pModified'] ?></td>
 </tr>

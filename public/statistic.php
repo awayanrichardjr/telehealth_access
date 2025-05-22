@@ -2,7 +2,7 @@
 session_start();
 
 // admin
-if (empty($_SESSION['adminEmail']) || empty($_SESSION['adminPass'])) {
+if (empty($_SESSION['adminUsername']) || empty($_SESSION['adminPass'])) {
     header("location: ../public/logout_admin.php");
     exit();
 } else {

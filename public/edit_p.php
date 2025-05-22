@@ -1,7 +1,7 @@
 <?php
 Ob_start();
 session_start();
-if (empty($_SESSION['adminEmail']) || empty($_SESSION['adminPass'])) {
+if (empty($_SESSION['adminUsername']) || empty($_SESSION['adminPass'])) {
     header("location: ../public/log_admin.php");
 } else {
     include '../admin/index.php';
@@ -16,10 +16,10 @@ if (empty($_SESSION['adminEmail']) || empty($_SESSION['adminPass'])) {
         $pAddress = $_REQUEST['pAddress'];
         $pBdate = $_REQUEST['pBdate'];
         $pContact = $_REQUEST['pContact'];
-        $pEmail = $_REQUEST['pEmail'];
+        $pUsername = $_REQUEST['pUsername'];
         $pModified = $_REQUEST['pModified'];
 
-        // error_edit_p($pFname, $pMname, $pLname, $pAddress, $pBdate, $pContact, $pEmail, $pPass, $pConfirm);
+        // error_edit_p($pFname, $pMname, $pLname, $pAddress, $pBdate, $pContact, $pUsername, $pPass, $pConfirm);
 
         $pFnamev = toupper1stchar($pFname);
         $pMnamev = toupper1stchar($pMname);
@@ -27,7 +27,7 @@ if (empty($_SESSION['adminEmail']) || empty($_SESSION['adminPass'])) {
         $pSuffixv = toupper1stchar($pSuffix);
         $pAddressv = toupper1stchar($pAddress);
 
-        $sql = "UPDATE patient SET pFname='$pFnamev',pMname='$pMnamev',pLname='$pLnamev',pSuffix='$pSuffixv',pAddress='$pAddressv',pBdate='$pBdate',pContact='$pContact',pEmail='$pEmail', pModified='$pModified' WHERE pID='$pID'";
+        $sql = "UPDATE patient SET pFname='$pFnamev',pMname='$pMnamev',pLname='$pLnamev',pSuffix='$pSuffixv',pAddress='$pAddressv',pBdate='$pBdate',pContact='$pContact',pUsername='$pUsername', pModified='$pModified' WHERE pID='$pID'";
 
         if ($conn->query($sql) === TRUE) {
             header("location: ../public/records_p.php");

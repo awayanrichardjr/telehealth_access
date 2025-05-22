@@ -43,14 +43,14 @@
                 <input type="text" name="conContact" id="conContact" value="<?php echo $_SESSION['pContact'] ?>">
             </div>
         </section>
-        <label for="conEmail">E-mail *
+        <label for="conUsername">E-mail *
             <span class="error">
-                <?php if (isset($_GET['conEmailErr'])) {
-                    echo $conEmailError = $_GET['conEmailErr'];
+                <?php if (isset($_GET['conUsernameErr'])) {
+                    echo $conUsernameError = $_GET['conUsernameErr'];
                 } ?>
             </span>
         </label>
-        <input type="email" name="conEmail" id="conEmail" value="<?php echo $_SESSION['pEmail'] ?>">
+        <input type="text" name="conUsername" id="conUsername" value="<?php echo $_SESSION['pUsername'] ?>">
 
         <hr>
         <section class="details">

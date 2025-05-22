@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-if (empty($_SESSION['pEmail']) || empty($_SESSION['pPass'])) {
+if (empty($_SESSION['pUsername']) || empty($_SESSION['pPass'])) {
     header("location: ../public/logout_p.php");
     exit();
 } else {
@@ -31,7 +31,7 @@ if (empty($_SESSION['pEmail']) || empty($_SESSION['pPass'])) {
             $_SESSION['docBdate'] = $row['docBdate'];
             $_SESSION['docAddress'] = $row['docAddress'];
             $_SESSION['docSpecialty'] = $row['docSpecialty'];
-            $_SESSION['docEmail'] = $row['docEmail'];
+            $_SESSION['docUsername'] = $row['docUsername'];
             $_SESSION['docContact'] = $row['docContact'];
             $_SESSION['docPass'] = $row['docPass'];
             $_SESSION['docConfirm'] = $row['docConfirm'];
@@ -46,7 +46,7 @@ if (empty($_SESSION['pEmail']) || empty($_SESSION['pPass'])) {
             // specialists table body
             include '../table/user_sp_tbody.php';
         }
-    } 
+    }
     $conn->close();
 }
 

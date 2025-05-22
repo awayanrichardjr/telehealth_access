@@ -4,18 +4,18 @@ session_start();
 include '../user/index.php';
 include '../user/nav.php';
 
-$pEmailErr = $pPassErr = "";
+$pUsernameErr = $pPassErr = "";
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    $pEmail = validate($_POST['pEmail']);
+    $pUsername = validate($_POST['pUsername']);
     $pPass = validate($_POST['pPass']);
 
-    if (empty($pEmail)) {
-        $pEmailErr = "is required";
+    if (empty($pUsername)) {
+        $pUsernameErr = "is required";
     } else if (empty($pPass)) {
         $pPassErr = "is required";
     } else {
-        $sql = "SELECT * FROM patient WHERE pEmail='$pEmail' AND pPass='$pPass'";
+        $sql = "SELECT * FROM patient WHERE pUsername='$pUsername' AND pPass='$pPass'";
         $result = $conn->query($sql);
 
         if ($result->num_rows > 0) {
@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $_SESSION['pAddress'] = $row['pAddress'];
                 $_SESSION['pBdate'] = $row['pBdate'];
                 $_SESSION['pContact'] = $row['pContact'];
-                $_SESSION['pEmail'] = $row['pEmail'];
+                $_SESSION['pUsername'] = $row['pUsername'];
                 $_SESSION['pPass'] = $row['pPass'];
                 $_SESSION['pConfirm'] = $row['pConfirm'];
 
