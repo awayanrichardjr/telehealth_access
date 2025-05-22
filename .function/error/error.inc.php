@@ -151,7 +151,7 @@ function error_consult_doc(
     $conSelectedDoc,
     $conDocSpecialty,
     $conADateTime,
-    $conDiagnose,
+    $conDiagnose
 ) {
     // consult
     if (empty($conName)) {
