@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             header("location: log_doc.php");
             exit();
         } else {
-            header("location: ../public/reg_doc.php?docUsernameTakenErr=E-mail has been taken");
+            header("location: ../public/reg_doc.php?docUsernameTakenErr=Username has been taken");
             exit();
         }
 

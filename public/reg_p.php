@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             header("location: log_p.php");
             exit();
         } else {
-            header("location: ../public/reg_p.php?pUsernameTakenErr=E-mail has been taken");
+            header("location: ../public/reg_p.php?pUsernameTakenErr=Username has been taken");
             exit();
         }
 

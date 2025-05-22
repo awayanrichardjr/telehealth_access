@@ -22,7 +22,7 @@
 
             </div>
             <div>
-                <label for="conUsername">Patient E-mail *</label>
+                <label for="conUsername">Patient Username *</label>
                 <input type="text" name="conUsername" id="conUsername" value="<?php echo $row['conUsername'] ?>">
 
             </div>

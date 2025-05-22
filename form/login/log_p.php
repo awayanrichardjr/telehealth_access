@@ -2,10 +2,10 @@
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
         <h1>Login as a patient</h1>
         <div>
-            <label for="pUsername">E-mail
+            <label for="pUsername">Username
                 <span class="error"><?php echo $pUsernameErr ?></span>
             </label>
-            <input type="text" name="pUsername" id="pUsername" placeholder="Enter E-mail">
+            <input type="text" name="pUsername" id="pUsername" placeholder="Enter Username">
         </div>
         <div>
             <label for="pPass">Password

@@ -108,9 +108,9 @@
             </div>
         </section>
 
-        <!-- E-MAIL  -->
+        <!-- Username  -->
         <div>
-            <label for="docUsername">E-mail</label>
+            <label for="docUsername">Username</label>
             <span class="error">
                 <?php if (isset($_GET['docUsernameErr'])) {
                     echo $docFnameErr = $_GET['docUsernameErr'];

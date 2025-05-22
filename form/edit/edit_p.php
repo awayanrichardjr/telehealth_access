@@ -78,7 +78,7 @@
         </section>
 
         <div>
-            <label for="pUsername">E-mail
+            <label for="pUsername">Username
                 <span class="error">
                     <?php if (isset($_GET['pUsername'])) {
                         echo $pUsernameErr = $_GET['pUsername'];
@@ -89,8 +89,8 @@
         </div>
         <div>
             <input type="hidden" name="pModified" id="pModified" value="<?php
-            date_default_timezone_set("Asia/Manila");
-            echo date("M-d-Y h:ia") ?>">
+                                                                        date_default_timezone_set("Asia/Manila");
+                                                                        echo date("M-d-Y h:ia") ?>">
         </div>
         <input type="submit" name="submit" id="submit" value="Save">
     </form>

@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             header("location: log_admin.php");
             exit();
         } else {
-            header("location: ../public/reg_admin.php?adminUsernameTakenErr=E-mail has been taken");
+            header("location: ../public/reg_admin.php?adminUsernameTakenErr=Username has been taken");
             exit();
             // echo "Error: " . $sql . "<br>" . $conn->error;
         }

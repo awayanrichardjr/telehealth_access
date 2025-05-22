@@ -29,7 +29,7 @@
                         <p><?php echo $_SESSION['medBdate'] ?></p>
                     </li>
                     <li>
-                        <label for="medUsername">E-mail:</label>
+                        <label for="medUsername">Username:</label>
                         <p><?php echo $_SESSION['medUsername'] ?></p>
                     </li>
                     <li>

@@ -26,7 +26,7 @@
                         <p><?php echo $_SESSION['conBdate'] ?></p>
                     </li>
                     <li>
-                        <label for="conUsername">E-mail:</label>
+                        <label for="conUsername">Username:</label>
                         <p><?php echo $_SESSION['conUsername'] ?></p>
                     </li>
                     <li>

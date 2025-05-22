@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 exit();
             }
         } else {
-            header("location: ../public/log_doc.php?error=Incorrect Password or E-mail");
+            header("location: ../public/log_doc.php?error=Incorrect Password or Username");
             exit();
         }
     }

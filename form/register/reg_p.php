@@ -83,21 +83,21 @@
         </section>
 
         <hr>
-        <!-- duplicate e-mail error -->
+        <!-- duplicate Username error -->
         <span style="text-align: center;">
             <?php if (isset($_GET['pUsernameTakenErr'])) {
                 echo $pUsernameTakenError = $_GET['pUsernameTakenErr'];
             } ?>
         </span>
         <div>
-            <label for="pUsername">E-mail
+            <label for="pUsername">Username
                 <span class="error">
                     <?php if (isset($_GET['pUsernameErr'])) {
                         echo $pUsernameError = $_GET['pUsernameErr'];
                     } ?>
                 </span>
             </label>
-            <input type="text" name="pUsername" id="pUsername" placeholder="E-mail">
+            <input type="text" name="pUsername" id="pUsername" placeholder="Username">
         </div>
 
         <!-- passwords error  -->

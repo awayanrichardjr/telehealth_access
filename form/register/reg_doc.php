@@ -121,21 +121,21 @@
         <input type="hidden" name="docStatus" id="docStatus" value="Unverified">
 
         <hr>
-        <!-- duplicate e-mail error -->
+        <!-- duplicate Username error -->
         <span class="error">
             <?php if (isset($_GET['docUsernameTakenErr'])) {
                 echo $docUsernameTakenError = $_GET['docUsernameTakenErr'];
             } ?>
         </span>
         <div>
-            <label for="docUsername">E-mail
+            <label for="docUsername">Username
                 <span class="error">
                     <?php if (isset($_GET['docUsernameErr'])) {
                         echo $docUsernameError = $_GET['docUsernameErr'];
                     } ?>
                 </span>
             </label>
-            <input type="text" name="docUsername" id="docUsername" placeholder="E-mail">
+            <input type="text" name="docUsername" id="docUsername" placeholder="Username">
         </div>
 
         <!-- passwords error  -->
