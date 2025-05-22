@@ -18,11 +18,6 @@
 </head>
 
 <body class="lightmode">
-    <!-- background  -->
-    <!-- <div class="body-bg-blur"></div>
-    <div class="body-bg1"></div>
-    <div class="body-bg2"></div>
-    <div class="body-bg3"></div> -->
 
     <!-- </body>
 

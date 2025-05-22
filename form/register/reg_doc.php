@@ -121,6 +121,7 @@
         <input type="hidden" name="docStatus" id="docStatus" value="Unverified">
 
         <hr>
+
         <!-- duplicate Username error -->
         <span class="error">
             <?php if (isset($_GET['docUsernameTakenErr'])) {
@@ -135,7 +136,7 @@
                     } ?>
                 </span>
             </label>
-            <input type="text" name="docUsername" id="docUsername" placeholder="Username">
+            <input type="username" name="docUsername" id="docUsername" placeholder="Username">
         </div>
 
         <!-- passwords error  -->

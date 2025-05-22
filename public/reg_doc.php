@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // if password not match ...&&
     if (($docPass) != ($docConfirm)) {
-        header("location: ../public/doc_reg.php?docPassNotMatch=Passwords not match!");
+        header("location: ../public/reg_doc.php?docPassNotMatch=Passwords not match!");
         exit();
     } else {
 

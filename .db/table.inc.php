@@ -6,5 +6,4 @@ include '../.db/table/feed.php';
 include '../.db/table/chat.php';
 include '../.db/table/doctor.php';
 include '../.db/table/admin.php';
-
 include '../.db/table/medical.php';
