@@ -69,8 +69,9 @@ a:hover .material-symbols-outlined {
     box-shadow: var(--shadow);
     position: absolute;
     left: 0;
+    top: 70px;
 
-    height: 80vh;
+    height: inherit;
     width: 300px;
     padding: 1rem;
 

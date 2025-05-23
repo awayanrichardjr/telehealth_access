@@ -1,7 +1,7 @@
 <section class="user_role">
     <label for="" class="info-label">
         <p>Select role to <b>login</b></p>
-        <a href="#"><span class="material-symbols-outlined" style="font-size: 17px;">info</span></a>
+        <a href="../public/info_guide.php"><span class="material-symbols-outlined" style="font-size: 17px;">info</span></a>
     </label>
     <ul>
         <li class="doc">
