@@ -2,11 +2,10 @@
   <?php if ($_SESSION['conUsername'] === $_SESSION['pUsername']) { ?>
     <td style="background-color: var(--purple);">
     <?php } else { ?>
-    <td style="background-color: var(--blue);">
+    <td style="background-color: lightgrey;">
     <?php } ?>
     <ul class="view-appt">
       <li>
-        <h3><?php echo $_SESSION['conName'] ?></h3>
         <p><?php echo $_SESSION['conUsername'] ?></p>
       </li>
 

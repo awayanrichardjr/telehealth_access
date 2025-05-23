@@ -9,7 +9,6 @@
     <?php } ?>
     <ul class="view-appt">
       <li>
-        <h3><?php echo $_SESSION['medName'] ?></h3>
         <p><?php echo $_SESSION['medUsername'] ?></p>
       </li>
 
