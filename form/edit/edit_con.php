@@ -64,7 +64,7 @@
                 </select>
             </div>
             <div>
-                <?php include '../form/edit_diagnose/derma.php' ?>
+                <?php include '../form/diagnose/edit_diagnose_con/derma.php' ?>
             </div>
             <div>
                 <label for="conADateTime">Appointment Date/Time *</label>

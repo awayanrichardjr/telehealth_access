@@ -89,7 +89,7 @@
 
         <!-- conpliant  -->
         <div>
-            <?php include '../form/edit_diagnose/derma.php' ?>
+            <?php include '../form/diagnose/edit_diagnose_med/derma.php' ?>
         </div>
 
         <!-- additional concern  -->
