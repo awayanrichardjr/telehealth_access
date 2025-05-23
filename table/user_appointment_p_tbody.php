@@ -1,5 +1,9 @@
 <tr class="appointment_tr">
-  <td>
+  <?php if ($_SESSION['conUsername'] === $_SESSION['pUsername']) { ?>
+    <td style="background-color: var(--purple);">
+    <?php } else { ?>
+    <td style="background-color: var(--blue);">
+    <?php } ?>
     <ul class="view-appt">
       <li>
         <h3><?php echo $_SESSION['conName'] ?></h3>
@@ -42,5 +46,5 @@
     <p><?php echo $_SESSION['conDocSpecialty'] ?></p>
     <p><?php echo $_SESSION['conADateTime'] = date_default_timezone_set("Asia/Manila");
         echo date("M d, Y h:ia") ?></p>
-  </td>
+    </td>
 </tr>

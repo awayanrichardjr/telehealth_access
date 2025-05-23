@@ -1,5 +1,8 @@
 <tr class="appointment_tr">
-  <?php if ($_SESSION['medUsername'] === $_SESSION['pUsername']) { ?>
+  <?php
+  $docName = "Dr. " . $_SESSION['docFname'] . " " . $_SESSION['docMname'] . " " . $_SESSION['docLname'] . " " . $_SESSION['docSuffix'];
+
+  if ($_SESSION['conSelectedDoc'] === $docName) { ?>
     <td style="background-color: var(--purple);">
     <?php } else { ?>
     <td style="background-color: var(--blue);">
@@ -13,16 +16,16 @@
       <!-- visibility action -->
       <li class="view-appt">
         <?php
-        if ($_SESSION['medUsername'] === $_SESSION['pUsername']) { ?>
+        if ($_SESSION['medSelectedDoc'] === $docName) { ?>
           <!-- visible -->
-          <a href="../public/view_medical_p.php?medID=<?php echo $row['medID'] ?>" class="appt-visibility">
+          <a href="../public/view_medical_doc.php?medID=<?php echo $row['medID'] ?>" class="appt-visibility">
             <span class="material-symbols-outlined">visibility</span>
             <p>View</p>
           </a>
         <?php
         } else { ?>
           <!-- locked -->
-          <a href="../public/appointment_past_p.php?locked" class="appt-visibility">
+          <a href="../public/appointment_past_doc.php?locked" class="appt-visibility">
             <span class="material-symbols-outlined">visibility_lock</span>
             <p>Locked</p>
           </a>

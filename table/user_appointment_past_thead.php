@@ -1,5 +1,5 @@
 <section class="user_table appointment">
-    <h1>Appointments</h1>
+    <h1>Medical Records</h1>
     <div>
         <table>
             <thead></thead>
