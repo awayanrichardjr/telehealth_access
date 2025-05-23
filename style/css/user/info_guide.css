@@ -1,0 +1,15 @@
+.info-guide {}
+
+.info-guide :where(h1) {
+    background-color: rgb(255, 249, 249);
+    padding: 1rem;
+    color: var(--blue);
+    height: 100vh;
+}
+
+.info-guide :where(#select-role) {
+    background-color: rgb(245, 245, 245);
+    padding: 1rem;
+
+    height: 100vh;
+}
