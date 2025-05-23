@@ -27,12 +27,13 @@
 
             </div>
         </section>
-
-        <!-- personal doctor  -->
-        <label for="conSelectedDoc">Patient's Personal Doctor *</label>
-        <input type="text" name="conSelectedDoc" id="conSelectedDoc" value="<?php echo $row['conSelectedDoc'] ?>">
-
+        <hr>
         <section class="details">
+            <div>
+                <!-- personal doctor  -->
+                <label for="conSelectedDoc">Patient's Personal Doctor *</label>
+                <input type="text" name="conSelectedDoc" id="conSelectedDoc" value="<?php echo $row['conSelectedDoc'] ?>">
+            </div>
             <!-- specialists  -->
             <div>
                 <label for="conDocSpecialty">Doctor's Specialist *</label>
@@ -63,16 +64,18 @@
                     <option value="Surgeon">Surgeon</option>
                 </select>
             </div>
-            <div>
-                <?php include '../form/diagnose/edit_diagnose_con/derma.php' ?>
-            </div>
-            <div>
-                <label for="conADateTime">Appointment Date/Time *</label>
-                <input type="datetime-local" name="conADateTime" id="conADateTime"
-                    value="<?php echo $row['conADateTime'] ?>">
-            </div>
         </section>
+
+        <!-- Appointment Date/Time -->
+        <label for="conADateTime">Appointment Date/Time *</label>
+        <input type="datetime-local" name="conADateTime" id="conADateTime" value="<?php echo $row['conADateTime'] ?>">
+
+        <!-- compliant -->
+        <?php include '../form/diagnose/edit_diagnose_con/derma.php' ?>
+
+        <!-- Appointment created date -->
         <input type="hidden" name="conCdate" id="conCdate" value="<?php echo $row['conCdate'] ?>">
+
         <label for="conConcern">Patient's Additional Concern *</label>
         <textarea name="conConcern" id="conConcern"
             placeholder="Type additional concern or specify your concern..."><?php echo $row['conConcern'] ?></textarea>
