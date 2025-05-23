@@ -61,3 +61,31 @@ a:hover .material-symbols-outlined {
 .info-label .material-symbols-outlined {
     color: var(--blue);
 }
+
+/* info steps  */
+.info-step {
+    background-color: white;
+    border-radius: var(--card-border);
+    box-shadow: var(--shadow);
+    position: absolute;
+    left: 0;
+
+    height: 80vh;
+    width: 300px;
+    padding: 1rem;
+
+    z-index: 1000;
+
+    font-size: 14px;
+    text-align: justify;
+
+    display: none;
+}
+
+.info-label:hover .info-step {
+    display: block;
+}
+
+.info-step :where(h1, b) {
+    color: var(--blue);
+}
