@@ -3,7 +3,7 @@
         <!-- header  -->
         <header class="header">
             <img class="logo" src="../img/images/doctor.png" alt="img">
-            <h1>TELEHEALTH ACCESS<br>APPOINTMENT</h1>
+            <h1>TELEHEALTH ACCESS<br>MEDICAL INFORMATION</h1>
         </header>
 
         <!-- body  -->
