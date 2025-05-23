@@ -5,6 +5,7 @@
             <h2>Welcome to the Telehealth Feed!</h2>
             <a href="#"><span class="material-symbols-outlined" style="font-size: 17px;">info</span></a>
         </label>
+        
         <p>This is where you can find the latest updates and information.</p>
         <?php
 

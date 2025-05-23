@@ -1,6 +1,9 @@
 <section class="form form_edit">
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" enctype="multipart/form-data">
-        <h1>USER VERIFICATION FORM</h1>
+        <label for="" class="info-label">
+            <h1>USER VERIFICATION FORM</h1>
+            <a href="../public/info_guide.php"><span class="material-symbols-outlined" style="font-size: 17px;">info</span></a>
+        </label>
         <p style="color: grey;">ID: <?php echo $selected_docID ?></p>
         <input type="hidden" name="docID" id="docID" value="<?php echo $selected_docID ?>">
 

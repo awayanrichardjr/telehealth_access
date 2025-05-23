@@ -90,3 +90,7 @@ a:hover .material-symbols-outlined {
 .info-step :where(h1, b) {
     color: var(--blue);
 }
+
+.info-label :where(h1) {
+    font-size: 20px;
+}

@@ -1,6 +1,9 @@
 <section class="form medical">
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-        <h1>Close Appointment</h1>
+        <label for="" class="info-label">
+            <h1>Close Appointment</h1>
+            <a href=" ../public/info_guide.php"><span class="material-symbols-outlined" style="font-size: 17px;">info</span></a>
+        </label>
         <input type="hidden" name="medID" id="medID" value="<?php echo $_SESSION['conID'] ?>" readonly>
         <input type="hidden" name="medName" id="medName" value="<?php echo $_SESSION['conName'] ?>" readonly>
         <input type="hidden" name="medAddress" id="medAddress" value="<?php echo $_SESSION['conAddress'] ?>" readonly>
