@@ -1,4 +1,4 @@
-<section class="form">
+<section class="form log_admin">
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
         <span class="material-symbols-outlined log-icon"
             style="font-size: 100px; color: var(--blue); text-align:center; width:100%;">admin_meds</span>

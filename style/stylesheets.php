@@ -54,6 +54,8 @@
 <link rel="stylesheet" href="../style/css/form/view_appointment_p.css">
 <link rel="stylesheet" href="../style/css/form/view_appointment_doc.css">
 <link rel="stylesheet" href="../style/css/form/payment.css">
+<link rel="stylesheet" href="../style/css/form/log_admin.css">
+<link rel="stylesheet" href="../style/css/form/reg_admin.css">
 
 <!-- table  -->
 <link rel="stylesheet" href="../style/css/table/table.css">

@@ -1,7 +1,7 @@
 <?php
 Ob_start();
 include '../admin/index.php';
-include '../admin/nav.php';
+// include '../admin/nav.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 

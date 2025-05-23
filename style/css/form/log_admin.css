@@ -1,0 +1,12 @@
+.log_admin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+    .log_admin {
+        justify-content: start;
+        align-items: start;
+    }
+}

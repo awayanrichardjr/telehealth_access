@@ -1,4 +1,4 @@
-<section class="form">
+<section class="form reg_admin">
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
         <h1 class="title-reg">
             <span class="material-symbols-outlined" style="font-size: 30px; color: var(--blue);">admin_meds</span>
