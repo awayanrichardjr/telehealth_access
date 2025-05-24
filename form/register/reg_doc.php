@@ -8,7 +8,13 @@
 
         <!-- Hidden Section -->
         <div id="popupSection">
-            <p>This is the popped-up section!</p>
+            <h1>Doctor Registration</h1>
+            <p>Join TELEHEALTH ACCESS as a Healthcare Provider</p>
+            <br>
+            <p>Please fill out the form below to create your doctor account and start offering online consultations.</p>
+            <p>- Username must not be unique.</p>
+            <p>- Contact number mut be unique.</p>
+            <br>
             <button class="info-button" onclick="document.getElementById('popupSection').style.display='none'">Close</button>
         </div>
     </label>

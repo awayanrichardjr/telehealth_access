@@ -95,3 +95,17 @@ a:hover .material-symbols-outlined {
 
     transition: 1s;
 }
+
+#popupSection :where(h1) {
+    color: var(--blue);
+    text-align: start;
+}
+
+#popupSection :where(b) {
+    color: var(--blue);
+}
+
+#popupSection :where(p) {
+    font-size: 12px;
+    color: grey;
+}

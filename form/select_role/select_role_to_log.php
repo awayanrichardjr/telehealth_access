@@ -11,7 +11,12 @@
 
         <!-- Hidden Section -->
         <div id="popupSection">
-            <p>This is the popped-up section!</p>
+            <h1>Select Your Role to Log In</h1>
+            <p>Please choose your role to access the appropriate dashboard:</p>
+            <br>
+            <p><b>Patient:</b> Access your appointments, consultations, and health records.</p>
+            <p><b>Doctor:</b> View your schedule, manage consultations, and patient data.</p>
+            <br>
             <button class="info-button" onclick="document.getElementById('popupSection').style.display='none'">Close</button>
         </div>
     </label>
