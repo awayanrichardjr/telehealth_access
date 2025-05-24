@@ -14,29 +14,29 @@
                 <h2>
                     <?php
 
-                    $ran1 = random_int(1, 100);
-                    $ran2 = random_int(1, 100);
-                    $ran3 = random_int(1, 100);
-                    $ran4 = random_int(1, 100);
-                    $ran5 = random_int(1, 100);
-                    $ran6 = random_int(1, 100);
-                    $ran7 = random_int(1, 100);
-                    $ran8 = random_int(1, 100);
-                    $ran9 = random_int(1, 100);
-                    $ran10 = random_int(1, 100);
-                    $ran11 = random_int(1, 100);
-                    $ran12 = random_int(1, 100);
-                    $ran13 = random_int(1, 100);
-                    $ran14 = random_int(1, 100);
-                    $ran15 = random_int(1, 100);
-                    $ran16 = random_int(1, 100);
-                    $ran17 = random_int(1, 100);
-                    $ran18 = random_int(1, 100);
-                    $ran19 = random_int(1, 100);
-                    $ran20 = random_int(1, 100);
-                    $ran21 = random_int(1, 100);
-                    $ran22 = random_int(1, 100);
-                    $ran23 = random_int(1, 100);
+                    // $ran1 = random_int(1, 100);
+                    // $ran2 = random_int(1, 100);
+                    // $ran3 = random_int(1, 100);
+                    // $ran4 = random_int(1, 100);
+                    // $ran5 = random_int(1, 100);
+                    // $ran6 = random_int(1, 100);
+                    // $ran7 = random_int(1, 100);
+                    // $ran8 = random_int(1, 100);
+                    // $ran9 = random_int(1, 100);
+                    // $ran10 = random_int(1, 100);
+                    // $ran11 = random_int(1, 100);
+                    // $ran12 = random_int(1, 100);
+                    // $ran13 = random_int(1, 100);
+                    // $ran14 = random_int(1, 100);
+                    // $ran15 = random_int(1, 100);
+                    // $ran16 = random_int(1, 100);
+                    // $ran17 = random_int(1, 100);
+                    // $ran18 = random_int(1, 100);
+                    // $ran19 = random_int(1, 100);
+                    // $ran20 = random_int(1, 100);
+                    // $ran21 = random_int(1, 100);
+                    // $ran22 = random_int(1, 100);
+                    // $ran23 = random_int(1, 100);
 
                     $mild = 0.10;
                     $moderate = 0.25;
@@ -48,7 +48,7 @@
 
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Dermatologist'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($derma_total = mysqli_num_rows($num_of_doc_run) + $ran1) {
+                    if ($derma_total = mysqli_num_rows($num_of_doc_run)) {
                         $as = $derma_total / 100;
                         if ($as >= $emergency) {
                             echo '<p style="color: var(--emergency);">' . $as . "%" . " emergency" . '</p>';
@@ -79,7 +79,7 @@
                     // $obste_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Obstetrician-Gynecologist'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($obste_total = mysqli_num_rows($num_of_doc_run) + $ran2) {
+                    if ($obste_total = mysqli_num_rows($num_of_doc_run)) {
                         $as = $obste_total / 100;
                         if ($as >= $emergency) {
                             echo '<p style="color: var(--emergency);">' . $as . "%" . " emergency" . '</p>';
@@ -110,7 +110,7 @@
                     // $optha_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Ophthalmologist'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($optha_total = mysqli_num_rows($num_of_doc_run) + $ran3) {
+                    if ($optha_total = mysqli_num_rows($num_of_doc_run)) {
                         $as = $optha_total / 100;
                         if ($as >= $emergency) {
                             echo '<p style="color: var(--emergency);">' . $as . "%" . " emergency" . '</p>';
@@ -141,7 +141,7 @@
                     // $allergy_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Allergist'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($allergy_total = mysqli_num_rows($num_of_doc_run) + $ran4) {
+                    if ($allergy_total = mysqli_num_rows($num_of_doc_run)) {
                         $as = $allergy_total / 100;
                         if ($as >= $emergency) {
                             echo '<p style="color: var(--emergency);">' . $as . "%" . " emergency" . '</p>';
@@ -172,7 +172,7 @@
                     // $gastro_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Gastroenterologist'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($gastro_total = mysqli_num_rows($num_of_doc_run) + $ran5) {
+                    if ($gastro_total = mysqli_num_rows($num_of_doc_run)) {
                         $as = $gastro_total / 100;
                         if ($as >= $emergency) {
                             echo '<p style="color: var(--emergency);">' . $as . "%" . " emergency" . '</p>';
@@ -203,7 +203,7 @@
                     // $geria_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Geriatrician'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($geria_total = mysqli_num_rows($num_of_doc_run) + $ran6) {
+                    if ($geria_total = mysqli_num_rows($num_of_doc_run)) {
                         $as = $geria_total / 100;
                         if ($as >= $emergency) {
                             echo '<p style="color: var(--emergency);">' . $as . "%" . " emergency" . '</p>';
@@ -234,7 +234,7 @@
                     // $infec_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Infectious Disease Specialist'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($infec_total = mysqli_num_rows($num_of_doc_run) + $ran7) {
+                    if ($infec_total = mysqli_num_rows($num_of_doc_run)) {
                         $as = $infec_total / 100;
                         if ($as >= $emergency) {
                             echo '<p style="color: var(--emergency);">' . $as . "%" . " emergency" . '</p>';
@@ -265,7 +265,7 @@
                     // $hema_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Hematologist'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($hema_total = mysqli_num_rows($num_of_doc_run) + $ran8) {
+                    if ($hema_total = mysqli_num_rows($num_of_doc_run)) {
                         $as = $hema_total / 100;
                         if ($as >= $emergency) {
                             echo '<p style="color: var(--emergency);">' . $as . "%" . " emergency" . '</p>';
@@ -296,7 +296,7 @@
                     // $neuro_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Neurologist'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($neuro_total = mysqli_num_rows($num_of_doc_run) + $ran9) {
+                    if ($neuro_total = mysqli_num_rows($num_of_doc_run)) {
                         $as = $neuro_total / 100;
                         if ($as >= $emergency) {
                             echo '<p style="color: var(--emergency);">' . $as . "%" . " emergency" . '</p>';
@@ -327,7 +327,7 @@
                     // $cardio_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Cardiologist'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($cardio_total = mysqli_num_rows($num_of_doc_run) + $ran10) {
+                    if ($cardio_total = mysqli_num_rows($num_of_doc_run)) {
                         $as = $cardio_total / 100;
                         if ($as >= $emergency) {
                             echo '<p style="color: var(--emergency);">' . $as . "%" . " emergency" . '</p>';
@@ -358,7 +358,7 @@
                     // $pedia_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Pediatrician'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($pedia_total = mysqli_num_rows($num_of_doc_run) + $ran11) {
+                    if ($pedia_total = mysqli_num_rows($num_of_doc_run)) {
                         $as = $pedia_total / 100;
                         if ($as >= $emergency) {
                             echo '<p style="color: var(--emergency);">' . $as . "%" . " emergency" . '</p>';
@@ -389,7 +389,7 @@
                     // $endo_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Endocrinologist'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($endo_total = mysqli_num_rows($num_of_doc_run) + $ran12) {
+                    if ($endo_total = mysqli_num_rows($num_of_doc_run)) {
                         $as = $endo_total / 100;
                         if ($as >= $emergency) {
                             echo '<p style="color: var(--emergency);">' . $as . "%" . " emergency" . '</p>';
@@ -420,7 +420,7 @@
                     // $radio_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Radiologist'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($radio_total = mysqli_num_rows($num_of_doc_run) + $ran13) {
+                    if ($radio_total = mysqli_num_rows($num_of_doc_run)) {
                         $as = $radio_total / 100;
                         if ($as >= $emergency) {
                             echo '<p style="color: var(--emergency);">' . $as . "%" . " emergency" . '</p>';
@@ -451,7 +451,7 @@
                     // $nephro_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Nephrologist'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($nephro_total = mysqli_num_rows($num_of_doc_run) + $ran14) {
+                    if ($nephro_total = mysqli_num_rows($num_of_doc_run)) {
                         $as = $nephro_total / 100;
                         if ($as >= $emergency) {
                             echo '<p style="color: var(--emergency);">' . $as . "%" . " emergency" . '</p>';
@@ -482,7 +482,7 @@
                     // $otorhi_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Otorhinolaryngologist'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($otorhi_total = mysqli_num_rows($num_of_doc_run) + $ran15) {
+                    if ($otorhi_total = mysqli_num_rows($num_of_doc_run)) {
                         $as = $otorhi_total / 100;
                         if ($as >= $emergency) {
                             echo '<p style="color: var(--emergency);">' . $as . "%" . " emergency" . '</p>';
@@ -513,7 +513,7 @@
                     // $podia_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Podiatrist'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($podia_total = mysqli_num_rows($num_of_doc_run) + $ran16) {
+                    if ($podia_total = mysqli_num_rows($num_of_doc_run)) {
                         $as = $podia_total / 100;
                         if ($as >= $emergency) {
                             echo '<p style="color: var(--emergency);">' . $as . "%" . " emergency" . '</p>';
@@ -544,7 +544,7 @@
                     // $fam_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Family Medicine Doctor'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($fam_total = mysqli_num_rows($num_of_doc_run) + $ran17) {
+                    if ($fam_total = mysqli_num_rows($num_of_doc_run)) {
                         $as = $fam_total / 100;
                         if ($as >= $emergency) {
                             echo '<p style="color: var(--emergency);">' . $as . "%" . " emergency" . '</p>';
@@ -575,7 +575,7 @@
                     // $psych_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Psychiatrist'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($psych_total = mysqli_num_rows($num_of_doc_run) + $ran18) {
+                    if ($psych_total = mysqli_num_rows($num_of_doc_run)) {
                         $as = $psych_total / 100;
                         if ($as >= $emergency) {
                             echo '<p style="color: var(--emergency);">' . $as . "%" . " emergency" . '</p>';
@@ -606,7 +606,7 @@
                     // $emp_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Emergency Medicine Physician'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($emp_total = mysqli_num_rows($num_of_doc_run) + $ran19) {
+                    if ($emp_total = mysqli_num_rows($num_of_doc_run)) {
                         $as = $emp_total / 100;
                         if ($as >= $emergency) {
                             echo '<p style="color: var(--emergency);">' . $as . "%" . " emergency" . '</p>';
@@ -637,7 +637,7 @@
                     // $anes_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Anesthesiologist'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($anes_total = mysqli_num_rows($num_of_doc_run) + $ran20) {
+                    if ($anes_total = mysqli_num_rows($num_of_doc_run)) {
                         $as = $anes_total / 100;
                         if ($as >= $emergency) {
                             echo '<p style="color: var(--emergency);">' . $as . "%" . " emergency" . '</p>';
@@ -668,7 +668,7 @@
                     // $gene_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='General Surgeon'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($gene_total = mysqli_num_rows($num_of_doc_run) + $ran21) {
+                    if ($gene_total = mysqli_num_rows($num_of_doc_run)) {
                         $as = $gene_total / 100;
                         if ($as >= $emergency) {
                             echo '<p style="color: var(--emergency);">' . $as . "%" . " emergency" . '</p>';
@@ -699,7 +699,7 @@
                     // $patho_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Pathologist'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($patho_total = mysqli_num_rows($num_of_doc_run) + $ran22) {
+                    if ($patho_total = mysqli_num_rows($num_of_doc_run)) {
                         $as = $patho_total / 100;
                         if ($as >= $emergency) {
                             echo '<p style="color: var(--emergency);">' . $as . "%" . " emergency" . '</p>';
@@ -730,7 +730,7 @@
                     // $surgeon_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Surgeon'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($surgeon_total = mysqli_num_rows($num_of_doc_run) + $ran23) {
+                    if ($surgeon_total = mysqli_num_rows($num_of_doc_run)) {
                         $as = $surgeon_total / 100;
                         if ($as >= $emergency) {
                             echo '<p style="color: var(--emergency);">' . $as . "%" . " emergency" . '</p>';
