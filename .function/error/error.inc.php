@@ -1,5 +1,6 @@
 <?php
-// error
+
+// admin
 function error_reg_admin(
     $adminFname,
     $adminMname,
@@ -11,7 +12,6 @@ function error_reg_admin(
     $adminPass,
     $adminConfirm
 ) {
-    // admin
     if (empty($adminFname)) {
         header("location: ../public/reg_admin.php?adminFnameErr= empty field");
         exit();
@@ -50,6 +50,7 @@ function error_reg_admin(
     }
 }
 
+// doc
 function error_reg_doc(
     $docFname,
     $docMname,
@@ -61,7 +62,6 @@ function error_reg_doc(
     $docPass,
     $docConfirm
 ) {
-    // doc
     if (empty($docFname)) {
         header("location: ../public/reg_doc.php?docFnameErr= empty field");
         exit();
@@ -100,9 +100,18 @@ function error_reg_doc(
     }
 }
 
-function error_reg_p($pFname, $pMname, $pLname, $pAddress, $pBdate, $pContact, $pUsername, $pPass, $pConfirm)
-{
-    // p
+// patient
+function error_reg_p(
+    $pFname,
+    $pMname,
+    $pLname,
+    $pAddress,
+    $pBdate,
+    $pContact,
+    $pUsername,
+    $pPass,
+    $pConfirm
+) {
     if (empty($pFname)) {
         header("location: ../public/reg_p.php?pFnameErr= empty field");
         exit();
@@ -141,6 +150,7 @@ function error_reg_p($pFname, $pMname, $pLname, $pAddress, $pBdate, $pContact, $
     }
 }
 
+// consult
 function error_consult_doc(
     $conName,
     $conAddress,
@@ -153,7 +163,6 @@ function error_consult_doc(
     $conADateTime,
     $conDiagnose
 ) {
-    // consult
     if (empty($conName)) {
         header("location: ../public/consult_selected_doc.php?conNameErr= empty field");
         exit();
@@ -197,6 +206,8 @@ function error_consult_doc(
         exit();
     }
 }
+
+// medical
 function error_medical_doc(
     $medName,
     $medAddress,
@@ -208,7 +219,6 @@ function error_medical_doc(
     $medADateTime,
     $medDiagnose
 ) {
-    // consult
     if (empty($medName)) {
         header("location: ../public/close_action_form.php?medNameErr= empty field");
         exit();
@@ -248,6 +258,8 @@ function error_medical_doc(
         exit();
     }
 }
+
+// doc
 function error_edit_doc(
     $docFname,
     $docMname,
@@ -259,7 +271,6 @@ function error_edit_doc(
     $docPass,
     $docConfirm
 ) {
-    // doc
     if (empty($docFname)) {
         header("location: ../public/edit_doc.php?docFnameErr= empty field");
         exit();
@@ -298,9 +309,18 @@ function error_edit_doc(
     }
 }
 
-function error_edit_p($pFname, $pMname, $pLname, $pAddress, $pBdate, $pContact, $pUsername, $pPass, $pConfirm)
-{
-    // p
+// patient
+function error_edit_p(
+    $pFname,
+    $pMname,
+    $pLname,
+    $pAddress,
+    $pBdate,
+    $pContact,
+    $pUsername,
+    $pPass,
+    $pConfirm
+) {
     if (empty($pFname)) {
         header("location: ../public/edit_p.php?pFnameErr= empty field");
         exit();

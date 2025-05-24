@@ -39,7 +39,7 @@
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                     if ($derma_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
                         $as = rate($derma_total);
-                        include '../.function/statistic_status.php';
+                        include '../.function/statistic_status.inc.php';
                     } else {
                         echo 0 . "%";
                     }
@@ -58,7 +58,7 @@
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                     if ($obste_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
                         $as = rate($obste_total);
-                        include '../.function/statistic_status.php';
+                        include '../.function/statistic_status.inc.php';
                     } else {
                         echo 0 . "%";
                     }
@@ -77,7 +77,7 @@
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                     if ($optha_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
                         $as = rate($optha_total);
-                        include '../.function/statistic_status.php';
+                        include '../.function/statistic_status.inc.php';
                     } else {
                         echo 0 . "%";
                     }
@@ -96,7 +96,7 @@
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                     if ($allergy_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
                         $as = rate($allergy_total);
-                        include '../.function/statistic_status.php';
+                        include '../.function/statistic_status.inc.php';
                     } else {
                         echo 0 . "%";
                     }
@@ -115,7 +115,7 @@
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                     if ($gastro_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
                         $as = rate($gastro_total);
-                        include '../.function/statistic_status.php';
+                        include '../.function/statistic_status.inc.php';
                     } else {
                         echo 0 . "%";
                     }
@@ -134,7 +134,7 @@
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                     if ($geria_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
                         $as = rate($geria_total);
-                        include '../.function/statistic_status.php';
+                        include '../.function/statistic_status.inc.php';
                     } else {
                         echo 0 . "%";
                     }
@@ -153,7 +153,7 @@
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                     if ($infec_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
                         $as = rate($infec_total);
-                        include '../.function/statistic_status.php';
+                        include '../.function/statistic_status.inc.php';
                     } else {
                         echo 0 . "%";
                     }
@@ -172,7 +172,7 @@
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                     if ($hema_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
                         $as = rate($hema_total);
-                        include '../.function/statistic_status.php';
+                        include '../.function/statistic_status.inc.php';
                     } else {
                         echo 0 . "%";
                     }
@@ -191,7 +191,7 @@
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                     if ($neuro_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
                         $as = rate($neuro_total);
-                        include '../.function/statistic_status.php';
+                        include '../.function/statistic_status.inc.php';
                     } else {
                         echo 0 . "%";
                     }
@@ -210,7 +210,7 @@
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                     if ($cardio_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
                         $as = rate($cardio_total);
-                        include '../.function/statistic_status.php';
+                        include '../.function/statistic_status.inc.php';
                     } else {
                         echo 0 . "%";
                     }
@@ -229,7 +229,7 @@
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                     if ($pedia_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
                         $as = rate($pedia_total);
-                        include '../.function/statistic_status.php';
+                        include '../.function/statistic_status.inc.php';
                     } else {
                         echo 0 . "%";
                     }
@@ -248,7 +248,7 @@
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                     if ($endo_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
                         $as = rate($endo_total);
-                        include '../.function/statistic_status.php';
+                        include '../.function/statistic_status.inc.php';
                     } else {
                         echo 0 . "%";
                     }
@@ -267,7 +267,7 @@
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                     if ($radio_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
                         $as = rate($radio_total);
-                        include '../.function/statistic_status.php';
+                        include '../.function/statistic_status.inc.php';
                     } else {
                         echo 0 . "%";
                     }
@@ -286,7 +286,7 @@
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                     if ($nephro_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
                         $as = rate($nephro_total);
-                        include '../.function/statistic_status.php';
+                        include '../.function/statistic_status.inc.php';
                     } else {
                         echo 0 . "%";
                     }
@@ -305,7 +305,7 @@
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                     if ($otorhi_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
                         $as = rate($otorhi_total);
-                        include '../.function/statistic_status.php';
+                        include '../.function/statistic_status.inc.php';
                     } else {
                         echo 0 . "%";
                     }
@@ -324,7 +324,7 @@
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                     if ($podia_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
                         $as = rate($podia_total);
-                        include '../.function/statistic_status.php';
+                        include '../.function/statistic_status.inc.php';
                     } else {
                         echo 0 . "%";
                     }
@@ -343,7 +343,7 @@
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                     if ($fam_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
                         $as = rate($fam_total);
-                        include '../.function/statistic_status.php';
+                        include '../.function/statistic_status.inc.php';
                     } else {
                         echo 0 . "%";
                     }
@@ -362,7 +362,7 @@
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                     if ($psych_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
                         $as = rate($psych_total);
-                        include '../.function/statistic_status.php';
+                        include '../.function/statistic_status.inc.php';
                     } else {
                         echo 0 . "%";
                     }
@@ -381,7 +381,7 @@
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                     if ($emp_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
                         $as = rate($emp_total);
-                        include '../.function/statistic_status.php';
+                        include '../.function/statistic_status.inc.php';
                     } else {
                         echo 0 . "%";
                     }
@@ -400,7 +400,7 @@
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                     if ($anes_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
                         $as = rate($anes_total);
-                        include '../.function/statistic_status.php';
+                        include '../.function/statistic_status.inc.php';
                     } else {
                         echo 0 . "%";
                     }
@@ -419,7 +419,7 @@
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                     if ($gene_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
                         $as = rate($gene_total);
-                        include '../.function/statistic_status.php';
+                        include '../.function/statistic_status.inc.php';
                     } else {
                         echo 0 . "%";
                     }
@@ -438,7 +438,7 @@
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                     if ($patho_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
                         $as = rate($patho_total);
-                        include '../.function/statistic_status.php';
+                        include '../.function/statistic_status.inc.php';
                     } else {
                         echo 0 . "%";
                     }
@@ -457,7 +457,7 @@
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                     if ($surgeon_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
                         $as = rate($surgeon_total);
-                        include '../.function/statistic_status.php';
+                        include '../.function/statistic_status.inc.php';
                     } else {
                         echo 0 . "%";
                     }
