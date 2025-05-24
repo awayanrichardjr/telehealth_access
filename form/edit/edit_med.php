@@ -12,6 +12,10 @@
 
         <section class="details">
             <div>
+                <label for="medAge">Patient age *</label>
+                <input type="number" name="medAge" id="conAge" value="<?php echo $row['medAge'] ?>">
+            </div>
+            <div>
                 <label for="medBdate">Patient Birthdate *</label>
                 <input type="date" name="medBdate" id="medBdate" value="<?php echo $row['medBdate'] ?>">
 

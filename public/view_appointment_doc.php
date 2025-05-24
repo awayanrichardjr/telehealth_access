@@ -24,6 +24,7 @@ if (empty($_SESSION['docUsername']) || empty($_SESSION['docPass'])) {
             $_SESSION['conName'] = $row['conName'];
             $_SESSION['conAddress'] = $row['conAddress'];
             $_SESSION['conBdate'] = $row['conBdate'];
+            $_SESSION['conAge'] = $row['conAge'];
             $_SESSION['conSelectedDoc'] = $row['conSelectedDoc'];
             $_SESSION['conDocSpecialty'] = $row['conDocSpecialty'];
             $_SESSION['conDiagnose'] = $row['conDiagnose'];

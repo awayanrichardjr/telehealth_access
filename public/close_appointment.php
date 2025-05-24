@@ -14,6 +14,7 @@ if (empty($_SESSION['docUsername']) && empty($_SESSION['docPass'])) {
         $medName = ucwords($_POST['medName']);
         $medAddress = ucwords($_POST['medAddress']);
         $medBdate = $_POST['medBdate'];
+        $medAge = $_POST['medAge'];
         $medContact = $_POST['medContact'];
         $medUsername = validate($_POST['medUsername']);
         $medEmail = validate($_POST['medEmail']);
@@ -25,9 +26,9 @@ if (empty($_SESSION['docUsername']) && empty($_SESSION['docPass'])) {
         $medADateTime = $_POST['medADateTime'];
         $medTreatment = $_POST['medTreatment'];
 
-        error_medical_doc($medName, $medAddress, $medBdate, $medContact, $medUsername, $medEmail, $medSelectedDoc, $medDocSpecialty, $medADateTime, $medDiagnose, $medConcern, $medTreatment);
+        error_medical_doc($medName, $medAddress, $medBdate, $medAge, $medContact, $medUsername, $medEmail, $medSelectedDoc, $medDocSpecialty, $medADateTime, $medDiagnose, $medConcern, $medTreatment);
 
-        $sql = "INSERT INTO medical (medName, medAddress, medBdate, medContact, medUsername, medEmail, medSelectedDoc, medDocSpecialty, medDiagnose, medConcern, medCdate, medADateTime, medTreatment) VALUES ('$medName','$medAddress','$medBdate','$medContact','$medUsername','$medEmail','$medSelectedDoc','$medDocSpecialty','$medDiagnose','$medConcern','$medCdate','$medADateTime', '$medTreatment')";
+        $sql = "INSERT INTO medical (medName, medAddress, medBdate, medAge, medContact, medUsername, medEmail, medSelectedDoc, medDocSpecialty, medDiagnose, medConcern, medCdate, medADateTime, medTreatment) VALUES ('$medName','$medAddress','$medBdate','$medAge','$medContact','$medUsername','$medEmail','$medSelectedDoc','$medDocSpecialty','$medDiagnose','$medConcern','$medCdate','$medADateTime', '$medTreatment')";
 
         if ($conn->query($sql) === TRUE) {
             header("location: appointment_profile_doc.php");

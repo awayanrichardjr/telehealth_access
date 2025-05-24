@@ -12,5 +12,6 @@ $sql = "CREATE TABLE consult (
     conEmail VARCHAR(255) NOT NULL,
     conContact VARCHAR(255) NOT NULL,
     conCdate VARCHAR(255) NOT NULL,
+    conAge VARCHAR(255) NOT NULL,
     conADateTime DATETIME NOT NULL
 )";

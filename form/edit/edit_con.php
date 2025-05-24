@@ -12,21 +12,22 @@
 
         <section class="details">
             <div>
+                <label for="conAge">Patient age *</label>
+                <input type="number" name="conAge" id="conAge" value="<?php echo $row['conAge'] ?>">
+            </div>
+            <div>
                 <label for="conBdate">Patient Birthdate *</label>
                 <input type="date" name="conBdate" id="conBdate" value="<?php echo $row['conBdate'] ?>">
-
             </div>
             <div>
                 <label for="conContact">Patient Contact Number *</label>
                 <input type="text" name="conContact" id="conContact" value="<?php echo $row['conContact'] ?>">
-
-            </div>
-            <div>
-                <label for="conUsername">Patient Username *</label>
-                <input type="text" name="conUsername" id="conUsername" value="<?php echo $row['conUsername'] ?>">
-
             </div>
         </section>
+        <div>
+            <label for="conUsername">Patient Username *</label>
+            <input type="text" name="conUsername" id="conUsername" value="<?php echo $row['conUsername'] ?>">
+        </div>
         <hr>
         <section class="details">
             <div>

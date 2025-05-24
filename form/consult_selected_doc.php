@@ -63,6 +63,13 @@
                 </label>
                 <input type="date" name="conBdate" id="conBdate" value="<?php echo $_SESSION['pBdate'] ?>">
             </div>
+            <!-- age  -->
+            <div>
+                <label for="conAge">Patient Age * </label>
+                <input type="number" id="conAge" name="conAge" min="0" max="120" value="0" required>
+            </div>
+
+            <!-- Contact Number  -->
             <div>
                 <label for="conContact">Patient Contact Number *
                     <span class="error">
@@ -75,15 +82,20 @@
             </div>
         </section>
 
-        <!-- username  -->
-        <label for="conUsername">Username *
-            <span class="error">
-                <?php if (isset($_GET['conUsernameErr'])) {
-                    echo $conUsernameError = $_GET['conUsernameErr'];
-                } ?>
-            </span>
-        </label>
-        <input type="text" name="conUsername" id="conUsername" value="<?php echo $_SESSION['pUsername'] ?>">
+        <section class="details">
+            <div>
+                <!-- username  -->
+                <label for="conUsername">Username *
+                    <span class="error">
+                        <?php if (isset($_GET['conUsernameErr'])) {
+                            echo $conUsernameError = $_GET['conUsernameErr'];
+                        } ?>
+                    </span>
+                </label>
+                <input type="text" name="conUsername" id="conUsername" value="<?php echo $_SESSION['pUsername'] ?>">
+
+            </div>
+        </section>
 
         <hr>
         <section class="details">

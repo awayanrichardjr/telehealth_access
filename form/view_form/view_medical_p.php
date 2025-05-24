@@ -26,6 +26,10 @@
                         <p><?php echo $_SESSION['medBdate'] ?></p>
                     </li>
                     <li>
+                        <label for="medAge">Age:</label>
+                        <p><?php echo $_SESSION['medAge'] ?></p>
+                    </li>
+                    <li>
                         <label for="medUsername">Username:</label>
                         <p><?php echo $_SESSION['medUsername'] ?></p>
                     </li>

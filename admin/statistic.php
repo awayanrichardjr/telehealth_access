@@ -36,8 +36,8 @@
                 // $ran21 = random_int(1, 100);
                 // $ran22 = random_int(1, 100);
                 // $ran23 = random_int(1, 100);
-                
-                $num_of_doc = "SELECT * from consult WHERE conDocSpecialty='Dermatologist'";
+
+                $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Dermatologist'";
                 $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                 if ($derma_total = mysqli_num_rows($num_of_doc_run)) {
                     echo $derma_total / 100 . "%";
@@ -55,7 +55,7 @@
             <h2>
                 <?php
                 // $obste_total = 1;
-                $num_of_doc = "SELECT * from consult WHERE conDocSpecialty='Obstetrician-Gynecologist'";
+                $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Obstetrician-Gynecologist'";
                 $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                 if ($obste_total = mysqli_num_rows($num_of_doc_run)) {
                     echo $obste_total / 100 . "%";
@@ -73,7 +73,7 @@
             <h2>
                 <?php
                 // $optha_total = 1;
-                $num_of_doc = "SELECT * from consult WHERE conDocSpecialty='Ophthalmologist'";
+                $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Ophthalmologist'";
                 $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                 if ($optha_total = mysqli_num_rows($num_of_doc_run)) {
                     echo $optha_total / 100 . "%";
@@ -91,7 +91,7 @@
             <h2>
                 <?php
                 // $allergy_total = 1;
-                $num_of_doc = "SELECT * from consult WHERE conDocSpecialty='Allergist'";
+                $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Allergist'";
                 $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                 if ($allergy_total = mysqli_num_rows($num_of_doc_run)) {
                     echo $allergy_total / 100 . "%";
@@ -109,7 +109,7 @@
             <h2>
                 <?php
                 // $gastro_total = 1;
-                $num_of_doc = "SELECT * from consult WHERE conDocSpecialty='Gastroenterologist'";
+                $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Gastroenterologist'";
                 $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                 if ($gastro_total = mysqli_num_rows($num_of_doc_run)) {
                     echo $gastro_total / 100 . "%";
@@ -127,7 +127,7 @@
             <h2>
                 <?php
                 // $geria_total = 1;
-                $num_of_doc = "SELECT * from consult WHERE conDocSpecialty='Geriatrician'";
+                $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Geriatrician'";
                 $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                 if ($geria_total = mysqli_num_rows($num_of_doc_run)) {
                     echo $geria_total / 100 . "%";
@@ -145,7 +145,7 @@
             <h2>
                 <?php
                 // $infec_total = 1;
-                $num_of_doc = "SELECT * from consult WHERE conDocSpecialty='Infectious Disease Specialist'";
+                $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Infectious Disease Specialist'";
                 $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                 if ($infec_total = mysqli_num_rows($num_of_doc_run)) {
                     echo $infec_total / 100 . "%";
@@ -163,7 +163,7 @@
             <h2>
                 <?php
                 // $hema_total = 1;
-                $num_of_doc = "SELECT * from consult WHERE conDocSpecialty='Hematologist'";
+                $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Hematologist'";
                 $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                 if ($hema_total = mysqli_num_rows($num_of_doc_run)) {
                     echo $hema_total / 100 . "%";
@@ -181,7 +181,7 @@
             <h2>
                 <?php
                 // $neuro_total = 1;
-                $num_of_doc = "SELECT * from consult WHERE conDocSpecialty='Neurologist'";
+                $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Neurologist'";
                 $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                 if ($neuro_total = mysqli_num_rows($num_of_doc_run)) {
                     echo $neuro_total / 100 . "%";
@@ -199,7 +199,7 @@
             <h2>
                 <?php
                 // $cardio_total = 1;
-                $num_of_doc = "SELECT * from consult WHERE conDocSpecialty='Cardiologist'";
+                $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Cardiologist'";
                 $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                 if ($cardio_total = mysqli_num_rows($num_of_doc_run)) {
                     echo $cardio_total / 100 . "%";
@@ -217,7 +217,7 @@
             <h2>
                 <?php
                 // $pedia_total = 1;
-                $num_of_doc = "SELECT * from consult WHERE conDocSpecialty='Pediatrician'";
+                $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Pediatrician'";
                 $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                 if ($pedia_total = mysqli_num_rows($num_of_doc_run)) {
                     echo $pedia_total / 100 . "%";
@@ -235,7 +235,7 @@
             <h2>
                 <?php
                 // $endo_total = 1;
-                $num_of_doc = "SELECT * from consult WHERE conDocSpecialty='Endocrinologist'";
+                $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Endocrinologist'";
                 $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                 if ($endo_total = mysqli_num_rows($num_of_doc_run)) {
                     echo $endo_total / 100 . "%";
@@ -253,7 +253,7 @@
             <h2>
                 <?php
                 // $radio_total = 1;
-                $num_of_doc = "SELECT * from consult WHERE conDocSpecialty='Radiologist'";
+                $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Radiologist'";
                 $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                 if ($radio_total = mysqli_num_rows($num_of_doc_run)) {
                     echo $radio_total / 100 . "%";
@@ -271,7 +271,7 @@
             <h2>
                 <?php
                 // $nephro_total = 1;
-                $num_of_doc = "SELECT * from consult WHERE conDocSpecialty='Nephrologist'";
+                $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Nephrologist'";
                 $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                 if ($nephro_total = mysqli_num_rows($num_of_doc_run)) {
                     echo $nephro_total / 100 . "%";
@@ -289,7 +289,7 @@
             <h2>
                 <?php
                 // $otorhi_total = 1;
-                $num_of_doc = "SELECT * from consult WHERE conDocSpecialty='Otorhinolaryngologist'";
+                $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Otorhinolaryngologist'";
                 $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                 if ($otorhi_total = mysqli_num_rows($num_of_doc_run)) {
                     echo $otorhi_total / 100 . "%";
@@ -307,7 +307,7 @@
             <h2>
                 <?php
                 // $podia_total = 1;
-                $num_of_doc = "SELECT * from consult WHERE conDocSpecialty='Podiatrist'";
+                $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Podiatrist'";
                 $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                 if ($podia_total = mysqli_num_rows($num_of_doc_run)) {
                     echo $podia_total / 100 . "%";
@@ -325,7 +325,7 @@
             <h2>
                 <?php
                 // $fam_total = 1;
-                $num_of_doc = "SELECT * from consult WHERE conDocSpecialty='Family Medicine Doctor'";
+                $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Family Medicine Doctor'";
                 $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                 if ($fam_total = mysqli_num_rows($num_of_doc_run)) {
                     echo $fam_total / 100 . "%";
@@ -343,7 +343,7 @@
             <h2>
                 <?php
                 // $psych_total = 1;
-                $num_of_doc = "SELECT * from consult WHERE conDocSpecialty='Psychiatrist'";
+                $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Psychiatrist'";
                 $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                 if ($psych_total = mysqli_num_rows($num_of_doc_run)) {
                     echo $psych_total / 100 . "%";
@@ -361,7 +361,7 @@
             <h2>
                 <?php
                 // $emp_total = 1;
-                $num_of_doc = "SELECT * from consult WHERE conDocSpecialty='Emergency Medicine Physician'";
+                $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Emergency Medicine Physician'";
                 $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                 if ($emp_total = mysqli_num_rows($num_of_doc_run)) {
                     echo $emp_total / 100 . "%";
@@ -379,7 +379,7 @@
             <h2>
                 <?php
                 // $anes_total = 1;
-                $num_of_doc = "SELECT * from consult WHERE conDocSpecialty='Anesthesiologist'";
+                $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Anesthesiologist'";
                 $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                 if ($anes_total = mysqli_num_rows($num_of_doc_run)) {
                     echo $anes_total / 100 . "%";
@@ -397,7 +397,7 @@
             <h2>
                 <?php
                 // $gene_total = 1;
-                $num_of_doc = "SELECT * from consult WHERE conDocSpecialty='General Surgeon'";
+                $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='General Surgeon'";
                 $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                 if ($gene_total = mysqli_num_rows($num_of_doc_run)) {
                     echo $gene_total / 100 . "%";
@@ -415,7 +415,7 @@
             <h2>
                 <?php
                 // $patho_total = 1;
-                $num_of_doc = "SELECT * from consult WHERE conDocSpecialty='Pathologist'";
+                $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Pathologist'";
                 $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                 if ($patho_total = mysqli_num_rows($num_of_doc_run)) {
                     echo $patho_total / 100 . "%";
@@ -433,7 +433,7 @@
             <h2>
                 <?php
                 // $surgeon_total = 1;
-                $num_of_doc = "SELECT * from consult WHERE conDocSpecialty='Surgeon'";
+                $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Surgeon'";
                 $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                 if ($surgeon_total = mysqli_num_rows($num_of_doc_run)) {
                     echo $surgeon_total / 100 . "%";

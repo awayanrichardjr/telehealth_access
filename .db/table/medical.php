@@ -13,5 +13,6 @@ $sql = "CREATE TABLE medical (
     medContact VARCHAR(255) NOT NULL,
     medCdate VARCHAR(255) NOT NULL,
     medADateTime VARCHAR(255) NOT NULL,
+    medAge VARCHAR(255) NOT NULL,
     medTreatment VARCHAR(255) NOT NULL
 )";

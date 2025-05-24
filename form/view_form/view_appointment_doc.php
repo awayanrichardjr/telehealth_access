@@ -35,6 +35,10 @@
                         <p><?php echo $_SESSION['conBdate'] ?></p>
                     </li>
                     <li>
+                        <label for="conAge">Age:</label>
+                        <p><?php echo $_SESSION['conAge'] ?></p>
+                    </li>
+                    <li>
                         <label for="conUsername">Username:</label>
                         <p><?php echo $_SESSION['conUsername'] ?></p>
                     </li>

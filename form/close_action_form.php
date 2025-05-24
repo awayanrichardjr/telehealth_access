@@ -17,8 +17,9 @@
         <input type="hidden" name="medID" id="medID" value="<?php echo $_SESSION['conID'] ?>" readonly>
         <input type="hidden" name="medName" id="medName" value="<?php echo $_SESSION['conName'] ?>" readonly>
         <input type="hidden" name="medAddress" id="medAddress" value="<?php echo $_SESSION['conAddress'] ?>" readonly>
-        <input type="hidden" name="medBdate" id="medBdate" value="<?php echo $_SESSION['conBdate'] ?>" readonly>
         <input type="hidden" name="medSelectedDoc" id="medSelectedDoc" value="<?php echo $_SESSION['conSelectedDoc'] ?>" readonly>
+        <input type="hidden" name="medBdate" id="medBdate" value="<?php echo $_SESSION['conBdate'] ?>" readonly>
+        <input type="hidden" name="medAge" id="medAge" value="<?php echo $_SESSION['conAge'] ?>" readonly>
         <input type="hidden" name="medDocSpecialty" id="medDocSpecialty" value="<?php echo $_SESSION['conDocSpecialty'] ?>" readonly>
         <input type="hidden" name="medDiagnose" id="medDiagnose" value="<?php echo $_SESSION['conDiagnose'] ?>" readonly>
         <input type="hidden" name="medConcern" id="medConcern" value="<?php echo $_SESSION['conConcern'] ?>" readonly>
