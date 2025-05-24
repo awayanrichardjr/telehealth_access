@@ -41,6 +41,11 @@
     color: var(--primary-color);
 }
 
+.admin_dashboard :where(.num-medical) {
+    background-color: var(--sky-blue);
+    color: var(--primary-color);
+}
+
 .admin_dashboard :where(.users-container li h2) {
     display: flex;
     justify-content: space-between;

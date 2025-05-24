@@ -1,5 +1,5 @@
 <script>
-    window.onload = function () {
+    window.onload = function() {
 
         var chart = new CanvasJS.Chart("chartContainer", {
             animationEnabled: true,
@@ -17,7 +17,7 @@
                 titleFontSize: "10"
             },
             axisY: {
-                title: "Numbers of Users/Appointments",
+                title: "Numbers of Users/Appointments/Medical",
                 labelFontColor: "grey",
                 labelFontSize: "10",
                 titleFontSize: "10",

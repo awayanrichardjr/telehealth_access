@@ -9,7 +9,7 @@
                         // $ran = random_int(1, 999999);  + $ran 
                         // $ran1 = random_int(1, 999999);  + $ran1 
                         // $ran2 = random_int(1, 999999);  + $ran2 
-                        
+
                         $num_of_doc = "SELECT * from doctor";
                         $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                         if ($doc_total = mysqli_num_rows($num_of_doc_run)) {
@@ -57,6 +57,23 @@
                         </span>
                     </h2>
                     <p>Appointment</p>
+                </li>
+                <li class="num-medical">
+                    <h2>
+                        <?php
+                        $num_of_med = "SELECT * from medical";
+                        $num_of_med_run = mysqli_query($conn, $num_of_med);
+                        if ($med_total = mysqli_num_rows($num_of_med_run)) {
+                            echo $med_total . "+";
+                        } else {
+                            echo 0 . "+";
+                        }
+                        ?>
+                        <span class="material-symbols-outlined" style="opacity: 40%;">
+                            bar_chart_4_bars
+                        </span>
+                    </h2>
+                    <p>Medical</p>
                 </li>
             </ul>
         </div>
