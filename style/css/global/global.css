@@ -62,27 +62,6 @@ a:hover .material-symbols-outlined {
     color: var(--blue);
 }
 
-/* info steps  */
-.info-step {
-    background-color: white;
-    border-radius: var(--card-border);
-    box-shadow: var(--shadow);
-    position: absolute;
-    left: 0;
-    top: 70px;
-
-    height: inherit;
-    width: 300px;
-    padding: 1rem;
-
-    z-index: 1000;
-
-    font-size: 14px;
-    text-align: justify;
-
-    display: none;
-}
-
 .info-label:hover .info-step {
     display: block;
 }
@@ -93,4 +72,26 @@ a:hover .material-symbols-outlined {
 
 .info-label :where(h1) {
     font-size: 20px;
+}
+
+.info-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--blue);
+}
+
+#popupSection {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: var(--card-border);
+    box-shadow: var(--card-shadow);
+    z-index: 1000;
+
+    transition: 1s;
 }

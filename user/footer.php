@@ -22,6 +22,6 @@
         <li><a href="#" class="fa fa-linkedin"></a></li>
     </ul>
     <p class="copyright">&copyCopyright <?php
-    $yr = date('Y');
-    echo $yr - 1 . "-" . date('Y'); ?> TELEHEALTH ACCESS, All Rights Reserved</p>
+                                        $yr = date('Y');
+                                        echo $yr - 1 . "-" . date('Y'); ?> TELEHEALTH ACCESS, All Rights Reserved</p>
 </footer>

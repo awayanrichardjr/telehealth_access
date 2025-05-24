@@ -26,27 +26,3 @@
         </li>
     </ul>
 </section>
-
-<style>
-    .info-button {
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-        color: var(--blue);
-    }
-
-    #popupSection {
-        display: none;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: white;
-        padding: 20px;
-        border-radius: var(--card-border);
-        box-shadow: var(--card-shadow);
-        z-index: 1000;
-
-        transition: 1s;
-    }
-</style>

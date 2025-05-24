@@ -1,29 +1,18 @@
 <section class="form">
-    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-        <label class="info-label">
-            <h1 class="user-h1">Register as a doctor</h1>
-            <a href="../public/info_guide.php"><span class="material-symbols-outlined" style="font-size: 17px;">info</span></a>
-            <aside class="info-step">
-                <h1>Doctor Registration Guide</h1>
-                <p>Welcome, Doctor! To complete your registration and start using our platform, please provide the following information:</p>
-                <br>
-                <ol>
-                    <li><b>Full Name</b> – Your legal full name as it appears on your medical license.</li>
-                    <li><b>Email Address</b> – A valid email address for communication and account verification.</li>
-                    <li><b>Phone Number</b> – Your contact number for appointment alerts and patient communication.</li>
-                    <li><b>Medical License Number</b> – Required to verify your professional credentials.</li>
-                    <li><b>Specialization</b> – Indicate your area of medical expertise (e.g., Cardiology, Dermatology).</li>
-                    <li><b>Clinic/Hospital Name</b> – The name of the facility where you practice, if applicable.</li>
-                    <li><b>Location</b> – City and country where you are practicing.</li>
-                    <li><b>Years of Experience</b> – Tell us how long you’ve been practicing medicine.</li>
-                    <li><b>Password</b> – Create a strong password to secure your account.</li>
-                    <li><b>Profile Photo (Optional)</b> – Upload a professional photo to build trust with patients.</li>
-                </ol>
-                <br>
-                <p><i>After submitting the form, your credentials will be reviewed for verification. Once approved, you'll gain full access to your Doctor Dashboard.</i></p>
+    <label class="info-label">
+        <h1 class="user-h1">Register as a doctor</h1>
+        <!-- with js -->
+        <button class="info-button" onclick="document.getElementById('popupSection').style.display='block';">
+            <span class="material-symbols-outlined" style="font-size: 17px;">info</span>
+        </button>
 
-            </aside>
-        </label>
+        <!-- Hidden Section -->
+        <div id="popupSection">
+            <p>This is the popped-up section!</p>
+            <button class="info-button" onclick="document.getElementById('popupSection').style.display='none'">Close</button>
+        </div>
+    </label>
+    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
         <!-- fullname  -->
         <section class="details">
             <div>
