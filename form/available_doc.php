@@ -4,7 +4,16 @@
             <span class="material-symbols-outlined">edit_calendar</span>
             <p>Edit Schedule/Click to Google Calendar</p>
         </a>
-        <a href="../public/info_guide.php"><span class="material-symbols-outlined" style="font-size: 17px;">info</span></a>
+        <!-- with js -->
+        <button class="info-button" onclick="document.getElementById('popupSection').style.display='block';">
+            <span class="material-symbols-outlined" style="font-size: 17px;">info</span>
+        </button>
+
+        <!-- Hidden Section -->
+        <div id="popupSection">
+            <p>This is the popped-up section!</p>
+            <button class="info-button" onclick="document.getElementById('popupSection').style.display='none'">Close</button>
+        </div>
     </label>
     <div class="calendar">
         <iframe

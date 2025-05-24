@@ -1,6 +1,5 @@
 .payment {
     padding: 0.5rem;
-
 }
 
 .payment :where(ul) {
@@ -13,6 +12,7 @@
 }
 
 .payment :where(ul) img {
+
     width: 200px;
 
     padding: 1rem 2rem;
@@ -36,4 +36,29 @@
 .payment :where(p) {
     font-size: 10px;
     color: grey;
+}
+
+.payment :where(form) .payment-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+    /* gap: 1rem; */
+}
+
+.payment :where(.payment-list) li {
+    padding: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+    .payment :where(form) .payment-list {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .payment :where(form) {
+        width: fit-content;
+        justify-self: center;
+    }
 }

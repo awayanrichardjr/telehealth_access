@@ -1,9 +1,19 @@
 <section class="form medical">
+    <label for="" class="info-label" style="justify-self: start;">
+        <h1>Close Appointment</h1>
+        <!-- with js -->
+        <button class="info-button" onclick="document.getElementById('popupSection').style.display='block';">
+            <span class="material-symbols-outlined" style="font-size: 17px;">info</span>
+        </button>
+
+        <!-- Hidden Section -->
+        <div id="popupSection">
+            <p>This is the popped-up section!</p>
+            <button class="info-button" onclick="document.getElementById('popupSection').style.display='none'">Close</button>
+        </div>
+    </label>
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-        <label for="" class="info-label">
-            <h1>Close Appointment</h1>
-            <a href=" ../public/info_guide.php"><span class="material-symbols-outlined" style="font-size: 17px;">info</span></a>
-        </label>
+        <h1>Additional Treatment</h1>
         <input type="hidden" name="medID" id="medID" value="<?php echo $_SESSION['conID'] ?>" readonly>
         <input type="hidden" name="medName" id="medName" value="<?php echo $_SESSION['conName'] ?>" readonly>
         <input type="hidden" name="medAddress" id="medAddress" value="<?php echo $_SESSION['conAddress'] ?>" readonly>

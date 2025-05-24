@@ -1,6 +1,18 @@
 <section class="form consult">
-    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+    <label for="" class="info-label">
         <h1>CONSULTATION FORM</h1>
+        <!-- with js -->
+        <button class="info-button" onclick="document.getElementById('popupSection').style.display='block';">
+            <span class="material-symbols-outlined" style="font-size: 17px;">info</span>
+        </button>
+
+        <!-- Hidden Section -->
+        <div id="popupSection">
+            <p>This is the popped-up section!</p>
+            <button class="info-button" onclick="document.getElementById('popupSection').style.display='none'">Close</button>
+        </div>
+    </label>
+    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
         <!-- full name -->
         <label for="conName">Patient Name *
             <span class="error">

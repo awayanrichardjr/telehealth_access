@@ -5,7 +5,7 @@
     overflow: auto;
 }
 
-.form :where(form h1) {
+.form :where(h1) {
     text-align: center;
     color: var(--blue);
 }

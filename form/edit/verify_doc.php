@@ -1,12 +1,19 @@
 <section class="form form_edit">
-    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" enctype="multipart/form-data">
-        <label for="" class="info-label">
-            <h1>USER VERIFICATION FORM</h1>
-            <a href="../public/info_guide.php"><span class="material-symbols-outlined" style="font-size: 17px;">info</span></a>
-        </label>
-        <p style="color: grey;">ID: <?php echo $selected_docID ?></p>
-        <input type="hidden" name="docID" id="docID" value="<?php echo $selected_docID ?>">
+    <label for="" class="info-label">
+        <h1>USER VERIFICATION FORM</h1>
+        <!-- with js -->
+        <button class="info-button" onclick="document.getElementById('popupSection').style.display='block';">
+            <span class="material-symbols-outlined" style="font-size: 17px;">info</span>
+        </button>
 
+        <!-- Hidden Section -->
+        <div id="popupSection">
+            <p>This is the popped-up section!</p>
+            <button class="info-button" onclick="document.getElementById('popupSection').style.display='none'">Close</button>
+        </div>
+    </label>
+    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" enctype="multipart/form-data">
+        <input type="hidden" name="docID" id="docID" value="<?php echo $selected_docID ?>">
         <!-- FULL NAME -->
         <h6><?php echo $_SESSION['docFname'] . " " . $_SESSION['docMname'] . " " . $_SESSION['docLname'] . " " . $_SESSION['docSuffix'] ?>
         </h6>

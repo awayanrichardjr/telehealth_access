@@ -3,7 +3,16 @@
     <div class="user_feed_content">
         <label for="" class="info-label">
             <h2>Welcome to the Telehealth Feed!</h2>
-            <a href="#"><span class="material-symbols-outlined" style="font-size: 17px;">info</span></a>
+            <!-- with js -->
+            <button class="info-button" onclick="document.getElementById('popupSection').style.display='block';">
+                <span class="material-symbols-outlined" style="font-size: 17px;">info</span>
+            </button>
+
+            <!-- Hidden Section -->
+            <div id="popupSection">
+                <p>This is the popped-up section!</p>
+                <button class="info-button" onclick="document.getElementById('popupSection').style.display='none'">Close</button>
+            </div>
         </label>
         <p>This is where you can find the latest updates and information.</p>
         <?php
