@@ -1,0 +1,60 @@
+.risks {
+    display: flex;
+    flex-direction: column;
+}
+
+.risks :where(.specialties) {
+    height: 78vh;
+    overflow: auto;
+}
+
+.risk-status :where(ul) {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.risk-status :where(ul) li {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 10px;
+
+    font-size: 10px;
+}
+
+.dot1 {
+    height: 10px;
+    width: 10px;
+    background-color: var(--mild);
+    border-radius: 50%;
+}
+
+.dot2 {
+    height: 10px;
+    width: 10px;
+    background-color: var(--moderate);
+    border-radius: 50%;
+}
+
+.dot3 {
+    height: 10px;
+    width: 10px;
+    background-color: var(--severe);
+    border-radius: 50%;
+}
+
+.dot4 {
+    height: 10px;
+    width: 10px;
+    background-color: var(--chronic);
+    border-radius: 50%;
+}
+
+.dot5 {
+    height: 10px;
+    width: 10px;
+    background-color: var(--emergency);
+    border-radius: 50%;
+}

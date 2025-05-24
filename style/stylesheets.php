@@ -16,6 +16,7 @@
 <link rel="stylesheet" href="../style/css/admin/settings.css">
 <link rel="stylesheet" href="../style/css/admin/specialties.css">
 <link rel="stylesheet" href="../style/css/admin/statistic.css">
+<link rel="stylesheet" href="../style/css/admin/risk.css">
 
 <!-- patient -->
 <link rel="stylesheet" href="../style/css/user/patient/appointment_nav.css">
