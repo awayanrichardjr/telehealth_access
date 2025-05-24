@@ -8,7 +8,8 @@
 
         <!-- Hidden Section -->
         <div id="popupSection">
-            <p>This is the popped-up section!</p>
+            <h1>Doctor Login</h1>
+            <p>To access your doctor account, please enter your <b>unsername</b> and <b>password</b> you registered. This will allow you to manage appointments, conduct online consultations, and view patient records securely.</p>
             <button class="info-button" onclick="document.getElementById('popupSection').style.display='none'">Close</button>
         </div>
     </label>

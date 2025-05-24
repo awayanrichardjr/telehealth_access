@@ -1,12 +1,10 @@
 <section class="user_role">
     <label for="" class="info-label">
         <p>Select role to <b>register</b></p>
-
         <!-- with js -->
         <button class="info-button" onclick="document.getElementById('popupSection').style.display='block';">
             <span class="material-symbols-outlined" style="font-size: 17px;">info</span>
         </button>
-
         <!-- Hidden Section -->
         <div id="popupSection">
             <h1>Select Your Role to Create an Account</h1>

@@ -81,19 +81,23 @@ a:hover .material-symbols-outlined {
     color: var(--blue);
 }
 
+
+/* popup section */
 #popupSection {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     background-color: white;
-    padding: 20px;
+    padding: 1rem;
     border-radius: var(--card-border);
     box-shadow: var(--card-shadow);
-    z-index: 1000;
 
-    transition: 1s;
+    position: absolute;
+    z-index: 1000;
+    top: 10%;
+
+    max-width: 350px;
+    max-height: 80vh;
+    overflow-y: auto;
+
+    display: none;
 }
 
 #popupSection :where(h1) {

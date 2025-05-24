@@ -8,7 +8,10 @@
 
         <!-- Hidden Section -->
         <div id="popupSection">
-            <p>This is the popped-up section!</p>
+            <h1>Patient Registration</h1>
+            <p>Create your account to start booking appointments and consulting with doctors online.</p>
+            <p>- Username must be unique.</p>
+            <p>- Contact number must be unique.</p>
             <button class="info-button" onclick="document.getElementById('popupSection').style.display='none'">Close</button>
         </div>
     </label>
