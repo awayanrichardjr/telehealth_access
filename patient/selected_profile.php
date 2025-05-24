@@ -42,7 +42,7 @@
                     </li>
                     <!-- google link -->
                     <li>
-                        <a href="#" onclick="window.open('<?php echo $_SESSION['doc_space'] ?>', 'PopupWindow', 'width=600,height=400');">
+                        <a href="#" onclick="window.open('<?php echo $_SESSION['doc_space'] ?>', 'PopupWindow', 'width=600,height=700');">
                             <span class="material-symbols-outlined" style="font-size: 17px;">link</span>
                             <p>Google Space Link</p>
                         </a>
