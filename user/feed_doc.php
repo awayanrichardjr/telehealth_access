@@ -10,7 +10,8 @@
 
             <!-- Hidden Section -->
             <div id="popupSection">
-                <p>This is the popped-up section!</p>
+                <h1>Share What’s on Your Mind</h1>
+                <p>Connect with others by posting updates, questions, or thoughts. Whether it’s a health tip, a personal experience, or a quick check-in—this is your space to share and engage with the community.</p>
                 <button class="info-button" onclick="document.getElementById('popupSection').style.display='none'">Close</button>
             </div>
         </label>

@@ -8,7 +8,13 @@
 
         <!-- Hidden Section -->
         <div id="popupSection">
-            <p>This is the popped-up section!</p>
+            <h1>Medical Records</h1>
+            <p>Access and manage your personal medical records securely in one place.</p>
+            <br>
+            <p>- Patients can view their own medical history, and consultation notes.</p>
+            <p>- Doctors can access medical records only for their patients to provide informed care.</p>
+            <p>- All other users’ records remain confidential and inaccessible.</p>
+            <p>- Your privacy and data security are protected with strict access controls.</p>
             <button class="info-button" onclick="document.getElementById('popupSection').style.display='none'">Close</button>
         </div>
     </label>

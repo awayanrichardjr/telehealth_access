@@ -8,7 +8,19 @@
 
         <!-- Hidden Section -->
         <div id="popupSection">
-            <p>This is the popped-up section!</p>
+            <h1>Doctor Account Verification</h1>
+            <p>Verify Your Account to Unlock Full Access</p>
+            <br>
+            <p>To ensure the credibility of our healthcare platform, doctors are required to verify their accounts. Please complete the form below by providing the necessary professional details and documentation.</p>
+            <br>
+            <p>To complete your verification and gain full access to the system, please upload the following:</p>
+            <p>- Certificates/Qualifications</p>
+            <p>- Front Valid ID</p>
+            <p>- Back Valid ID</p>
+            <p>- Google Space Link (for ongoing patient conversations and professional communication)</p>
+            <br>
+            <p>- All submitted information is kept confidential and used solely for verification purposes.</p>
+            <p>- Once submitted, your verification will be reviewed by our admin team. </p>
             <button class="info-button" onclick="document.getElementById('popupSection').style.display='none'">Close</button>
         </div>
     </label>

@@ -10,10 +10,10 @@
         </button>
 
         <!-- Hidden Section -->
-        <div id="popupSection">
+        <!-- <div id="popupSection">
             <p>This is the popped-up section!</p>
             <button class="info-button" onclick="document.getElementById('popupSection').style.display='none'">Close</button>
-        </div>
+        </div> -->
     </label>
     <div class="calendar">
         <iframe

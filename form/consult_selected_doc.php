@@ -8,10 +8,19 @@
 
         <!-- Hidden Section -->
         <div id="popupSection">
-            <p>This is the popped-up section!</p>
+            <h1>Consultation Form</h1>
+            <p>Please fill out the form below to help your doctor understand your health concerns better.</p>
+            <br>
+            <p>- Provide detailed information about your symptoms and any questions you have.</p>
+            <p>- Include relevant personal details to ensure accurate consultation.</p>
+            <!-- <p>- Attach any supporting documents or previous test results if available.</p> -->
+            <p>- Once submitted, your doctor will review the information to prepare for your online consultation.</p>
+            <p>- Your health information is kept confidential and secure.</p>
+            <p>- Make sure you provide an E-mail account for you to have conversation with the selected doctor in Google space.</p>
             <button class="info-button" onclick="document.getElementById('popupSection').style.display='none'">Close</button>
         </div>
     </label>
+
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
         <!-- full name -->
         <label for="conName">Patient Name *
