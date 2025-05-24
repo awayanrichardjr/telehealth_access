@@ -38,3 +38,9 @@ function toupper1stchar($data)
     $data = ucwords($data);
     return $data;
 }
+
+function rate($data)
+{
+    $data = $data / 100;
+    return $data;
+}

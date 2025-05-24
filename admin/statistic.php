@@ -1,9 +1,31 @@
-<!-- <section class="admin_statistic">
-    <div class="chart">
-        <h1>Analytics</h1>
+<?php
 
-    </div>
-</section> -->
+// $ran1 = random_int(1, 100);
+// $ran2 = random_int(1, 100);
+// $ran3 = random_int(1, 100);
+// $ran4 = random_int(1, 100);
+// $ran5 = random_int(1, 100);
+// $ran6 = random_int(1, 100);
+// $ran7 = random_int(1, 100);
+// $ran8 = random_int(1, 100);
+// $ran9 = random_int(1, 100);
+// $ran10 = random_int(1, 100);
+// $ran11 = random_int(1, 100);
+// $ran12 = random_int(1, 100);
+// $ran13 = random_int(1, 100);
+// $ran14 = random_int(1, 100);
+// $ran15 = random_int(1, 100);
+// $ran16 = random_int(1, 100);
+// $ran17 = random_int(1, 100);
+// $ran18 = random_int(1, 100);
+// $ran19 = random_int(1, 100);
+// $ran20 = random_int(1, 100);
+// $ran21 = random_int(1, 100);
+// $ran22 = random_int(1, 100);
+// $ran23 = random_int(1, 100);
+
+// 10 15 20 25 30 35 40 45 50 55 60 65 70 75 80 85 90
+?>
 <section class="admin_specialties">
     <div id="chartContainer" style="width: 900px;">
     </div>
@@ -13,56 +35,11 @@
             <li>
                 <h2>
                     <?php
-
-                    // $ran1 = random_int(1, 100);
-                    // $ran2 = random_int(1, 100);
-                    // $ran3 = random_int(1, 100);
-                    // $ran4 = random_int(1, 100);
-                    // $ran5 = random_int(1, 100);
-                    // $ran6 = random_int(1, 100);
-                    // $ran7 = random_int(1, 100);
-                    // $ran8 = random_int(1, 100);
-                    // $ran9 = random_int(1, 100);
-                    // $ran10 = random_int(1, 100);
-                    // $ran11 = random_int(1, 100);
-                    // $ran12 = random_int(1, 100);
-                    // $ran13 = random_int(1, 100);
-                    // $ran14 = random_int(1, 100);
-                    // $ran15 = random_int(1, 100);
-                    // $ran16 = random_int(1, 100);
-                    // $ran17 = random_int(1, 100);
-                    // $ran18 = random_int(1, 100);
-                    // $ran19 = random_int(1, 100);
-                    // $ran20 = random_int(1, 100);
-                    // $ran21 = random_int(1, 100);
-                    // $ran22 = random_int(1, 100);
-                    // $ran23 = random_int(1, 100);
-
-                    $mild = 0.10;
-                    $moderate = 0.25;
-                    $severe = 0.45;
-                    $chronic = 0.70;
-                    $emergency = 0.90;
-
-                    // 10 15 20 25 30 35 40 45 50 55 60 65 70 75 80 85 90
-
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Dermatologist'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($derma_total = mysqli_num_rows($num_of_doc_run)) {
-                        $as = $derma_total / 100;
-                        if ($as >= $emergency) {
-                            echo '<p style="color: var(--emergency);">' . $as . "%" . " emergency" . '</p>';
-                        } else if ($as >= $chronic) {
-                            echo '<p style="color: var(--chronic);">' . $as . "%" . " chronic" . '</p>';
-                        } else if ($as >= $severe) {
-                            echo '<p style="color: var(--severe);">' . $as . "%" . " severe" . '</p>';
-                        } else if ($as >= $moderate) {
-                            echo '<p style="color: var(--moderate);">' . $as . "%" . " moderate" . '</p>';
-                        } else if ($as >= $mild) {
-                            echo '<p style="color: var(--mild);">' . $as . "%" . " mild" . '</p>';
-                        } else {
-                            echo '<p style="color: grey;">' . $as . "%" . " monitoring" . '</p>';
-                        }
+                    if ($derma_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
+                        $as = rate($derma_total);
+                        include '../.function/statistic_status.php';
                     } else {
                         echo 0 . "%";
                     }
@@ -79,21 +56,9 @@
                     // $obste_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Obstetrician-Gynecologist'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($obste_total = mysqli_num_rows($num_of_doc_run)) {
-                        $as = $obste_total / 100;
-                        if ($as >= $emergency) {
-                            echo '<p style="color: var(--emergency);">' . $as . "%" . " emergency" . '</p>';
-                        } else if ($as >= $chronic) {
-                            echo '<p style="color: var(--chronic);">' . $as . "%" . " chronic" . '</p>';
-                        } else if ($as >= $severe) {
-                            echo '<p style="color: var(--severe);">' . $as . "%" . " severe" . '</p>';
-                        } else if ($as >= $moderate) {
-                            echo '<p style="color: var(--moderate);">' . $as . "%" . " moderate" . '</p>';
-                        } else if ($as >= $mild) {
-                            echo '<p style="color: var(--mild);">' . $as . "%" . " mild" . '</p>';
-                        } else {
-                            echo '<p style="color: grey;">' . $as . "%" . " monitoring" . '</p>';
-                        }
+                    if ($obste_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
+                        $as = rate($obste_total);
+                        include '../.function/statistic_status.php';
                     } else {
                         echo 0 . "%";
                     }
@@ -110,21 +75,9 @@
                     // $optha_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Ophthalmologist'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($optha_total = mysqli_num_rows($num_of_doc_run)) {
-                        $as = $optha_total / 100;
-                        if ($as >= $emergency) {
-                            echo '<p style="color: var(--emergency);">' . $as . "%" . " emergency" . '</p>';
-                        } else if ($as >= $chronic) {
-                            echo '<p style="color: var(--chronic);">' . $as . "%" . " chronic" . '</p>';
-                        } else if ($as >= $severe) {
-                            echo '<p style="color: var(--severe);">' . $as . "%" . " severe" . '</p>';
-                        } else if ($as >= $moderate) {
-                            echo '<p style="color: var(--moderate);">' . $as . "%" . " moderate" . '</p>';
-                        } else if ($as >= $mild) {
-                            echo '<p style="color: var(--mild);">' . $as . "%" . " mild" . '</p>';
-                        } else {
-                            echo '<p style="color: grey;">' . $as . "%" . " monitoring" . '</p>';
-                        }
+                    if ($optha_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
+                        $as = rate($optha_total);
+                        include '../.function/statistic_status.php';
                     } else {
                         echo 0 . "%";
                     }
@@ -141,21 +94,9 @@
                     // $allergy_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Allergist'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($allergy_total = mysqli_num_rows($num_of_doc_run)) {
-                        $as = $allergy_total / 100;
-                        if ($as >= $emergency) {
-                            echo '<p style="color: var(--emergency);">' . $as . "%" . " emergency" . '</p>';
-                        } else if ($as >= $chronic) {
-                            echo '<p style="color: var(--chronic);">' . $as . "%" . " chronic" . '</p>';
-                        } else if ($as >= $severe) {
-                            echo '<p style="color: var(--severe);">' . $as . "%" . " severe" . '</p>';
-                        } else if ($as >= $moderate) {
-                            echo '<p style="color: var(--moderate);">' . $as . "%" . " moderate" . '</p>';
-                        } else if ($as >= $mild) {
-                            echo '<p style="color: var(--mild);">' . $as . "%" . " mild" . '</p>';
-                        } else {
-                            echo '<p style="color: grey;">' . $as . "%" . " monitoring" . '</p>';
-                        }
+                    if ($allergy_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
+                        $as = rate($allergy_total);
+                        include '../.function/statistic_status.php';
                     } else {
                         echo 0 . "%";
                     }
@@ -172,21 +113,9 @@
                     // $gastro_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Gastroenterologist'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($gastro_total = mysqli_num_rows($num_of_doc_run)) {
-                        $as = $gastro_total / 100;
-                        if ($as >= $emergency) {
-                            echo '<p style="color: var(--emergency);">' . $as . "%" . " emergency" . '</p>';
-                        } else if ($as >= $chronic) {
-                            echo '<p style="color: var(--chronic);">' . $as . "%" . " chronic" . '</p>';
-                        } else if ($as >= $severe) {
-                            echo '<p style="color: var(--severe);">' . $as . "%" . " severe" . '</p>';
-                        } else if ($as >= $moderate) {
-                            echo '<p style="color: var(--moderate);">' . $as . "%" . " moderate" . '</p>';
-                        } else if ($as >= $mild) {
-                            echo '<p style="color: var(--mild);">' . $as . "%" . " mild" . '</p>';
-                        } else {
-                            echo '<p style="color: grey;">' . $as . "%" . " monitoring" . '</p>';
-                        }
+                    if ($gastro_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
+                        $as = rate($gastro_total);
+                        include '../.function/statistic_status.php';
                     } else {
                         echo 0 . "%";
                     }
@@ -203,21 +132,9 @@
                     // $geria_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Geriatrician'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($geria_total = mysqli_num_rows($num_of_doc_run)) {
-                        $as = $geria_total / 100;
-                        if ($as >= $emergency) {
-                            echo '<p style="color: var(--emergency);">' . $as . "%" . " emergency" . '</p>';
-                        } else if ($as >= $chronic) {
-                            echo '<p style="color: var(--chronic);">' . $as . "%" . " chronic" . '</p>';
-                        } else if ($as >= $severe) {
-                            echo '<p style="color: var(--severe);">' . $as . "%" . " severe" . '</p>';
-                        } else if ($as >= $moderate) {
-                            echo '<p style="color: var(--moderate);">' . $as . "%" . " moderate" . '</p>';
-                        } else if ($as >= $mild) {
-                            echo '<p style="color: var(--mild);">' . $as . "%" . " mild" . '</p>';
-                        } else {
-                            echo '<p style="color: grey;">' . $as . "%" . " monitoring" . '</p>';
-                        }
+                    if ($geria_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
+                        $as = rate($geria_total);
+                        include '../.function/statistic_status.php';
                     } else {
                         echo 0 . "%";
                     }
@@ -234,21 +151,9 @@
                     // $infec_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Infectious Disease Specialist'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($infec_total = mysqli_num_rows($num_of_doc_run)) {
-                        $as = $infec_total / 100;
-                        if ($as >= $emergency) {
-                            echo '<p style="color: var(--emergency);">' . $as . "%" . " emergency" . '</p>';
-                        } else if ($as >= $chronic) {
-                            echo '<p style="color: var(--chronic);">' . $as . "%" . " chronic" . '</p>';
-                        } else if ($as >= $severe) {
-                            echo '<p style="color: var(--severe);">' . $as . "%" . " severe" . '</p>';
-                        } else if ($as >= $moderate) {
-                            echo '<p style="color: var(--moderate);">' . $as . "%" . " moderate" . '</p>';
-                        } else if ($as >= $mild) {
-                            echo '<p style="color: var(--mild);">' . $as . "%" . " mild" . '</p>';
-                        } else {
-                            echo '<p style="color: grey;">' . $as . "%" . " monitoring" . '</p>';
-                        }
+                    if ($infec_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
+                        $as = rate($infec_total);
+                        include '../.function/statistic_status.php';
                     } else {
                         echo 0 . "%";
                     }
@@ -265,21 +170,9 @@
                     // $hema_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Hematologist'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($hema_total = mysqli_num_rows($num_of_doc_run)) {
-                        $as = $hema_total / 100;
-                        if ($as >= $emergency) {
-                            echo '<p style="color: var(--emergency);">' . $as . "%" . " emergency" . '</p>';
-                        } else if ($as >= $chronic) {
-                            echo '<p style="color: var(--chronic);">' . $as . "%" . " chronic" . '</p>';
-                        } else if ($as >= $severe) {
-                            echo '<p style="color: var(--severe);">' . $as . "%" . " severe" . '</p>';
-                        } else if ($as >= $moderate) {
-                            echo '<p style="color: var(--moderate);">' . $as . "%" . " moderate" . '</p>';
-                        } else if ($as >= $mild) {
-                            echo '<p style="color: var(--mild);">' . $as . "%" . " mild" . '</p>';
-                        } else {
-                            echo '<p style="color: grey;">' . $as . "%" . " monitoring" . '</p>';
-                        }
+                    if ($hema_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
+                        $as = rate($hema_total);
+                        include '../.function/statistic_status.php';
                     } else {
                         echo 0 . "%";
                     }
@@ -296,21 +189,9 @@
                     // $neuro_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Neurologist'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($neuro_total = mysqli_num_rows($num_of_doc_run)) {
-                        $as = $neuro_total / 100;
-                        if ($as >= $emergency) {
-                            echo '<p style="color: var(--emergency);">' . $as . "%" . " emergency" . '</p>';
-                        } else if ($as >= $chronic) {
-                            echo '<p style="color: var(--chronic);">' . $as . "%" . " chronic" . '</p>';
-                        } else if ($as >= $severe) {
-                            echo '<p style="color: var(--severe);">' . $as . "%" . " severe" . '</p>';
-                        } else if ($as >= $moderate) {
-                            echo '<p style="color: var(--moderate);">' . $as . "%" . " moderate" . '</p>';
-                        } else if ($as >= $mild) {
-                            echo '<p style="color: var(--mild);">' . $as . "%" . " mild" . '</p>';
-                        } else {
-                            echo '<p style="color: grey;">' . $as . "%" . " monitoring" . '</p>';
-                        }
+                    if ($neuro_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
+                        $as = rate($neuro_total);
+                        include '../.function/statistic_status.php';
                     } else {
                         echo 0 . "%";
                     }
@@ -327,21 +208,9 @@
                     // $cardio_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Cardiologist'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($cardio_total = mysqli_num_rows($num_of_doc_run)) {
-                        $as = $cardio_total / 100;
-                        if ($as >= $emergency) {
-                            echo '<p style="color: var(--emergency);">' . $as . "%" . " emergency" . '</p>';
-                        } else if ($as >= $chronic) {
-                            echo '<p style="color: var(--chronic);">' . $as . "%" . " chronic" . '</p>';
-                        } else if ($as >= $severe) {
-                            echo '<p style="color: var(--severe);">' . $as . "%" . " severe" . '</p>';
-                        } else if ($as >= $moderate) {
-                            echo '<p style="color: var(--moderate);">' . $as . "%" . " moderate" . '</p>';
-                        } else if ($as >= $mild) {
-                            echo '<p style="color: var(--mild);">' . $as . "%" . " mild" . '</p>';
-                        } else {
-                            echo '<p style="color: grey;">' . $as . "%" . " monitoring" . '</p>';
-                        }
+                    if ($cardio_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
+                        $as = rate($cardio_total);
+                        include '../.function/statistic_status.php';
                     } else {
                         echo 0 . "%";
                     }
@@ -358,21 +227,9 @@
                     // $pedia_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Pediatrician'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($pedia_total = mysqli_num_rows($num_of_doc_run)) {
-                        $as = $pedia_total / 100;
-                        if ($as >= $emergency) {
-                            echo '<p style="color: var(--emergency);">' . $as . "%" . " emergency" . '</p>';
-                        } else if ($as >= $chronic) {
-                            echo '<p style="color: var(--chronic);">' . $as . "%" . " chronic" . '</p>';
-                        } else if ($as >= $severe) {
-                            echo '<p style="color: var(--severe);">' . $as . "%" . " severe" . '</p>';
-                        } else if ($as >= $moderate) {
-                            echo '<p style="color: var(--moderate);">' . $as . "%" . " moderate" . '</p>';
-                        } else if ($as >= $mild) {
-                            echo '<p style="color: var(--mild);">' . $as . "%" . " mild" . '</p>';
-                        } else {
-                            echo '<p style="color: grey;">' . $as . "%" . " monitoring" . '</p>';
-                        }
+                    if ($pedia_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
+                        $as = rate($pedia_total);
+                        include '../.function/statistic_status.php';
                     } else {
                         echo 0 . "%";
                     }
@@ -389,21 +246,9 @@
                     // $endo_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Endocrinologist'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($endo_total = mysqli_num_rows($num_of_doc_run)) {
-                        $as = $endo_total / 100;
-                        if ($as >= $emergency) {
-                            echo '<p style="color: var(--emergency);">' . $as . "%" . " emergency" . '</p>';
-                        } else if ($as >= $chronic) {
-                            echo '<p style="color: var(--chronic);">' . $as . "%" . " chronic" . '</p>';
-                        } else if ($as >= $severe) {
-                            echo '<p style="color: var(--severe);">' . $as . "%" . " severe" . '</p>';
-                        } else if ($as >= $moderate) {
-                            echo '<p style="color: var(--moderate);">' . $as . "%" . " moderate" . '</p>';
-                        } else if ($as >= $mild) {
-                            echo '<p style="color: var(--mild);">' . $as . "%" . " mild" . '</p>';
-                        } else {
-                            echo '<p style="color: grey;">' . $as . "%" . " monitoring" . '</p>';
-                        }
+                    if ($endo_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
+                        $as = rate($endo_total);
+                        include '../.function/statistic_status.php';
                     } else {
                         echo 0 . "%";
                     }
@@ -420,21 +265,9 @@
                     // $radio_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Radiologist'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($radio_total = mysqli_num_rows($num_of_doc_run)) {
-                        $as = $radio_total / 100;
-                        if ($as >= $emergency) {
-                            echo '<p style="color: var(--emergency);">' . $as . "%" . " emergency" . '</p>';
-                        } else if ($as >= $chronic) {
-                            echo '<p style="color: var(--chronic);">' . $as . "%" . " chronic" . '</p>';
-                        } else if ($as >= $severe) {
-                            echo '<p style="color: var(--severe);">' . $as . "%" . " severe" . '</p>';
-                        } else if ($as >= $moderate) {
-                            echo '<p style="color: var(--moderate);">' . $as . "%" . " moderate" . '</p>';
-                        } else if ($as >= $mild) {
-                            echo '<p style="color: var(--mild);">' . $as . "%" . " mild" . '</p>';
-                        } else {
-                            echo '<p style="color: grey;">' . $as . "%" . " monitoring" . '</p>';
-                        }
+                    if ($radio_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
+                        $as = rate($radio_total);
+                        include '../.function/statistic_status.php';
                     } else {
                         echo 0 . "%";
                     }
@@ -451,21 +284,9 @@
                     // $nephro_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Nephrologist'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($nephro_total = mysqli_num_rows($num_of_doc_run)) {
-                        $as = $nephro_total / 100;
-                        if ($as >= $emergency) {
-                            echo '<p style="color: var(--emergency);">' . $as . "%" . " emergency" . '</p>';
-                        } else if ($as >= $chronic) {
-                            echo '<p style="color: var(--chronic);">' . $as . "%" . " chronic" . '</p>';
-                        } else if ($as >= $severe) {
-                            echo '<p style="color: var(--severe);">' . $as . "%" . " severe" . '</p>';
-                        } else if ($as >= $moderate) {
-                            echo '<p style="color: var(--moderate);">' . $as . "%" . " moderate" . '</p>';
-                        } else if ($as >= $mild) {
-                            echo '<p style="color: var(--mild);">' . $as . "%" . " mild" . '</p>';
-                        } else {
-                            echo '<p style="color: grey;">' . $as . "%" . " monitoring" . '</p>';
-                        }
+                    if ($nephro_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
+                        $as = rate($nephro_total);
+                        include '../.function/statistic_status.php';
                     } else {
                         echo 0 . "%";
                     }
@@ -482,21 +303,9 @@
                     // $otorhi_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Otorhinolaryngologist'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($otorhi_total = mysqli_num_rows($num_of_doc_run)) {
-                        $as = $otorhi_total / 100;
-                        if ($as >= $emergency) {
-                            echo '<p style="color: var(--emergency);">' . $as . "%" . " emergency" . '</p>';
-                        } else if ($as >= $chronic) {
-                            echo '<p style="color: var(--chronic);">' . $as . "%" . " chronic" . '</p>';
-                        } else if ($as >= $severe) {
-                            echo '<p style="color: var(--severe);">' . $as . "%" . " severe" . '</p>';
-                        } else if ($as >= $moderate) {
-                            echo '<p style="color: var(--moderate);">' . $as . "%" . " moderate" . '</p>';
-                        } else if ($as >= $mild) {
-                            echo '<p style="color: var(--mild);">' . $as . "%" . " mild" . '</p>';
-                        } else {
-                            echo '<p style="color: grey;">' . $as . "%" . " monitoring" . '</p>';
-                        }
+                    if ($otorhi_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
+                        $as = rate($otorhi_total);
+                        include '../.function/statistic_status.php';
                     } else {
                         echo 0 . "%";
                     }
@@ -513,21 +322,9 @@
                     // $podia_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Podiatrist'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($podia_total = mysqli_num_rows($num_of_doc_run)) {
-                        $as = $podia_total / 100;
-                        if ($as >= $emergency) {
-                            echo '<p style="color: var(--emergency);">' . $as . "%" . " emergency" . '</p>';
-                        } else if ($as >= $chronic) {
-                            echo '<p style="color: var(--chronic);">' . $as . "%" . " chronic" . '</p>';
-                        } else if ($as >= $severe) {
-                            echo '<p style="color: var(--severe);">' . $as . "%" . " severe" . '</p>';
-                        } else if ($as >= $moderate) {
-                            echo '<p style="color: var(--moderate);">' . $as . "%" . " moderate" . '</p>';
-                        } else if ($as >= $mild) {
-                            echo '<p style="color: var(--mild);">' . $as . "%" . " mild" . '</p>';
-                        } else {
-                            echo '<p style="color: grey;">' . $as . "%" . " monitoring" . '</p>';
-                        }
+                    if ($podia_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
+                        $as = rate($podia_total);
+                        include '../.function/statistic_status.php';
                     } else {
                         echo 0 . "%";
                     }
@@ -544,21 +341,9 @@
                     // $fam_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Family Medicine Doctor'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($fam_total = mysqli_num_rows($num_of_doc_run)) {
-                        $as = $fam_total / 100;
-                        if ($as >= $emergency) {
-                            echo '<p style="color: var(--emergency);">' . $as . "%" . " emergency" . '</p>';
-                        } else if ($as >= $chronic) {
-                            echo '<p style="color: var(--chronic);">' . $as . "%" . " chronic" . '</p>';
-                        } else if ($as >= $severe) {
-                            echo '<p style="color: var(--severe);">' . $as . "%" . " severe" . '</p>';
-                        } else if ($as >= $moderate) {
-                            echo '<p style="color: var(--moderate);">' . $as . "%" . " moderate" . '</p>';
-                        } else if ($as >= $mild) {
-                            echo '<p style="color: var(--mild);">' . $as . "%" . " mild" . '</p>';
-                        } else {
-                            echo '<p style="color: grey;">' . $as . "%" . " monitoring" . '</p>';
-                        }
+                    if ($fam_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
+                        $as = rate($fam_total);
+                        include '../.function/statistic_status.php';
                     } else {
                         echo 0 . "%";
                     }
@@ -575,21 +360,9 @@
                     // $psych_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Psychiatrist'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($psych_total = mysqli_num_rows($num_of_doc_run)) {
-                        $as = $psych_total / 100;
-                        if ($as >= $emergency) {
-                            echo '<p style="color: var(--emergency);">' . $as . "%" . " emergency" . '</p>';
-                        } else if ($as >= $chronic) {
-                            echo '<p style="color: var(--chronic);">' . $as . "%" . " chronic" . '</p>';
-                        } else if ($as >= $severe) {
-                            echo '<p style="color: var(--severe);">' . $as . "%" . " severe" . '</p>';
-                        } else if ($as >= $moderate) {
-                            echo '<p style="color: var(--moderate);">' . $as . "%" . " moderate" . '</p>';
-                        } else if ($as >= $mild) {
-                            echo '<p style="color: var(--mild);">' . $as . "%" . " mild" . '</p>';
-                        } else {
-                            echo '<p style="color: grey;">' . $as . "%" . " monitoring" . '</p>';
-                        }
+                    if ($psych_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
+                        $as = rate($psych_total);
+                        include '../.function/statistic_status.php';
                     } else {
                         echo 0 . "%";
                     }
@@ -606,21 +379,9 @@
                     // $emp_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Emergency Medicine Physician'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($emp_total = mysqli_num_rows($num_of_doc_run)) {
-                        $as = $emp_total / 100;
-                        if ($as >= $emergency) {
-                            echo '<p style="color: var(--emergency);">' . $as . "%" . " emergency" . '</p>';
-                        } else if ($as >= $chronic) {
-                            echo '<p style="color: var(--chronic);">' . $as . "%" . " chronic" . '</p>';
-                        } else if ($as >= $severe) {
-                            echo '<p style="color: var(--severe);">' . $as . "%" . " severe" . '</p>';
-                        } else if ($as >= $moderate) {
-                            echo '<p style="color: var(--moderate);">' . $as . "%" . " moderate" . '</p>';
-                        } else if ($as >= $mild) {
-                            echo '<p style="color: var(--mild);">' . $as . "%" . " mild" . '</p>';
-                        } else {
-                            echo '<p style="color: grey;">' . $as . "%" . " monitoring" . '</p>';
-                        }
+                    if ($emp_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
+                        $as = rate($emp_total);
+                        include '../.function/statistic_status.php';
                     } else {
                         echo 0 . "%";
                     }
@@ -637,21 +398,9 @@
                     // $anes_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Anesthesiologist'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($anes_total = mysqli_num_rows($num_of_doc_run)) {
-                        $as = $anes_total / 100;
-                        if ($as >= $emergency) {
-                            echo '<p style="color: var(--emergency);">' . $as . "%" . " emergency" . '</p>';
-                        } else if ($as >= $chronic) {
-                            echo '<p style="color: var(--chronic);">' . $as . "%" . " chronic" . '</p>';
-                        } else if ($as >= $severe) {
-                            echo '<p style="color: var(--severe);">' . $as . "%" . " severe" . '</p>';
-                        } else if ($as >= $moderate) {
-                            echo '<p style="color: var(--moderate);">' . $as . "%" . " moderate" . '</p>';
-                        } else if ($as >= $mild) {
-                            echo '<p style="color: var(--mild);">' . $as . "%" . " mild" . '</p>';
-                        } else {
-                            echo '<p style="color: grey;">' . $as . "%" . " monitoring" . '</p>';
-                        }
+                    if ($anes_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
+                        $as = rate($anes_total);
+                        include '../.function/statistic_status.php';
                     } else {
                         echo 0 . "%";
                     }
@@ -668,21 +417,9 @@
                     // $gene_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='General Surgeon'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($gene_total = mysqli_num_rows($num_of_doc_run)) {
-                        $as = $gene_total / 100;
-                        if ($as >= $emergency) {
-                            echo '<p style="color: var(--emergency);">' . $as . "%" . " emergency" . '</p>';
-                        } else if ($as >= $chronic) {
-                            echo '<p style="color: var(--chronic);">' . $as . "%" . " chronic" . '</p>';
-                        } else if ($as >= $severe) {
-                            echo '<p style="color: var(--severe);">' . $as . "%" . " severe" . '</p>';
-                        } else if ($as >= $moderate) {
-                            echo '<p style="color: var(--moderate);">' . $as . "%" . " moderate" . '</p>';
-                        } else if ($as >= $mild) {
-                            echo '<p style="color: var(--mild);">' . $as . "%" . " mild" . '</p>';
-                        } else {
-                            echo '<p style="color: grey;">' . $as . "%" . " monitoring" . '</p>';
-                        }
+                    if ($gene_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
+                        $as = rate($gene_total);
+                        include '../.function/statistic_status.php';
                     } else {
                         echo 0 . "%";
                     }
@@ -699,21 +436,9 @@
                     // $patho_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Pathologist'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($patho_total = mysqli_num_rows($num_of_doc_run)) {
-                        $as = $patho_total / 100;
-                        if ($as >= $emergency) {
-                            echo '<p style="color: var(--emergency);">' . $as . "%" . " emergency" . '</p>';
-                        } else if ($as >= $chronic) {
-                            echo '<p style="color: var(--chronic);">' . $as . "%" . " chronic" . '</p>';
-                        } else if ($as >= $severe) {
-                            echo '<p style="color: var(--severe);">' . $as . "%" . " severe" . '</p>';
-                        } else if ($as >= $moderate) {
-                            echo '<p style="color: var(--moderate);">' . $as . "%" . " moderate" . '</p>';
-                        } else if ($as >= $mild) {
-                            echo '<p style="color: var(--mild);">' . $as . "%" . " mild" . '</p>';
-                        } else {
-                            echo '<p style="color: grey;">' . $as . "%" . " monitoring" . '</p>';
-                        }
+                    if ($patho_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
+                        $as = rate($patho_total);
+                        include '../.function/statistic_status.php';
                     } else {
                         echo 0 . "%";
                     }
@@ -730,21 +455,9 @@
                     // $surgeon_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Surgeon'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($surgeon_total = mysqli_num_rows($num_of_doc_run)) {
-                        $as = $surgeon_total / 100;
-                        if ($as >= $emergency) {
-                            echo '<p style="color: var(--emergency);">' . $as . "%" . " emergency" . '</p>';
-                        } else if ($as >= $chronic) {
-                            echo '<p style="color: var(--chronic);">' . $as . "%" . " chronic" . '</p>';
-                        } else if ($as >= $severe) {
-                            echo '<p style="color: var(--severe);">' . $as . "%" . " severe" . '</p>';
-                        } else if ($as >= $moderate) {
-                            echo '<p style="color: var(--moderate);">' . $as . "%" . " moderate" . '</p>';
-                        } else if ($as >= $mild) {
-                            echo '<p style="color: var(--mild);">' . $as . "%" . " mild" . '</p>';
-                        } else {
-                            echo '<p style="color: grey;">' . $as . "%" . " monitoring" . '</p>';
-                        }
+                    if ($surgeon_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
+                        $as = rate($surgeon_total);
+                        include '../.function/statistic_status.php';
                     } else {
                         echo 0 . "%";
                     }
