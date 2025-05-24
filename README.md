@@ -28,7 +28,7 @@
 
 ### 1. System Access and User Registration
 
-    - Users can register for an account by selecting their role: Patient, Doctor, or Admin.
+    - Users can register for an account by selecting their role: Patient, Doctor.
     - Once registered, users can log in to the system based on their selected role.
 
 ### 2. Admin Management and User Monitoring
