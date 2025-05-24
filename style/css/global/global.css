@@ -113,3 +113,7 @@ a:hover .material-symbols-outlined {
     font-size: 12px;
     color: grey;
 }
+
+#submit {
+    cursor: pointer;
+}
