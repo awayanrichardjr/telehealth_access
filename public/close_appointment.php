@@ -33,9 +33,8 @@ if (empty($_SESSION['docUsername']) && empty($_SESSION['docPass'])) {
             header("location: appointment_profile_doc.php");
             exit();
         } else {
-            // echo "Error: " . $sql . "<br>" . $conn->error;
             header("location: appointment_profile_doc.php?error");
-            // exit();
+            exit();
         }
         $conn->close();
     }
