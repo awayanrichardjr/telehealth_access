@@ -13,13 +13,9 @@
             <br>
             <p><b>Add Additional Treatment Notes (Optional)</b></p>
             <p>A form will appear with a textarea input. Use this space to write any important details such as:</p>
-
             <p>- Follow-up advice</p>
-
             <p>- Prescribed medications</p>
-
             <p>- Additional treatments</p>
-
             <p>- Observations from the consultation</p>
             <br>
             <p><b>Note:</b></p>
