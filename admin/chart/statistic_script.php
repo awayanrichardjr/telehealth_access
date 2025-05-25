@@ -7,19 +7,19 @@
             // backgroundColor: "#f8f8f8",
             theme: "light2", // "light1", "light2", "dark1", "dark2"
             title: {
-                text: "APPOINTMENT RATES STATISTICS",
+                text: "MEDICAL RATES STATISTICS",
                 fontColor: "#a29bb3",
                 fontSize: "20"
             },
             axisX: {
-                title: "Specialties",
+                title: "SPECIALTIES",
                 labelFontColor: "grey",
                 labelFontSize: "10",
                 titleFontSize: "12",
                 labelAngle: -45 // Slants the labels for readability
             },
             axisY: {
-                title: "Numbers of Specialists",
+                title: "SPECIALTIES' MEDICAL RATES AREA",
                 labelFontColor: "grey",
                 labelFontSize: "10",
                 titleFontSize: "10",

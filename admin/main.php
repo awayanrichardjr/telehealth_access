@@ -33,7 +33,12 @@
                         </li>
                         <li>
                             <a href="../public/statistic.php">
-                                Analytics
+                                Medical Analytics
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../public/monthly_analytics.php">
+                                Monthly Analytics
                             </a>
                         </li>
                     </ul>
