@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 23, 2025 at 03:05 AM
+-- Generation Time: May 25, 2025 at 08:28 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -87,6 +87,7 @@ CREATE TABLE `consult` (
   `conEmail` varchar(255) NOT NULL,
   `conContact` varchar(255) NOT NULL,
   `conCdate` varchar(255) NOT NULL,
+  `conAge` varchar(255) NOT NULL,
   `conADateTime` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -94,9 +95,8 @@ CREATE TABLE `consult` (
 -- Dumping data for table `consult`
 --
 
-INSERT INTO `consult` (`conID`, `conName`, `conAddress`, `conBdate`, `conSelectedDoc`, `conDocSpecialty`, `conDiagnose`, `conConcern`, `conUsername`, `conEmail`, `conContact`, `conCdate`, `conADateTime`) VALUES
-(1, 'Gwen Cha  Na ', 'Panabo', '2025-05-09', 'Dr. William F Smith ', 'Dermatologist', 'qwe', 'asd asd', 'gwen', 'richarddumaelawayanjr@gmail.com', '09091012054', 'May-23-2025 05:16am', '2025-05-23 11:16:00'),
-(2, 'Lisa M Manoban ', 'Thialand', '2025-05-23', 'Dr. William F Smith ', 'Dermatologist', 'ert', 'asd asd as', 'lisa', 'jayrawayan@gmail.com', '0912412311211', 'May-23-2025 05:17am', '2025-05-23 11:18:00');
+INSERT INTO `consult` (`conID`, `conName`, `conAddress`, `conBdate`, `conSelectedDoc`, `conDocSpecialty`, `conDiagnose`, `conConcern`, `conUsername`, `conEmail`, `conContact`, `conCdate`, `conAge`, `conADateTime`) VALUES
+(4, 'Mia  Rose  Martinez ', '707 Aspen Way, Brookville', '2025-05-25', 'Dr. William F Smith ', 'Dermatologist', 'asd asd', 'qwq ew', 'miam', 'richarddumaelawayanjr@gmail.com', '09667778888', 'May-25-2025 01:58pm', '24', '2025-05-25 19:58:00');
 
 -- --------------------------------------------------------
 
@@ -134,9 +134,14 @@ CREATE TABLE `doctor` (
 
 INSERT INTO `doctor` (`docID`, `docFname`, `docMname`, `docLname`, `docSuffix`, `docBdate`, `docAddress`, `docSpecialty`, `docUsername`, `docEmail`, `docContact`, `docPass`, `docConfirm`, `docCdate`, `docModified`, `docStatus`, `docPhoto`, `docQualify`, `docIDfront`, `docIDback`, `doc_space`) VALUES
 (1, 'William', 'F', 'Smith', '', '2025-05-23', 'Davao', 'Dermatologist', 'william', '', '091234', '1234', '1234', '2025-05-23', 'May-23-2025 05:07am', 'Verified', '', 'Array', '', '', 'https://chat.google.com/room/AAQAXVjeDx4?cls=7'),
-(2, 'John', 'M', 'Doe', '', '2025-05-09', 'Davao City', 'Obstetrician-Gynecologist', 'johndoe', '', '0912345', '1234', '1234', '2025-05-23', '', 'Unverified', '', '', '', '', ''),
+(2, 'John', 'M', 'Doe', '', '2025-05-09', 'Davao City', 'Obstetrician-Gynecologist', 'johndoe', '', '0912345', '1234', '1234', '2025-05-23', 'May-25-2025 01:43pm', 'Verified', '', '', '', '', 'https://chat.google.com/room/AAQAXVjeDx4?cls=7'),
 (3, 'Joe', 'D', 'Leon', '', '2025-05-23', 'Panabo', 'Dermatologist', 'joe', '', '0912341236', '1234', '1234', '2025-05-23', '', 'Unverified', '', '', '', '', ''),
-(4, 'Chopper', 'C', 'Tony Tony', '', '2025-05-23', 'Davao', 'Geriatrician', 'chopper', '', '098751234', '1234', '1234', '2025-05-23', '', 'Unverified', '', '', '', '', '');
+(4, 'Chopper', 'C', 'Tony Tony', '', '2025-05-23', 'Davao', 'Infectious Disease Specialist', 'chopper', '', '098751234', '1234', '1234', '2025-05-23', 'May-25-2025 01:55pm', 'Verified', '', '', '', '', 'https://chat.google.com/room/AAQAXVjeDx4?cls=7'),
+(6, 'Clyn', 'B', 'Amore', '', '2025-05-08', 'Panabo City', 'Dermatologist', 'clyn', '', '09124123123', '1234', '1234', '2025-05-25', '', 'Unverified', '', '', '', '', ''),
+(7, ' Emily ', 'Grace ', 'Smith', '', '2025-05-25', '123 Main St, Springfield', 'Infectious Disease Specialist', 'emilys', '', '09171234567', '1234', '1234', '2025-05-25', 'May-25-2025 01:50pm', 'Unverified', '', '', '', '', ''),
+(8, 'James ', 'Edward ', 'Johnson ', 'Jr.', '2025-05-08', '45 Elm Rd, Rivertown', 'Cardiologist', 'jjohnson', '', '09181112222', '1234', '1234', '2025-05-25', 'May-25-2025 01:54pm', 'Verified', '', '', '', '', 'https://chat.google.com/room/AAQAXVjeDx4?cls=7'),
+(9, 'Sophia ', 'Marie ', 'Williams', '', '2025-05-09', '78 Oak St, Lakeview', 'Hematologist', 'sophiaw', '', '1t132421315123', '1234', '1234', '2025-05-25', 'May-25-2025 01:52pm', 'Unverified', '', '', '', '', ''),
+(11, 'Liam ', 'Andrew ', 'Brown', '', '2025-05-07', '901 Birch Ln, Maple City', 'Allergist', 'liamb', '', '09334445555', '1234', '1234', '2025-05-25', 'May-25-2025 01:54pm', 'Verified', '', '', '', '', 'https://chat.google.com/room/AAQAXVjeDx4?cls=7');
 
 -- --------------------------------------------------------
 
@@ -159,7 +164,8 @@ CREATE TABLE `feed` (
 
 INSERT INTO `feed` (`feed_id`, `feed_name`, `feed_post`, `feed_DocStatus`, `feed_Cdate`, `feed_Modified`) VALUES
 (1, 'Lisa M Manoban ', 'how you like that!\r\n', '', 'May-23-2025 05:04am', ''),
-(2, 'Dr. William F Smith ', 'oh 👀👌😒😍❤', 'Verified', 'May-23-2025 05:08am', '');
+(2, 'Dr. William F Smith ', 'oh 👀👌😒😍❤', 'Verified', 'May-23-2025 05:08am', ''),
+(3, 'Dr. William F Smith ', '', 'Verified', 'May-25-2025 11:21am', '');
 
 -- --------------------------------------------------------
 
@@ -181,6 +187,7 @@ CREATE TABLE `medical` (
   `medContact` varchar(255) NOT NULL,
   `medCdate` varchar(255) NOT NULL,
   `medADateTime` varchar(255) NOT NULL,
+  `medAge` varchar(255) NOT NULL,
   `medTreatment` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -188,9 +195,12 @@ CREATE TABLE `medical` (
 -- Dumping data for table `medical`
 --
 
-INSERT INTO `medical` (`medID`, `medName`, `medAddress`, `medBdate`, `medSelectedDoc`, `medDocSpecialty`, `medDiagnose`, `medConcern`, `medUsername`, `medEmail`, `medContact`, `medCdate`, `medADateTime`, `medTreatment`) VALUES
-(1, 'Lisa M Manoban ', 'Thialand', '2025-05-23', 'Dr. William F Smith ', 'Dermatologist', 'ert', 'asd asd as', 'lisa', 'jayrawayan@gmail.com', '0912412311211', 'May-23-2025 05:17am', 'May 23, 2025 05:19am', 'ok'),
-(2, 'Gwen Cha  Na ', 'Panabo', '2025-05-09', 'Dr. William F Smith ', 'Dermatologist', 'qwe', 'asd asd', 'gwen', 'richarddumaelawayanjr@gmail.com', '09091012054', 'May-23-2025 05:16am', 'May 23, 2025 05:20am', 'ok na');
+INSERT INTO `medical` (`medID`, `medName`, `medAddress`, `medBdate`, `medSelectedDoc`, `medDocSpecialty`, `medDiagnose`, `medConcern`, `medUsername`, `medEmail`, `medContact`, `medCdate`, `medADateTime`, `medAge`, `medTreatment`) VALUES
+(4, 'Gwen Cha  Na ', 'Panabo', '2025-05-09', 'Dr. William F Smith ', 'Dermatologist', 'asd asd asd ', 'asd wed Asdc ED', 'gwen', 'richarddumaelawayanjr@gmail.com', '09091012054', 'May-25-2025 11:56am', 'May 25, 2025 11:57am', '24', 'asd '),
+(5, 'Benjamin  Lee  Garcia ', ' 304 Cedar St, Hillside', '2025-05-08', 'Dr. Liam  Andrew  Brown ', 'Allergist', 'qwe wqe qwe', ' qwe qwe qwe qwe qwe', 'bengarcia', 'richarddumaelawayanjr@gmail.com', '09556667777', 'May-25-2025 01:59pm', 'May 25, 2025 02:05pm', '35', 'asasvasvassa as as as'),
+(6, 'Gwen Cha  Na ', 'Panabo', '2025-05-09', 'Dr. James  Edward  Johnson  Jr.', 'Cardiologist', 'qwe qwe', 'qwe q q  q q q q', 'gwen', 'richarddumaelawayanjr@gmail.com', '09091012054', 'May-25-2025 02:00pm', 'May 25, 2025 02:08pm', '29', 'aaa aaaaaaaaaaaa'),
+(7, 'Mia  Rose  Martinez ', '707 Aspen Way, Brookville', '2025-05-25', 'Dr. Chopper C Tony Tony ', 'Infectious Disease Specialist', 'qwe qwe', 'qwe qwe qwe qwe qwe ', 'miam', 'richarddumaelawayanjr@gmail.com', '09667778888', 'May-25-2025 01:59pm', 'May 25, 2025 02:08pm', '24', 'asd asd asd asd'),
+(8, 'Benjamin  Lee  Garcia ', ' 304 Cedar St, Hillside', '2025-05-08', 'Dr. Chopper C Tony Tony ', 'Infectious Disease Specialist', 'qwe wqe qwe', ' qwe qwe qwe qwe qwe', 'bengarcia', 'richarddumaelawayanjr@gmail.com', '09556667777', 'May-25-2025 02:13pm', 'May 25, 2025 02:13pm', '35', 'ssssss aasssssss');
 
 -- --------------------------------------------------------
 
@@ -221,7 +231,9 @@ CREATE TABLE `patient` (
 
 INSERT INTO `patient` (`pID`, `pFname`, `pMname`, `pLname`, `pSuffix`, `pAddress`, `pBdate`, `pContact`, `pUsername`, `pEmail`, `pPass`, `pConfirm`, `pCdate`, `pModified`) VALUES
 (1, 'Gwen', 'Cha ', 'Na', '', 'Panabo', '2025-05-09', '09091012054', 'gwen', '', '1234', '1234', '2025-05-23', ''),
-(2, 'Lisa', 'M', 'Manoban', '', 'Thialand', '2025-05-23', '0912412311211', 'lisa', '', '1234', '1234', '2025-05-23', '');
+(2, 'Lisa', 'M', 'Manoban', '', 'Thialand', '2025-05-23', '0912412311211', 'lisa', '', '1234', '1234', '2025-05-23', ''),
+(3, 'Benjamin ', 'Lee ', 'Garcia', '', ' 304 Cedar St, Hillside', '2025-05-08', '09556667777', 'bengarcia', '', '1234', '1234', '2025-05-25', 'May-25-2025 01:56pm'),
+(4, 'Mia ', 'Rose ', 'Martinez', '', '707 Aspen Way, Brookville', '2025-05-25', '09667778888', 'miam', '', '1234', '1234', '2025-05-25', 'May-25-2025 01:57pm');
 
 --
 -- Indexes for dumped tables
@@ -295,31 +307,31 @@ ALTER TABLE `chat`
 -- AUTO_INCREMENT for table `consult`
 --
 ALTER TABLE `consult`
-  MODIFY `conID` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `conID` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `doctor`
 --
 ALTER TABLE `doctor`
-  MODIFY `docID` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `docID` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `feed`
 --
 ALTER TABLE `feed`
-  MODIFY `feed_id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `feed_id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `medical`
 --
 ALTER TABLE `medical`
-  MODIFY `medID` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `medID` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `patient`
 --
 ALTER TABLE `patient`
-  MODIFY `pID` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `pID` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
