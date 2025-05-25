@@ -18,6 +18,8 @@ if ($as >= $emergency) {
     echo '<p style="color: var(--moderate);">' . $as . "%" . " moderate" . '</p>';
 } else if ($as >= $mild) {
     echo '<p style="color: var(--mild);">' . $as . "%" . " mild" . '</p>';
+} else if ($as < 0.01) {
+    echo '<p style="color: grey;">' . $as . "%" . "" . '</p>';
 } else {
-    echo '<p style="color: grey;">' . $as . "%" . " monitoring" . '</p>';
+    echo '<p style="color: var(--monitor);">' . $as . "%" . " monitoring" . '</p>';
 }

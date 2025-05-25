@@ -66,7 +66,7 @@
             <!-- age  -->
             <div>
                 <label for="conAge">Patient Age * </label>
-                <input type="number" id="conAge" name="conAge" min="0" max="120" value="0" required>
+                <input type="number" id="conAge" name="conAge" min="0" max="120" placeholder="Age" required>
             </div>
 
             <!-- Contact Number  -->

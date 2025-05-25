@@ -1,8 +1,8 @@
 <tr class="appointment_tr">
   <?php if ($_SESSION['medUsername'] === $_SESSION['pUsername']) { ?>
-    <td style="background-color: var(--purple);">
+    <td style="background-color: var(--blue);">
     <?php } else { ?>
-    <td style="background-color: lightgrey;">
+    <td style="background-color: grey;">
     <?php } ?>
     <ul class="view-appt">
       <li>

@@ -33,16 +33,17 @@
     --blue-hover: #0062ff;
     --red: #f54242;
     --yellow: #f5bf42;
+    --orange: #f57b42;
     --green: #42f593;
     --sky-blue: #42d1f5;
     --purple: #e342f5;
 
-    --monitor: var(--mild);
-    --mild: #42b3f5;
-    --moderate: #42f542;
-    --severe: #ffc400;
-    --chronic: #f58442;
-    --emergency: #f54242;
+    --monitor: var(--purple);
+    --mild: var(--blue);
+    --moderate: var(--green);
+    --severe: var(--yellow);
+    --chronic: var(--orange);
+    --emergency: var(--red);
 
     /* shadows */
     --shadow: 1px 1px 2px rgba(0, 0, 0, 0.200);

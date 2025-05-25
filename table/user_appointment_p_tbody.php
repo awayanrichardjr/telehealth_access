@@ -2,7 +2,7 @@
   <?php if ($_SESSION['conUsername'] === $_SESSION['pUsername']) { ?>
     <td style="background-color: var(--purple);">
     <?php } else { ?>
-    <td style="background-color: lightgrey;">
+    <td style="background-color: grey;">
     <?php } ?>
     <ul class="view-appt">
       <li>

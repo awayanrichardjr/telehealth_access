@@ -2,10 +2,10 @@
   <?php
   $docName = "Dr. " . $_SESSION['docFname'] . " " . $_SESSION['docMname'] . " " . $_SESSION['docLname'] . " " . $_SESSION['docSuffix'];
 
-  if ($_SESSION['conSelectedDoc'] === $docName) { ?>
-    <td style="background-color: var(--purple);">
-    <?php } else { ?>
+  if ($_SESSION['medSelectedDoc'] === $docName) { ?>
     <td style="background-color: var(--blue);">
+    <?php } else { ?>
+    <td style="background-color: grey;">
     <?php } ?>
     <ul class="view-appt">
       <li>

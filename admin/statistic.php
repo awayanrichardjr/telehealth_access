@@ -40,7 +40,7 @@
                         $as = rate($derma_total);
                         include '../.function/statistic_status.inc.php';
                     } else {
-                        echo 0 . "%";
+                        echo '<p style="color:grey">' . 0 . "%" . '</p>';
                     }
                     ?>
                     <span class="material-symbols-outlined" style="opacity: 20%;">
@@ -59,7 +59,7 @@
                         $as = rate($obste_total);
                         include '../.function/statistic_status.inc.php';
                     } else {
-                        echo 0 . "%";
+                        echo '<p style="color:grey">' . 0 . "%" . '</p>';
                     }
                     ?>
                     <span class="material-symbols-outlined" style="opacity: 20%;">
@@ -78,7 +78,7 @@
                         $as = rate($optha_total);
                         include '../.function/statistic_status.inc.php';
                     } else {
-                        echo 0 . "%";
+                        echo '<p style="color:grey">' . 0 . "%" . '</p>';
                     }
                     ?>
                     <span class="material-symbols-outlined" style="opacity: 20%;">
@@ -97,7 +97,7 @@
                         $as = rate($allergy_total);
                         include '../.function/statistic_status.inc.php';
                     } else {
-                        echo 0 . "%";
+                        echo '<p style="color:grey">' . 0 . "%" . '</p>';
                     }
                     ?>
                     <span class="material-symbols-outlined" style="opacity: 20%;">
@@ -116,7 +116,7 @@
                         $as = rate($gastro_total);
                         include '../.function/statistic_status.inc.php';
                     } else {
-                        echo 0 . "%";
+                        echo '<p style="color:grey">' . 0 . "%" . '</p>';
                     }
                     ?>
                     <span class="material-symbols-outlined" style="opacity: 20%;">
@@ -135,7 +135,7 @@
                         $as = rate($geria_total);
                         include '../.function/statistic_status.inc.php';
                     } else {
-                        echo 0 . "%";
+                        echo '<p style="color:grey">' . 0 . "%" . '</p>';
                     }
                     ?>
                     <span class="material-symbols-outlined" style="opacity: 20%;">
@@ -154,7 +154,7 @@
                         $as = rate($infec_total);
                         include '../.function/statistic_status.inc.php';
                     } else {
-                        echo 0 . "%";
+                        echo '<p style="color:grey">' . 0 . "%" . '</p>';
                     }
                     ?>
                     <span class="material-symbols-outlined" style="opacity: 20%;">
@@ -173,7 +173,7 @@
                         $as = rate($hema_total);
                         include '../.function/statistic_status.inc.php';
                     } else {
-                        echo 0 . "%";
+                        echo '<p style="color:grey">' . 0 . "%" . '</p>';
                     }
                     ?>
                     <span class="material-symbols-outlined" style="opacity: 20%;">
@@ -192,7 +192,7 @@
                         $as = rate($neuro_total);
                         include '../.function/statistic_status.inc.php';
                     } else {
-                        echo 0 . "%";
+                        echo '<p style="color:grey">' . 0 . "%" . '</p>';
                     }
                     ?>
                     <span class="material-symbols-outlined" style="opacity: 20%;">
@@ -211,7 +211,7 @@
                         $as = rate($cardio_total);
                         include '../.function/statistic_status.inc.php';
                     } else {
-                        echo 0 . "%";
+                        echo '<p style="color:grey">' . 0 . "%" . '</p>';
                     }
                     ?>
                     <span class="material-symbols-outlined" style="opacity: 20%;">
@@ -230,7 +230,7 @@
                         $as = rate($pedia_total);
                         include '../.function/statistic_status.inc.php';
                     } else {
-                        echo 0 . "%";
+                        echo '<p style="color:grey">' . 0 . "%" . '</p>';
                     }
                     ?>
                     <span class="material-symbols-outlined" style="opacity: 20%;">
@@ -249,7 +249,7 @@
                         $as = rate($endo_total);
                         include '../.function/statistic_status.inc.php';
                     } else {
-                        echo 0 . "%";
+                        echo '<p style="color:grey">' . 0 . "%" . '</p>';
                     }
                     ?>
                     <span class="material-symbols-outlined" style="opacity: 20%;">
@@ -268,7 +268,7 @@
                         $as = rate($radio_total);
                         include '../.function/statistic_status.inc.php';
                     } else {
-                        echo 0 . "%";
+                        echo '<p style="color:grey">' . 0 . "%" . '</p>';
                     }
                     ?>
                     <span class="material-symbols-outlined" style="opacity: 20%;">
@@ -287,7 +287,7 @@
                         $as = rate($nephro_total);
                         include '../.function/statistic_status.inc.php';
                     } else {
-                        echo 0 . "%";
+                        echo '<p style="color:grey">' . 0 . "%" . '</p>';
                     }
                     ?>
                     <span class="material-symbols-outlined" style="opacity: 20%;">
@@ -306,7 +306,7 @@
                         $as = rate($otorhi_total);
                         include '../.function/statistic_status.inc.php';
                     } else {
-                        echo 0 . "%";
+                        echo '<p style="color:grey">' . 0 . "%" . '</p>';
                     }
                     ?>
                     <span class="material-symbols-outlined" style="opacity: 20%;">
@@ -325,7 +325,7 @@
                         $as = rate($podia_total);
                         include '../.function/statistic_status.inc.php';
                     } else {
-                        echo 0 . "%";
+                        echo '<p style="color:grey">' . 0 . "%" . '</p>';
                     }
                     ?>
                     <span class="material-symbols-outlined" style="opacity: 20%;">
@@ -344,7 +344,7 @@
                         $as = rate($fam_total);
                         include '../.function/statistic_status.inc.php';
                     } else {
-                        echo 0 . "%";
+                        echo '<p style="color:grey">' . 0 . "%" . '</p>';
                     }
                     ?>
                     <span class="material-symbols-outlined" style="opacity: 20%;">
@@ -363,7 +363,7 @@
                         $as = rate($psych_total);
                         include '../.function/statistic_status.inc.php';
                     } else {
-                        echo 0 . "%";
+                        echo '<p style="color:grey">' . 0 . "%" . '</p>';
                     }
                     ?>
                     <span class="material-symbols-outlined" style="opacity: 20%;">
@@ -382,7 +382,7 @@
                         $as = rate($emp_total);
                         include '../.function/statistic_status.inc.php';
                     } else {
-                        echo 0 . "%";
+                        echo '<p style="color:grey">' . 0 . "%" . '</p>';
                     }
                     ?>
                     <span class="material-symbols-outlined" style="opacity: 20%;">
@@ -401,7 +401,7 @@
                         $as = rate($anes_total);
                         include '../.function/statistic_status.inc.php';
                     } else {
-                        echo 0 . "%";
+                        echo '<p style="color:grey">' . 0 . "%" . '</p>';
                     }
                     ?>
                     <span class="material-symbols-outlined" style="opacity: 20%;">
@@ -420,7 +420,7 @@
                         $as = rate($gene_total);
                         include '../.function/statistic_status.inc.php';
                     } else {
-                        echo 0 . "%";
+                        echo '<p style="color:grey">' . 0 . "%" . '</p>';
                     }
                     ?>
                     <span class="material-symbols-outlined" style="opacity: 20%;">
@@ -439,7 +439,7 @@
                         $as = rate($patho_total);
                         include '../.function/statistic_status.inc.php';
                     } else {
-                        echo 0 . "%";
+                        echo '<p style="color:grey">' . 0 . "%" . '</p>';
                     }
                     ?>
                     <span class="material-symbols-outlined" style="opacity: 20%;">
@@ -458,7 +458,7 @@
                         $as = rate($surgeon_total);
                         include '../.function/statistic_status.inc.php';
                     } else {
-                        echo 0 . "%";
+                        echo '<p style="color:grey">' . 0 . "%" . '</p>';
                     }
                     ?>
                     <span class="material-symbols-outlined" style="opacity: 20%;">
