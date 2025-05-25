@@ -31,7 +31,7 @@ if (empty($_SESSION['adminUsername']) || empty($_SESSION['adminPass'])) {
         $sql = "UPDATE medical SET medID = '$medID', medName = '$medNamev', medAddress = '$medAddressv', medBdate = '$medBdate', medSelectedDoc = '$medSelectedDocv', medDocSpecialty = '$medDocSpecialty', medDiagnose = '$medDiagnose', medConcern = '$medConcernv', medUsername = '$medUsername', medEmail = '$medEmail', medContact = '$medContact', medCdate = '$medCdate', medADateTime = '$medADateTime', medTreatment = '$medTreatment' WHERE medID='$medID'";
 
         if ($conn->query($sql) === TRUE) {
-            header("location: ../public/appointment_admin.php");
+            header("location: ../public/medical_admin.php");
             exit();
         } else {
             // echo "Error updating record: " . $medn->error;
