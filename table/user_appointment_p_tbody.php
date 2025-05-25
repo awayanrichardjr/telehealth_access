@@ -9,33 +9,35 @@
         <p><?php echo $_SESSION['conUsername'] ?></p>
       </li>
 
-      <!-- visibility -->
-      <li class="view-appt">
-        <?php if ($_SESSION['conUsername'] === $_SESSION['pUsername']) { ?>
-          <a href="../public/view_appointment_p.php?conID=<?php echo $row['conID']; ?>" class="appt-visibility">
-            <span class="material-symbols-outlined">visibility</span>
-            <p>View</p>
-          </a>
-        <?php
-        } else { ?>
-          <a href="../public/appointment_p.php?locked" class="appt-visibility">
-            <span class="material-symbols-outlined">visibility_lock</span>
-            <p>Locked</p>
-          </a>
-        <?php } ?>
-      </li>
+      <div style="display: flex;">
+        <!-- visibility -->
+        <li class="view-appt">
+          <?php if ($_SESSION['conUsername'] === $_SESSION['pUsername']) { ?>
+            <a href="../public/view_appointment_p.php?conID=<?php echo $row['conID']; ?>" class="appt-visibility">
+              <span class="material-symbols-outlined">visibility</span>
+              <p>View</p>
+            </a>
+          <?php
+          } else { ?>
+            <a href="../public/appointment_p.php?locked" class="appt-visibility">
+              <span class="material-symbols-outlined">visibility_lock</span>
+              <p>Locked</p>
+            </a>
+          <?php } ?>
+        </li>
 
-      <!-- cancel appointment -->
-      <li>
-        <?php if ($_SESSION['conUsername'] === $_SESSION['pUsername']) { ?>
-          <a href="../public/delete_appointment.php?conID=<?php echo $row['conID']; ?>" class="appt-visibility">
-            <span class="material-symbols-outlined">cancel</span>
-            <p>Cancel</p>
-          </a>
-        <?php
-        } else {
-        } ?>
-      </li>
+        <!-- cancel appointment -->
+        <li>
+          <?php if ($_SESSION['conUsername'] === $_SESSION['pUsername']) { ?>
+            <a href="../public/delete_appointment.php?conID=<?php echo $row['conID']; ?>" class="appt-visibility">
+              <span class="material-symbols-outlined">cancel</span>
+              <p>Cancel</p>
+            </a>
+          <?php
+          } else {
+          } ?>
+        </li>
+      </div>
 
     </ul>
     </ul>
