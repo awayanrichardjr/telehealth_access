@@ -5,7 +5,7 @@ include '../admin/index.php';
 // include '../admin/nav.php';
 
 $adminUsernameErr = $adminPassErr = "";
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if (isset($_SERVER["REQUEST_METHOD"]) && $_SERVER["REQUEST_METHOD"] == "POST") {
 
     $adminUsername = validate($_POST['adminUsername']);
     $adminPass = validate($_POST['adminPass']);
