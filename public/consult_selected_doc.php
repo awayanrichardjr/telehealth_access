@@ -39,9 +39,30 @@ if (empty($_SESSION['pUsername']) && empty($_SESSION['pPass'])) {
             header("location: consult_selected_doc.php?error");
             // exit();
         }
-        $conn->close();
+        // $conn->close();
     }
     include '../patient/main.php';
-    include '../form/consult_selected_doc.php';
+    // include '../form/consult_selected_doc.php';
 }
+$appointmentID = $_GET['appointment_id'];
+$sql = "SELECT * FROM appointment WHERE appointment_id = $appointmentID";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while ($row = $result->fetch_assoc()) {
+
+        $_SESSION['appointment_month'] = $row['appointment_month'];
+        $_SESSION['appointment_day'] = $row['appointment_day'];
+        $_SESSION['appointment_year'] = $row['appointment_year'];
+        $_SESSION['appointment_time'] = $row['appointment_time'];
+
+        include '../form/consult_selected_doc.php';
+        exit();
+    }
+} else {
+    echo "0 results";
+    // echo "Error updating record: " . $conn->error;
+}
+$conn->close();
 Ob_end_flush();

@@ -128,7 +128,7 @@
         <section class="details">
             <div>
                 <label for="conDate">Date * </label>
-                <?php $appointmentDate = $_SESSION['appointment_month'] . "-" . $_SESSION['appointment_day'] . "-" . $_SESSION['appointment_year'] ?>
+                <?php $appointmentDate = (int)$_SESSION['appointment_month'] . "-" . (int)$_SESSION['appointment_day'] . "-" . (int)$_SESSION['appointment_year'] ?>
                 <input type="text" name="conDate" id="conDate" value="<?php echo $appointmentDate ?>" readonly>
             </div>
             <div>
