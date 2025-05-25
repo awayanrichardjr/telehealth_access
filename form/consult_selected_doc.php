@@ -61,7 +61,7 @@
                         } ?>
                     </span>
                 </label>
-                <input type="date" name="conBdate" id="conBdate" value="<?php echo $_SESSION['pBdate'] ?>">
+                <input type="date" name="conBdate" id="conBdate" value="<?php echo $_SESSION['pBdate'] ?>" readonly>
             </div>
             <!-- age  -->
             <div>
@@ -78,7 +78,7 @@
                         } ?>
                     </span>
                 </label>
-                <input type="text" name="conContact" id="conContact" value="<?php echo $_SESSION['pContact'] ?>">
+                <input type="text" name="conContact" id="conContact" value="<?php echo $_SESSION['pContact'] ?>" readonly>
             </div>
         </section>
 
@@ -92,7 +92,7 @@
                         } ?>
                     </span>
                 </label>
-                <input type="text" name="conUsername" id="conUsername" value="<?php echo $_SESSION['pUsername'] ?>">
+                <input type="hidden" name="conUsername" id="conUsername" value="<?php echo $_SESSION['pUsername'] ?>" readonly>
 
             </div>
         </section>
@@ -109,7 +109,7 @@
                     </span>
                 </label>
                 <input type="text" name="conSelectedDoc" id="conSelectedDoc"
-                    value="Dr. <?php echo $_SESSION['docFname'] . " " . $_SESSION['docMname'] . " " . $_SESSION['docLname'] . " " . $_SESSION['docSuffix'] ?>">
+                    value="Dr. <?php echo $_SESSION['docFname'] . " " . $_SESSION['docMname'] . " " . $_SESSION['docLname'] . " " . $_SESSION['docSuffix'] ?>" readonly>
             </div>
             <div>
                 <label for="conDocSpecialty">Doctor Specialty *
@@ -120,34 +120,35 @@
                     </span>
                 </label>
                 <input type="text" name="conDocSpecialty" id="conDocSpecialty"
-                    value="<?php echo $_SESSION['docSpecialty'] ?>">
+                    value="<?php echo $_SESSION['docSpecialty'] ?>" readonly>
             </div>
         </section>
 
+        <!-- date/time  -->
         <section class="details">
-            <!-- date/time  -->
             <div>
-                <label for="conADateTime">Appointment Date/Time *
-                    <span class="error">
-                        <?php if (isset($_GET['conADateTimeErr'])) {
-                            echo $conADateTimeError = $_GET['conADateTimeErr'];
-                        } ?>
-                    </span>
-                </label>
-                <input type="datetime-local" name="conADateTime" id="conADateTime">
+                <label for="conDate">Date * </label>
+                <?php $appointmentDate = $_SESSION['appointment_month'] . "-" . $_SESSION['appointment_day'] . "-" . $_SESSION['appointment_year'] ?>
+                <input type="text" name="conDate" id="conDate" value="<?php echo $appointmentDate ?>" readonly>
             </div>
             <div>
-                <!-- compliant  -->
-                <?php include '../form/diagnose/derma.php' ?>
+                <label for="conTime">Time * </label>
+                <?php $appointmentTime = $_SESSION['appointment_time'] ?>
+                <input type="time" name="conTime" id="conTime" value="<?php echo $appointmentTime ?>" readonly>
             </div>
         </section>
+
+        <div>
+            <!-- compliant  -->
+            <?php include '../form/diagnose/derma.php' ?>
+        </div>
 
         <input type="hidden" name="conCdate" id="conCdate" value="<?php
                                                                     date_default_timezone_set("Asia/Manila");
                                                                     echo date("M-d-Y h:ia") ?>">
 
         <!-- concern -->
-        <label for="conConcern">Additional Concern * </label>
+        <label for="conConcern">Additional Concern(Optional) * </label>
         <textarea name="conConcern" id="conConcern"
             placeholder="Type additional concern or specify your concern..."></textarea>
 

@@ -35,13 +35,6 @@
                 </li>
                 <ul class="actions">
                     <li>
-                        <a href="../public/consult_selected_doc.php?docID=<?php echo $row['docID'] ?>">
-                            <span class="material-symbols-outlined" style="font-size: 17px;">event_upcoming</span>
-                            <p>Consult</p>
-                        </a>
-                    </li>
-                    <!-- google link -->
-                    <li>
                         <a href="<?php echo $_SESSION['doc_space'] ?>" onclick="window.open(this.href, 'PopupWindow', 'width=600,height=700'); return false;">
                             <span class="material-symbols-outlined" style="font-size: 17px;">link</span>
                             <p>Google Space Link</p>
@@ -56,12 +49,6 @@
                     <?php echo "Unverified" ?>
                 </li>
                 <ul class="actions">
-                    <li>
-                        <a href="#" style="background-color: grey;">
-                            <span class="material-symbols-outlined" style="font-size: 17px;">event_upcoming</span>
-                            <p>Consult</p>
-                        </a>
-                    </li>
                     <li>
                         <a href="#" style="background-color: grey;">
                             <span class="material-symbols-outlined" style="font-size: 17px;">link</span>

@@ -13,7 +13,7 @@ if (empty($_SESSION['docUsername']) || empty($_SESSION['docPass'])) {
 
     $conSelectedDoc = "Dr. " . $_SESSION['docFname'] . " " . $_SESSION['docMname'] . " " . $_SESSION['docLname'] . " " . $_SESSION['docSuffix'];
 
-    $sql = "SELECT * FROM consult WHERE conSelectedDoc='$conSelectedDoc' ORDER BY conADateTime DESC";
+    $sql = "SELECT * FROM consult WHERE conSelectedDoc='$conSelectedDoc' ORDER BY conDate DESC";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
@@ -31,7 +31,8 @@ if (empty($_SESSION['docUsername']) || empty($_SESSION['docPass'])) {
             $_SESSION['conDiagnose'] = $row['conDiagnose'];
             $_SESSION['conConcern'] = $row['conConcern'];
             $_SESSION['conCdate'] = $row['conCdate'];
-            $_SESSION['conADateTime'] = $row['conADateTime'];
+            $_SESSION['conDate'] = $row['conDate'];
+            $_SESSION['conTime'] = $row['conTime'];
 
             include '../table/user_appointment_doc_tbody.php';
         }

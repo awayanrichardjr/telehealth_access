@@ -13,5 +13,6 @@
   <td><?php echo $_SESSION['conSelectedDoc'] ?></td>
   <td><?php echo $_SESSION['conDocSpecialty'] ?></td>
   <td><?php echo $_SESSION['conCdate'] ?></td>
-  <td><?php echo $_SESSION['conADateTime'] ?></td>
+  <td><?php echo $_SESSION['conDate'] ?></td>
+  <td><?php echo $_SESSION['conTime'] ?></td>
 </tr>

@@ -30,7 +30,8 @@ if (empty($_SESSION['pUsername']) || empty($_SESSION['pPass'])) {
             $_SESSION['conDiagnose'] = $row['conDiagnose'];
             $_SESSION['conConcern'] = $row['conConcern'];
             $_SESSION['conCdate'] = $row['conCdate'];
-            $_SESSION['conADateTime'] = $row['conADateTime'];
+            $_SESSION['conDate'] = $row['conDate'];
+            $_SESSION['conTime'] = $row['conTime'];
 
             include '../table/user_appointment_p_tbody.php';
         }

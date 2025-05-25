@@ -1,0 +1,72 @@
+.availability-table {
+    /* padding: 1rem; */
+    /* margin: 0; */
+}
+
+.availability-table :where(td) {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 0.3rem;
+
+    background-color: white;
+    box-shadow: var(--shadow);
+    border-radius: var(--card-border-thin);
+
+    height: fit-content;
+    width: fit-content;
+}
+
+.availability-table :where(div) {
+    display: flex;
+    gap: 0.3rem;
+}
+
+.availability-table :where(table, tr, th, td) {
+    border: unset;
+}
+
+.availability-table :where(table) {
+    border-collapse: unset;
+    /* background-color: red; */
+}
+
+
+.availability-table :where(tbody) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    max-width: 100vw;
+    overflow: auto;
+    padding: 1rem;
+}
+
+.availability-table :where(td) p {
+    font-size: 10px;
+}
+
+.availability-table :where(.material-symbols-outlined) {
+    color: var(--blue);
+    font-variation-settings:
+        'FILL' 1;
+}
+
+.availability-table :where(.consult-doc-link) {
+    background-color: var(--blue);
+    padding: 0.3rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+
+    border-radius: var(--card-border-thin);
+}
+
+.availability-table :where(.consult-doc-link:hover) {
+    background-color: var(--blue-hover);
+}
+
+.availability-table :where(.consult-doc-link) .material-symbols-outlined {
+    color: white;
+}

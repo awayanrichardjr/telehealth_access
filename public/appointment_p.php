@@ -11,7 +11,7 @@ if (empty($_SESSION['pUsername']) || empty($_SESSION['pPass'])) {
     include '../patient/appointment_nav.php';
     include '../table/user_appointment_p_thead.php';
 
-    $sql = "SELECT * FROM consult ORDER BY conADateTime";
+    $sql = "SELECT * FROM consult ORDER BY conDate";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
@@ -29,7 +29,8 @@ if (empty($_SESSION['pUsername']) || empty($_SESSION['pPass'])) {
             $_SESSION['conDiagnose'] = $row['conDiagnose'];
             $_SESSION['conConcern'] = $row['conConcern'];
             $_SESSION['conCdate'] = $row['conCdate'];
-            $_SESSION['conADateTime'] = $row['conADateTime'];
+            $_SESSION['conDate'] = $row['conDate'];
+            $_SESSION['conTime'] = $row['conTime'];
 
             include '../table/user_appointment_p_tbody.php';
         }

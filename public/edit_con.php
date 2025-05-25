@@ -17,14 +17,15 @@ if (empty($_SESSION['adminUsername']) || empty($_SESSION['adminPass'])) {
         $conDiagnose = $_REQUEST['conDiagnose'];
         $conConcern = $_REQUEST['conConcern'];
         $conCdate = $_REQUEST['conCdate'];
-        $conADateTime = $_REQUEST['conADateTime'];
+        $conDate = $_REQUEST['conDate'];
+        $conTime = $_REQUEST['conTime'];
 
         $conNamev = toupper1stchar($conName);
         $conAddressv = toupper1stchar($conAddress);
         $conSelectedDocv = toupper1stchar($conSelectedDoc);
         $conConcernv = toupper1stchar($conConcern);
 
-        $sql = "UPDATE consult SET conName='$conNamev', conAddress='$conAddressv', conBdate='$conBdate', conUsername='$conUsername', conSelectedDoc='$conSelectedDocv', conDiagnose='$conDiagnose',conConcern='$conConcernv', conCdate='$conCdate', conADateTime='$conADateTime' WHERE conID='$conID'";
+        $sql = "UPDATE consult SET conName='$conNamev', conAddress='$conAddressv', conBdate='$conBdate', conUsername='$conUsername', conSelectedDoc='$conSelectedDocv', conDiagnose='$conDiagnose',conConcern='$conConcernv', conCdate='$conCdate', conDate='$conDate', conTime='$conTime' WHERE conID='$conID'";
 
         if ($conn->query($sql) === TRUE) {
             header("location: ../public/appointment_admin.php");

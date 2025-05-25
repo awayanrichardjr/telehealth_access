@@ -28,7 +28,8 @@ if (empty($_SESSION['adminUsername']) || empty($_SESSION['adminPass'])) {
             $_SESSION['conDiagnose'] = $row['conDiagnose'];
             $_SESSION['conConcern'] = $row['conConcern'];
             $_SESSION['conCdate'] = $row['conCdate'];
-            $_SESSION['conADateTime'] = $row['conADateTime'];
+            $_SESSION['conDate'] = $row['conDate'];
+            $_SESSION['conTime'] = $row['conTime'];
 
             include '../table/admin_appointment_tbody.php';
         }

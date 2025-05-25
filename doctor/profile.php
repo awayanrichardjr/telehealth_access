@@ -41,32 +41,73 @@
                     <p>Verify Account</p>
                 </a>
             </li>
-            <li>
-                <a href="../public/available_doc.php">
-                    <span class="material-symbols-outlined" style="font-size: 17px;">event_available</span>
-                    <p>Availability</p>
-                </a>
-            </li>
-            <li>
-                <?php
-                if (isset($_SESSION['doc_space']) && !empty($_SESSION['doc_space'])) {
-                    $doc_space = $_SESSION['doc_space'];
-                } else {
-                    $doc_space = ''; // default or fallback URL
-                }
-                ?>
 
-                <script>
-                    let doc_space = "<?php echo $doc_space; ?>";
-                </script>
+            <!-- IF VERIFIED  -->
+            <?php if ($_SESSION['docStatus'] == "Verified") { ?>
+                <li>
+                    <a href="../public/available_doc.php">
+                        <span class="material-symbols-outlined" style="font-size: 17px;">event_available</span>
+                        <p>Availability</p>
+                    </a>
+                </li>
+                <li>
+                    <?php
+                    if (isset($_SESSION['doc_space']) && !empty($_SESSION['doc_space'])) {
+                        $doc_space = $_SESSION['doc_space'];
+                    } else {
+                        $doc_space = ''; // default or fallback URL
+                    }
+                    ?>
 
-                <a href="#" onclick="window.open(doc_space, 'PopupWindow', 'width=600,height=700'); return false;">
-                    <span class="material-symbols-outlined" style="font-size: 17px;">link</span>
-                    <p>Google Space Link</p>
-                </a>
-            </li>
+                    <script>
+                        let doc_space = "<?php echo $doc_space; ?>";
+                    </script>
+
+                    <a href="#" onclick="window.open(doc_space, 'PopupWindow', 'width=600,height=700'); return false;">
+                        <span class="material-symbols-outlined" style="font-size: 17px;">link</span>
+                        <p>Google Space Link</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="info-button" onclick="document.getElementById('popupAvailability').style.display='block';  return false;">
+                        <span class="material-symbols-outlined" style="font-size: 17px;">book_online</span>
+                        <p>Book Appointment</p>
+                    </a>
+                    <div id="popupAvailability">
+                        <?php include '../public/availability_doc.php' ?>
+                    </div>
+                </li>
+
+                <!-- IF NOT VERIFIED  -->
+            <?php } else { ?>
+                <li>
+                    <a href="#" style="background-color: grey;">
+                        <span class="material-symbols-outlined" style="font-size: 17px;">event_available</span>
+                        <p>Availability</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" style="background-color: grey;">
+                        <span class="material-symbols-outlined" style="font-size: 17px;">link</span>
+                        <p>Google Space Link</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" style="background-color: grey;">
+                        <span class="material-symbols-outlined" style="font-size: 17px;">book_online</span>
+                        <p>Book Appointment</p>
+                    </a>
+                </li>
+            <?php } ?>
 
         </ul>
     </div>
 
     <!-- </section> -->
+
+    <style>
+        #popupAvailability {
+            position: absolute;
+            display: none;
+        }
+    </style>

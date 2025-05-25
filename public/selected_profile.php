@@ -8,7 +8,6 @@ if (empty($_SESSION['pUsername']) || empty($_SESSION['pPass'])) {
 } else {
     include '../user/index.php';
     include '../patient/main.php';
-    // include '../patient/specialties.php';
 
     $selected_docID = $_GET['docID'];
 
@@ -32,7 +31,7 @@ if (empty($_SESSION['pUsername']) || empty($_SESSION['pPass'])) {
             $_SESSION['doc_space'] = $row['doc_space']; #google link 
 
             include '../patient/selected_profile.php';
-            include '../patient/availability.php';
+            include 'available_p.php';
             exit();
         }
     } else {

@@ -9,7 +9,10 @@
         <!-- Hidden Section -->
         <div id="popupSection">
             <div class="payment-footer">
-                <h1>Payment Information</h1>
+                <h1 style="display: flex; justify-content: start; align-items: center; gap: 0.3rem;">
+                    Payment Information
+                    <span class="material-symbols-outlined">payments</span>
+                </h1>
                 <p>- To complete your purchase, please select a payment method from the options above.</p>
                 <p>- Once you click "Pay Now," you will be redirected to the respective payment platform to finalize your transaction.</p>
                 <p>- If you have any questions or need assistance, feel free to contact our support team.</p>

@@ -33,7 +33,8 @@ if (empty($_SESSION['pUsername']) || empty($_SESSION['pPass'])) {
             $_SESSION['conEmail'] = $row['conEmail'];
             $_SESSION['conContact'] = $row['conContact'];
             $_SESSION['conCdate'] = $row['conCdate'];
-            $_SESSION['conADateTime'] = $row['conADateTime'];
+            $_SESSION['conDate'] = $row['conDate'];
+            $_SESSION['conTime'] = $row['conTime'];
 
             include '../form/view_form/view_appointment_p.php';
             exit();

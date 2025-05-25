@@ -3,7 +3,6 @@
 <link rel="stylesheet" href="../style/css/global/global.css">
 <link rel="stylesheet" href="../style/css/global/fonts.css">
 <link rel="stylesheet" href="../style/css/global/index.css">
-
 <!-- admin  -->
 <link rel="stylesheet" href="../style/css/admin/credit.css">
 <link rel="stylesheet" href="../style/css/admin/dashboard_nav.css">
@@ -17,7 +16,6 @@
 <link rel="stylesheet" href="../style/css/admin/specialties.css">
 <link rel="stylesheet" href="../style/css/admin/statistic.css">
 <link rel="stylesheet" href="../style/css/admin/risk.css">
-
 <!-- patient -->
 <link rel="stylesheet" href="../style/css/user/patient/appointment_nav.css">
 <link rel="stylesheet" href="../style/css/user/patient/availability.css">
@@ -27,7 +25,6 @@
 <link rel="stylesheet" href="../style/css/user/patient/selected_profile.css">
 <link rel="stylesheet" href="../style/css/user/patient/settings.css">
 <link rel="stylesheet" href="../style/css/user/patient/specialties.css">
-
 <!-- doctor -->
 <link rel="stylesheet" href="../style/css/user/doctor/appointment_nav.css">
 <link rel="stylesheet" href="../style/css/user/doctor/availability.css">
@@ -36,7 +33,6 @@
 <link rel="stylesheet" href="../style/css/user/doctor/profile.css">
 <link rel="stylesheet" href="../style/css/user/doctor/settings.css">
 <link rel="stylesheet" href="../style/css/user/doctor/medical.css">
-
 <!-- user  -->
 <link rel="stylesheet" href="../style/css/user/about.css">
 <link rel="stylesheet" href="../style/css/user/contact.css">
@@ -46,7 +42,6 @@
 <link rel="stylesheet" href="../style/css/user/nav.css">
 <link rel="stylesheet" href="../style/css/user/user_feed.css">
 <link rel="stylesheet" href="../style/css/user/info_guide.css">
-
 <!-- form  -->
 <link rel="stylesheet" href="../style/css/form/form.css">
 <link rel="stylesheet" href="../style/css/form/form_edit.css">
@@ -57,7 +52,6 @@
 <link rel="stylesheet" href="../style/css/form/payment.css">
 <link rel="stylesheet" href="../style/css/form/log_admin.css">
 <link rel="stylesheet" href="../style/css/form/reg_admin.css">
-
 <!-- table  -->
 <link rel="stylesheet" href="../style/css/table/table.css">
 <link rel="stylesheet" href="../style/css/table/admin_table.css">
@@ -65,17 +59,13 @@
 <link rel="stylesheet" href="../style/css/table/user_sp_thead.css">
 <link rel="stylesheet" href="../style/css/table/user_appointment_doc_thead.css">
 <link rel="stylesheet" href="../style/css/table/user_appointment_past_thead.css">
-
-
+<link rel="stylesheet" href="../style/css/table/availability_table.css">
 <!-- google icons  -->
 <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
 <!-- Icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

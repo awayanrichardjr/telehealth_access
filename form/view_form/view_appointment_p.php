@@ -75,8 +75,12 @@
                     <p><?php echo $_SESSION['conCdate'] ?></p>
                 </li>
                 <li>
-                    <label for="conADateTime">Appointment Date/Time:</label>
-                    <p><?php echo $_SESSION['conADateTime'] ?></p>
+                    <label for="conDate">Appointment Date:</label>
+                    <p><?php echo $_SESSION['conDate'] ?></p>
+                </li>
+                <li>
+                    <label for="conTime">Appointment Time:</label>
+                    <p><?php echo $_SESSION['conTime'] ?></p>
                 </li>
             </div>
         </ol>
