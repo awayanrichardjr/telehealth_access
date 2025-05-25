@@ -67,9 +67,16 @@
         </section>
 
         <!-- Appointment Date/Time -->
-        <label for="conADateTime">Appointment Date/Time *</label>
-        <input type="datetime-local" name="conADateTime" id="conADateTime" value="<?php echo $row['conADateTime'] ?>">
-
+        <section class="details">
+            <div>
+                <label for="conADateTime">Appointment Date *</label>
+                <input type="text" name="conDate" id="conDate" value="<?php echo $row['conDate'] ?>">
+            </div>
+            <div>
+                <label for="conADateTime">Appointment Time *</label>
+                <input type="time" name="conTime" id="conTime" value="<?php echo $row['conTime'] ?>">
+            </div>
+        </section>
         <!-- compliant -->
         <?php include '../form/diagnose/edit_diagnose_con/derma.php' ?>
 
