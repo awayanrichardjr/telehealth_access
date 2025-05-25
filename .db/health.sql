@@ -259,12 +259,12 @@ VALUES
     '1234',
     '2025-05-20',
     '',
-    'Verified',
+    'Unverified',
     '',
     '',
     '',
     '',
-    'https://chat.google.com/room/AAQAXVjeDx4?cls=7'
+    ''
   ),
   (
     3,
@@ -282,12 +282,12 @@ VALUES
     '1234',
     '2025-05-19',
     '',
-    'Verified',
+    'Unverified',
     '',
     '',
     '',
     '',
-    'https://chat.google.com/room/AAQAXVjeDx4?cls=7'
+    ''
   ),
   (
     4,
@@ -328,12 +328,12 @@ VALUES
     '1234',
     '2025-05-17',
     '',
-    'Verified',
+    'Unverified',
     '',
     '',
     '',
     '',
-    'https://chat.google.com/room/AAQAXVjeDx4?cls=7'
+    ''
   ),
   (
     6,
@@ -374,12 +374,12 @@ VALUES
     '1234',
     '2025-05-15',
     '',
-    'Verified',
+    'Unverified',
     '',
     '',
     '',
     '',
-    'https://chat.google.com/room/AAQAXVjeDx4?cls=7'
+    ''
   ),
   (
     8,
@@ -420,12 +420,12 @@ VALUES
     '1234',
     '2025-05-13',
     '',
-    'Verified',
+    'Unverified',
     '',
     '',
     '',
     '',
-    'https://chat.google.com/room/AAQAXVjeDx4?cls=7'
+    ''
   ),
   (
     10,
@@ -443,12 +443,12 @@ VALUES
     '1234',
     '2025-05-12',
     '',
-    'Verified',
+    'Unverified',
     '',
     '',
     '',
     '',
-    'https://chat.google.com/room/AAQAXVjeDx4?cls=7'
+    ''
   ),
   (
     11,
@@ -489,12 +489,12 @@ VALUES
     '1234',
     '2025-05-10',
     '',
-    'Verified',
+    'Unverified',
     '',
     '',
     '',
     '',
-    'https://chat.google.com/room/AAQAXVjeDx4?cls=7'
+    ''
   ),
   (
     13,
@@ -512,12 +512,12 @@ VALUES
     '1234',
     '2025-05-09',
     '',
-    'Verified',
+    'Unverified',
     '',
     '',
     '',
     '',
-    'https://chat.google.com/room/AAQAXVjeDx4?cls=7'
+    ''
   ),
   (
     14,
@@ -558,12 +558,12 @@ VALUES
     '1234',
     '2025-05-07',
     '',
-    'Verified',
+    'Unverified',
     '',
     '',
     '',
     '',
-    'https://chat.google.com/room/AAQAXVjeDx4?cls=7'
+    ''
   ),
   (
     16,
@@ -604,12 +604,12 @@ VALUES
     '1234',
     '2025-05-05',
     '',
-    'Verified',
+    'Unverified',
     '',
     '',
     '',
     '',
-    'https://chat.google.com/room/AAQAXVjeDx4?cls=7'
+    ''
   ),
   (
     18,
@@ -650,12 +650,12 @@ VALUES
     '1234',
     '2025-05-03',
     '',
-    'Verified',
+    'Unverified',
     '',
     '',
     '',
     '',
-    'https://chat.google.com/room/AAQAXVjeDx4?cls=7'
+    ''
   ),
   (
     20,
@@ -673,12 +673,12 @@ VALUES
     '1234',
     '2025-05-02',
     '',
-    'Verified',
+    'Unverified',
     '',
     '',
     '',
     '',
-    'https://chat.google.com/room/AAQAXVjeDx4?cls=7'
+    ''
   ),
   (
     21,
@@ -696,12 +696,12 @@ VALUES
     '1234',
     '2025-05-01',
     '',
-    'Verified',
+    'Unverified',
     '',
     '',
     '',
     '',
-    'https://chat.google.com/room/AAQAXVjeDx4?cls=7'
+    ''
   ),
   (
     22,
@@ -719,12 +719,12 @@ VALUES
     '1234',
     '2025-05-02',
     '',
-    'Verified',
+    'Unverified',
     '',
     '',
     '',
     '',
-    'https://chat.google.com/room/AAQAXVjeDx4?cls=7'
+    ''
   ),
   (
     23,
@@ -765,12 +765,12 @@ VALUES
     '1234',
     '2025-05-04',
     '',
-    'Verified',
+    'Unverified',
     '',
     '',
     '',
     '',
-    'https://chat.google.com/room/AAQAXVjeDx4?cls=7'
+    ''
   ),
   (
     25,
@@ -788,12 +788,12 @@ VALUES
     '1234',
     '2025-05-05',
     '',
-    'Verified',
+    'Unverified',
     '',
     '',
     '',
     '',
-    'https://chat.google.com/room/AAQAXVjeDx4?cls=7'
+    ''
   ),
   (
     26,
@@ -834,12 +834,12 @@ VALUES
     '1234',
     '2025-05-07',
     '',
-    'Verified',
+    'Unverified',
     '',
     '',
     '',
     '',
-    'https://chat.google.com/room/AAQAXVjeDx4?cls=7'
+    ''
   ),
   (
     28,
@@ -857,12 +857,12 @@ VALUES
     '1234',
     '2025-05-08',
     '',
-    'Verified',
+    'Unverified',
     '',
     '',
     '',
     '',
-    'https://chat.google.com/room/AAQAXVjeDx4?cls=7'
+    ''
   ),
   (
     29,
@@ -903,12 +903,12 @@ VALUES
     '1234',
     '2025-05-10',
     '',
-    'Verified',
+    'Unverified',
     '',
     '',
     '',
     '',
-    'https://chat.google.com/room/AAQAXVjeDx4?cls=7'
+    ''
   ),
   (
     31,
@@ -926,12 +926,12 @@ VALUES
     '1234',
     '2025-05-11',
     '',
-    'Verified',
+    'Unverified',
     '',
     '',
     '',
     '',
-    'https://chat.google.com/room/AAQAXVjeDx4?cls=7'
+    ''
   ),
   (
     32,
@@ -972,12 +972,12 @@ VALUES
     '1234',
     '2025-05-13',
     '',
-    'Verified',
+    'Unverified',
     '',
     '',
     '',
     '',
-    'https://chat.google.com/room/AAQAXVjeDx4?cls=7'
+    ''
   ),
   (
     34,
@@ -995,12 +995,12 @@ VALUES
     '1234',
     '2025-05-14',
     '',
-    'Verified',
+    'Unverified',
     '',
     '',
     '',
     '',
-    'https://chat.google.com/room/AAQAXVjeDx4?cls=7'
+    ''
   ),
   (
     35,
@@ -1041,12 +1041,12 @@ VALUES
     '1234',
     '2025-05-16',
     '',
-    'Verified',
+    'Unverified',
     '',
     '',
     '',
     '',
-    'https://chat.google.com/room/AAQAXVjeDx4?cls=7'
+    ''
   ),
   (
     37,
@@ -1087,12 +1087,12 @@ VALUES
     '1234',
     '2025-05-18',
     '',
-    'Verified',
+    'Unverified',
     '',
     '',
     '',
     '',
-    'https://chat.google.com/room/AAQAXVjeDx4?cls=7'
+    ''
   ),
   (
     39,
@@ -1110,12 +1110,12 @@ VALUES
     '1234',
     '2025-05-19',
     '',
-    'Verified',
+    'Unverified',
     '',
     '',
     '',
     '',
-    'https://chat.google.com/room/AAQAXVjeDx4?cls=7'
+    ''
   ),
   (
     40,
