@@ -1,30 +1,29 @@
 <?php
 
-$ran1 = random_int(1, 100);
-$ran2 = random_int(1, 100);
-$ran3 = random_int(1, 100);
-$ran4 = random_int(1, 100);
-$ran5 = random_int(1, 100);
-$ran6 = random_int(1, 100);
-$ran7 = random_int(1, 100);
-$ran8 = random_int(1, 100);
-$ran9 = random_int(1, 100);
-$ran10 = random_int(1, 100);
-$ran11 = random_int(1, 100);
-$ran12 = random_int(1, 100);
-$ran13 = random_int(1, 100);
-$ran14 = random_int(1, 100);
-$ran15 = random_int(1, 100);
-$ran16 = random_int(1, 100);
-$ran17 = random_int(1, 100);
-$ran18 = random_int(1, 100);
-$ran19 = random_int(1, 100);
-$ran20 = random_int(1, 100);
-$ran21 = random_int(1, 100);
-$ran22 = random_int(1, 100);
-$ran23 = random_int(1, 100);
+// $ran1 = random_int(1, 100);
+// $ran2 = random_int(1, 100);
+// $ran3 = random_int(1, 100);
+// $ran4 = random_int(1, 100);
+// $ran5 = random_int(1, 100);
+// $ran6 = random_int(1, 100);
+// $ran7 = random_int(1, 100);
+// $ran8 = random_int(1, 100);
+// $ran9 = random_int(1, 100);
+// $ran10 = random_int(1, 100);
+// $ran11 = random_int(1, 100);
+// $ran12 = random_int(1, 100);
+// $ran13 = random_int(1, 100);
+// $ran14 = random_int(1, 100);
+// $ran15 = random_int(1, 100);
+// $ran16 = random_int(1, 100);
+// $ran17 = random_int(1, 100);
+// $ran18 = random_int(1, 100);
+// $ran19 = random_int(1, 100);
+// $ran20 = random_int(1, 100);
+// $ran21 = random_int(1, 100);
+// $ran22 = random_int(1, 100);
+// $ran23 = random_int(1, 100);
 
-// 10 15 20 25 30 35 40 45 50 55 60 65 70 75 80 85 90
 ?>
 <section class="admin_specialties">
     <div id="chartContainer" style="width: 900px;">
@@ -37,7 +36,7 @@ $ran23 = random_int(1, 100);
                     <?php
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Dermatologist'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($derma_total = mysqli_num_rows($num_of_doc_run) + $ran1) {
+                    if ($derma_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
                         $as = rate($derma_total);
                         include '../.function/statistic_status.inc.php';
                     } else {
@@ -56,7 +55,7 @@ $ran23 = random_int(1, 100);
                     // $obste_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Obstetrician-Gynecologist'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($obste_total = mysqli_num_rows($num_of_doc_run) + $ran2) {
+                    if ($obste_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
                         $as = rate($obste_total);
                         include '../.function/statistic_status.inc.php';
                     } else {
@@ -75,7 +74,7 @@ $ran23 = random_int(1, 100);
                     // $optha_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Ophthalmologist'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($optha_total = mysqli_num_rows($num_of_doc_run) + $ran3) {
+                    if ($optha_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
                         $as = rate($optha_total);
                         include '../.function/statistic_status.inc.php';
                     } else {
@@ -94,7 +93,7 @@ $ran23 = random_int(1, 100);
                     // $allergy_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Allergist'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($allergy_total = mysqli_num_rows($num_of_doc_run) + $ran4) {
+                    if ($allergy_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
                         $as = rate($allergy_total);
                         include '../.function/statistic_status.inc.php';
                     } else {
@@ -113,7 +112,7 @@ $ran23 = random_int(1, 100);
                     // $gastro_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Gastroenterologist'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($gastro_total = mysqli_num_rows($num_of_doc_run) + $ran5) {
+                    if ($gastro_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
                         $as = rate($gastro_total);
                         include '../.function/statistic_status.inc.php';
                     } else {
@@ -132,7 +131,7 @@ $ran23 = random_int(1, 100);
                     // $geria_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Geriatrician'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($geria_total = mysqli_num_rows($num_of_doc_run) + $ran6) {
+                    if ($geria_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
                         $as = rate($geria_total);
                         include '../.function/statistic_status.inc.php';
                     } else {
@@ -151,7 +150,7 @@ $ran23 = random_int(1, 100);
                     // $infec_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Infectious Disease Specialist'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($infec_total = mysqli_num_rows($num_of_doc_run) + $ran7) {
+                    if ($infec_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
                         $as = rate($infec_total);
                         include '../.function/statistic_status.inc.php';
                     } else {
@@ -170,7 +169,7 @@ $ran23 = random_int(1, 100);
                     // $hema_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Hematologist'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($hema_total = mysqli_num_rows($num_of_doc_run) + $ran8) {
+                    if ($hema_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
                         $as = rate($hema_total);
                         include '../.function/statistic_status.inc.php';
                     } else {
@@ -189,7 +188,7 @@ $ran23 = random_int(1, 100);
                     // $neuro_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Neurologist'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($neuro_total = mysqli_num_rows($num_of_doc_run) + $ran9) {
+                    if ($neuro_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
                         $as = rate($neuro_total);
                         include '../.function/statistic_status.inc.php';
                     } else {
@@ -208,7 +207,7 @@ $ran23 = random_int(1, 100);
                     // $cardio_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Cardiologist'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($cardio_total = mysqli_num_rows($num_of_doc_run) + $ran10) {
+                    if ($cardio_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
                         $as = rate($cardio_total);
                         include '../.function/statistic_status.inc.php';
                     } else {
@@ -227,7 +226,7 @@ $ran23 = random_int(1, 100);
                     // $pedia_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Pediatrician'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($pedia_total = mysqli_num_rows($num_of_doc_run) + $ran11) {
+                    if ($pedia_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
                         $as = rate($pedia_total);
                         include '../.function/statistic_status.inc.php';
                     } else {
@@ -246,7 +245,7 @@ $ran23 = random_int(1, 100);
                     // $endo_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Endocrinologist'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($endo_total = mysqli_num_rows($num_of_doc_run) + $ran12) {
+                    if ($endo_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
                         $as = rate($endo_total);
                         include '../.function/statistic_status.inc.php';
                     } else {
@@ -265,7 +264,7 @@ $ran23 = random_int(1, 100);
                     // $radio_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Radiologist'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($radio_total = mysqli_num_rows($num_of_doc_run) + $ran13) {
+                    if ($radio_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
                         $as = rate($radio_total);
                         include '../.function/statistic_status.inc.php';
                     } else {
@@ -284,7 +283,7 @@ $ran23 = random_int(1, 100);
                     // $nephro_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Nephrologist'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($nephro_total = mysqli_num_rows($num_of_doc_run) + $ran14) {
+                    if ($nephro_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
                         $as = rate($nephro_total);
                         include '../.function/statistic_status.inc.php';
                     } else {
@@ -303,7 +302,7 @@ $ran23 = random_int(1, 100);
                     // $otorhi_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Otorhinolaryngologist'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($otorhi_total = mysqli_num_rows($num_of_doc_run) + $ran15) {
+                    if ($otorhi_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
                         $as = rate($otorhi_total);
                         include '../.function/statistic_status.inc.php';
                     } else {
@@ -322,7 +321,7 @@ $ran23 = random_int(1, 100);
                     // $podia_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Podiatrist'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($podia_total = mysqli_num_rows($num_of_doc_run) + $ran16) {
+                    if ($podia_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
                         $as = rate($podia_total);
                         include '../.function/statistic_status.inc.php';
                     } else {
@@ -341,7 +340,7 @@ $ran23 = random_int(1, 100);
                     // $fam_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Family Medicine Doctor'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($fam_total = mysqli_num_rows($num_of_doc_run) + $ran17) {
+                    if ($fam_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
                         $as = rate($fam_total);
                         include '../.function/statistic_status.inc.php';
                     } else {
@@ -360,7 +359,7 @@ $ran23 = random_int(1, 100);
                     // $psych_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Psychiatrist'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($psych_total = mysqli_num_rows($num_of_doc_run) + $ran18) {
+                    if ($psych_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
                         $as = rate($psych_total);
                         include '../.function/statistic_status.inc.php';
                     } else {
@@ -379,7 +378,7 @@ $ran23 = random_int(1, 100);
                     // $emp_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Emergency Medicine Physician'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($emp_total = mysqli_num_rows($num_of_doc_run) + $ran19) {
+                    if ($emp_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
                         $as = rate($emp_total);
                         include '../.function/statistic_status.inc.php';
                     } else {
@@ -398,7 +397,7 @@ $ran23 = random_int(1, 100);
                     // $anes_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Anesthesiologist'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($anes_total = mysqli_num_rows($num_of_doc_run) + $ran20) {
+                    if ($anes_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
                         $as = rate($anes_total);
                         include '../.function/statistic_status.inc.php';
                     } else {
@@ -417,7 +416,7 @@ $ran23 = random_int(1, 100);
                     // $gene_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='General Surgeon'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($gene_total = mysqli_num_rows($num_of_doc_run) + $ran21) {
+                    if ($gene_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
                         $as = rate($gene_total);
                         include '../.function/statistic_status.inc.php';
                     } else {
@@ -436,7 +435,7 @@ $ran23 = random_int(1, 100);
                     // $patho_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Pathologist'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($patho_total = mysqli_num_rows($num_of_doc_run) + $ran22) {
+                    if ($patho_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
                         $as = rate($patho_total);
                         include '../.function/statistic_status.inc.php';
                     } else {
@@ -455,7 +454,7 @@ $ran23 = random_int(1, 100);
                     // $surgeon_total = 1;
                     $num_of_doc = "SELECT * from medical WHERE medDocSpecialty='Surgeon'";
                     $num_of_doc_run = mysqli_query($conn, $num_of_doc);
-                    if ($surgeon_total = mysqli_num_rows($num_of_doc_run) + $ran23) {
+                    if ($surgeon_total = mysqli_num_rows($num_of_doc_run)) { #EditRandomNumber
                         $as = rate($surgeon_total);
                         include '../.function/statistic_status.inc.php';
                     } else {
