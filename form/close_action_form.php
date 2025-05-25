@@ -8,7 +8,22 @@
 
         <!-- Hidden Section -->
         <div id="popupSection">
-            <p>This is the popped-up section!</p>
+            <h1>Closing an Appointment</h1>
+            <p>After completing a consultation, doctors must close the appointment to mark it as finished and transfer it into the medical records. Follow the steps below:</p>
+            <br>
+            <p><b>Add Additional Treatment Notes (Optional)</b></p>
+            <p>A form will appear with a textarea input. Use this space to write any important details such as:</p>
+
+            <p>- Follow-up advice</p>
+
+            <p>- Prescribed medications</p>
+
+            <p>- Additional treatments</p>
+
+            <p>- Observations from the consultation</p>
+            <br>
+            <p><b>Note:</b></p>
+            <p>Only verified doctors can close appointments. All closed records are securely stored and can be reviewed by both the doctor and the system admin.</p>
             <button class="info-button" onclick="document.getElementById('popupSection').style.display='none'">Close</button>
         </div>
     </label>
