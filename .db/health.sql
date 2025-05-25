@@ -253,7 +253,7 @@ VALUES
     'Manila',
     'Cardiologist',
     'maria_g',
-    'maria.garcia@hospital.com',
+    'maria.garcia@gmail.com',
     '09171234567',
     '1234',
     '1234',
@@ -264,7 +264,7 @@ VALUES
     '',
     '',
     '',
-    ''
+    'https://chat.google.com/room/AAQAXVjeDx4?cls=7'
   ),
   (
     3,
@@ -276,7 +276,7 @@ VALUES
     'Cebu City',
     'Neurologist',
     'john_d',
-    'john.doe@hospital.com',
+    'john.doe@gmail.com',
     '09281234567',
     '1234',
     '1234',
@@ -287,7 +287,7 @@ VALUES
     '',
     '',
     '',
-    ''
+    'https://chat.google.com/room/AAQAXVjeDx4?cls=7'
   ),
   (
     4,
@@ -299,7 +299,7 @@ VALUES
     'Davao',
     'Pediatrician',
     'ana_l',
-    'ana.lopez@hospital.com',
+    'ana.lopez@gmail.com',
     '09391234567',
     '1234',
     '1234',
@@ -322,7 +322,7 @@ VALUES
     'Quezon City',
     'Dermatologist',
     'mark_r',
-    'mark.reyes@hospital.com',
+    'mark.reyes@gmail.com',
     '09401234567',
     '1234',
     '1234',
@@ -333,7 +333,7 @@ VALUES
     '',
     '',
     '',
-    ''
+    'https://chat.google.com/room/AAQAXVjeDx4?cls=7'
   ),
   (
     6,
@@ -345,7 +345,7 @@ VALUES
     'Makati',
     'Psychiatrist',
     'liza_c',
-    'liza.cruz@hospital.com',
+    'liza.cruz@gmail.com',
     '09511234567',
     '1234',
     '1234',
@@ -368,7 +368,7 @@ VALUES
     'Pasig',
     'Endocrinologist',
     'paul_s',
-    'paul.santos@hospital.com',
+    'paul.santos@gmail.com',
     '09621234567',
     '1234',
     '1234',
@@ -379,7 +379,7 @@ VALUES
     '',
     '',
     '',
-    ''
+    'https://chat.google.com/room/AAQAXVjeDx4?cls=7'
   ),
   (
     8,
@@ -391,7 +391,7 @@ VALUES
     'Mandaluyong',
     'Radiologist',
     'kim_d',
-    'kim.delgado@hospital.com',
+    'kim.delgado@gmail.com',
     '09731234567',
     '1234',
     '1234',
@@ -414,7 +414,7 @@ VALUES
     'Las Piñas',
     'General Surgeon',
     'rico_t',
-    'rico.torres@hospital.com',
+    'rico.torres@gmail.com',
     '09841234567',
     '1234',
     '1234',
@@ -425,7 +425,7 @@ VALUES
     '',
     '',
     '',
-    ''
+    'https://chat.google.com/room/AAQAXVjeDx4?cls=7'
   ),
   (
     10,
@@ -437,7 +437,7 @@ VALUES
     'Parañaque',
     'Ophthalmologist',
     'grace_m',
-    'grace.martinez@hospital.com',
+    'grace.martinez@gmail.com',
     '09951234567',
     '1234',
     '1234',
@@ -448,7 +448,7 @@ VALUES
     '',
     '',
     '',
-    ''
+    'https://chat.google.com/room/AAQAXVjeDx4?cls=7'
   ),
   (
     11,
@@ -460,7 +460,7 @@ VALUES
     'Valenzuela',
     'Infectious Disease Specialist',
     'leo_g',
-    'leo.gutierrez@hospital.com',
+    'leo.gutierrez@gmail.com',
     '09161234567',
     '1234',
     '1234',
@@ -483,7 +483,7 @@ VALUES
     'Caloocan',
     'Obstetrician-Gynecologist',
     'sofia_f',
-    'sofia.flores@hospital.com',
+    'sofia.flores@gmail.com',
     '09271234567',
     '1234',
     '1234',
@@ -494,7 +494,7 @@ VALUES
     '',
     '',
     '',
-    ''
+    'https://chat.google.com/room/AAQAXVjeDx4?cls=7'
   ),
   (
     13,
@@ -506,7 +506,7 @@ VALUES
     'Muntinlupa',
     'Hematologist',
     'ethan_v',
-    'ethan.villanueva@hospital.com',
+    'ethan.villanueva@gmail.com',
     '09381234567',
     '1234',
     '1234',
@@ -517,7 +517,7 @@ VALUES
     '',
     '',
     '',
-    ''
+    'https://chat.google.com/room/AAQAXVjeDx4?cls=7'
   ),
   (
     14,
@@ -529,7 +529,7 @@ VALUES
     'Las Piñas',
     'Family Medicine Doctor',
     'maya_n',
-    'maya.navarro@hospital.com',
+    'maya.navarro@gmail.com',
     '09491234567',
     '1234',
     '1234',
@@ -552,7 +552,7 @@ VALUES
     'Pasay',
     'Allergist',
     'carlos_l',
-    'carlos.luna@hospital.com',
+    'carlos.luna@gmail.com',
     '09501234567',
     '1234',
     '1234',
@@ -563,7 +563,7 @@ VALUES
     '',
     '',
     '',
-    ''
+    'https://chat.google.com/room/AAQAXVjeDx4?cls=7'
   ),
   (
     16,
@@ -575,7 +575,7 @@ VALUES
     'San Juan',
     'Pathologist',
     'isabel_o',
-    'isabel.ortega@hospital.com',
+    'isabel.ortega@gmail.com',
     '09611234567',
     '1234',
     '1234',
@@ -598,7 +598,7 @@ VALUES
     'Navotas',
     'Surgeon',
     'derek_v',
-    'derek.vega@hospital.com',
+    'derek.vega@gmail.com',
     '09721234567',
     '1234',
     '1234',
@@ -609,7 +609,7 @@ VALUES
     '',
     '',
     '',
-    ''
+    'https://chat.google.com/room/AAQAXVjeDx4?cls=7'
   ),
   (
     18,
@@ -621,7 +621,7 @@ VALUES
     'Cainta',
     'Otorhinolaryngologist',
     'nina_a',
-    'nina.alvarez@hospital.com',
+    'nina.alvarez@gmail.com',
     '09831234567',
     '1234',
     '1234',
@@ -644,7 +644,7 @@ VALUES
     'San Mateo',
     'Podiatrist',
     'jose_c',
-    'jose.castillo@hospital.com',
+    'jose.castillo@gmail.com',
     '09941234567',
     '1234',
     '1234',
@@ -655,7 +655,7 @@ VALUES
     '',
     '',
     '',
-    ''
+    'https://chat.google.com/room/AAQAXVjeDx4?cls=7'
   ),
   (
     20,
@@ -667,7 +667,7 @@ VALUES
     'Antipolo',
     'Emergency Medicine Physician',
     'clara_p',
-    'clara.pangilinan@hospital.com',
+    'clara.pangilinan@gmail.com',
     '09151234567',
     '1234',
     '1234',
@@ -678,31 +678,7 @@ VALUES
     '',
     '',
     '',
-    ''
-  )
-INSERT INTO
-  `doctor` (
-    `docID`,
-    `docFname`,
-    `docMname`,
-    `docLname`,
-    `docSuffix`,
-    `docBdate`,
-    `docAddress`,
-    `docSpecialty`,
-    `docUsername`,
-    `docEmail`,
-    `docContact`,
-    `docPass`,
-    `docConfirm`,
-    `docCdate`,
-    `docModified`,
-    `docStatus`,
-    `docPhoto`,
-    `docQualify`,
-    `docIDfront`,
-    `docIDback`,
-    `doc_space`
+    'https://chat.google.com/room/AAQAXVjeDx4?cls=7'
   ),
   (
     21,
@@ -714,7 +690,7 @@ INSERT INTO
     'Quezon City',
     'Cardiologist',
     'albert_d',
-    'albert.diaz@hospital.com',
+    'albert.diaz@gmail.com',
     '09170000001',
     '1234',
     '1234',
@@ -725,7 +701,7 @@ INSERT INTO
     '',
     '',
     '',
-    ''
+    'https://chat.google.com/room/AAQAXVjeDx4?cls=7'
   ),
   (
     22,
@@ -737,7 +713,7 @@ INSERT INTO
     'Manila',
     'Pediatrician',
     'beatrice_t',
-    'beatrice.torres@hospital.com',
+    'beatrice.torres@gmail.com',
     '09170000002',
     '1234',
     '1234',
@@ -748,7 +724,7 @@ INSERT INTO
     '',
     '',
     '',
-    ''
+    'https://chat.google.com/room/AAQAXVjeDx4?cls=7'
   ),
   (
     23,
@@ -760,7 +736,7 @@ INSERT INTO
     'Taguig',
     'Neurologist',
     'carlos_r',
-    'carlos.reyes@hospital.com',
+    'carlos.reyes@gmail.com',
     '09170000003',
     '1234',
     '1234',
@@ -783,7 +759,7 @@ INSERT INTO
     'Makati',
     'Dermatologist',
     'diana_g',
-    'diana.garcia@hospital.com',
+    'diana.garcia@gmail.com',
     '09170000004',
     '1234',
     '1234',
@@ -794,7 +770,7 @@ INSERT INTO
     '',
     '',
     '',
-    ''
+    'https://chat.google.com/room/AAQAXVjeDx4?cls=7'
   ),
   (
     25,
@@ -806,7 +782,7 @@ INSERT INTO
     'Pasig',
     'Endocrinologist',
     'edward_m',
-    'edward.mendoza@hospital.com',
+    'edward.mendoza@gmail.com',
     '09170000005',
     '1234',
     '1234',
@@ -817,7 +793,7 @@ INSERT INTO
     '',
     '',
     '',
-    ''
+    'https://chat.google.com/room/AAQAXVjeDx4?cls=7'
   ),
   (
     26,
@@ -829,7 +805,7 @@ INSERT INTO
     'Parañaque',
     'Allergist',
     'fiona_s',
-    'fiona.santos@hospital.com',
+    'fiona.santos@gmail.com',
     '09170000006',
     '1234',
     '1234',
@@ -852,7 +828,7 @@ INSERT INTO
     'Mandaluyong',
     'Surgeon',
     'george_l',
-    'george.luna@hospital.com',
+    'george.luna@gmail.com',
     '09170000007',
     '1234',
     '1234',
@@ -863,7 +839,7 @@ INSERT INTO
     '',
     '',
     '',
-    ''
+    'https://chat.google.com/room/AAQAXVjeDx4?cls=7'
   ),
   (
     28,
@@ -875,7 +851,7 @@ INSERT INTO
     'Las Piñas',
     'Radiologist',
     'hannah_v',
-    'hannah.villanueva@hospital.com',
+    'hannah.villanueva@gmail.com',
     '09170000008',
     '1234',
     '1234',
@@ -886,7 +862,7 @@ INSERT INTO
     '',
     '',
     '',
-    ''
+    'https://chat.google.com/room/AAQAXVjeDx4?cls=7'
   ),
   (
     29,
@@ -898,7 +874,7 @@ INSERT INTO
     'Valenzuela',
     'Hematologist',
     'isaac_c',
-    'isaac.castillo@hospital.com',
+    'isaac.castillo@gmail.com',
     '09170000009',
     '1234',
     '1234',
@@ -921,7 +897,7 @@ INSERT INTO
     'Navotas',
     'Ophthalmologist',
     'janet_a',
-    'janet.alvarez@hospital.com',
+    'janet.alvarez@gmail.com',
     '09170000010',
     '1234',
     '1234',
@@ -932,7 +908,7 @@ INSERT INTO
     '',
     '',
     '',
-    ''
+    'https://chat.google.com/room/AAQAXVjeDx4?cls=7'
   ),
   (
     31,
@@ -944,7 +920,7 @@ INSERT INTO
     'Caloocan',
     'Psychiatrist',
     'kevin_n',
-    'kevin.navarro@hospital.com',
+    'kevin.navarro@gmail.com',
     '09170000011',
     '1234',
     '1234',
@@ -955,7 +931,7 @@ INSERT INTO
     '',
     '',
     '',
-    ''
+    'https://chat.google.com/room/AAQAXVjeDx4?cls=7'
   ),
   (
     32,
@@ -967,7 +943,7 @@ INSERT INTO
     'San Juan',
     'Infectious Disease Specialist',
     'laura_o',
-    'laura.ortega@hospital.com',
+    'laura.ortega@gmail.com',
     '09170000012',
     '1234',
     '1234',
@@ -990,7 +966,7 @@ INSERT INTO
     'Antipolo',
     'Family Medicine Doctor',
     'michael_t',
-    'michael.torres@hospital.com',
+    'michael.torres@gmail.com',
     '09170000013',
     '1234',
     '1234',
@@ -1001,7 +977,7 @@ INSERT INTO
     '',
     '',
     '',
-    ''
+    'https://chat.google.com/room/AAQAXVjeDx4?cls=7'
   ),
   (
     34,
@@ -1013,7 +989,7 @@ INSERT INTO
     'Quezon City',
     'Emergency Medicine Physician',
     'natalie_d',
-    'natalie.delgado@hospital.com',
+    'natalie.delgado@gmail.com',
     '09170000014',
     '1234',
     '1234',
@@ -1024,7 +1000,7 @@ INSERT INTO
     '',
     '',
     '',
-    ''
+    'https://chat.google.com/room/AAQAXVjeDx4?cls=7'
   ),
   (
     35,
@@ -1036,7 +1012,7 @@ INSERT INTO
     'San Mateo',
     'Anesthesiologist',
     'oscar_p',
-    'oscar.pangilinan@hospital.com',
+    'oscar.pangilinan@gmail.com',
     '09170000015',
     '1234',
     '1234',
@@ -1059,7 +1035,7 @@ INSERT INTO
     'Cainta',
     'Nephrologist',
     'patricia_f',
-    'patricia.flores@hospital.com',
+    'patricia.flores@gmail.com',
     '09170000016',
     '1234',
     '1234',
@@ -1070,7 +1046,7 @@ INSERT INTO
     '',
     '',
     '',
-    ''
+    'https://chat.google.com/room/AAQAXVjeDx4?cls=7'
   ),
   (
     37,
@@ -1082,7 +1058,7 @@ INSERT INTO
     'Las Piñas',
     'Otorhinolaryngologist',
     'quincy_m',
-    'quincy.mendoza@hospital.com',
+    'quincy.mendoza@gmail.com',
     '09170000017',
     '1234',
     '1234',
@@ -1105,7 +1081,7 @@ INSERT INTO
     'Makati',
     'Podiatrist',
     'rachel_s',
-    'rachel.santos@hospital.com',
+    'rachel.santos@gmail.com',
     '09170000018',
     '1234',
     '1234',
@@ -1116,7 +1092,7 @@ INSERT INTO
     '',
     '',
     '',
-    ''
+    'https://chat.google.com/room/AAQAXVjeDx4?cls=7'
   ),
   (
     39,
@@ -1128,7 +1104,7 @@ INSERT INTO
     'Pasay',
     'General Surgeon',
     'samuel_g',
-    'samuel.gonzales@hospital.com',
+    'samuel.gonzales@gmail.com',
     '09170000019',
     '1234',
     '1234',
@@ -1139,7 +1115,7 @@ INSERT INTO
     '',
     '',
     '',
-    ''
+    'https://chat.google.com/room/AAQAXVjeDx4?cls=7'
   ),
   (
     40,
@@ -1151,7 +1127,7 @@ INSERT INTO
     'Pasig',
     'Pathologist',
     'teresa_v',
-    'teresa.valdez@hospital.com',
+    'teresa.valdez@gmail.com',
     '09170000020',
     '1234',
     '1234',
