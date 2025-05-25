@@ -1,7 +1,6 @@
 <section class="form form_edit">
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
         <h1>USERs APPOINTMENT RECORDS</h1>
-        <p style="color: grey;">ID: <?php echo $selected_conID ?></p>
         <input type="hidden" name="conID" id="conID" value="<?php echo $selected_conID ?>">
 
         <label for="conName">Patient Name *</label>

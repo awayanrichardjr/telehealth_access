@@ -1,7 +1,6 @@
 <section class="form form_edit">
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
         <h1>PATIENT INFORMATION</h1>
-        <p style="color: grey;">ID: <?php echo $selected_pID ?></p>
         <input type="hidden" name="pID" id="pID" value="<?php echo $selected_pID ?>">
 
         <!-- fullname  -->
