@@ -31,6 +31,11 @@ if (empty($_SESSION['docUsername']) && empty($_SESSION['docPass'])) {
         $sql = "INSERT INTO medical (medName, medAddress, medBdate, medAge, medContact, medUsername, medEmail, medSelectedDoc, medDocSpecialty, medDiagnose, medConcern, medCdate, medADateTime, medTreatment) VALUES ('$medName','$medAddress','$medBdate','$medAge','$medContact','$medUsername','$medEmail','$medSelectedDoc','$medDocSpecialty','$medDiagnose','$medConcern','$medCdate','$medADateTime', '$medTreatment')";
 
         if ($conn->query($sql) === TRUE) {
+            // Now delete from consult table
+            $conID = $_SESSION['conID'];
+            $delete_sql = "DELETE FROM consult WHERE conID = '$conID'";
+            $conn->query($delete_sql);
+
             header("location: appointment_profile_doc.php");
             exit();
         } else {
