@@ -36,11 +36,11 @@
                                 Medical Analytics
                             </a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a href="../public/monthly_analytics.php">
                                 Monthly Analytics
                             </a>
-                        </li>
+                        </li> -->
                     </ul>
                 </li>
 
