@@ -19,8 +19,8 @@
     top: 82px;
 
     box-shadow: var(--shadow);
-    height: 550px;
-    width: 340px;
+    height: fit-content;
+    width: 500px;
 }
 
 .admin_specialties :where(.specialties li) {

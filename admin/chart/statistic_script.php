@@ -15,7 +15,8 @@
                 title: "Specialties",
                 labelFontColor: "grey",
                 labelFontSize: "10",
-                titleFontSize: "12"
+                titleFontSize: "12",
+                labelAngle: -45 // Slants the labels for readability
             },
             axisY: {
                 title: "Numbers of Specialists",
@@ -25,7 +26,7 @@
                 includeZero: true
             },
             data: [{
-                type: "pie", //change type to bar, line, area, pie, etc
+                type: "area", //change type to bar, line, area, pie, etc
                 // indexLabel: "{y}", //Shows y value on all Data Points
                 indexLabelFontColor: "black",
                 indexLabelFontSize: "12",

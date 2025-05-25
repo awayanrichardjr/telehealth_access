@@ -1,6 +1,5 @@
 <section class="admin_specialties">
-    <div id="chartContainer">
-    </div>
+    <div id="chartContainer"></div>
     <ul class=" specialties">
         <li>
             <h2>

@@ -1,51 +1,27 @@
 <?php
 
 $total_doc = array(
-    array("x" => 10, "y" => $derma_total, "indexLabel" => "Dermatologist"),
-    array("x" => 20, "y" => $obste_total, "indexLabel" => "Obstetrician-Gynecologist"),
-    array("x" => 30, "y" => $optha_total, "indexLabel" => "Ophthalmologist"),
-    array("x" => 40, "y" => $allergy_total, "indexLabel" => "Allergist"),
-    array("x" => 50, "y" => $gastro_total, "indexLabel" => "Gastroenterologist"),
-    array("x" => 60, "y" => $geria_total, "indexLabel" => "Geriatrician"),
-    array("x" => 70, "y" => $infec_total, "indexLabel" => "Infectious Disease Specialist"),
-    array("x" => 80, "y" => $hema_total, "indexLabel" => "Hematologist"),
-    array("x" => 90, "y" => $neuro_total, "indexLabel" => "Neurologist"),
-    array("x" => 100, "y" => $cardio_total, "indexLabel" => "Cardiologist"),
-    array("x" => 110, "y" => $pedia_total, "indexLabel" => "Pediatrician"),
-    array("x" => 120, "y" => $endo_total, "indexLabel" => "Endocrinologist"),
-    array("x" => 130, "y" => $radio_total, "indexLabel" => "Radiologist"),
-    array("x" => 140, "y" => $nephro_total, "indexLabel" => "Nephrologist"),
-    array("x" => 150, "y" => $otorhi_total, "indexLabel" => "Otorhinolaryngologist"),
-    array("x" => 160, "y" => $podia_total, "indexLabel" => "Podiatrist"),
-    array("x" => 170, "y" => $fam_total, "indexLabel" => "Family Medicine Doctor"),
-    array("x" => 180, "y" => $psych_total, "indexLabel" => "Psychiatrist"),
-    array("x" => 190, "y" => $emp_total, "indexLabel" => "Emergency Medicine Physician"),
-    array("x" => 200, "y" => $anes_total, "indexLabel" => "Anesthesiologist"),
-    array("x" => 210, "y" => $gene_total, "indexLabel" => "General Surgeon"),
-    array("x" => 220, "y" => $patho_total, "indexLabel" => "Pathologist"),
-    array("x" => 230, "y" => $surgeon_total, "indexLabel" => "Surgeon")
+    array("label" => "Dermatologist", "y" => $derma_total),
+    array("label" => "Obstetrician-Gynecologist", "y" => $obste_total),
+    array("label" => "Ophthalmologist", "y" => $optha_total),
+    array("label" => "Allergist", "y" => $allergy_total),
+    array("label" => "Gastroenterologist", "y" => $gastro_total),
+    array("label" => "Geriatrician", "y" => $geria_total),
+    array("label" => "Infectious Disease Specialist", "y" => $infec_total),
+    array("label" => "Hematologist", "y" => $hema_total),
+    array("label" => "Neurologist", "y" => $neuro_total),
+    array("label" => "Cardiologist", "y" => $cardio_total),
+    array("label" => "Pediatrician", "y" => $pedia_total),
+    array("label" => "Endocrinologist", "y" => $endo_total),
+    array("label" => "Radiologist", "y" => $radio_total),
+    array("label" => "Nephrologist", "y" => $nephro_total),
+    array("label" => "Otorhinolaryngologist", "y" => $otorhi_total),
+    array("label" => "Podiatrist", "y" => $podia_total),
+    array("label" => "Family Medicine Doctor", "y" => $fam_total),
+    array("label" => "Psychiatrist", "y" => $psych_total),
+    array("label" => "Emergency Medicine Physician", "y" => $emp_total),
+    array("label" => "Anesthesiologist", "y" => $anes_total),
+    array("label" => "General Surgeon", "y" => $gene_total),
+    array("label" => "Pathologist", "y" => $patho_total),
+    array("label" => "Surgeon", "y" => $surgeon_total)
 );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
