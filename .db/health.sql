@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 25, 2025 at 09:08 AM
+-- Generation Time: May 26, 2025 at 02:32 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 SET
@@ -160,8 +160,100 @@ CREATE TABLE
     `conContact` varchar(255) NOT NULL,
     `conCdate` varchar(255) NOT NULL,
     `conAge` varchar(255) NOT NULL,
-    `conADateTime` datetime NOT NULL
+    `conDate` varchar(255) NOT NULL,
+    `conTime` varchar(255) NOT NULL
   ) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_general_ci;
+
+--
+-- Dumping data for table `consult`
+--
+INSERT INTO
+  `consult` (
+    `conID`,
+    `conName`,
+    `conAddress`,
+    `conBdate`,
+    `conSelectedDoc`,
+    `conDocSpecialty`,
+    `conDiagnose`,
+    `conConcern`,
+    `conUsername`,
+    `conEmail`,
+    `conContact`,
+    `conCdate`,
+    `conAge`,
+    `conDate`,
+    `conTime`
+  )
+VALUES
+  (
+    10,
+    'James M Smith ',
+    'Cebu City',
+    '1990-03-15',
+    'Dr. Maria L Garcia ',
+    'Cardiologist',
+    'qwe qwe',
+    'qwe qwe q',
+    'james',
+    'richarddumaelawayanjr@gmail.com',
+    '09171234567',
+    'May-26-2025 06:22am',
+    '21',
+    '7-2-2025',
+    '00:18'
+  ),
+  (
+    50,
+    'Gwen Cha Na ',
+    'Panabo',
+    '2025-05-25',
+    'Dr. Richard Dumael Awayan Jr.',
+    'Dermatologist',
+    'asd asd asd',
+    '',
+    'gwen',
+    'richarddumaelawayanjr@gmail.com',
+    '091234123213',
+    'May-26-2025 08:13am',
+    '23',
+    '5-26-2025',
+    '00:46'
+  ),
+  (
+    51,
+    'Gwen Cha Na ',
+    'Panabo',
+    '2025-05-25',
+    'Dr. Richard Dumael Awayan Jr.',
+    'Dermatologist',
+    'wqadasd asd asd',
+    'asd asd asd ',
+    'gwen',
+    'richarddumaelawayanjr@gmail.com',
+    '091234123213',
+    'May-26-2025 08:15am',
+    '23',
+    '5-26-2025',
+    '02:14'
+  ),
+  (
+    52,
+    'Gwen Cha Na ',
+    'Panabo',
+    '2025-05-25',
+    'Dr. Richard Dumael Awayan Jr.',
+    'Dermatologist',
+    'awdasd asd',
+    '',
+    'gwen',
+    'richarddumaelawayanjr@gmail.com',
+    '091234123213',
+    'May-26-2025 08:25am',
+    '23',
+    '5-26-2025',
+    '00:00'
+  );
 
 -- --------------------------------------------------------
 --
@@ -221,29 +313,6 @@ INSERT INTO
   )
 VALUES
   (
-    1,
-    'William',
-    'F',
-    'Smith',
-    '',
-    '2025-05-08',
-    'Davao',
-    'Dermatologist',
-    'will',
-    '',
-    '09023128982',
-    '1234',
-    '1234',
-    '2025-05-25',
-    '',
-    'Unverified',
-    '',
-    '',
-    '',
-    '',
-    ''
-  ),
-  (
     2,
     'Maria',
     'L',
@@ -258,13 +327,13 @@ VALUES
     '1234',
     '1234',
     '2025-05-20',
-    '',
-    'Unverified',
-    '',
-    '',
+    'May-26-2025 07:31am',
+    'Verified',
     '',
     '',
-    ''
+    '',
+    '',
+    'https://chat.google.com/room/AAQAXVjeDx4?cls=7'
   ),
   (
     3,
@@ -305,12 +374,12 @@ VALUES
     '1234',
     '2025-05-18',
     '',
-    'Unverified',
+    'Pending',
+    '',
+    'Array',
     '',
     '',
-    '',
-    '',
-    ''
+    'https://chat.google.com/room/AAQAXVjeDx4?cls=7'
   ),
   (
     5,
@@ -1139,6 +1208,29 @@ VALUES
     '',
     '',
     ''
+  ),
+  (
+    43,
+    'Richard',
+    'Dumael',
+    'Awayan',
+    'Jr.',
+    '1995-09-19',
+    'Davao City',
+    'Dermatologist',
+    'awayan',
+    '',
+    '09091012050',
+    '1234',
+    '1234',
+    '2025-05-26',
+    'May-26-2025 05:57am',
+    'Verified',
+    '',
+    'Array',
+    '',
+    '',
+    'https://chat.google.com/room/AAQAXVjeDx4?cls=7'
   );
 
 -- --------------------------------------------------------
@@ -1154,6 +1246,28 @@ CREATE TABLE
     `feed_Cdate` varchar(255) NOT NULL,
     `feed_Modified` varchar(255) NOT NULL
   ) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_general_ci;
+
+--
+-- Dumping data for table `feed`
+--
+INSERT INTO
+  `feed` (
+    `feed_id`,
+    `feed_name`,
+    `feed_post`,
+    `feed_DocStatus`,
+    `feed_Cdate`,
+    `feed_Modified`
+  )
+VALUES
+  (
+    1,
+    'Gwen Cha Na ',
+    '👀',
+    '',
+    'May-25-2025 04:55pm',
+    ''
+  );
 
 -- --------------------------------------------------------
 --
@@ -1177,6 +1291,97 @@ CREATE TABLE
     `medAge` varchar(255) NOT NULL,
     `medTreatment` varchar(255) NOT NULL
   ) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_general_ci;
+
+--
+-- Dumping data for table `medical`
+--
+INSERT INTO
+  `medical` (
+    `medID`,
+    `medName`,
+    `medAddress`,
+    `medBdate`,
+    `medSelectedDoc`,
+    `medDocSpecialty`,
+    `medDiagnose`,
+    `medConcern`,
+    `medUsername`,
+    `medEmail`,
+    `medContact`,
+    `medCdate`,
+    `medADateTime`,
+    `medAge`,
+    `medTreatment`
+  )
+VALUES
+  (
+    2,
+    'Gwen Cha Na ',
+    'Panabo',
+    '2025-05-25',
+    'Dr. Richard Dumael Awayan Jr.',
+    'Dermatologist',
+    'qwe qwe qwe ',
+    'qw eqw eq we',
+    'gwen',
+    'richarddumaelawayanjr@gmail.com',
+    '091234123213',
+    'May-26-2025 05:59am',
+    'May 26, 2025 06:07am',
+    '23',
+    'eh'
+  ),
+  (
+    3,
+    'Gwen Cha Na ',
+    'Panabo',
+    '2025-05-25',
+    'Dr. Richard Dumael Awayan Jr.',
+    'Dermatologist',
+    'qwe qwe qwe ',
+    'qw eqw eq we',
+    'gwen',
+    'richarddumaelawayanjr@gmail.com',
+    '091234123213',
+    'May-26-2025 05:59am',
+    'May 26, 2025 06:07am',
+    '23',
+    'eh'
+  ),
+  (
+    4,
+    'Gwen Cha Na ',
+    'Panabo',
+    '2025-05-25',
+    'Dr. Richard Dumael Awayan Jr.',
+    'Dermatologist',
+    'qwe qwe',
+    'Qwe Qwe Qwe ',
+    'gwen',
+    'richarddumaelawayanjr@gmail.com',
+    '091234123213',
+    'May-26-2025 06:09am',
+    'May 26, 2025 06:10am',
+    '34',
+    'ewwe'
+  ),
+  (
+    5,
+    'James M Smith ',
+    'Cebu City',
+    '1990-03-15',
+    'Dr. Richard Dumael Awayan Jr.',
+    'Dermatologist',
+    'asdas dasd',
+    'asd asd',
+    'james',
+    'richarddumaelawayanjr@gmail.com',
+    '09171234567',
+    'May-26-2025 08:27am',
+    'May 26, 2025 08:28am',
+    '23',
+    'ha ok '
+  );
 
 -- --------------------------------------------------------
 --
@@ -1246,12 +1451,12 @@ VALUES
     'Cebu City',
     '1990-03-15',
     '09171234567',
-    'james_s',
+    'james',
     'james.smith@example.com',
     '1234',
     '1234',
     '2025-05-20',
-    ''
+    'May-26-2025 06:21am'
   ),
   (
     3,
@@ -1609,7 +1814,7 @@ ADD UNIQUE KEY `pUsername` (`pUsername`);
 -- AUTO_INCREMENT for table `admin`
 --
 ALTER TABLE `admin` MODIFY `adminID` int (11) UNSIGNED NOT NULL AUTO_INCREMENT,
-AUTO_INCREMENT = 2;
+AUTO_INCREMENT = 5;
 
 --
 -- AUTO_INCREMENT for table `chat`
@@ -1619,29 +1824,32 @@ ALTER TABLE `chat` MODIFY `chat_id` int (11) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `consult`
 --
-ALTER TABLE `consult` MODIFY `conID` int (11) UNSIGNED NOT NULL AUTO_INCREMENT;
+ALTER TABLE `consult` MODIFY `conID` int (11) UNSIGNED NOT NULL AUTO_INCREMENT,
+AUTO_INCREMENT = 54;
 
 --
 -- AUTO_INCREMENT for table `doctor`
 --
 ALTER TABLE `doctor` MODIFY `docID` int (11) UNSIGNED NOT NULL AUTO_INCREMENT,
-AUTO_INCREMENT = 2;
+AUTO_INCREMENT = 44;
 
 --
 -- AUTO_INCREMENT for table `feed`
 --
-ALTER TABLE `feed` MODIFY `feed_id` int (11) UNSIGNED NOT NULL AUTO_INCREMENT;
+ALTER TABLE `feed` MODIFY `feed_id` int (11) UNSIGNED NOT NULL AUTO_INCREMENT,
+AUTO_INCREMENT = 2;
 
 --
 -- AUTO_INCREMENT for table `medical`
 --
-ALTER TABLE `medical` MODIFY `medID` int (11) UNSIGNED NOT NULL AUTO_INCREMENT;
+ALTER TABLE `medical` MODIFY `medID` int (11) UNSIGNED NOT NULL AUTO_INCREMENT,
+AUTO_INCREMENT = 6;
 
 --
 -- AUTO_INCREMENT for table `patient`
 --
 ALTER TABLE `patient` MODIFY `pID` int (11) UNSIGNED NOT NULL AUTO_INCREMENT,
-AUTO_INCREMENT = 2;
+AUTO_INCREMENT = 22;
 
 COMMIT;
 
