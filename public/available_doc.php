@@ -11,7 +11,7 @@ if (empty($_SESSION['docUsername']) || empty($_SESSION['docPass'])) {
     include '../doctor/profile.php';
     include '../table/user_availability_doc_thead.php';
 
-    $sql = "SELECT * FROM appointment WHERE appointment_id";
+    $sql = "SELECT * FROM appointment  ORDER BY appointment_id DESC";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {

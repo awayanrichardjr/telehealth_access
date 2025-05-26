@@ -8,7 +8,7 @@ if (empty($_SESSION['pUsername']) || empty($_SESSION['pPass'])) {
 } else {
     include '../table/user_availability_p_thead.php';
 
-    $sql = "SELECT * FROM appointment WHERE appointment_id";
+    $sql = "SELECT * FROM appointment ORDER BY appointment_id DESC";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {

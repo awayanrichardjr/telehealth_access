@@ -11,7 +11,7 @@ if (empty($_SESSION['docUsername']) || empty($_SESSION['docPass'])) {
     include '../doctor/appointment_nav.php';
     include '../table/user_appointment_doc_thead.php';
 
-    $sql = "SELECT * FROM consult ORDER BY conDate";
+    $sql = "SELECT * FROM consult ORDER BY conDate DESC";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {

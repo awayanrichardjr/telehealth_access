@@ -32,6 +32,10 @@ if (empty($_SESSION['pUsername']) && empty($_SESSION['pPass'])) {
         $sql = "INSERT INTO consult (conName, conAddress, conBdate, conAge, conContact, conUsername, conEmail, conSelectedDoc, conDocSpecialty, conDiagnose, conConcern, conCdate, conDate, conTime) VALUES ('$conName','$conAddress','$conBdate','$conAge','$conContact','$conUsername','$conEmail','$conSelectedDoc','$conDocSpecialty','$conDiagnose','$conConcern','$conCdate','$conDate','$conTime')";
 
         if ($conn->query($sql) === TRUE) {
+            // Now delete from appointment table
+            $appointmentID = $_SESSION['appointment_id'];
+            $delete_sql = "DELETE FROM appointment WHERE appointment_id = '$appointmentID'";
+            $conn->query($delete_sql);
             header("location: pay_selected_doc.php");
             exit();
         } else {
@@ -44,6 +48,7 @@ if (empty($_SESSION['pUsername']) && empty($_SESSION['pPass'])) {
     include '../patient/main.php';
     // include '../form/consult_selected_doc.php';
 }
+// Display sessions
 $appointmentID = $_GET['appointment_id'];
 $sql = "SELECT * FROM appointment WHERE appointment_id = $appointmentID";
 $result = $conn->query($sql);
@@ -58,11 +63,15 @@ if ($result->num_rows > 0) {
         $_SESSION['appointment_time'] = $row['appointment_time'];
 
         include '../form/consult_selected_doc.php';
-        exit();
     }
+    // exit();
 } else {
     echo "0 results";
     // echo "Error updating record: " . $conn->error;
 }
+
+// sessioning 
+$_SESSION['appointment_id'] = $appointmentID;
+
 $conn->close();
 Ob_end_flush();
