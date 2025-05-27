@@ -6,6 +6,7 @@
     <?php } ?>
     <ul class="view-appt">
       <li>
+        <p><?php echo $_SESSION['conName'] ?></p>
         <p><?php echo $_SESSION['conUsername'] ?></p>
       </li>
 

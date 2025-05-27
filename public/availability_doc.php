@@ -19,8 +19,9 @@ if (empty($_SESSION['docUsername']) || empty($_SESSION['docPass'])) {
         $appointment_time = $_POST['appointment_time'];
         $appointment_price = $_POST['appointment_price'];
         $appointment_date = $_POST['appointment_date'];
+        $appointment_email = $_POST['appointment_email'];
 
-        $sql = "INSERT INTO appointment (appointment_name, appointment_username, appointment_month, appointment_day, appointment_year, appointment_time, appointment_price, appointment_date) VALUES ('$appointment_name','$appointment_username','$appointment_month','$appointment_day','$appointment_year','$appointment_time','$appointment_price','$appointment_date')";
+        $sql = "INSERT INTO appointment (appointment_name, appointment_username, appointment_month, appointment_day, appointment_year, appointment_time, appointment_price, appointment_date, appointment_email) VALUES ('$appointment_name','$appointment_username','$appointment_month','$appointment_day','$appointment_year','$appointment_time','$appointment_price','$appointment_date','$appointment_email')";
         if ($conn->query($sql) === TRUE) {
             header("location: available_doc.php");
             exit();

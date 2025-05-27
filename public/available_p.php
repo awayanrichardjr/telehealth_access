@@ -24,6 +24,7 @@ if (empty($_SESSION['pUsername']) || empty($_SESSION['pPass'])) {
             $_SESSION['appointment_time'] = $row['appointment_time'];
             $_SESSION['appointment_price'] = $row['appointment_price'];
             $_SESSION['appointment_date'] = $row['appointment_date'];
+            $_SESSION['appointment_email'] = $row['appointment_email'];
 
             include '../table/user_availability_p_tbody.php';
         }

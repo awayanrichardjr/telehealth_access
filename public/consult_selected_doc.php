@@ -61,6 +61,7 @@ if ($result->num_rows > 0) {
         $_SESSION['appointment_day'] = $row['appointment_day'];
         $_SESSION['appointment_year'] = $row['appointment_year'];
         $_SESSION['appointment_time'] = $row['appointment_time'];
+        $_SESSION['appointment_email'] = $row['appointment_email'];
 
         include '../form/consult_selected_doc.php';
     }

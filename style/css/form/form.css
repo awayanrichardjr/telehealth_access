@@ -38,7 +38,7 @@
 }
 
 /* input  */
-.form :where(input, select, textarea) {
+.form :where(input, select, textarea, .invoice-btn) {
     padding: 0.5rem;
     font-size: 10px;
 
@@ -80,4 +80,28 @@
 .form :where(.error) {
     color: var(--red);
     font-size: 10px;
+}
+
+.form :where(.invoice-btn) {
+    background-color: var(--green);
+    color: var(--primary-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+
+    padding: 0.3rem;
+}
+
+.form :where(.invoice-btn:hover) {
+    background-color: var(--green-hover);
+}
+
+.form :where(.invoice-btn:hover) {
+    border-color: lightblue;
+}
+
+.form :where(.invoice-btn:focus) {
+    border-color: lightblue;
 }

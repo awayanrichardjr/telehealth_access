@@ -27,6 +27,7 @@ if (empty($_SESSION['docUsername']) || empty($_SESSION['docPass'])) {
             $_SESSION['appointment_time'] = $row['appointment_time'];
             $_SESSION['appointment_price'] = $row['appointment_price'];
             $_SESSION['appointment_date'] = $row['appointment_date'];
+            $_SESSION['appointment_email'] = $row['appointment_email'];
 
             include '../table/user_availability_doc_tbody.php';
         }

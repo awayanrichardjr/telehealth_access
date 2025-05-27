@@ -43,7 +43,27 @@
                                                                             echo date("M d, Y h:ia") ?>" readonly>
         <!-- confirm btn -->
         <label for="medTreatment" style="color: grey;">Treatment *(Optional)</label>
-        <textarea name="medTreatment" id="medTreatment" placeholder="Additional Treatment..."></textarea>
+        <textarea name="medTreatment" id="medTreatment" placeholder="Add additional Treatment or provide follow up appointment..."></textarea>
+
+        <br>
+        <div>
+            <h1 style="text-align: start;">Payment for follow up appointment</h1>
+            <p style="font-size: 10px; color:grey;">Please schedule a follow-up appointment to continue your treatment, or discuss ongoing concerns with the patient.</p>
+            <p style="font-size: 10px; color:grey;">Timely follow-ups are essential for effective care and recovery.</p>
+        </div>
+
+        <!-- Create Invoice -->
+        <a href="https://www.paypal.com/invoice/s/create/" onclick="window.open(this.href, 'PopupWindow','width=900,height=700'); return false;" class="invoice-btn">
+            <span class="material-symbols-outlined" style="font-size: 17px;">payment</span>
+            <p>Creat Invoice</p>
+        </a>
+        <br>
+
+        <p style="font-size: 10px; color:grey;">Close the appointment if no more concerns needed.</p>
         <input type="submit" name="submit" id="submit" value="Close">
     </form>
 </section>
+
+
+
+<!-- , 'width=900,height=600' -->

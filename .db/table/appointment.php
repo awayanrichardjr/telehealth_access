@@ -8,5 +8,6 @@ $sql = "CREATE TABLE appointment (
     appointment_year VARCHAR(255) NOT NULL,
     appointment_time VARCHAR(255) NOT NULL,
     appointment_price int(50) NOT NULL,
-    appointment_date VARCHAR(255) NOT NULL
+    appointment_date VARCHAR(255) NOT NULL,
+    appointment_email VARCHAR(255) NOT NULL
 )";

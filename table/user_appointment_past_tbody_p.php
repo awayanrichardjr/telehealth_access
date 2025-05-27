@@ -8,6 +8,7 @@ if ($_SESSION['medUsername'] === $_SESSION['pUsername']) { ?>
       <?php } ?>
       <ul class="view-appt">
         <li>
+          <p><?php echo $_SESSION['medName'] ?></p>
           <p><?php echo $_SESSION['medUsername'] ?></p>
         </li>
 

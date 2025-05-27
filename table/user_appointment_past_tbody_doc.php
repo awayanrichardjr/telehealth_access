@@ -11,6 +11,7 @@ if ($_SESSION['medSelectedDoc'] === $docName) { ?>
       <?php } ?>
       <ul class="view-appt">
         <li>
+          <p><?php echo $_SESSION['medName'] ?></p>
           <p><?php echo $_SESSION['medUsername'] ?></p>
         </li>
 

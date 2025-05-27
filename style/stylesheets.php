@@ -52,6 +52,7 @@
 <link rel="stylesheet" href="../style/css/form/payment.css">
 <link rel="stylesheet" href="../style/css/form/log_admin.css">
 <link rel="stylesheet" href="../style/css/form/reg_admin.css">
+<link rel="stylesheet" href="../style/css/form/availability.css">
 <!-- table  -->
 <link rel="stylesheet" href="../style/css/table/table.css">
 <link rel="stylesheet" href="../style/css/table/admin_table.css">

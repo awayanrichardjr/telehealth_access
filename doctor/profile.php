@@ -21,6 +21,10 @@
                 <span class="material-symbols-outlined" style="font-size: 17px;">contact_phone</span>
                 <?php echo $_SESSION['docContact'] ?>
             </li>
+            <li>
+                <span class="material-symbols-outlined" style="font-size: 17px;">badge</span>
+                <?php echo $_SESSION['docUsername'] ?>
+            </li>
             <!-- STATUS -->
             <?php if ($_SESSION['docStatus'] == "Verified") { ?>
                 <li class="verified">
@@ -104,10 +108,3 @@
     </div>
 
     <!-- </section> -->
-
-    <style>
-        #popupAvailability {
-            position: absolute;
-            display: none;
-        }
-    </style>

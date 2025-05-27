@@ -17,6 +17,10 @@
                 <span class="material-symbols-outlined" style="font-size: 17px;">contact_phone</span>
                 <?php echo $_SESSION['pContact'] ?>
             </li>
+            <li>
+                <span class="material-symbols-outlined" style="font-size: 17px;">badge</span>
+                <?php echo $_SESSION['pUsername'] ?>
+            </li>
         </ul>
     </div>
 </section>

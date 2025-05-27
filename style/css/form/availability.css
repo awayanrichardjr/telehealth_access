@@ -1,0 +1,9 @@
+.availability :where(label) {
+    color: grey;
+}
+
+/* .availability :where(input[type="number"]) {} */
+
+.availability :where(.details) {
+    flex-direction: row;
+}
