@@ -19,7 +19,7 @@
                 </a>
             </li>
             <li>
-                <a href="../public/appointment_doc.php">
+                <a href="../public/appointment_profile_doc.php">
                     <span class="material-symbols-outlined">schedule</span>
                     <p>Appointments</p>
                 </a>

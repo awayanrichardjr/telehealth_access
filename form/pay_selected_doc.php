@@ -33,7 +33,7 @@
             </li>
             <li>
                 <img src="../img/logo/paypal.png" alt="paypal">
-                <input type="submit" name="submit" id="submit" value="Pay Now" onclick="window.open('https://www.paypal.com/myaccount/transfer/homepage?from=SUM-QuickLink', 'PopupWindow', 'width=600,height=700');">
+                <input type="submit" name="submit" id="submit" value="Pay Now" onclick="window.open('https://www.paypal.com/invoice/p/#78RUR9P5K6B26NXJ', 'PopupWindow', 'width=900,height=600');">
                 <p style="color: var(--blue);">Recomended</p>
             </li>
         </ul>

@@ -25,7 +25,7 @@
                 </a>
             </li>
             <li>
-                <a href="../public/appointment_p.php">
+                <a href="../public/appointment_profile_p.php">
                     <span class="material-symbols-outlined">schedule</span>
                     <p>Appointments</p>
                 </a>

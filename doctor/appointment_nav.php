@@ -1,11 +1,11 @@
 <nav class="appointment_nav">
     <ul class="side-nav">
-        <li>
+        <!-- <li>
             <a href="../public/appointment_doc.php">
                 <span class="material-symbols-outlined">schedule</span>
                 <p>Appointments</p>
             </a>
-        </li>
+        </li> -->
         <li>
             <a href="../public/appointment_profile_doc.php">
                 <span class="material-symbols-outlined">book_online</span>

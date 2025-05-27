@@ -7,12 +7,12 @@
                     View All Specialists
                     <p class="num_of_sp">
                         <?php
-                        $num_of_doc = "SELECT * from doctor ORDER BY docSpecialty";
+                        $num_of_doc = "SELECT * from doctor WHERE docStatus='Verified'";
                         $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                         if ($doc_total = mysqli_num_rows($num_of_doc_run)) {
-                            echo $doc_total . "+ doctors";
+                            echo $doc_total . "+ Verified Doctors";
                         } else {
-                            echo 0 . "+ doctors";
+                            echo 0 . "+ Verified Doctors";
                         }
                         ?>
                     </p>
@@ -27,12 +27,12 @@
                     <p class="sp-description poppins-bold">Consult for skin, hair, and nail concerns online.</p>
                     <p class="num_of_sp">
                         <?php
-                        $num_of_doc = "SELECT * from doctor WHERE docSpecialty='Dermatologist'";
+                        $num_of_doc = "SELECT * from doctor WHERE docStatus='Verified' AND docSpecialty='Dermatologist'";
                         $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                         if ($doc_total = mysqli_num_rows($num_of_doc_run)) {
-                            echo $doc_total . "+ doctors";
+                            echo $doc_total . "+ Verified Doctors";
                         } else {
-                            echo 0 . "+ doctors";
+                            echo 0 . "+ Verified Doctors";
                         }
                         ?>
                     </p>
@@ -47,12 +47,12 @@
                     </p>
                     <p class="num_of_sp">
                         <?php
-                        $num_of_doc = "SELECT * from doctor WHERE docSpecialty='Obstetrician-Gynecologist'";
+                        $num_of_doc = "SELECT * from doctor WHERE docStatus='Verified' AND docSpecialty='Obstetrician-Gynecologist'";
                         $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                         if ($doc_total = mysqli_num_rows($num_of_doc_run)) {
-                            echo $doc_total . "+ doctors";
+                            echo $doc_total . "+ Verified Doctors";
                         } else {
-                            echo 0 . "+ doctors";
+                            echo 0 . "+ Verified Doctors";
                         }
                         ?>
                     </p>
@@ -65,12 +65,12 @@
                     <p class="sp-description poppins-bold">Get advice on eye health and vision problems online.</p>
                     <p class="num_of_sp">
                         <?php
-                        $num_of_doc = "SELECT * from doctor WHERE docSpecialty='Ophthalmologist'";
+                        $num_of_doc = "SELECT * from doctor WHERE docStatus='Verified' AND docSpecialty='Ophthalmologist'";
                         $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                         if ($doc_total = mysqli_num_rows($num_of_doc_run)) {
-                            echo $doc_total . "+ doctors";
+                            echo $doc_total . "+ Verified Doctors";
                         } else {
-                            echo 0 . "+ doctors";
+                            echo 0 . "+ Verified Doctors";
                         }
                         ?>
                     </p>
@@ -84,12 +84,12 @@
                         home.</p>
                     <p class="num_of_sp">
                         <?php
-                        $num_of_doc = "SELECT * from doctor WHERE docSpecialty='Allergist'";
+                        $num_of_doc = "SELECT * from doctor WHERE docStatus='Verified' AND docSpecialty='Allergist'";
                         $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                         if ($doc_total = mysqli_num_rows($num_of_doc_run)) {
-                            echo $doc_total . "+ doctors";
+                            echo $doc_total . "+ Verified Doctors";
                         } else {
-                            echo 0 . "+ doctors";
+                            echo 0 . "+ Verified Doctors";
                         }
                         ?>
                     </p>
@@ -104,12 +104,12 @@
                     </p>
                     <p class="num_of_sp">
                         <?php
-                        $num_of_doc = "SELECT * from doctor WHERE docSpecialty='Gastroenterologist'";
+                        $num_of_doc = "SELECT * from doctor WHERE docStatus='Verified' AND docSpecialty='Gastroenterologist'";
                         $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                         if ($doc_total = mysqli_num_rows($num_of_doc_run)) {
-                            echo $doc_total . "+ doctors";
+                            echo $doc_total . "+ Verified Doctors";
                         } else {
-                            echo 0 . "+ doctors";
+                            echo 0 . "+ Verified Doctors";
                         }
                         ?>
                     </p>
@@ -123,12 +123,12 @@
                         appointments.</p>
                     <p class="num_of_sp">
                         <?php
-                        $num_of_doc = "SELECT * from doctor WHERE docSpecialty='Geriatrician'";
+                        $num_of_doc = "SELECT * from doctor WHERE docStatus='Verified' AND docSpecialty='Geriatrician'";
                         $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                         if ($doc_total = mysqli_num_rows($num_of_doc_run)) {
-                            echo $doc_total . "+ doctors";
+                            echo $doc_total . "+ Verified Doctors";
                         } else {
-                            echo 0 . "+ doctors";
+                            echo 0 . "+ Verified Doctors";
                         }
                         ?>
                     </p>
@@ -142,12 +142,12 @@
                         telemedicine.</p>
                     <p class="num_of_sp">
                         <?php
-                        $num_of_doc = "SELECT * from doctor WHERE docSpecialty='Infectious Disease Specialist'";
+                        $num_of_doc = "SELECT * from doctor WHERE docStatus='Verified' AND docSpecialty='Infectious Disease Specialist'";
                         $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                         if ($doc_total = mysqli_num_rows($num_of_doc_run)) {
-                            echo $doc_total . "+ doctors";
+                            echo $doc_total . "+ Verified Doctors";
                         } else {
-                            echo 0 . "+ doctors";
+                            echo 0 . "+ Verified Doctors";
                         }
                         ?>
                     </p>
@@ -160,12 +160,12 @@
                     <p class="sp-description poppins-bold">Online consultations for blood-related health issues.</p>
                     <p class="num_of_sp">
                         <?php
-                        $num_of_doc = "SELECT * from doctor WHERE docSpecialty='Hematologist'";
+                        $num_of_doc = "SELECT * from doctor WHERE docStatus='Verified' AND docSpecialty='Hematologist'";
                         $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                         if ($doc_total = mysqli_num_rows($num_of_doc_run)) {
-                            echo $doc_total . "+ doctors";
+                            echo $doc_total . "+ Verified Doctors";
                         } else {
-                            echo 0 . "+ doctors";
+                            echo 0 . "+ Verified Doctors";
                         }
                         ?>
                     </p>
@@ -179,12 +179,12 @@
                         online.</p>
                     <p class="num_of_sp">
                         <?php
-                        $num_of_doc = "SELECT * from doctor WHERE docSpecialty='Neurologist'";
+                        $num_of_doc = "SELECT * from doctor WHERE docStatus='Verified' AND docSpecialty='Neurologist'";
                         $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                         if ($doc_total = mysqli_num_rows($num_of_doc_run)) {
-                            echo $doc_total . "+ doctors";
+                            echo $doc_total . "+ Verified Doctors";
                         } else {
-                            echo 0 . "+ doctors";
+                            echo 0 . "+ Verified Doctors";
                         }
                         ?>
                     </p>
@@ -197,12 +197,12 @@
                     <p class="sp-description poppins-bold">Virtual care for heart and blood vessel health.</p>
                     <p class="num_of_sp">
                         <?php
-                        $num_of_doc = "SELECT * from doctor WHERE docSpecialty='Cardiologist'";
+                        $num_of_doc = "SELECT * from doctor WHERE docStatus='Verified' AND docSpecialty='Cardiologist'";
                         $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                         if ($doc_total = mysqli_num_rows($num_of_doc_run)) {
-                            echo $doc_total . "+ doctors";
+                            echo $doc_total . "+ Verified Doctors";
                         } else {
-                            echo 0 . "+ doctors";
+                            echo 0 . "+ Verified Doctors";
                         }
                         ?>
                     </p>
@@ -215,12 +215,12 @@
                     <p class="sp-description poppins-bold">Online healthcare for children and adolescents.</p>
                     <p class="num_of_sp">
                         <?php
-                        $num_of_doc = "SELECT * from doctor WHERE docSpecialty='Pediatrician'";
+                        $num_of_doc = "SELECT * from doctor WHERE docStatus='Verified' AND docSpecialty='Pediatrician'";
                         $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                         if ($doc_total = mysqli_num_rows($num_of_doc_run)) {
-                            echo $doc_total . "+ doctors";
+                            echo $doc_total . "+ Verified Doctors";
                         } else {
-                            echo 0 . "+ doctors";
+                            echo 0 . "+ Verified Doctors";
                         }
                         ?>
                     </p>
@@ -234,12 +234,12 @@
                     </p>
                     <p class="num_of_sp">
                         <?php
-                        $num_of_doc = "SELECT * from doctor WHERE docSpecialty='Endocrinologist'";
+                        $num_of_doc = "SELECT * from doctor WHERE docStatus='Verified' AND docSpecialty='Endocrinologist'";
                         $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                         if ($doc_total = mysqli_num_rows($num_of_doc_run)) {
-                            echo $doc_total . "+ doctors";
+                            echo $doc_total . "+ Verified Doctors";
                         } else {
-                            echo 0 . "+ doctors";
+                            echo 0 . "+ Verified Doctors";
                         }
                         ?>
                     </p>
@@ -253,12 +253,12 @@
                         scans.</p>
                     <p class="num_of_sp">
                         <?php
-                        $num_of_doc = "SELECT * from doctor WHERE docSpecialty='Radiologist'";
+                        $num_of_doc = "SELECT * from doctor WHERE docStatus='Verified' AND docSpecialty='Radiologist'";
                         $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                         if ($doc_total = mysqli_num_rows($num_of_doc_run)) {
-                            echo $doc_total . "+ doctors";
+                            echo $doc_total . "+ Verified Doctors";
                         } else {
-                            echo 0 . "+ doctors";
+                            echo 0 . "+ Verified Doctors";
                         }
                         ?>
                     </p>
@@ -271,12 +271,12 @@
                     <p class="sp-description poppins-bold">Consult about kidney health remotely.</p>
                     <p class="num_of_sp">
                         <?php
-                        $num_of_doc = "SELECT * from doctor WHERE docSpecialty='Nephrologist'";
+                        $num_of_doc = "SELECT * from doctor WHERE docStatus='Verified' AND docSpecialty='Nephrologist'";
                         $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                         if ($doc_total = mysqli_num_rows($num_of_doc_run)) {
-                            echo $doc_total . "+ doctors";
+                            echo $doc_total . "+ Verified Doctors";
                         } else {
-                            echo 0 . "+ doctors";
+                            echo 0 . "+ Verified Doctors";
                         }
                         ?>
                     </p>
@@ -289,12 +289,12 @@
                     <p class="sp-description poppins-bold">Online advice for ear, nose, and throat issues.</p>
                     <p class="num_of_sp">
                         <?php
-                        $num_of_doc = "SELECT * from doctor WHERE docSpecialty='Otorhinolaryngologist'";
+                        $num_of_doc = "SELECT * from doctor WHERE docStatus='Verified' AND docSpecialty='Otorhinolaryngologist'";
                         $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                         if ($doc_total = mysqli_num_rows($num_of_doc_run)) {
-                            echo $doc_total . "+ doctors";
+                            echo $doc_total . "+ Verified Doctors";
                         } else {
-                            echo 0 . "+ doctors";
+                            echo 0 . "+ Verified Doctors";
                         }
                         ?>
                     </p>
@@ -308,12 +308,12 @@
                         consultations.</p>
                     <p class="num_of_sp">
                         <?php
-                        $num_of_doc = "SELECT * from doctor WHERE docSpecialty='Podiatrist'";
+                        $num_of_doc = "SELECT * from doctor WHERE docStatus='Verified' AND docSpecialty='Podiatrist'";
                         $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                         if ($doc_total = mysqli_num_rows($num_of_doc_run)) {
-                            echo $doc_total . "+ doctors";
+                            echo $doc_total . "+ Verified Doctors";
                         } else {
-                            echo 0 . "+ doctors";
+                            echo 0 . "+ Verified Doctors";
                         }
                         ?>
                     </p>
@@ -326,12 +326,12 @@
                     <p class="sp-description poppins-bold">Comprehensive online care for inuliduals and families.</p>
                     <p class="num_of_sp">
                         <?php
-                        $num_of_doc = "SELECT * from doctor WHERE docSpecialty='Family Medicine Doctor'";
+                        $num_of_doc = "SELECT * from doctor WHERE docStatus='Verified' AND docSpecialty='Family Medicine Doctor'";
                         $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                         if ($doc_total = mysqli_num_rows($num_of_doc_run)) {
-                            echo $doc_total . "+ doctors";
+                            echo $doc_total . "+ Verified Doctors";
                         } else {
-                            echo 0 . "+ doctors";
+                            echo 0 . "+ Verified Doctors";
                         }
                         ?>
                     </p>
@@ -345,12 +345,12 @@
                         treatments.</p>
                     <p class="num_of_sp">
                         <?php
-                        $num_of_doc = "SELECT * from doctor WHERE docSpecialty='Psychiatrist'";
+                        $num_of_doc = "SELECT * from doctor WHERE docStatus='Verified' AND docSpecialty='Psychiatrist'";
                         $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                         if ($doc_total = mysqli_num_rows($num_of_doc_run)) {
-                            echo $doc_total . "+ doctors";
+                            echo $doc_total . "+ Verified Doctors";
                         } else {
-                            echo 0 . "+ doctors";
+                            echo 0 . "+ Verified Doctors";
                         }
                         ?>
                     </p>
@@ -363,12 +363,12 @@
                     <p class="sp-description poppins-bold">Immediate online advice for urgent medical conditions.</p>
                     <p class="num_of_sp">
                         <?php
-                        $num_of_doc = "SELECT * from doctor WHERE docSpecialty='Emergency Medicine Physician'";
+                        $num_of_doc = "SELECT * from doctor WHERE docStatus='Verified' AND docSpecialty='Emergency Medicine Physician'";
                         $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                         if ($doc_total = mysqli_num_rows($num_of_doc_run)) {
-                            echo $doc_total . "+ doctors";
+                            echo $doc_total . "+ Verified Doctors";
                         } else {
-                            echo 0 . "+ doctors";
+                            echo 0 . "+ Verified Doctors";
                         }
                         ?>
                     </p>
@@ -382,12 +382,12 @@
                         virtually.</p>
                     <p class="num_of_sp">
                         <?php
-                        $num_of_doc = "SELECT * from doctor WHERE docSpecialty='Anesthesiologist'";
+                        $num_of_doc = "SELECT * from doctor WHERE docStatus='Verified' AND docSpecialty='Anesthesiologist'";
                         $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                         if ($doc_total = mysqli_num_rows($num_of_doc_run)) {
-                            echo $doc_total . "+ doctors";
+                            echo $doc_total . "+ Verified Doctors";
                         } else {
-                            echo 0 . "+ doctors";
+                            echo 0 . "+ Verified Doctors";
                         }
                         ?>
                     </p>
@@ -402,12 +402,12 @@
                     </p>
                     <p class="num_of_sp">
                         <?php
-                        $num_of_doc = "SELECT * from doctor WHERE docSpecialty='General Surgeon'";
+                        $num_of_doc = "SELECT * from doctor WHERE docStatus='Verified' AND docSpecialty='General Surgeon'";
                         $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                         if ($doc_total = mysqli_num_rows($num_of_doc_run)) {
-                            echo $doc_total . "+ doctors";
+                            echo $doc_total . "+ Verified Doctors";
                         } else {
-                            echo 0 . "+ doctors";
+                            echo 0 . "+ Verified Doctors";
                         }
                         ?>
                     </p>
@@ -421,12 +421,12 @@
                         samples.</p>
                     <p class="num_of_sp">
                         <?php
-                        $num_of_doc = "SELECT * from doctor WHERE docSpecialty='Pathologist'";
+                        $num_of_doc = "SELECT * from doctor WHERE docStatus='Verified' AND docSpecialty='Pathologist'";
                         $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                         if ($doc_total = mysqli_num_rows($num_of_doc_run)) {
-                            echo $doc_total . "+ doctors";
+                            echo $doc_total . "+ Verified Doctors";
                         } else {
-                            echo 0 . "+ doctors";
+                            echo 0 . "+ Verified Doctors";
                         }
                         ?>
                     </p>
@@ -440,12 +440,12 @@
                     </p>
                     <p class="num_of_sp">
                         <?php
-                        $num_of_doc = "SELECT * from doctor WHERE docSpecialty='Surgeon'";
+                        $num_of_doc = "SELECT * from doctor WHERE docStatus='Verified' AND docSpecialty='Surgeon'";
                         $num_of_doc_run = mysqli_query($conn, $num_of_doc);
                         if ($doc_total = mysqli_num_rows($num_of_doc_run)) {
-                            echo $doc_total . "+ doctors";
+                            echo $doc_total . "+ Verified Doctors";
                         } else {
-                            echo 0 . "+ doctors";
+                            echo 0 . "+ Verified Doctors";
                         }
                         ?>
                     </p>

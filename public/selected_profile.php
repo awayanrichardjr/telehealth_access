@@ -8,6 +8,7 @@ if (empty($_SESSION['pUsername']) || empty($_SESSION['pPass'])) {
 } else {
     include '../user/index.php';
     include '../patient/main.php';
+    // include '../patient/specialties.php';
 
     $selected_docID = $_GET['docID'];
 

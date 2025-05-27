@@ -109,7 +109,7 @@
                 <select name="docSpecialty" id="docSpecialty">
                     <option value="Dermatologist">Dermatologist</option>
                     <option value="Obstetrician-Gynecologist">Obstetrician-Gynecologist</option>
-                    <option value="Ophthalmologist">Ophthalmologist</option>
+                    <option value="Opthalmologist">Opthalmologist</option>
                     <option value="Allergist">Allergist</option>
                     <option value="Gastroenterologist">Gastroenterologist</option>
                     <option value="Geriatrician">Geriatrician</option>
