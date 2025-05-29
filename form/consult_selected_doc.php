@@ -137,6 +137,12 @@
                 <input type="time" name="conTime" id="conTime" value="<?php echo $appointmentTime ?>" readonly>
             </div>
         </section>
+        <div>
+            <label for="appointment_email">Doctor's E-mail * </label>
+            <p style="color: grey; font-size:10px;">Note: Use this E-mail or Doctor's Contact number for payments.</p>
+            <?php $appointmentEmail = $_SESSION['appointment_email'] ?>
+            <input type="email" name="appointment_email" id="appointment_email" value="<?php echo $appointmentEmail ?>" readonly>
+        </div>
 
         <div>
             <!-- compliant  -->
