@@ -77,8 +77,19 @@
                 <input type="time" name="conTime" id="conTime" value="<?php echo $row['conTime'] ?>">
             </div>
         </section>
+
         <!-- compliant -->
-        <?php include '../form/diagnose/edit_diagnose_con/derma.php' ?>
+        <div>
+            <label for="conDiagnose">Compliant *
+                <span class="error">
+                    <?php if (isset($_GET['conDiagnoseErr'])) {
+                        echo $conDiagnoseError = $_GET['conDiagnoseErr'];
+                    } ?>
+                </span>
+            </label>
+
+            <textarea name="conDiagnose" id="conDiagnose"><?php echo $row['conDiagnose'] ?></textarea>
+        </div>
 
         <!-- Appointment created date -->
         <input type="hidden" name="conCdate" id="conCdate" value="<?php echo $row['conCdate'] ?>">

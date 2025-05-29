@@ -93,7 +93,15 @@
 
         <!-- conpliant  -->
         <div>
-            <?php include '../form/diagnose/edit_diagnose_med/derma.php' ?>
+            <label for="medDiagnose">Compliant *
+                <span class="error">
+                    <?php if (isset($_GET['medDiagnoseErr'])) {
+                        echo $medDiagnoseError = $_GET['medDiagnoseErr'];
+                    } ?>
+                </span>
+            </label>
+
+            <textarea name="medDiagnose" id="medDiagnose"><?php echo $row['medDiagnose'] ?></textarea>
         </div>
 
         <!-- additional concern  -->
