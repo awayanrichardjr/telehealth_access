@@ -8,7 +8,7 @@ $selected_conID = $_GET['conID'];
 $sql = "DELETE FROM consult WHERE conID = $selected_conID";
 
 if ($conn->query($sql) === TRUE) {
-    header("location: ../public/appointment_p.php");
+    header("location: ../public/appointment_profile_p.php");
     exit();
 } else {
     // echo "Error deleting record: " . $conn->error;
