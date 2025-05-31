@@ -1,10 +1,10 @@
 <?php
 
-$mild = 0.10;
-$moderate = 0.25;
-$severe = 0.45;
-$chronic = 0.70;
-$emergency = 0.90;
+$mild = 10;
+$moderate = 40;
+$severe = 60;
+$chronic = 80;
+$emergency = 90;
 
 // 10 15 20 25 30 35 40 45 50 55 60 65 70 75 80 85 90
 
