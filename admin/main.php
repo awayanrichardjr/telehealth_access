@@ -14,12 +14,12 @@
                 </li>
             </div>
             <div class="links-container1">
-                <li>
+                <!-- <li>
                     <a href="../public/predictive_analytics.php">
                         <span class="material-symbols-outlined">link</span>
                         <p>predictive_analytics</p>
                     </a>
-                </li>
+                </li> -->
                 <!-- dropdown -->
                 <li class="dropdown-links">
                     <a href="#">
