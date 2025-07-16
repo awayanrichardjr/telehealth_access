@@ -1,5 +1,5 @@
 <?php
-$sql = "CREATE TABLE doctor (
+$sql = "CREATE TABLE IF NOT EXISTS doctor (
     docID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     docFname VARCHAR(255) NOT NULL,
     docMname VARCHAR(255) NOT NULL,

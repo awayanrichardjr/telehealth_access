@@ -1,5 +1,5 @@
 <?php
-$sql = "CREATE TABLE admin (
+$sql = "CREATE TABLE IF NOT EXISTS admin (
     adminID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     adminFname VARCHAR(255) NOT NULL,
     adminMname VARCHAR(255) NOT NULL,

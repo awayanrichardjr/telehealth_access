@@ -12,7 +12,7 @@ function check_conn($conn)
 function check_table($conn, $sql)
 {
     if ($conn->query($sql) === TRUE) {
-        echo '<script>alert("Table Created Successfully!")</script>';
+        // echo '<script>alert("Table Created Successfully!")</script>';
     } else {
     }
 }
@@ -20,7 +20,7 @@ function check_table($conn, $sql)
 function check_db($conn, $sql)
 {
     if ($conn->query($sql) === TRUE) {
-        echo '<script>alert("Database Created Successfully!")</script>';
+        // echo '<script>alert("Database Created Successfully!")</script>';
     } else {
     }
 }
